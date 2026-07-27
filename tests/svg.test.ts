@@ -11,7 +11,8 @@ describe("SVG engine", () => {
 
   it("keeps timing metadata in layered SVG", () => {
     const svg = renderLayeredSvg(createCatDrawing());
-    expect(svg).toContain('data-start-ms="2600"');
+    expect(svg).toContain('data-start-ms="3000"');
+    expect(svg).toContain('data-duration-ms="2400"');
     expect(svg).toContain('id="layer-08-whiskers"');
   });
 });

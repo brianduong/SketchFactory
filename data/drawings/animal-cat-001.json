@@ -89,8 +89,8 @@
         "width": 530,
         "height": 530
       },
-      "startMs": 2600,
-      "durationMs": 800,
+      "startMs": 3000,
+      "durationMs": 2400,
       "stepId": "step-1",
       "voiceDescription": "Start with a big circle.",
       "enabled": true
@@ -109,8 +109,8 @@
         "width": 140,
         "height": 185
       },
-      "startMs": 3700,
-      "durationMs": 650,
+      "startMs": 6000,
+      "durationMs": 1800,
       "stepId": "step-2",
       "voiceDescription": "Add one triangle ear.",
       "enabled": true
@@ -129,8 +129,8 @@
         "width": 140,
         "height": 185
       },
-      "startMs": 4500,
-      "durationMs": 650,
+      "startMs": 8200,
+      "durationMs": 1800,
       "stepId": "step-2",
       "voiceDescription": "Add another triangle ear.",
       "enabled": true
@@ -155,8 +155,8 @@
         "fill": "#111111",
         "strokeWidth": 0
       },
-      "startMs": 5700,
-      "durationMs": 400,
+      "startMs": 10800,
+      "durationMs": 1200,
       "stepId": "step-3",
       "voiceDescription": "Draw the first eye.",
       "enabled": true
@@ -181,8 +181,8 @@
         "fill": "#111111",
         "strokeWidth": 0
       },
-      "startMs": 6300,
-      "durationMs": 400,
+      "startMs": 12500,
+      "durationMs": 1200,
       "stepId": "step-3",
       "voiceDescription": "Draw the second eye.",
       "enabled": true
@@ -204,8 +204,8 @@
       "style": {
         "fill": "#111111"
       },
-      "startMs": 7500,
-      "durationMs": 500,
+      "startMs": 14500,
+      "durationMs": 1400,
       "stepId": "step-4",
       "voiceDescription": "Add a tiny nose.",
       "enabled": true
@@ -224,8 +224,8 @@
         "width": 140,
         "height": 45
       },
-      "startMs": 8300,
-      "durationMs": 650,
+      "startMs": 16600,
+      "durationMs": 1900,
       "stepId": "step-4",
       "voiceDescription": "Draw two small curves for the mouth.",
       "enabled": true,
@@ -245,8 +245,8 @@
         "width": 520,
         "height": 70
       },
-      "startMs": 9500,
-      "durationMs": 900,
+      "startMs": 19300,
+      "durationMs": 2500,
       "stepId": "step-5",
       "voiceDescription": "Finish with four whiskers.",
       "enabled": true,
@@ -262,49 +262,49 @@
       {
         "id": "hook",
         "startMs": 200,
-        "endMs": 2200,
+        "endMs": 2500,
         "text": "Can you draw a cat in just eight strokes?"
       },
       {
         "id": "step-1",
-        "startMs": 2400,
-        "endMs": 3600,
+        "startMs": 2700,
+        "endMs": 5600,
         "text": "Start with a big circle."
       },
       {
         "id": "step-2",
-        "startMs": 3650,
-        "endMs": 5350,
+        "startMs": 5800,
+        "endMs": 10200,
         "text": "Add two triangle ears."
       },
       {
         "id": "step-3",
-        "startMs": 5500,
-        "endMs": 7100,
+        "startMs": 10500,
+        "endMs": 14000,
         "text": "Now draw two little eyes."
       },
       {
         "id": "step-4",
-        "startMs": 7250,
-        "endMs": 9250,
+        "startMs": 14200,
+        "endMs": 19000,
         "text": "Add a tiny nose and two mouth curves."
       },
       {
         "id": "step-5",
-        "startMs": 9400,
-        "endMs": 11100,
+        "startMs": 19000,
+        "endMs": 22000,
         "text": "Finish with four whiskers."
       },
       {
         "id": "result",
-        "startMs": 12500,
-        "endMs": 14200,
+        "startMs": 22300,
+        "endMs": 24500,
         "text": "It's a cat!"
       },
       {
         "id": "cta",
-        "startMs": 15000,
-        "endMs": 18000,
+        "startMs": 25000,
+        "endMs": 28700,
         "text": "Great job! Now try drawing it yourself."
       }
     ]
@@ -313,9 +313,9 @@
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "durationSeconds": 20,
+    "durationSeconds": 29,
     "hook": "Can you draw a cat in just eight strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T02:34:05.445Z"
+  "updatedAt": "2026-07-27T02:41:00.000Z"
 }

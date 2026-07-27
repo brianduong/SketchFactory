@@ -55,7 +55,8 @@ subpath mặc định được đếm theo số subpath; ngoại lệ chỉ dàn
 - Trình tự: khối lớn → silhouette → bộ phận nhận diện → chi tiết chốt.
 - Không vẽ chi tiết phụ trước khi có khung tham chiếu.
 - Mỗi stroke có `startMs`, `durationMs`; các khoảng không âm và tăng theo order.
-- Animation mục tiêu 350–900 ms/nét, ease tuyến tính hoặc ease-out nhẹ.
+- Chế độ preview nhanh dùng 350–900 ms/nét. Video học theo mặc định dùng
+  1.200–2.500 ms/nét và có khoảng nghỉ ngắn giữa hai hành động để người xem kịp vẽ.
 - Voice cue mô tả đúng step, không liệt kê dữ liệu kỹ thuật.
 
 ## Nhận diện

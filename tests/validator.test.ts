@@ -19,4 +19,14 @@ describe("validateDrawing", () => {
     drawing.strokes[0]!.bounds.x = 50;
     expect(validateDrawing(drawing).some((issue) => issue.code === "SAFE_AREA")).toBe(true);
   });
+
+  it("keeps the cat tutorial slow enough to follow", () => {
+    const drawing = createCatDrawing();
+    const enabled = drawing.strokes.filter((stroke) => stroke.enabled);
+    const drawingStart = Math.min(...enabled.map((stroke) => stroke.startMs));
+    const drawingEnd = Math.max(...enabled.map((stroke) => stroke.startMs + stroke.durationMs));
+    expect(drawingEnd - drawingStart).toBeGreaterThanOrEqual(18_000);
+    expect(drawing.videoMetadata.durationSeconds).toBeGreaterThanOrEqual(28);
+    expect(drawing.videoMetadata.durationSeconds).toBeLessThanOrEqual(30);
+  });
 });

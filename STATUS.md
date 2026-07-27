@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-07-27 09:34 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-07-27 09:51 (Asia/Ho_Chi_Minh)
 
 ## Tổng quan
 
@@ -33,12 +33,15 @@ Cập nhật: 2026-07-27 09:34 (Asia/Ho_Chi_Minh)
 ## Kết quả kiểm chứng
 
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
-- `npm test`: 3 test files, 6 tests đạt.
+- `npm test`: 3 test files, 7 tests đạt.
 - `npm run validate -- --id animal-cat-001`: `QC đạt`.
 - `npm run list`: `animal-cat-001 / generated / 8 strokes / Cat`.
 - QC artifact: 10/10 file bắt buộc tồn tại và không rỗng.
-- ffprobe: H.264 1080×1920, 30 fps; AAC 48 kHz; đúng 20.000 giây.
-- Review frame 1s/7s/13s/17s: thứ tự nét, subtitle, khung an toàn và frame cuối đạt.
+- ffprobe: H.264 1080×1920, 30 fps; AAC 48 kHz; đúng 29.000 giây.
+- Phần vẽ kéo dài 18,8 giây (từ giây 3,0 đến 21,8), thay cho khoảng 7,8 giây bản đầu.
+- Mỗi nét dùng 1,2–2,5 giây và có khoảng nghỉ ngắn giữa các hành động để học theo.
+- Review contact sheet tại 4s/7s/12s/17s/21s/24s/27s: nhịp nét, subtitle, khung an
+  toàn, thời gian giữ kết quả và CTA đều đạt.
 - Chạy pipeline lần hai: toàn bộ 9 stage được skip, không sinh dữ liệu trùng lặp.
 
 ## Sự cố đã phát hiện và sửa
@@ -48,6 +51,8 @@ Cập nhật: 2026-07-27 09:34 (Asia/Ho_Chi_Minh)
    subtitle overlay theo cue, đồng thời vẫn xuất SRT độc lập.
 3. Manifest có pipeline version trong checksum để thay đổi renderer không dùng nhầm
    artifact cũ.
+4. Bản đầu vẽ quá nhanh để học theo: timeline 001 đã tăng lên 29 giây, riêng phần vẽ
+   tăng lên 18,8 giây và có test chống giảm tốc độ ngoài ý muốn.
 
 ## Trạng thái nội dung
 
