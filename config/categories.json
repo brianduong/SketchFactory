@@ -1,0 +1,10 @@
+{
+  "categories": [
+    { "id": "animals", "label": { "en": "Animals", "vi": "Động vật" }, "subcategories": ["pets", "wildlife", "birds", "sea-creatures", "insects", "dinosaurs"] },
+    { "id": "food", "label": { "en": "Food", "vi": "Đồ ăn" }, "subcategories": ["fruits", "vegetables", "drinks"] },
+    { "id": "transport", "label": { "en": "Transport", "vi": "Phương tiện" }, "subcategories": ["vehicles", "construction-vehicles"] },
+    { "id": "everyday", "label": { "en": "Everyday objects", "vi": "Đồ vật hằng ngày" }, "subcategories": ["home", "school", "symbols"] },
+    { "id": "learning", "label": { "en": "Learning", "vi": "Học tập" }, "subcategories": ["geometry", "letters", "numbers"] },
+    { "id": "seasonal", "label": { "en": "Seasonal", "vi": "Theo mùa" }, "subcategories": ["christmas", "halloween", "birthday"] }
+  ]
+}

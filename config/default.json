@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "canvas": { "width": 1000, "height": 1000, "safeMargin": 100 },
+  "drawing": {
+    "strokeColor": "#111111",
+    "strokeWidth": 24,
+    "lineCap": "round",
+    "lineJoin": "round",
+    "backgroundColor": "#ffffff"
+  }
+}

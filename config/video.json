@@ -1,0 +1,10 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationSeconds": 20,
+  "drawingBox": { "x": 90, "y": 330, "width": 900, "height": 900 },
+  "subtitleMarginBottom": 270,
+  "codec": "libx264",
+  "audioCodec": "aac"
+}

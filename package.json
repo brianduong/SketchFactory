@@ -1,0 +1,26 @@
+{
+  "name": "sketch-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first content factory for simple drawing videos",
+  "scripts": {
+    "create": "tsx src/cli/index.ts create",
+    "render:short": "tsx src/cli/index.ts render:short",
+    "render:collection": "tsx src/cli/index.ts render:collection",
+    "validate": "tsx src/cli/index.ts validate",
+    "batch": "tsx src/cli/index.ts batch",
+    "list": "tsx src/cli/index.ts list",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
