@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-07-27 10:03 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-07-27 10:25 (Asia/Ho_Chi_Minh)
 
 ## Tổng quan
 
@@ -67,6 +67,8 @@ hoạt động và không nội dung nào được đăng tự động.
   1546×423.
 - Facebook cover SVG/PNG: 1640×624; chừa vùng avatar/UI bên trái.
 - Tagline: `Draw anything. The simple way.`
+- Định vị đã đổi sang general audience: adults, teachers, creators, visual thinkers
+  và complete beginners; public copy/metadata không còn nhắm đến kids/parents.
 - Bio, mô tả Facebook, YouTube, TikTok/Instagram và welcome post:
   `docs/page-description.md`.
 - Quy chuẩn màu, typography và sử dụng: `docs/brand-guide.md`.

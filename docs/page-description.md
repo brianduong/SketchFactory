@@ -1,4 +1,10 @@
-# Nội dung page SketchFactory
+# Nội dung kênh SketchFactory — General Audience
+
+## Định vị
+
+SketchFactory là kênh **general audience**, không chủ đích hướng đến trẻ em. Nội dung
+dành cho người lớn mới tập vẽ, giáo viên, content creator, visual thinker và người cần
+vẽ nhanh trên giấy hoặc bảng trắng.
 
 ## Tên hiển thị
 
@@ -19,7 +25,7 @@
 ## Bio ngắn
 
 ```text
-Learn to draw anything with a few simple strokes. Easy lessons for kids, parents, teachers, and complete beginners. ✏️
+Simple step-by-step drawing for adults, teachers, creators, visual thinkers, and complete beginners. ✏️
 ```
 
 ## Mô tả Facebook Page
@@ -27,36 +33,41 @@ Learn to draw anything with a few simple strokes. Easy lessons for kids, parents
 ```text
 Think you can't draw? SketchFactory makes it simple.
 
-We turn animals, food, vehicles, classroom objects, nature, and everyday things into clear step-by-step drawings anyone can follow. Every lesson uses only the lines you really need, with a friendly voice and enough time to draw along.
+We turn animals, food, vehicles, everyday objects, and useful symbols into clear line drawings anyone can follow. Each lesson focuses on the few strokes that make an object instantly recognizable, with a steady pace that gives you time to draw along.
 
-Made for kids, parents, teachers, and complete beginners.
+SketchFactory is made for adults learning from scratch, teachers drawing on whiteboards, content creators, visual thinkers, and anyone who wants to communicate ideas with simple pictures.
 
-Pick up a pencil. Start with one simple shape. You can draw this.
+No art-school experience required. Pick up a pencil and start with one simple shape.
+
+Draw anything. The simple way.
 ```
 
 ## Mô tả kênh YouTube
 
 ```text
-Welcome to SketchFactory — the simplest way to learn drawing.
+Welcome to SketchFactory — the simplest way to learn practical drawing.
 
-Here you'll learn how to draw animals, food, vehicles, school supplies, nature, and everyday objects with just a few easy strokes. Each video is short, clear, and slow enough to follow along.
+Here, you'll learn how to turn animals, food, vehicles, everyday objects, and useful symbols into clear, memorable line drawings. Every tutorial uses only the strokes you really need and moves at a steady pace so you can draw along.
 
-SketchFactory is made for:
-• Kids learning to draw
-• Parents looking for simple creative activities
-• Preschool and elementary teachers
+SketchFactory is for:
+• Adults learning to draw from scratch
+• Teachers who draw on whiteboards
+• Content creators and visual storytellers
+• Visual thinkers and note-takers
 • Complete beginners who think they can't draw
 
-No fancy art skills. No unnecessary details. Just simple shapes, clear steps, and drawings you can remember.
+No art-school experience. No unnecessary details. Just simple shapes, clear steps, and drawings you can use in real life.
 
 Pick up a pencil and draw with us.
+
+Draw anything. The simple way.
 ```
 
 ## About ngắn cho TikTok/Instagram
 
 ```text
-Draw anything, the simple way. ✏️
-Easy step-by-step drawings for kids, teachers & beginners.
+Practical drawing made simple. ✏️
+For adults, teachers, creators, visual thinkers & beginners.
 ```
 
 ## Lời chào ghim đầu page
@@ -64,17 +75,37 @@ Easy step-by-step drawings for kids, teachers & beginners.
 ```text
 Welcome to SketchFactory! ✏️
 
-This is a place for anyone who thinks, “I can't draw.”
+This is a place for adults who think, “I can't draw.”
 
-We break everyday things into a few simple strokes, then show each step slowly enough for you to follow. Start with our easy cat, share your drawing, and tell us what we should draw next.
+We break everyday things into a few useful strokes and show each step at a steady pace. Use these drawings in your notes, presentations, classroom, content, or simply as a relaxing creative habit.
+
+Start with our easy cat and tell us what practical drawing you want to learn next.
 
 You can draw this.
 ```
 
-## Ghi chú sử dụng
+## Audience setting cho YouTube
 
-- Dùng tiếng Anh làm ngôn ngữ chính để thống nhất với voice MVP.
-- Không hứa “10 giây” trong bio vì video học theo cần chậm hơn; “few simple strokes”
-  phản ánh đúng giá trị mà không gây hiểu nhầm.
-- Không thêm hashtag vào phần About. Hashtag chỉ dùng theo từng bài đăng.
-- Banner dùng tagline; bio giải thích audience; mô tả dài giải thích format nội dung.
+Nếu nội dung thực tế tiếp tục đúng định vị trên, đặt:
+
+```text
+No, set this channel as not made for kids.
+```
+
+General audience không đồng nghĩa với nội dung người lớn hoặc không thân thiện với gia
+đình. Trẻ em có thể tình cờ xem, nhưng copy, metadata và cách trình bày không được chủ
+đích mời gọi trẻ em. Không dùng disclaimer `13+` để thay cho việc định vị thật.
+
+Tham khảo chính thức:
+
+- https://support.google.com/youtube/answer/9528076
+- https://support.google.com/youtube/answer/9684541
+
+## Quy tắc copy
+
+- Không dùng `for kids`, `children`, `parents`, `preschool` hoặc `elementary learners`.
+- Không dùng `fun for the whole family` như một tín hiệu audience.
+- Có thể dùng `family-friendly` khi thực sự cần mô tả độ an toàn, nhưng không dùng làm
+  audience chính.
+- Ưu tiên: adults, teachers, creators, visual thinkers, note-takers, beginners.
+- Không thêm hashtag vào About; hashtag chỉ dùng theo từng bài đăng.

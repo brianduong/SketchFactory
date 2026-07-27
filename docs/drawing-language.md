@@ -72,10 +72,10 @@ Một hình đạt khi:
 Validator tự động kiểm tra bbox, số nét, size tối thiểu, thứ tự, timing và SVG parse
 cơ bản. Nó không thay thế bài test nhận diện với con người.
 
-## Phù hợp với trẻ em và giáo viên
+## Phù hợp với người mới và giáo viên
 
-- Hình dùng cấu trúc quen thuộc, không có chi tiết đáng sợ, bạo lực hoặc người lớn.
-- Một trẻ khoảng 5 tuổi có thể bắt chước từng bước với hình cơ bản.
+- Hình dùng cấu trúc quen thuộc, an toàn và phù hợp với môi trường làm việc/lớp học.
+- Một người chưa từng học vẽ có thể bắt chước từng bước bằng các hình cơ bản.
 - Tổng thời gian vẽ tay mục tiêu không quá 10 giây.
 - Lời đọc dùng câu ngắn, động từ trực tiếp, không thuật ngữ hình học phức tạp.
 - Bản in đen trắng vẫn rõ; mọi nét đủ dày khi in A5.

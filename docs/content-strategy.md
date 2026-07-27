@@ -2,9 +2,9 @@
 
 ## Lời hứa nội dung
 
-SketchFactory giúp người xem vẽ một vật dễ nhận ra trong khoảng 10 giây bằng ít nét
-nhất có thể. Đây là kỹ năng giao tiếp bằng hình đơn giản cho trẻ em, phụ huynh, giáo
-viên và người mới, không phải bài học mỹ thuật hàn lâm.
+SketchFactory giúp người xem vẽ một vật dễ nhận ra bằng ít nét nhất có thể. Đây là kỹ
+năng giao tiếp bằng hình đơn giản cho người lớn mới bắt đầu, giáo viên, người làm nội
+dung và visual thinker; không phải bài học mỹ thuật hàn lâm.
 
 ## Đơn vị nội dung
 
@@ -31,7 +31,7 @@ Voice dùng tiếng Anh Mỹ mặc định, câu ngắn và một ý mỗi cue. 
 
 ## Trụ nội dung ban đầu
 
-Ưu tiên các nhóm có giá trị cao với giáo viên và trẻ nhỏ:
+Ưu tiên các nhóm có giá trị cao với người mới, giáo viên và người cần vẽ nhanh:
 
 1. Thú nuôi và động vật quen thuộc.
 2. Đồ dùng lớp học.
