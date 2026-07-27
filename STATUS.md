@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-07-27 14:23 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-07-27 16:09 (Asia/Ho_Chi_Minh)
 
 ## Tổng quan
 
@@ -15,7 +15,9 @@ Cập nhật: 2026-07-27 14:23 (Asia/Ho_Chi_Minh)
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
 | Bộ video upload-ready | ✅ 12 video | `output/upload-ready/01-cat.mp4` đến `12-elephant.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
-| Publishing tự động | ⏳ Chưa triển khai | Hiện đăng thủ công |
+| Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
+| YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
+| Google Drive archive | 📝 Đã định nghĩa quy trình | `docs/publishing/operations.md` |
 
 ## Danh mục 12 video
 
@@ -31,11 +33,13 @@ Cập nhật: 2026-07-27 14:23 (Asia/Ho_Chi_Minh)
 | 08 | Cow | 10 | `08-cow.mp4` | ✅ Uploaded |
 | 09 | Frog | 8 | `09-frog.mp4` | ✅ Uploaded |
 | 10 | Fish | 9 | `10-fish.mp4` | ✅ Uploaded |
-| 11 | Turtle | 9 | `11-turtle.mp4` | ⬜ Chưa upload |
-| 12 | Elephant | 10 | `12-elephant.mp4` | ⬜ Chưa upload |
+| 11 | Turtle | 9 | `11-turtle.mp4` | ✅ Uploaded — Private |
+| 12 | Elephant | 10 | `12-elephant.mp4` | ✅ Uploaded — Private |
 
-TikTok, Facebook và Instagram chưa có video nào được đánh dấu uploaded. Trạng thái chi
-tiết được duy trì đồng thời trong bảng tổng và từng upload sheet.
+Tài khoản TikTok đã tạo: `Simple Sketch` (`@simplesketchdraw`). TikTok được đăng thủ
+công; phần tích hợp Developer API đã bỏ qua. TikTok, Facebook và Instagram chưa có
+video nào được đánh dấu uploaded. Trạng thái chi tiết được duy trì đồng thời trong
+bảng tổng và từng upload sheet.
 
 ## Quy ước file và publishing
 
@@ -46,6 +50,9 @@ tiết được duy trì đồng thời trong bảng tổng và từng upload sh
 - Upload sheet nằm tại `docs/publishing/`; mỗi file ghi số video và trạng thái riêng
   cho YouTube, TikTok, Facebook và Instagram.
 - Bảng tổng: `docs/publishing/upload-tracker.md`.
+- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `13`.
+- Chỉ upload khi người dùng yêu cầu rõ video; mặc định YouTube là `Private`.
+- Quy trình vận hành và archive: `docs/publishing/operations.md`.
 - Metadata và public copy dùng tiếng Anh, định hướng general audience, không gắn nhãn
   theo nhóm tuổi.
 
@@ -68,6 +75,10 @@ tiết được duy trì đồng thời trong bảng tổng và từng upload sh
   `output/shorts/`.
 - Turtle và Elephant đã được review trực quan ở final frame và thumbnail.
 - Elephant đã được chỉnh lại vòi/ngà để không chạm vùng chữ kết quả.
+- YouTube OAuth đã kết nối đúng kênh Simple Sketch.
+- Video 11 và 12 đã upload Private; API xác nhận xử lý thành công, audience đúng và
+  captions tiếng Anh tồn tại.
+- `npm audit --omit=dev`: 0 vulnerabilities sau khi khóa phiên bản dependency an toàn.
 
 ## Artifact được lưu trong Git
 
@@ -75,12 +86,14 @@ tiết được duy trì đồng thời trong bảng tổng và từng upload sh
 - Drawing factories: `src/drawing/*.ts`
 - Pipeline, validator, SVG/thumbnail/metadata engines: `src/`
 - Publishing sheets và upload tracker: `docs/publishing/`
+- Publishing state: `data/publishing-state.json`
 - Brand guide, strategy và page copy: `docs/`
 - Logo/banner source: `assets/branding/`
 
 ## Việc tiếp theo
 
-1. Upload video 11 Turtle và video 12 Elephant lên YouTube.
-2. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
-3. Theo dõi dữ liệu 10 video đầu để chọn nhóm con vật nên sản xuất tiếp.
-4. Tiếp tục duy trì kho dự trữ và lịch đăng bền vững.
+1. Sửa tiêu đề video Frog và đổi tên playlist theo danh sách pending.
+2. Bật quyền custom thumbnail cho kênh và đặt thumbnail cho video 11–12.
+3. Tạo video mới với số bắt đầu từ 13 và chỉ upload khi người dùng yêu cầu.
+4. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
+5. Archive MP4 lên Google Drive theo checksum trước khi xóa local.

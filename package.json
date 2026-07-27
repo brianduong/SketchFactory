@@ -11,6 +11,9 @@
     "validate": "tsx src/cli/index.ts validate",
     "batch": "tsx src/cli/index.ts batch",
     "list": "tsx src/cli/index.ts list",
+    "youtube:auth": "tsx src/publishing/youtube-cli.ts auth",
+    "youtube:channel": "tsx src/publishing/youtube-cli.ts channel",
+    "youtube:upload": "tsx src/publishing/youtube-cli.ts upload",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
@@ -22,5 +25,11 @@
     "tsx": "^4.20.0",
     "typescript": "^5.8.0",
     "vitest": "^3.2.0"
+  },
+  "dependencies": {
+    "googleapis": "^173.0.0"
+  },
+  "overrides": {
+    "gaxios": "^7.3.0"
   }
 }

@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [ ] Chưa upload
+- YouTube: [x] Đã upload — Private — https://youtu.be/eMFVYHlj7Zo
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -45,15 +45,24 @@ how to draw an elephant, easy elephant drawing, simple elephant drawing, elephan
 - Comments: On
 - Shorts remixing: On
 - Playlist: Simple Drawing Tutorials
-- Initial visibility: Unlisted
+- Initial visibility: Private
+
+## YouTube Result
+
+- Video ID: `eMFVYHlj7Zo`
+- Upload status: Processed
+- Privacy: Private
+- Audience: Not made for kids
+- English captions: Uploaded
+- Custom thumbnail: Chưa đặt được vì kênh chưa cấp quyền custom thumbnail
 
 ## Final Checklist
 
-- [ ] Upload file `12-elephant.mp4`
-- [ ] Confirm the opening hook is fully visible on a phone
+- [x] Upload file `12-elephant.mp4`
+- [x] Confirm the opening hook is fully visible on a phone
 - [ ] Confirm the thumbnail says `DRAW AN ELEPHANT`
-- [ ] Set audience to `No, it's not made for kids`
-- [ ] Upload the SRT subtitle file
+- [x] Set audience to `No, it's not made for kids`
+- [x] Upload the SRT subtitle file
 - [ ] Wait for HD processing and YouTube Checks
 - [ ] Watch the full video once on a phone before publishing
 

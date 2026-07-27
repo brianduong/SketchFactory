@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-27T16:09:26+07:00",
+  "youtube": {
+    "channelName": "Simple Sketch",
+    "channelId": "UCAfBtu-doN3P_2q8nuRwXng",
+    "uploadOnlyOnExplicitUserRequest": true,
+    "defaultPrivacy": "private",
+    "defaultAudience": "notMadeForKids",
+    "defaultLanguage": "en-US",
+    "defaultCategory": "Howto & Style",
+    "customThumbnailAvailable": false
+  },
+  "tiktok": {
+    "accountName": "Simple Sketch",
+    "username": "simplesketchdraw",
+    "profileUrl": "https://www.tiktok.com/@simplesketchdraw",
+    "uploadMode": "manual",
+    "developerApiIntegration": "skipped",
+    "trackOnlyAfterUserConfirmsPublished": true
+  },
+  "sequence": {
+    "lastGenerated": 12,
+    "lastYouTubeUploaded": 12,
+    "nextNumber": 13
+  },
+  "videos": [
+    {
+      "number": 1,
+      "animal": "Cat",
+      "file": "01-cat.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 2,
+      "animal": "Dog",
+      "file": "02-dog.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 3,
+      "animal": "Rabbit",
+      "file": "03-rabbit.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 4,
+      "animal": "Bear",
+      "file": "04-bear.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 5,
+      "animal": "Fox",
+      "file": "05-fox.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 6,
+      "animal": "Panda",
+      "file": "06-panda.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 7,
+      "animal": "Pig",
+      "file": "07-pig.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 8,
+      "animal": "Cow",
+      "file": "08-cow.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 9,
+      "animal": "Frog",
+      "file": "09-frog.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 10,
+      "animal": "Fish",
+      "file": "10-fish.mp4",
+      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 11,
+      "animal": "Turtle",
+      "file": "11-turtle.mp4",
+      "youtube": { "uploaded": true, "visibility": "private", "videoId": "2jRkRZatStw" },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    },
+    {
+      "number": 12,
+      "animal": "Elephant",
+      "file": "12-elephant.mp4",
+      "youtube": { "uploaded": true, "visibility": "private", "videoId": "eMFVYHlj7Zo" },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+    }
+  ],
+  "pendingActions": [
+    "Correct the public Frog video title to: How to Draw a Frog in 8 Simple Strokes ✏️",
+    "Rename the playlist from Easy Drawing in 10 Strokes to Simple Drawing Tutorials",
+    "Enable custom thumbnails for the channel before retrying thumbnails for videos 11 and 12",
+    "Keep videos 11 and 12 private until the user explicitly requests publication"
+  ]
+}
