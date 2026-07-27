@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "animal-cat-001",
-  "slug": "easy-cat",
+  "id": "animal-pig-001",
+  "slug": "easy-pig",
   "name": {
-    "en": "Cat",
-    "vi": "Con mèo"
+    "en": "Pig",
+    "vi": "Con heo"
   },
   "category": "animals",
-  "subcategory": "pets",
+  "subcategory": "farm",
   "difficulty": 1,
-  "strokeCount": 10,
+  "strokeCount": 9,
   "estimatedDrawingSeconds": 10,
   "status": "generated",
   "tags": [
-    "cat",
+    "pig",
     "animal",
-    "pet",
+    "farm",
     "easy drawing"
   ],
   "canvas": {
@@ -55,23 +55,22 @@
     {
       "id": "step-4",
       "order": 4,
-      "title": "Face",
+      "title": "Snout",
       "strokeIds": [
-        "06-nose",
-        "07-left-mouth",
-        "08-right-mouth"
+        "06-snout",
+        "07-left-nostril",
+        "08-right-nostril"
       ],
-      "voiceText": "Add a tiny nose, then two simple mouth curves."
+      "voiceText": "Add an oval snout and two little nostrils."
     },
     {
       "id": "step-5",
       "order": 5,
-      "title": "Whiskers",
+      "title": "Smile",
       "strokeIds": [
-        "09-left-whisker",
-        "10-right-whisker"
+        "09-smile"
       ],
-      "voiceText": "Finish with two simple whiskers."
+      "voiceText": "Finish with one happy curve."
     }
   ],
   "strokes": [
@@ -82,14 +81,19 @@
       "geometry": "circle",
       "vector": {
         "cx": 500,
-        "cy": 510,
-        "r": 265
+        "cy": 520,
+        "r": 245
       },
       "bounds": {
-        "x": 235,
-        "y": 245,
-        "width": 530,
-        "height": 530
+        "x": 255,
+        "y": 275,
+        "width": 490,
+        "height": 490
+      },
+      "style": {
+        "fill": "#EF6F6C",
+        "stroke": "#111111",
+        "strokeWidth": 24
       },
       "startMs": 3000,
       "durationMs": 2400,
@@ -99,17 +103,22 @@
     },
     {
       "id": "02-left-ear",
-      "name": "Add the left ear",
+      "name": "Add the left triangle ear",
       "order": 2,
-      "geometry": "path",
+      "geometry": "polygon",
       "vector": {
-        "d": "M300 330 L315 145 L440 270"
+        "points": "315,365 335,160 455,315"
       },
       "bounds": {
-        "x": 300,
-        "y": 145,
+        "x": 315,
+        "y": 160,
         "width": 140,
-        "height": 185
+        "height": 205
+      },
+      "style": {
+        "fill": "#EF6F6C",
+        "stroke": "#111111",
+        "strokeWidth": 24
       },
       "startMs": 6000,
       "durationMs": 1800,
@@ -119,17 +128,22 @@
     },
     {
       "id": "03-right-ear",
-      "name": "Add the right ear",
+      "name": "Add the right triangle ear",
       "order": 3,
-      "geometry": "path",
+      "geometry": "polygon",
       "vector": {
-        "d": "M560 270 L685 145 L700 330"
+        "points": "545,315 665,160 685,365"
       },
       "bounds": {
-        "x": 560,
-        "y": 145,
+        "x": 545,
+        "y": 160,
         "width": 140,
-        "height": 185
+        "height": 205
+      },
+      "style": {
+        "fill": "#EF6F6C",
+        "stroke": "#111111",
+        "strokeWidth": 24
       },
       "startMs": 8200,
       "durationMs": 1800,
@@ -143,13 +157,13 @@
       "order": 4,
       "geometry": "circle",
       "vector": {
-        "cx": 410,
-        "cy": 490,
+        "cx": 420,
+        "cy": 500,
         "r": 18
       },
       "bounds": {
-        "x": 392,
-        "y": 472,
+        "x": 402,
+        "y": 482,
         "width": 36,
         "height": 36
       },
@@ -169,13 +183,13 @@
       "order": 5,
       "geometry": "circle",
       "vector": {
-        "cx": 590,
-        "cy": 490,
+        "cx": 580,
+        "cy": 500,
         "r": 18
       },
       "bounds": {
-        "x": 572,
-        "y": 472,
+        "x": 562,
+        "y": 482,
         "width": 36,
         "height": 36
       },
@@ -190,115 +204,103 @@
       "enabled": true
     },
     {
-      "id": "06-nose",
-      "name": "Add the nose",
+      "id": "06-snout",
+      "name": "Draw the snout",
       "order": 6,
-      "geometry": "circle",
+      "geometry": "ellipse",
       "vector": {
         "cx": 500,
-        "cy": 575,
-        "r": 24
+        "cy": 610,
+        "rx": 125,
+        "ry": 88
       },
       "bounds": {
-        "x": 476,
-        "y": 551,
-        "width": 48,
-        "height": 48
+        "x": 375,
+        "y": 522,
+        "width": 250,
+        "height": 176
+      },
+      "style": {
+        "fill": "#F5C99B",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 14200,
+      "durationMs": 2000,
+      "stepId": "step-4",
+      "voiceDescription": "Add an oval snout.",
+      "enabled": true
+    },
+    {
+      "id": "07-left-nostril",
+      "name": "Add the left nostril",
+      "order": 7,
+      "geometry": "circle",
+      "vector": {
+        "cx": 455,
+        "cy": 610,
+        "r": 15
+      },
+      "bounds": {
+        "x": 440,
+        "y": 595,
+        "width": 30,
+        "height": 30
       },
       "style": {
         "fill": "#111111",
         "strokeWidth": 0
       },
-      "startMs": 13000,
-      "durationMs": 1200,
+      "startMs": 16700,
+      "durationMs": 1100,
       "stepId": "step-4",
-      "voiceDescription": "Add a tiny round nose.",
+      "voiceDescription": "Add the first nostril.",
       "enabled": true
     },
     {
-      "id": "07-left-mouth",
-      "name": "Draw the left mouth curve",
-      "order": 7,
-      "geometry": "path",
-      "vector": {
-        "d": "M500 605 Q465 650 430 615"
-      },
-      "bounds": {
-        "x": 430,
-        "y": 605,
-        "width": 70,
-        "height": 45
-      },
-      "startMs": 14500,
-      "durationMs": 1400,
-      "stepId": "step-4",
-      "voiceDescription": "Draw one curve to the left.",
-      "enabled": true
-    },
-    {
-      "id": "08-right-mouth",
-      "name": "Draw the right mouth curve",
+      "id": "08-right-nostril",
+      "name": "Add the right nostril",
       "order": 8,
-      "geometry": "path",
+      "geometry": "circle",
       "vector": {
-        "d": "M500 605 Q535 650 570 615"
+        "cx": 545,
+        "cy": 610,
+        "r": 15
       },
       "bounds": {
-        "x": 500,
-        "y": 605,
-        "width": 70,
-        "height": 45
+        "x": 530,
+        "y": 595,
+        "width": 30,
+        "height": 30
       },
-      "startMs": 16200,
-      "durationMs": 1400,
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 18300,
+      "durationMs": 1100,
       "stepId": "step-4",
-      "voiceDescription": "Draw one curve to the right.",
+      "voiceDescription": "Add the second nostril.",
       "enabled": true
     },
     {
-      "id": "09-left-whisker",
-      "name": "Add the left whisker",
+      "id": "09-smile",
+      "name": "Draw the smile",
       "order": 9,
-      "geometry": "line",
+      "geometry": "path",
       "vector": {
-        "x1": 390,
-        "y1": 590,
-        "x2": 245,
-        "y2": 565
+        "d": "M440 690 Q500 740 560 690"
       },
       "bounds": {
-        "x": 245,
-        "y": 565,
-        "width": 145,
-        "height": 25
+        "x": 440,
+        "y": 690,
+        "width": 120,
+        "height": 50
       },
-      "startMs": 18000,
+      "startMs": 20200,
       "durationMs": 1600,
       "stepId": "step-5",
-      "voiceDescription": "Draw one whisker on the left.",
-      "enabled": true
-    },
-    {
-      "id": "10-right-whisker",
-      "name": "Add the right whisker",
-      "order": 10,
-      "geometry": "line",
-      "vector": {
-        "x1": 610,
-        "y1": 590,
-        "x2": 755,
-        "y2": 565
-      },
-      "bounds": {
-        "x": 610,
-        "y": 565,
-        "width": 145,
-        "height": 25
-      },
-      "startMs": 19900,
-      "durationMs": 1900,
-      "stepId": "step-5",
-      "voiceDescription": "Draw one whisker on the right.",
+      "voiceDescription": "Finish with one happy curve.",
       "enabled": true
     }
   ],
@@ -312,7 +314,7 @@
         "id": "hook",
         "startMs": 200,
         "endMs": 2500,
-        "text": "Can you draw a cat in just ten strokes?"
+        "text": "Can you draw a pig in just nine strokes?"
       },
       {
         "id": "step-1",
@@ -334,21 +336,21 @@
       },
       {
         "id": "step-4",
-        "startMs": 12700,
-        "endMs": 17800,
-        "text": "Add a tiny nose, then two simple mouth curves."
+        "startMs": 14000,
+        "endMs": 19900,
+        "text": "Add an oval snout and two little nostrils."
       },
       {
         "id": "step-5",
-        "startMs": 17800,
+        "startMs": 19900,
         "endMs": 22000,
-        "text": "Finish with two simple whiskers."
+        "text": "Finish with one happy curve."
       },
       {
         "id": "result",
         "startMs": 22300,
         "endMs": 24500,
-        "text": "It's a cat!"
+        "text": "It's a pig!"
       },
       {
         "id": "cta",
@@ -363,8 +365,8 @@
     "height": 1920,
     "fps": 30,
     "durationSeconds": 29,
-    "hook": "Can you draw a cat in just ten strokes?"
+    "hook": "Can you draw a pig in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T03:38:00.000Z"
+  "updatedAt": "2026-07-27T06:39:51.063Z"
 }

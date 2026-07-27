@@ -55,12 +55,30 @@ ${groups.join("\n")}
 }
 
 export function renderVideoBase(drawing: Drawing): string {
-  const hook = escapeXml(drawing.videoMetadata.hook);
+  const hookLines = splitBalanced(drawing.videoMetadata.hook);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920">
 <rect width="1080" height="1920" fill="#ffffff"/>
-<text x="540" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="52" font-weight="700" fill="#111111">${hook}</text>
+<text x="540" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#111111">
+${hookLines.map((line, index) => `<tspan x="540" dy="${index === 0 ? 0 : 58}">${escapeXml(line)}</tspan>`).join("\n")}
+</text>
 <text x="540" y="1780" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#777777">SKETCHFACTORY · ${drawing.strokeCount} SIMPLE STROKES</text>
 </svg>\n`;
+}
+
+function splitBalanced(value: string): [string, string] {
+  const words = value.trim().split(/\s+/);
+  let bestIndex = 1;
+  let bestDifference = Number.POSITIVE_INFINITY;
+  for (let index = 1; index < words.length; index += 1) {
+    const left = words.slice(0, index).join(" ");
+    const right = words.slice(index).join(" ");
+    const difference = Math.abs(left.length - right.length);
+    if (difference < bestDifference) {
+      bestDifference = difference;
+      bestIndex = index;
+    }
+  }
+  return [words.slice(0, bestIndex).join(" "), words.slice(bestIndex).join(" ")];
 }
 
 function escapeXml(value: string): string {

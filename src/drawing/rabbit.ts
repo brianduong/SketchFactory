@@ -1,0 +1,125 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-27T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-head-outline", name: "Draw the head", order: 1, geometry: "ellipse",
+    vector: { cx: 500, cy: 535, rx: 220, ry: 245 },
+    bounds: { x: 280, y: 290, width: 440, height: 490 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Start with a big oval.", enabled: true,
+  },
+  {
+    id: "02-left-ear", name: "Add the left long ear", order: 2, geometry: "ellipse",
+    vector: { cx: 405, cy: 270, rx: 65, ry: 145, transform: "rotate(-12 405 270)" },
+    bounds: { x: 325, y: 120, width: 160, height: 300 },
+    startMs: 6000, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add one long ear.", enabled: true,
+  },
+  {
+    id: "03-right-ear", name: "Add the right long ear", order: 3, geometry: "ellipse",
+    vector: { cx: 595, cy: 270, rx: 65, ry: 145, transform: "rotate(12 595 270)" },
+    bounds: { x: 515, y: 120, width: 160, height: 300 },
+    startMs: 8200, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add another long ear.", enabled: true,
+  },
+  {
+    id: "04-left-eye", name: "Draw the left eye", order: 4, geometry: "circle",
+    vector: { cx: 425, cy: 515, r: 18 },
+    bounds: { x: 407, y: 497, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 10800, durationMs: 1200, stepId: "step-3",
+    voiceDescription: "Draw the first eye.", enabled: true,
+  },
+  {
+    id: "05-right-eye", name: "Draw the right eye", order: 5, geometry: "circle",
+    vector: { cx: 575, cy: 515, r: 18 },
+    bounds: { x: 557, y: 497, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 12500, durationMs: 1200, stepId: "step-3",
+    voiceDescription: "Draw the second eye.", enabled: true,
+  },
+  {
+    id: "06-nose", name: "Add the nose", order: 6, geometry: "circle",
+    vector: { cx: 500, cy: 585, r: 22 },
+    bounds: { x: 478, y: 563, width: 44, height: 44 },
+    style: { fill: "#EF6F6C", stroke: "#111111", strokeWidth: 12 },
+    startMs: 14200, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Add a little round nose.", enabled: true,
+  },
+  {
+    id: "07-smile", name: "Draw the smile", order: 7, geometry: "path",
+    vector: { d: "M450 610 Q500 660 550 610" },
+    bounds: { x: 450, y: 610, width: 100, height: 50 },
+    startMs: 15800, durationMs: 1600, stepId: "step-4",
+    voiceDescription: "Draw one happy curve.", enabled: true,
+  },
+  {
+    id: "08-left-tooth", name: "Add the left front tooth", order: 8, geometry: "rect",
+    vector: { x: 463, y: 645, width: 37, height: 65, rx: 5 },
+    bounds: { x: 463, y: 645, width: 37, height: 65 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 14 },
+    startMs: 17800, durationMs: 1600, stepId: "step-5",
+    voiceDescription: "Add the first front tooth.", enabled: true,
+  },
+  {
+    id: "09-right-tooth", name: "Add the right front tooth", order: 9, geometry: "rect",
+    vector: { x: 500, y: 645, width: 37, height: 65, rx: 5 },
+    bounds: { x: 500, y: 645, width: 37, height: 65 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 14 },
+    startMs: 20200, durationMs: 1600, stepId: "step-5",
+    voiceDescription: "Add the second front tooth.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Head", strokeIds: ["01-head-outline"], voiceText: "Start with a big oval." },
+  { id: "step-2", order: 2, title: "Ears", strokeIds: ["02-left-ear", "03-right-ear"], voiceText: "Add two long rabbit ears." },
+  { id: "step-3", order: 3, title: "Eyes", strokeIds: ["04-left-eye", "05-right-eye"], voiceText: "Now draw two little eyes." },
+  { id: "step-4", order: 4, title: "Face", strokeIds: ["06-nose", "07-smile"], voiceText: "Add a little nose and one happy curve." },
+  { id: "step-5", order: 5, title: "Teeth", strokeIds: ["08-left-tooth", "09-right-tooth"], voiceText: "Finish with two little front teeth." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a rabbit in just nine strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5600, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5800, endMs: 10200, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 10500, endMs: 14000, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 14000, endMs: 17700, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 17700, endMs: 22000, text: steps[4]!.voiceText },
+  { id: "result", startMs: 22300, endMs: 24500, text: "It's a rabbit!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createRabbitDrawing(): Drawing {
+  return {
+    schemaVersion: 1,
+    id: "animal-rabbit-001",
+    slug: "easy-rabbit",
+    name: { en: "Rabbit", vi: "Con thỏ" },
+    category: "animals",
+    subcategory: "pets",
+    difficulty: 1,
+    strokeCount: 9,
+    estimatedDrawingSeconds: 10,
+    status: "draft",
+    tags: ["rabbit", "animal", "pet", "easy drawing"],
+    canvas: { width: 1000, height: 1000 },
+    steps,
+    strokes,
+    voiceScript: {
+      language: "en-US",
+      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a rabbit in just nine strokes?",
+    },
+    createdAt,
+    updatedAt: new Date().toISOString(),
+  };
+}

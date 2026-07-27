@@ -1,0 +1,106 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-27T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-head-outline", name: "Draw the head", order: 1, geometry: "ellipse",
+    vector: { cx: 500, cy: 545, rx: 260, ry: 200 },
+    bounds: { x: 240, y: 345, width: 520, height: 400 },
+    style: { fill: "#9BD18B", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Start with a wide oval.", enabled: true,
+  },
+  {
+    id: "02-left-eye-bump", name: "Add the left eye bump", order: 2, geometry: "circle",
+    vector: { cx: 390, cy: 365, r: 85 },
+    bounds: { x: 305, y: 280, width: 170, height: 170 },
+    style: { fill: "#9BD18B", stroke: "#111111", strokeWidth: 24 },
+    startMs: 6000, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add the first big round eye.", enabled: true,
+  },
+  {
+    id: "03-right-eye-bump", name: "Add the right eye bump", order: 3, geometry: "circle",
+    vector: { cx: 610, cy: 365, r: 85 },
+    bounds: { x: 525, y: 280, width: 170, height: 170 },
+    style: { fill: "#9BD18B", stroke: "#111111", strokeWidth: 24 },
+    startMs: 8200, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add the second big round eye.", enabled: true,
+  },
+  {
+    id: "04-left-pupil", name: "Draw the left pupil", order: 4, geometry: "circle",
+    vector: { cx: 390, cy: 370, r: 22 },
+    bounds: { x: 368, y: 348, width: 44, height: 44 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 10800, durationMs: 1200, stepId: "step-3",
+    voiceDescription: "Add the first pupil.", enabled: true,
+  },
+  {
+    id: "05-right-pupil", name: "Draw the right pupil", order: 5, geometry: "circle",
+    vector: { cx: 610, cy: 370, r: 22 },
+    bounds: { x: 588, y: 348, width: 44, height: 44 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 12500, durationMs: 1200, stepId: "step-3",
+    voiceDescription: "Add the second pupil.", enabled: true,
+  },
+  {
+    id: "06-left-nostril", name: "Add the left nostril", order: 6, geometry: "circle",
+    vector: { cx: 470, cy: 525, r: 12 },
+    bounds: { x: 458, y: 513, width: 24, height: 24 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 14500, durationMs: 1100, stepId: "step-4",
+    voiceDescription: "Add the first tiny nostril.", enabled: true,
+  },
+  {
+    id: "07-right-nostril", name: "Add the right nostril", order: 7, geometry: "circle",
+    vector: { cx: 530, cy: 525, r: 12 },
+    bounds: { x: 518, y: 513, width: 24, height: 24 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 16200, durationMs: 1100, stepId: "step-4",
+    voiceDescription: "Add the second tiny nostril.", enabled: true,
+  },
+  {
+    id: "08-smile", name: "Draw the wide smile", order: 8, geometry: "path",
+    vector: { d: "M380 590 Q500 710 620 590" },
+    bounds: { x: 380, y: 590, width: 240, height: 120 },
+    startMs: 18400, durationMs: 3400, stepId: "step-4",
+    voiceDescription: "Finish with one big happy curve.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Head", strokeIds: ["01-head-outline"], voiceText: "Start with a wide oval." },
+  { id: "step-2", order: 2, title: "Eyes", strokeIds: ["02-left-eye-bump", "03-right-eye-bump"], voiceText: "Add two big round eyes." },
+  { id: "step-3", order: 3, title: "Pupils", strokeIds: ["04-left-pupil", "05-right-pupil"], voiceText: "Put one little pupil inside each eye." },
+  { id: "step-4", order: 4, title: "Face", strokeIds: ["06-left-nostril", "07-right-nostril", "08-smile"], voiceText: "Finish with two nostrils and one big smile." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a frog in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5600, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5800, endMs: 10200, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 10500, endMs: 14000, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 14000, endMs: 22000, text: steps[3]!.voiceText },
+  { id: "result", startMs: 22300, endMs: 24500, text: "It's a frog!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createFrogDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "animal-frog-001", slug: "easy-frog",
+    name: { en: "Frog", vi: "Con ếch" }, category: "animals", subcategory: "wildlife",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["frog", "animal", "wildlife", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a frog in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

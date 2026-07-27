@@ -90,9 +90,9 @@ async function main(): Promise<void> {
       throw new Error(`Lệnh "${command}" đã có vị trí trong kiến trúc nhưng nằm ngoài MVP 0.1.`);
     default:
       console.log("SketchFactory CLI");
-      console.log("  create --subject cat [--force]");
-      console.log("  render:short --id animal-cat-001 [--force]");
-      console.log("  validate --id animal-cat-001");
+      console.log("  create --subject <bear|cat|cow|dog|elephant|fish|fox|frog|panda|pig|rabbit|turtle> [--force]");
+      console.log("  render:short --id <drawing-id> [--force]");
+      console.log("  validate --id <drawing-id>");
       console.log("  list");
       if (command) process.exitCode = 1;
   }

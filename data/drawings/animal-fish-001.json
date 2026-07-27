@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "id": "animal-fish-001",
+  "slug": "easy-fish",
+  "name": {
+    "en": "Fish",
+    "vi": "Con cá"
+  },
+  "category": "animals",
+  "subcategory": "aquatic",
+  "difficulty": 1,
+  "strokeCount": 9,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "fish",
+    "animal",
+    "aquatic",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body-outline"
+      ],
+      "voiceText": "Start with a wide oval."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Tail and fins",
+      "strokeIds": [
+        "02-tail",
+        "03-top-fin",
+        "04-bottom-fin"
+      ],
+      "voiceText": "Add one triangle tail and two little fins."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Eye",
+      "strokeIds": [
+        "05-eye",
+        "06-pupil"
+      ],
+      "voiceText": "Draw one round eye with a little pupil."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Gill",
+      "strokeIds": [
+        "07-gill"
+      ],
+      "voiceText": "Add one simple curved gill."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Bubbles",
+      "strokeIds": [
+        "08-small-bubble",
+        "09-big-bubble"
+      ],
+      "voiceText": "Finish with two round bubbles."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body-outline",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 480,
+        "cy": 520,
+        "rx": 240,
+        "ry": 150
+      },
+      "bounds": {
+        "x": 240,
+        "y": 370,
+        "width": 480,
+        "height": 300
+      },
+      "style": {
+        "fill": "#79BCE8",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2400,
+      "stepId": "step-1",
+      "voiceDescription": "Start with a wide oval.",
+      "enabled": true
+    },
+    {
+      "id": "02-tail",
+      "name": "Add the tail",
+      "order": 2,
+      "geometry": "polygon",
+      "vector": {
+        "points": "700,520 835,390 835,650"
+      },
+      "bounds": {
+        "x": 700,
+        "y": 390,
+        "width": 135,
+        "height": 260
+      },
+      "style": {
+        "fill": "#79BCE8",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 6000,
+      "durationMs": 2000,
+      "stepId": "step-2",
+      "voiceDescription": "Add one triangle tail.",
+      "enabled": true
+    },
+    {
+      "id": "03-top-fin",
+      "name": "Add the top fin",
+      "order": 3,
+      "geometry": "polygon",
+      "vector": {
+        "points": "450,380 540,250 600,390"
+      },
+      "bounds": {
+        "x": 450,
+        "y": 250,
+        "width": 150,
+        "height": 140
+      },
+      "style": {
+        "fill": "#79BCE8",
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 8400,
+      "durationMs": 1800,
+      "stepId": "step-2",
+      "voiceDescription": "Add the top triangle fin.",
+      "enabled": true
+    },
+    {
+      "id": "04-bottom-fin",
+      "name": "Add the bottom fin",
+      "order": 4,
+      "geometry": "polygon",
+      "vector": {
+        "points": "450,660 540,790 600,650"
+      },
+      "bounds": {
+        "x": 450,
+        "y": 650,
+        "width": 150,
+        "height": 140
+      },
+      "style": {
+        "fill": "#79BCE8",
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 10600,
+      "durationMs": 1800,
+      "stepId": "step-2",
+      "voiceDescription": "Add the bottom triangle fin.",
+      "enabled": true
+    },
+    {
+      "id": "05-eye",
+      "name": "Draw the eye",
+      "order": 5,
+      "geometry": "circle",
+      "vector": {
+        "cx": 350,
+        "cy": 490,
+        "r": 38
+      },
+      "bounds": {
+        "x": 312,
+        "y": 452,
+        "width": 76,
+        "height": 76
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 18
+      },
+      "startMs": 13000,
+      "durationMs": 1400,
+      "stepId": "step-3",
+      "voiceDescription": "Draw one round eye.",
+      "enabled": true
+    },
+    {
+      "id": "06-pupil",
+      "name": "Add the pupil",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 350,
+        "cy": 490,
+        "r": 15
+      },
+      "bounds": {
+        "x": 335,
+        "y": 475,
+        "width": 30,
+        "height": 30
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 14800,
+      "durationMs": 1100,
+      "stepId": "step-3",
+      "voiceDescription": "Put a little pupil inside.",
+      "enabled": true
+    },
+    {
+      "id": "07-gill",
+      "name": "Draw the gill",
+      "order": 7,
+      "geometry": "path",
+      "vector": {
+        "d": "M580 430 Q530 520 580 610"
+      },
+      "bounds": {
+        "x": 530,
+        "y": 430,
+        "width": 50,
+        "height": 180
+      },
+      "startMs": 16400,
+      "durationMs": 1900,
+      "stepId": "step-4",
+      "voiceDescription": "Add one curved gill.",
+      "enabled": true
+    },
+    {
+      "id": "08-small-bubble",
+      "name": "Add the small bubble",
+      "order": 8,
+      "geometry": "circle",
+      "vector": {
+        "cx": 240,
+        "cy": 365,
+        "r": 28
+      },
+      "bounds": {
+        "x": 212,
+        "y": 337,
+        "width": 56,
+        "height": 56
+      },
+      "startMs": 18800,
+      "durationMs": 1300,
+      "stepId": "step-5",
+      "voiceDescription": "Add one small bubble.",
+      "enabled": true
+    },
+    {
+      "id": "09-big-bubble",
+      "name": "Add the big bubble",
+      "order": 9,
+      "geometry": "circle",
+      "vector": {
+        "cx": 175,
+        "cy": 285,
+        "r": 42
+      },
+      "bounds": {
+        "x": 133,
+        "y": 243,
+        "width": 84,
+        "height": 84
+      },
+      "startMs": 20400,
+      "durationMs": 1400,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with one big bubble.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "macos-say",
+    "voice": "Samantha",
+    "rate": 175,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a fish in just nine strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5600,
+        "text": "Start with a wide oval."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5800,
+        "endMs": 12600,
+        "text": "Add one triangle tail and two little fins."
+      },
+      {
+        "id": "step-3",
+        "startMs": 12700,
+        "endMs": 16100,
+        "text": "Draw one round eye with a little pupil."
+      },
+      {
+        "id": "step-4",
+        "startMs": 16100,
+        "endMs": 18500,
+        "text": "Add one simple curved gill."
+      },
+      {
+        "id": "step-5",
+        "startMs": 18500,
+        "endMs": 22000,
+        "text": "Finish with two round bubbles."
+      },
+      {
+        "id": "result",
+        "startMs": 22300,
+        "endMs": 24500,
+        "text": "It's a fish!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a fish in just nine strokes?"
+  },
+  "createdAt": "2026-07-27T00:00:00.000Z",
+  "updatedAt": "2026-07-27T06:40:27.463Z"
+}

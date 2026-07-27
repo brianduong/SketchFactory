@@ -2,9 +2,8 @@
 
 ## Định vị
 
-SketchFactory là kênh **general audience**, không chủ đích hướng đến trẻ em. Nội dung
-dành cho người lớn mới tập vẽ, giáo viên, content creator, visual thinker và người cần
-vẽ nhanh trên giấy hoặc bảng trắng.
+SketchFactory là kênh **general audience**, dành cho bất kỳ ai muốn học cách vẽ nhanh,
+đơn giản và hữu ích trên giấy hoặc bảng trắng.
 
 ## Tên hiển thị
 
@@ -25,7 +24,7 @@ vẽ nhanh trên giấy hoặc bảng trắng.
 ## Bio ngắn
 
 ```text
-Simple step-by-step drawing for adults, teachers, creators, visual thinkers, and complete beginners. ✏️
+Simple step-by-step drawing for teachers, creators, visual thinkers, and complete beginners. ✏️
 ```
 
 ## Mô tả Facebook Page
@@ -35,7 +34,7 @@ Think you can't draw? SketchFactory makes it simple.
 
 We turn animals, food, vehicles, everyday objects, and useful symbols into clear line drawings anyone can follow. Each lesson focuses on the few strokes that make an object instantly recognizable, with a steady pace that gives you time to draw along.
 
-SketchFactory is made for adults learning from scratch, teachers drawing on whiteboards, content creators, visual thinkers, and anyone who wants to communicate ideas with simple pictures.
+SketchFactory is made for teachers drawing on whiteboards, content creators, visual thinkers, complete beginners, and anyone who wants to communicate ideas with simple pictures.
 
 No art-school experience required. Pick up a pencil and start with one simple shape.
 
@@ -50,7 +49,7 @@ Welcome to SketchFactory — the simplest way to learn practical drawing.
 Here, you'll learn how to turn animals, food, vehicles, everyday objects, and useful symbols into clear, memorable line drawings. Every tutorial uses only the strokes you really need and moves at a steady pace so you can draw along.
 
 SketchFactory is for:
-• Adults learning to draw from scratch
+• Anyone learning to draw from scratch
 • Teachers who draw on whiteboards
 • Content creators and visual storytellers
 • Visual thinkers and note-takers
@@ -67,7 +66,7 @@ Draw anything. The simple way.
 
 ```text
 Practical drawing made simple. ✏️
-For adults, teachers, creators, visual thinkers & beginners.
+For teachers, creators, visual thinkers & beginners.
 ```
 
 ## Lời chào ghim đầu page
@@ -75,7 +74,7 @@ For adults, teachers, creators, visual thinkers & beginners.
 ```text
 Welcome to SketchFactory! ✏️
 
-This is a place for adults who think, “I can't draw.”
+This is a place for anyone who thinks, “I can't draw.”
 
 We break everyday things into a few useful strokes and show each step at a steady pace. Use these drawings in your notes, presentations, classroom, content, or simply as a relaxing creative habit.
 
@@ -107,5 +106,5 @@ Tham khảo chính thức:
 - Không dùng `fun for the whole family` như một tín hiệu audience.
 - Có thể dùng `family-friendly` khi thực sự cần mô tả độ an toàn, nhưng không dùng làm
   audience chính.
-- Ưu tiên: adults, teachers, creators, visual thinkers, note-takers, beginners.
+- Ưu tiên: everyone, teachers, creators, visual thinkers, note-takers, beginners.
 - Không thêm hashtag vào About; hashtag chỉ dùng theo từng bài đăng.

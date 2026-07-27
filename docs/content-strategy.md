@@ -3,8 +3,12 @@
 ## Lời hứa nội dung
 
 SketchFactory giúp người xem vẽ một vật dễ nhận ra bằng ít nét nhất có thể. Đây là kỹ
-năng giao tiếp bằng hình đơn giản cho người lớn mới bắt đầu, giáo viên, người làm nội
+năng giao tiếp bằng hình đơn giản dành cho người mới bắt đầu, giáo viên, người làm nội
 dung và visual thinker; không phải bài học mỹ thuật hàn lâm.
+
+Mỗi nét trong video phải là một hành động bút đơn, liên tục. Không được gom nhiều đường
+rời hoặc nhiều chi tiết vào một stroke để giảm số đếm. Nếu hình còn phức tạp, phải đơn
+giản hóa hình trước khi sản xuất.
 
 ## Đơn vị nội dung
 
@@ -28,6 +32,13 @@ Không tạo bản vẽ riêng theo nền tảng. Chỉ thay presentation, copy 
 
 Voice dùng tiếng Anh Mỹ mặc định, câu ngắn và một ý mỗi cue. Subtitle lấy từ cùng
 `VoiceCue` để tránh lệch nội dung.
+
+Hook trên video dọc phải nằm trong mobile safe area:
+
+- Luôn chia hook thành hai dòng cân đối.
+- Căn giữa tại `x=540`, dùng cỡ chữ tối đa 44 trên canvas rộng 1080.
+- Giữ nội dung chính trong khoảng ngang `x=140..940`; không dùng một dòng dài.
+- Khi review, phải xem frame 1080×1920 ở kích thước điện thoại trước khi approved.
 
 ## Trụ nội dung ban đầu
 

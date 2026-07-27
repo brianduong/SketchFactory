@@ -1,82 +1,86 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-07-27 10:25 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-07-27 14:23 (Asia/Ho_Chi_Minh)
 
 ## Tổng quan
 
-| Giai đoạn | Trạng thái | Bằng chứng |
+| Hạng mục | Trạng thái | Bằng chứng |
 |---|---|---|
-| Khảo sát workspace | ✅ Hoàn thành | Project mới ban đầu rỗng |
-| Khảo sát One Small Thing | ✅ Hoàn thành, chỉ đọc | `docs/reuse-from-one-small-thing.md` |
-| Thiết kế kiến trúc | ✅ Hoàn thành | `docs/architecture.md` |
-| Chuẩn hóa ngôn ngữ vẽ | ✅ Hoàn thành | `docs/drawing-language.md` |
-| Khởi tạo TypeScript/CLI | ✅ Hoàn thành | `npm run typecheck` đạt |
-| MVP con mèo | ✅ Hoàn thành | QC report đạt, video đã đo bằng ffprobe |
-| Nhận diện page | ✅ Hoàn thành | Logo, YouTube banner, Facebook cover và page copy |
+| Kiến trúc TypeScript/CLI | ✅ Hoàn thành | `src/`, `docs/architecture.md` |
+| Ngôn ngữ vẽ nét đơn | ✅ Hoàn thành | `docs/drawing-language.md` |
+| Pipeline SVG/PNG/voice/subtitle/video | ✅ Hoạt động | 12 drawing JSON và artifact cục bộ |
+| Hook an toàn trên điện thoại | ✅ Hoàn thành | Hook tự chia hai dòng, font 44, căn giữa |
+| Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
+| Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
+| Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
+| Bộ video upload-ready | ✅ 12 video | `output/upload-ready/01-cat.mp4` đến `12-elephant.mp4` |
+| Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
+| Publishing tự động | ⏳ Chưa triển khai | Hiện đăng thủ công |
 
-## Artifact MVP
+## Danh mục 12 video
 
-| Artifact | Kết quả |
-|---|---|
-| JSON nguồn | `data/drawings/animal-cat-001.json` |
-| SVG đầy đủ/layered | `output/drawings/animal-cat-001/` |
-| PNG trong suốt/trắng | `output/drawings/animal-cat-001/` |
-| Voice WAV | `output/audio/animal-cat-001.wav` |
-| Subtitle SRT | `output/subtitles/animal-cat-001.srt` |
-| Shorts | `output/shorts/animal-cat-001.mp4` |
-| Thumbnail SVG/PNG | `output/thumbnails/` |
-| Metadata | `output/reports/animal-cat-001-metadata.json` |
-| QC | `output/reports/animal-cat-001-qc.json` |
-| Resume manifest | `output/manifests/animal-cat-001.json` |
+| No. | Animal | Số nét | Video upload-ready | YouTube |
+|---:|---|---:|---|:---:|
+| 01 | Cat | 10 | `01-cat.mp4` | ✅ Uploaded |
+| 02 | Dog | 9 | `02-dog.mp4` | ✅ Uploaded |
+| 03 | Rabbit | 9 | `03-rabbit.mp4` | ✅ Uploaded |
+| 04 | Bear | 9 | `04-bear.mp4` | ✅ Uploaded |
+| 05 | Fox | 9 | `05-fox.mp4` | ✅ Uploaded |
+| 06 | Panda | 10 | `06-panda.mp4` | ✅ Uploaded |
+| 07 | Pig | 9 | `07-pig.mp4` | ✅ Uploaded |
+| 08 | Cow | 10 | `08-cow.mp4` | ✅ Uploaded |
+| 09 | Frog | 8 | `09-frog.mp4` | ✅ Uploaded |
+| 10 | Fish | 9 | `10-fish.mp4` | ✅ Uploaded |
+| 11 | Turtle | 9 | `11-turtle.mp4` | ⬜ Chưa upload |
+| 12 | Elephant | 10 | `12-elephant.mp4` | ⬜ Chưa upload |
 
-`output/` bị ignore khỏi Git và có thể tái tạo từ JSON nguồn.
+TikTok, Facebook và Instagram chưa có video nào được đánh dấu uploaded. Trạng thái chi
+tiết được duy trì đồng thời trong bảng tổng và từng upload sheet.
 
-## Kết quả kiểm chứng
+## Quy ước file và publishing
+
+- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`12`.
+- `output/shorts/` đã được xóa sau khi checksum xác nhận đủ 12 bản trùng trong
+  `upload-ready`.
+- File sinh trong `output/` bị ignore khỏi Git và có thể tái tạo từ JSON nguồn.
+- Upload sheet nằm tại `docs/publishing/`; mỗi file ghi số video và trạng thái riêng
+  cho YouTube, TikTok, Facebook và Instagram.
+- Bảng tổng: `docs/publishing/upload-tracker.md`.
+- Metadata và public copy dùng tiếng Anh, định hướng general audience, không gắn nhãn
+  theo nhóm tuổi.
+
+## Nguyên tắc nội dung đang áp dụng
+
+- Mỗi bước là một nét đơn liên tục; không gom nhiều chi tiết vào một stroke.
+- Mỗi hình có 5–10 nét và phải nhận diện nhanh.
+- Video dọc 1080×1920, dài 29 giây, có voice, subtitle và thumbnail.
+- Hook “Can you draw…” tự chia hai dòng để không bị khuất hai bên trên YouTube mobile.
+- Tiêu đề, mô tả và tag dùng tiếng Anh nhất quán.
+- Audience trên YouTube được đặt thủ công là `No, it's not made for kids`.
+
+## Kết quả kiểm chứng hiện tại
 
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
-- `npm test`: 3 test files, 7 tests đạt.
-- `npm run validate -- --id animal-cat-001`: `QC đạt`.
-- `npm run list`: `animal-cat-001 / generated / 8 strokes / Cat`.
-- QC artifact: 10/10 file bắt buộc tồn tại và không rỗng.
-- ffprobe: H.264 1080×1920, 30 fps; AAC 48 kHz; đúng 29.000 giây.
-- Phần vẽ kéo dài 18,8 giây (từ giây 3,0 đến 21,8), thay cho khoảng 7,8 giây bản đầu.
-- Mỗi nét dùng 1,2–2,5 giây và có khoảng nghỉ ngắn giữa các hành động để học theo.
-- Review contact sheet tại 4s/7s/12s/17s/21s/24s/27s: nhịp nét, subtitle, khung an
-  toàn, thời gian giữ kết quả và CTA đều đạt.
-- Chạy pipeline lần hai: toàn bộ 9 stage được skip, không sinh dữ liệu trùng lặp.
+- `npm test`: 5 test files, 42/42 tests đạt.
+- Validator chặn stroke phức tạp, semantic group, sai số nét và chi tiết ngoài safe area.
+- Pipeline và QC độc lập đạt cho Turtle 11 và Elephant 12.
+- Cả 12 MP4 upload-ready đã được đối chiếu với bản render trước khi xóa
+  `output/shorts/`.
+- Turtle và Elephant đã được review trực quan ở final frame và thumbnail.
+- Elephant đã được chỉnh lại vòi/ngà để không chạm vùng chữ kết quả.
 
-## Sự cố đã phát hiện và sửa
+## Artifact được lưu trong Git
 
-1. FFmpeg không ghi được WAV do thiếu thư mục cha: provider giờ tự tạo parent output.
-2. Bản FFmpeg hiện tại không có filter libass `subtitles`: renderer chuyển sang SVG/PNG
-   subtitle overlay theo cue, đồng thời vẫn xuất SRT độc lập.
-3. Manifest có pipeline version trong checksum để thay đổi renderer không dùng nhầm
-   artifact cũ.
-4. Bản đầu vẽ quá nhanh để học theo: timeline 001 đã tăng lên 29 giây, riêng phần vẽ
-   tăng lên 18,8 giây và có test chống giảm tốc độ ngoài ý muốn.
+- Drawing source: `data/drawings/*.json`
+- Drawing factories: `src/drawing/*.ts`
+- Pipeline, validator, SVG/thumbnail/metadata engines: `src/`
+- Publishing sheets và upload tracker: `docs/publishing/`
+- Brand guide, strategy và page copy: `docs/`
+- Logo/banner source: `assets/branding/`
 
-## Trạng thái nội dung
+## Việc tiếp theo
 
-`animal-cat-001` đang là `generated`, chưa phải `approved`. Không có publishing adapter
-hoạt động và không nội dung nào được đăng tự động.
-
-## Bộ nhận diện page
-
-- Logo SVG/PNG: 1000×1000.
-- YouTube banner SVG/PNG: 2560×1440; nội dung chính đã kiểm tra trong safe area
-  1546×423.
-- Facebook cover SVG/PNG: 1640×624; chừa vùng avatar/UI bên trái.
-- Tagline: `Draw anything. The simple way.`
-- Định vị đã đổi sang general audience: adults, teachers, creators, visual thinkers
-  và complete beginners; public copy/metadata không còn nhắm đến kids/parents.
-- Bio, mô tả Facebook, YouTube, TikTok/Instagram và welcome post:
-  `docs/page-description.md`.
-- Quy chuẩn màu, typography và sử dụng: `docs/brand-guide.md`.
-
-## Giới hạn có chủ ý của MVP 0.1
-
-- Animation là fade-in mượt cho từng semantic stroke; chưa mô phỏng đầu bút chạy dọc path.
-- Voice macOS `say` dùng để chứng minh pipeline; chưa phải voice production cuối.
-- Chưa có batch, collection/video dài, database hay publishing.
-- Nhận diện trong 1–2 giây đã review nội bộ qua frame; test với nhiều người vẫn cần làm
-  trước khi chuyển sang `approved`.
+1. Upload video 11 Turtle và video 12 Elephant lên YouTube.
+2. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
+3. Theo dõi dữ liệu 10 video đầu để chọn nhóm con vật nên sản xuất tiếp.
+4. Tiếp tục duy trì kho dự trữ và lịch đăng bền vững.

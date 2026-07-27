@@ -43,9 +43,15 @@ không trùng. Không đặt tên theo cách render như `path-1`.
 
 ## Đếm nét
 
-Một nét là một hành động bút có ý nghĩa. Nhấc bút tạo nét mới. Một path có nhiều
-subpath mặc định được đếm theo số subpath; ngoại lệ chỉ dành cho nhóm chi tiết lặp
-được khai báo `semanticGroup` và validator phải báo warning để review thủ công.
+Một nét là đúng **một lần đặt bút liên tục**. Nhấc bút tạo nét mới. Đây là quy tắc
+cứng của kênh:
+
+- Không gom nhiều đường rời vào một stroke để làm số nét trông ít hơn.
+- Một SVG path chỉ được có một lệnh bắt đầu `M/m`.
+- Không dùng `semanticGroup` để hợp thức hóa nhiều đường thành một nét.
+- Ưu tiên line, circle, ellipse và đường cong liên tục ngắn.
+- Nếu một chi tiết cần nhiều lần nhấc bút, phải lưu thành nhiều stroke riêng.
+- Nếu hình vượt quá giới hạn nét, phải đơn giản hóa thiết kế thay vì tạo stroke phức tạp.
 
 `strokeCount` phải bằng tổng stroke đang `enabled`. Nét tắt không render và không tính.
 
