@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <title>SketchFactory logo</title>
+  <desc>A coral pencil drawing three simple black shapes on warm white paper.</desc>
+  <rect width="1000" height="1000" fill="#F4D35E"/>
+  <rect x="145" y="145" width="710" height="710" rx="185" fill="#FFFDF7"/>
+
+  <!-- Three simple shapes: the shared visual language of SketchFactory. -->
+  <circle cx="365" cy="395" r="70" fill="none" stroke="#111111" stroke-width="34"/>
+  <path d="M500 465 L590 325 L680 465 Z" fill="none" stroke="#111111"
+        stroke-width="34" stroke-linejoin="round"/>
+  <rect x="315" y="565" width="140" height="140" rx="24" fill="none"
+        stroke="#111111" stroke-width="34"/>
+
+  <!-- Pencil, angled toward the unfinished line. -->
+  <g transform="rotate(-42 620 620)">
+    <rect x="555" y="405" width="108" height="360" rx="28" fill="#EF6F6C"
+          stroke="#111111" stroke-width="28"/>
+    <rect x="555" y="405" width="108" height="82" rx="24" fill="#FFFDF7"
+          stroke="#111111" stroke-width="28"/>
+    <path d="M555 765 L609 865 L663 765 Z" fill="#F5C99B"
+          stroke="#111111" stroke-width="28" stroke-linejoin="round"/>
+    <path d="M591 830 L609 865 L627 830 Z" fill="#111111"/>
+  </g>
+</svg>

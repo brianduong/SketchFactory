@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-07-27 09:51 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-07-27 10:03 (Asia/Ho_Chi_Minh)
 
 ## Tổng quan
 
@@ -12,6 +12,7 @@ Cập nhật: 2026-07-27 09:51 (Asia/Ho_Chi_Minh)
 | Chuẩn hóa ngôn ngữ vẽ | ✅ Hoàn thành | `docs/drawing-language.md` |
 | Khởi tạo TypeScript/CLI | ✅ Hoàn thành | `npm run typecheck` đạt |
 | MVP con mèo | ✅ Hoàn thành | QC report đạt, video đã đo bằng ffprobe |
+| Nhận diện page | ✅ Hoàn thành | Logo, YouTube banner, Facebook cover và page copy |
 
 ## Artifact MVP
 
@@ -58,6 +59,17 @@ Cập nhật: 2026-07-27 09:51 (Asia/Ho_Chi_Minh)
 
 `animal-cat-001` đang là `generated`, chưa phải `approved`. Không có publishing adapter
 hoạt động và không nội dung nào được đăng tự động.
+
+## Bộ nhận diện page
+
+- Logo SVG/PNG: 1000×1000.
+- YouTube banner SVG/PNG: 2560×1440; nội dung chính đã kiểm tra trong safe area
+  1546×423.
+- Facebook cover SVG/PNG: 1640×624; chừa vùng avatar/UI bên trái.
+- Tagline: `Draw anything. The simple way.`
+- Bio, mô tả Facebook, YouTube, TikTok/Instagram và welcome post:
+  `docs/page-description.md`.
+- Quy chuẩn màu, typography và sử dụng: `docs/brand-guide.md`.
 
 ## Giới hạn có chủ ý của MVP 0.1
 

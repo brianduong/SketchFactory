@@ -43,6 +43,8 @@ không đổi; dùng `--force` để dựng lại.
 - [docs/architecture.md](docs/architecture.md): kiến trúc và luồng dữ liệu.
 - [docs/drawing-language.md](docs/drawing-language.md): ngôn ngữ vẽ thống nhất.
 - [docs/content-strategy.md](docs/content-strategy.md): định vị và gate nội dung.
+- [docs/brand-guide.md](docs/brand-guide.md): logo, màu sắc và quy tắc sử dụng.
+- [docs/page-description.md](docs/page-description.md): bio và mô tả cho các nền tảng.
 - [docs/reuse-from-one-small-thing.md](docs/reuse-from-one-small-thing.md): khảo sát tái sử dụng.
 - [docs/roadmap.md](docs/roadmap.md): phạm vi MVP và lộ trình.
 
