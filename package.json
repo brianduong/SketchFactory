@@ -15,7 +15,8 @@
     "youtube:channel": "tsx src/publishing/youtube-cli.ts channel",
     "youtube:upload": "tsx src/publishing/youtube-cli.ts upload",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "youtube:playlist": "tsx scripts/playlist-sync.ts"
   },
   "engines": {
     "node": ">=22"
@@ -27,7 +28,8 @@
     "vitest": "^3.2.0"
   },
   "dependencies": {
-    "googleapis": "^173.0.0"
+    "googleapis": "^173.0.0",
+    "kokoro-js": "^1.2.1"
   },
   "overrides": {
     "gaxios": "^7.3.0"

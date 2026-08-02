@@ -7,7 +7,9 @@ import { outputPaths } from "../shared/paths.js";
 import { renderDrawingSvg, renderLayeredSvg, renderVideoBase } from "../svg/engine.js";
 import { validateDrawing } from "../quality-control/validator.js";
 import { renderSrt, renderSubtitleOverlaySvg } from "../subtitle/engine.js";
+import { KokoroProvider } from "../voice/kokoro.js";
 import { MacOsSayProvider } from "../voice/macos-say.js";
+import type { VoiceProvider } from "../voice/provider.js";
 import { generateMetadata } from "../metadata/engine.js";
 import { renderThumbnailSvg } from "../thumbnail/engine.js";
 import { renderShort, svgToPng } from "../video/renderer.js";
@@ -17,6 +19,17 @@ import { drawingHash, loadManifest, outputsExist, saveManifest } from "./manifes
 export interface PipelineOptions {
   force?: boolean;
   videoOnly?: boolean;
+}
+
+function selectVoiceProvider(id: string): VoiceProvider {
+  switch (id) {
+    case "kokoro":
+      return new KokoroProvider();
+    case "macos-say":
+      return new MacOsSayProvider();
+    default:
+      throw new Error(`Provider TTS "${id}" chưa được cài. Hỗ trợ: kokoro, macos-say.`);
+  }
 }
 
 export async function runPipeline(drawing: Drawing, options: PipelineOptions = {}): Promise<void> {
@@ -88,15 +101,14 @@ export async function runPipeline(drawing: Drawing, options: PipelineOptions = {
   });
 
   await stage("voice", [paths.audio], async () => {
-    if (drawing.voiceScript.provider !== "macos-say") {
-      throw new Error(`Provider TTS "${drawing.voiceScript.provider}" chưa được cài. MVP hỗ trợ macos-say.`);
-    }
-    await new MacOsSayProvider().synthesize({
+    const provider = selectVoiceProvider(drawing.voiceScript.provider);
+    await provider.synthesize({
       cues: drawing.voiceScript.cues,
       outputFile: paths.audio,
       tempDir: path.join(paths.tempDir, "voice"),
       voice: drawing.voiceScript.voice,
       rate: drawing.voiceScript.rate,
+      speed: drawing.voiceScript.speed ?? 1,
       durationSeconds: drawing.videoMetadata.durationSeconds,
     });
   });

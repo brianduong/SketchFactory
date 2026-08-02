@@ -70,6 +70,7 @@ export interface Drawing {
     provider: string;
     voice: string;
     rate: number;
+    speed?: number;
     cues: VoiceCue[];
   };
   videoMetadata: {
