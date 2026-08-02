@@ -84,6 +84,13 @@ vẽ nét ngày 2026-08-02:
 5. Gỡ bản cũ khỏi playlist **và** thêm bản mới vào trong cùng một bước, nếu không playlist
    sẽ rỗng. Dùng `npm run youtube:playlist -- --apply`.
 
+## Playlist
+
+Kênh dùng **một playlist chung** `Simple Drawing Tutorials` (`PLS5I18k91_u4`) chứa tất cả
+video, xếp theo số thứ tự, để người xem chạy liên tục từ video 01 tới cuối. Không chia
+playlist theo nhóm con vật — quyết định ngày 2026-08-02, dù drawing có sẵn `subcategory`
+(wildlife, pets, farm, birds, aquatic, insects).
+
 ## Quota YouTube
 
 Hạn mức tính theo ngày, reset lúc 0h giờ Thái Bình Dương, tức 14h giờ Việt Nam. Giá:

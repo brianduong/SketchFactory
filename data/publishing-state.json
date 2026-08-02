@@ -15,7 +15,8 @@
     "playlist": {
       "name": "Simple Drawing Tutorials",
       "id": "PLS5I18k91_u4",
-      "videoCount": 0
+      "videoCount": 0,
+      "structure": "Một playlist chung cho tất cả video, xếp theo số thứ tự. Không chia playlist theo nhóm con vật (quyết định 2026-08-02)."
     }
   },
   "tiktok": {
@@ -474,7 +475,7 @@
     }
   ],
   "pendingActions": [
-    "Chạy npm run youtube:playlist -- --apply để thêm 22 video mới vào playlist (playlist đang trống, cần ~1.100 đơn vị quota)",
+    "Chạy npm run youtube:playlist -- --apply sau 14:00 ngày 2026-08-03 để thêm 22 video vào playlist chung (playlist đang trống, cần ~1.100 đơn vị quota)",
     "Kiểm tra trackKind của 2 track phụ đề trên mỗi video mới; dự kiến là 1 track tự động của YouTube + 1 track do mình upload"
   ],
   "contentVersion": {
