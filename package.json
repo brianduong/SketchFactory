@@ -16,7 +16,8 @@
     "youtube:upload": "tsx src/publishing/youtube-cli.ts upload",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "youtube:playlist": "tsx scripts/playlist-sync.ts"
+    "youtube:playlist": "tsx scripts/playlist-sync.ts",
+    "youtube:retire": "tsx scripts/youtube-retire.ts"
   },
   "engines": {
     "node": ">=22"

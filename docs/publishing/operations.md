@@ -81,6 +81,10 @@ vẽ nét ngày 2026-08-02:
 3. Ẩn theo cặp: bản mới của con nào lên xong thì ẩn bản cũ của con đó ngay.
 4. Ẩn bằng `privacyStatus: unlisted`, không xóa. View, bình luận và lịch sử vẫn còn, và
    khôi phục được. Việc chuyển unlisted cũng hủy luôn `publishAt` của bản cũ.
+   Chỉ xóa hẳn khi người dùng yêu cầu rõ và đã biết mình mất bao nhiêu view — dùng
+   `npm run youtube:retire -- --archive <file> --delete-confirm`. Script mặc định chỉ
+   liệt kê, và ghi `deletedAt` cho từng video ngay sau khi xóa nên chạy lại sau khi hết
+   quota sẽ làm tiếp đúng chỗ dừng.
 5. Gỡ bản cũ khỏi playlist **và** thêm bản mới vào trong cùng một bước, nếu không playlist
    sẽ rỗng. Dùng `npm run youtube:playlist -- --apply`.
 

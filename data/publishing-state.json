@@ -475,6 +475,7 @@
     }
   ],
   "pendingActions": [
+    "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
     "Chạy npm run youtube:playlist -- --apply sau 14:00 ngày 2026-08-03 để thêm 22 video vào playlist chung (playlist đang trống, cần ~1.100 đơn vị quota)",
     "Kiểm tra trackKind của 2 track phụ đề trên mỗi video mới; dự kiến là 1 track tự động của YouTube + 1 track do mình upload"
   ],
@@ -482,6 +483,6 @@
     "version": 2,
     "name": "line-art",
     "replacedAt": "2026-08-02",
-    "note": "Bản 22 video vẽ nét thuần, không tô màu, giọng Kokoro af_bella speed 0.85. Bản v1 còn tô màu đã chuyển Unlisted, ID lưu tại .secrets/youtube-archive-color-version.json."
+    "note": "Bản 22 video vẽ nét thuần, không tô màu, giọng Kokoro af_bella speed 0.85. Bản v1 còn tô màu đã chuyển Unlisted và đang chờ xóa vĩnh viễn theo yêu cầu người dùng ngày 2026-08-02; ID lưu tại .secrets/youtube-archive-color-version.json."
   }
 }
