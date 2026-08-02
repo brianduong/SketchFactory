@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27T16:09:26+07:00",
+  "updatedAt": "2026-08-02T15:05:00+07:00",
+  "verifiedAgainstYouTubeApiAt": "2026-08-02T14:55:00+07:00",
   "youtube": {
     "channelName": "Simple Sketch",
     "channelId": "UCAfBtu-doN3P_2q8nuRwXng",
@@ -9,7 +10,13 @@
     "defaultAudience": "notMadeForKids",
     "defaultLanguage": "en-US",
     "defaultCategory": "Howto & Style",
-    "customThumbnailAvailable": false
+    "customThumbnailAvailable": true,
+    "customThumbnailVerifiedAt": "2026-08-02",
+    "playlist": {
+      "name": "Simple Drawing Tutorials",
+      "id": "PLS5I18k91_u4",
+      "videoCount": 0
+    }
   },
   "tiktok": {
     "accountName": "Simple Sketch",
@@ -20,136 +27,460 @@
     "trackOnlyAfterUserConfirmsPublished": true
   },
   "sequence": {
-    "lastGenerated": 12,
-    "lastYouTubeUploaded": 12,
-    "nextNumber": 13
+    "lastGenerated": 22,
+    "lastYouTubeUploaded": 22,
+    "nextNumber": 23
   },
   "videos": [
     {
       "number": 1,
       "animal": "Cat",
       "file": "01-cat.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "O4RkgkWIPbE",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 2,
       "animal": "Dog",
       "file": "02-dog.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "hiUp_b8d920",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 3,
       "animal": "Rabbit",
       "file": "03-rabbit.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "HgEQAsTIlIE",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 4,
       "animal": "Bear",
       "file": "04-bear.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "kNk7At4sqXg",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 5,
       "animal": "Fox",
       "file": "05-fox.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "H8IfhyMZcmY",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 6,
       "animal": "Panda",
       "file": "06-panda.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "Zy82wobJ6w4",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 7,
       "animal": "Pig",
       "file": "07-pig.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "N3zTaQAQZ7s",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 8,
       "animal": "Cow",
       "file": "08-cow.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "vH-yIqPOcXg",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 9,
       "animal": "Frog",
       "file": "09-frog.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "7p5AIE9tPUo",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 10,
       "animal": "Fish",
       "file": "10-fish.mp4",
-      "youtube": { "uploaded": true, "visibility": "public", "videoId": null },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "LT8x5E-zxGI",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 11,
       "animal": "Turtle",
       "file": "11-turtle.mp4",
-      "youtube": { "uploaded": true, "visibility": "private", "videoId": "2jRkRZatStw" },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "SFgzoLwCkPQ",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     },
     {
       "number": 12,
       "animal": "Elephant",
       "file": "12-elephant.mp4",
-      "youtube": { "uploaded": true, "visibility": "private", "videoId": "eMFVYHlj7Zo" },
+      "youtube": {
+        "uploaded": true,
+        "visibility": "public",
+        "videoId": "qsPrsEtp54E",
+        "thumbnailSet": true,
+        "scheduledPublishAt": null
+      },
       "tiktok": false,
       "facebook": false,
       "instagram": false,
-      "storage": { "local": true, "googleDrive": false, "driveFileId": null }
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 13,
+      "animal": "Lion",
+      "file": "13-lion.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "LoD45Gl_h6o",
+        "scheduledPublishAt": "2026-08-02T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 14,
+      "animal": "Monkey",
+      "file": "14-monkey.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "AZ0_u--w9pk",
+        "scheduledPublishAt": "2026-08-03T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 15,
+      "animal": "Owl",
+      "file": "15-owl.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "Vjkmz43mL8M",
+        "scheduledPublishAt": "2026-08-04T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 16,
+      "animal": "Penguin",
+      "file": "16-penguin.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "pP2sOsi4Vwo",
+        "scheduledPublishAt": "2026-08-05T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 17,
+      "animal": "Duck",
+      "file": "17-duck.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "-wBSaSOMguQ",
+        "scheduledPublishAt": "2026-08-06T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 18,
+      "animal": "Mouse",
+      "file": "18-mouse.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "_hSpAiOlTcA",
+        "scheduledPublishAt": "2026-08-07T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 19,
+      "animal": "Sheep",
+      "file": "19-sheep.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "oZUi5ZOdWeA",
+        "scheduledPublishAt": "2026-08-08T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 20,
+      "animal": "Giraffe",
+      "file": "20-giraffe.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "zG9SSaV6omY",
+        "scheduledPublishAt": "2026-08-09T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 21,
+      "animal": "Whale",
+      "file": "21-whale.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "J6203iAHXos",
+        "scheduledPublishAt": "2026-08-10T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 22,
+      "animal": "Bee",
+      "file": "22-bee.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "LymfnoWAFUs",
+        "scheduledPublishAt": "2026-08-11T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     }
   ],
   "pendingActions": [
-    "Correct the public Frog video title to: How to Draw a Frog in 8 Simple Strokes ✏️",
-    "Rename the playlist from Easy Drawing in 10 Strokes to Simple Drawing Tutorials",
-    "Enable custom thumbnails for the channel before retrying thumbnails for videos 11 and 12",
-    "Keep videos 11 and 12 private until the user explicitly requests publication"
-  ]
+    "Chạy npm run youtube:playlist -- --apply để thêm 22 video mới vào playlist (playlist đang trống, cần ~1.100 đơn vị quota)",
+    "Kiểm tra trackKind của 2 track phụ đề trên mỗi video mới; dự kiến là 1 track tự động của YouTube + 1 track do mình upload"
+  ],
+  "contentVersion": {
+    "version": 2,
+    "name": "line-art",
+    "replacedAt": "2026-08-02",
+    "note": "Bản 22 video vẽ nét thuần, không tô màu, giọng Kokoro af_bella speed 0.85. Bản v1 còn tô màu đã chuyển Unlisted, ID lưu tại .secrets/youtube-archive-color-version.json."
+  }
 }

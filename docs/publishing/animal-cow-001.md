@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng — Video 08
 
-- YouTube: [x] Đã upload
+- YouTube: [x] Đã upload — Public
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu

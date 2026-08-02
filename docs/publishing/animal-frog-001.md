@@ -2,10 +2,14 @@
 
 ## Trạng thái đăng — Video 09
 
-- YouTube: [x] Đã upload
+- YouTube: [x] Đã upload — Public
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
+
+Video này từng mang title, description và tag của **Fox**. Đã sửa ngày 2026-08-02 qua
+`videos.update`; đọc lại từ API xác nhận title, description và tag đã khớp đúng phần
+Title/Description/Tags bên dưới.
 
 ## Title
 

@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [x] Đã upload — Private — https://youtu.be/eMFVYHlj7Zo
+- YouTube: [x] Đã upload — Public
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -49,12 +49,13 @@ how to draw an elephant, easy elephant drawing, simple elephant drawing, elephan
 
 ## YouTube Result
 
-- Video ID: `eMFVYHlj7Zo`
-- Upload status: Processed
-- Privacy: Private
+- Video ID: `qsPrsEtp54E` — https://youtu.be/qsPrsEtp54E
+- Upload status: Uploaded 2026-08-02 (bản v2 vẽ nét thuần)
+- Privacy: Public
 - Audience: Not made for kids
 - English captions: Uploaded
-- Custom thumbnail: Chưa đặt được vì kênh chưa cấp quyền custom thumbnail
+- Custom thumbnail: Đã đặt
+- Playlist: chưa thêm lại sau khi thay bản mới, xem việc treo trong upload-tracker.md
 
 ## Final Checklist
 

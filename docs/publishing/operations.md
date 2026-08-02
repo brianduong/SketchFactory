@@ -1,6 +1,6 @@
 # SketchFactory Publishing Operations
 
-Updated: 2026-07-27 16:09 (Asia/Ho_Chi_Minh)
+Updated: 2026-08-02 11:22 (Asia/Ho_Chi_Minh)
 
 ## Source of Truth
 
@@ -15,11 +15,19 @@ task. Do not rely only on conversation history.
 
 ## Current Position
 
-- Last generated video: 12
-- Last YouTube upload: 12
-- Next new video number: 13
-- Videos 01–10: YouTube Public
-- Videos 11–12: YouTube Private
+Đối chiếu trực tiếp với YouTube Data API ngày 2026-08-02.
+
+- Nội dung đang phát hành: **bản v2 vẽ nét thuần**, giọng Kokoro `af_bella`
+- Last generated video: 22
+- Last YouTube upload: 22
+- Next new video number: 23
+- Videos 01–12: YouTube Public
+- Videos 13–22: Private kèm lịch tự công khai 20:00 giờ VN mỗi ngày, 02/08 → 11/08
+- Custom thumbnail: đã bật, cả 22 video đều dùng thumbnail riêng
+- 22 video bản v1 tô màu: đã Unlisted, giữ lại để khôi phục nếu cần
+- Kênh hiện có 44 video: 22 bản v2 hiển thị, 22 bản v1 ẩn
+- Playlist đang trống, chờ chạy `npm run youtube:playlist -- --apply`
+- Video 09 (Frog, `_j6SiVf0dvs`): nội dung đúng nhưng metadata đang là Fox
 - TikTok account: `Simple Sketch` (`@simplesketchdraw`)
 - TikTok upload mode: manual; the Developer API integration was skipped
 - TikTok, Facebook and Instagram: no uploads marked
@@ -35,6 +43,11 @@ the user confirms that the post was published.
 Only upload when the user explicitly requests a specific video. Never upload or
 publish based only on a schedule assumption.
 
+**Nhịp đăng: đúng một video công khai mỗi ngày.** Render sẵn bao nhiêu cũng được, nhưng
+mỗi lần upload phải để `Private` kèm `--publish-at` để rải mỗi ngày một video lúc 20:00
+giờ VN. Không bao giờ để hai video cùng công khai trong một ngày, kể cả khi hàng đã sẵn.
+Đây là lỗi đã mắc ngày 27/07/2026 khi 10 video đầu lên cùng lúc.
+
 Default workflow:
 
 1. Resolve the requested number against `data/publishing-state.json`.
@@ -45,8 +58,8 @@ Default workflow:
 5. Set audience to `Not made for kids`, language to English (US), and category to
    Howto & Style.
 6. Upload MP4, metadata and English captions.
-7. Attempt the custom thumbnail, but treat it as optional until the channel enables
-   that feature.
+7. Upload the custom thumbnail. Kênh đã xác minh số điện thoại ngày 2026-08-02 nên
+   `thumbnails.set` hoạt động; nếu vẫn lỗi thì coi là cảnh báo, không chặn upload.
 8. Verify the YouTube video ID, upload status, visibility, audience and captions by
    reading them back through the API.
 9. Update the JSON state, tracker, upload sheet and `STATUS.md`.
@@ -54,18 +67,74 @@ Default workflow:
 Do not create a second upload when a local upload receipt already contains a YouTube
 video ID. Resume missing thumbnail/caption steps instead.
 
+## Thay nội dung một video đã đăng
+
+YouTube **không cho thay file video** của một video đã tồn tại. Muốn đổi nội dung phải
+đăng video mới rồi xử lý video cũ. Quy trình đã dùng khi thay bản v1 tô màu bằng bản v2
+vẽ nét ngày 2026-08-02:
+
+1. Lưu ID toàn bộ bản cũ vào `.secrets/youtube-archive-color-version.json`, và chuyển
+   `youtube-uploads.json` sang `youtube-uploads-color-version.json` rồi reset về `{}`.
+   Nếu không reset, uploader thấy receipt cũ sẽ bỏ qua bước upload.
+2. Upload đủ bản mới **trước**. Không ẩn bản cũ sớm, để nếu hết quota giữa chừng thì kênh
+   vẫn còn nội dung.
+3. Ẩn theo cặp: bản mới của con nào lên xong thì ẩn bản cũ của con đó ngay.
+4. Ẩn bằng `privacyStatus: unlisted`, không xóa. View, bình luận và lịch sử vẫn còn, và
+   khôi phục được. Việc chuyển unlisted cũng hủy luôn `publishAt` của bản cũ.
+5. Gỡ bản cũ khỏi playlist **và** thêm bản mới vào trong cùng một bước, nếu không playlist
+   sẽ rỗng. Dùng `npm run youtube:playlist -- --apply`.
+
+## Quota YouTube
+
+Hạn mức tính theo ngày, reset lúc 0h giờ Thái Bình Dương, tức 14h giờ Việt Nam. Giá:
+
+| Thao tác | Đơn vị |
+|---|---:|
+| `videos.insert` | 1.600 |
+| `captions.insert` | 400 |
+| `thumbnails.set`, `videos.update`, `playlistItems.*`, `captions.list` | 50 |
+| `videos.list`, `playlistItems.list` | 1 |
+
+Một video đăng đầy đủ tốn 2.050 đơn vị, nên **không đăng nổi 22 video trong một ngày**.
+Khi hết quota, API trả 403 `quotaExceeded`. Uploader ghi receipt ngay sau khi
+`videos.insert` thành công nên chạy lại hôm sau sẽ không đăng trùng, chỉ làm tiếp các
+bước còn thiếu.
+
+Cẩn thận với script kiểm tra: `captions.list` tốn 50 đơn vị mỗi lần gọi, quét 22 video
+hết 1.100 đơn vị. Đừng chạy audit khi còn việc ghi quan trọng chưa xong.
+
+## Scheduled Publishing
+
+Đặt lịch bằng `--publish-at <RFC3339 UTC>` kèm `--privacy private`; YouTube chỉ nhận
+`publishAt` khi video đang Private. 20:00 giờ VN tương ứng `T13:00:00Z` cùng ngày.
+
+```
+npm run youtube:upload -- --number 23 --id 23-animal-... \
+  --privacy private --publish-at 2026-08-12T13:00:00Z \
+  --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+```
+
+Uploader đọc lại `privacyStatus` và `publishAt` từ API sau khi upload, ghi
+`visibility: "scheduled"` cùng `scheduledPublishAt` vào `data/publishing-state.json`.
+Chạy lại lệnh với `--publish-at` khác sẽ dời lịch qua `videos.update`, không upload lại.
+
 ## Current Publishing Recovery Plan
 
 The first 10 videos were published on the same day. Do not delete, re-upload or change
 them back to Private only to alter their release order.
 
-- Leave videos 01–10 Public.
-- Keep 11 and 12 Private until explicitly requested.
+- Leave videos 01–12 Public. Videos 11 và 12 đã được chuyển Public (không phải do
+  uploader thực hiện), nên không đổi ngược lại về Private chỉ để sửa thứ tự phát hành.
 - Resume a sustainable schedule of one new Public video per day.
-- Pending metadata correction: the Frog video must use
-  `How to Draw a Frog in 8 Simple Strokes ✏️`.
-- Pending playlist correction: rename `Easy Drawing in 10 Strokes` to
-  `Simple Drawing Tutorials`.
+- Đã xong 2026-08-02: video `_j6SiVf0dvs` (Frog) trước đây mang title/description/tag
+  của Fox, nay đã sửa về `How to Draw a Frog in 8 Simple Strokes ✏️`.
+- Đã xong 2026-08-02: playlist `Easy Drawing in 10 Strokes` đổi tên thành
+  `Simple Drawing Tutorials` (`PLS5I18k91_u4`) và bổ sung đủ 22 video.
+
+Lưu ý khi sửa metadata: `videos.update` với `part=["snippet"]` ghi đè toàn bộ snippet,
+nên phải gửi kèm `categoryId`, `defaultLanguage` và `defaultAudioLanguage`, nếu không
+các trường đó bị xóa. Đọc lại ngay sau khi ghi có thể còn trả dữ liệu cũ; kiểm tra lại
+sau vài giây trước khi kết luận là thất bại.
 
 ## Google Drive Archive Rule
 
