@@ -1,0 +1,120 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-31T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "circle",
+    vector: { cx: 455, cy: 515, r: 235 },
+    bounds: { x: 220, y: 280, width: 470, height: 470 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 26 },
+    startMs: 3000, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Start with one big fluffy circle.", enabled: true,
+  },
+  {
+    id: "02-head", name: "Draw the head", order: 2, geometry: "ellipse",
+    vector: { cx: 740, cy: 570, rx: 105, ry: 130 },
+    bounds: { x: 635, y: 440, width: 210, height: 260 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 5400, durationMs: 2000, stepId: "step-2",
+    voiceDescription: "Add one dark oval head.", enabled: true,
+  },
+  {
+    id: "03-left-ear", name: "Add the left ear", order: 3, geometry: "ellipse",
+    vector: { cx: 655, cy: 470, rx: 62, ry: 36 },
+    bounds: { x: 593, y: 434, width: 124, height: 72 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 7600, durationMs: 1600, stepId: "step-3",
+    voiceDescription: "Add one small oval ear.", enabled: true,
+  },
+  {
+    id: "04-right-ear", name: "Add the right ear", order: 4, geometry: "ellipse",
+    vector: { cx: 825, cy: 470, rx: 62, ry: 36 },
+    bounds: { x: 763, y: 434, width: 124, height: 72 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 9400, durationMs: 1600, stepId: "step-3",
+    voiceDescription: "Add the second small oval ear.", enabled: true,
+  },
+  {
+    id: "05-left-eye", name: "Draw the left eye", order: 5, geometry: "circle",
+    vector: { cx: 705, cy: 545, r: 18 },
+    bounds: { x: 687, y: 527, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 11200, durationMs: 1300, stepId: "step-4",
+    voiceDescription: "Draw the first little eye.", enabled: true,
+  },
+  {
+    id: "06-right-eye", name: "Draw the right eye", order: 6, geometry: "circle",
+    vector: { cx: 775, cy: 545, r: 18 },
+    bounds: { x: 757, y: 527, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 12700, durationMs: 1300, stepId: "step-4",
+    voiceDescription: "Draw the second little eye.", enabled: true,
+  },
+  {
+    id: "07-fringe", name: "Add the fringe", order: 7, geometry: "path",
+    vector: { d: "M690 455 Q740 405 790 455" },
+    bounds: { x: 690, y: 405, width: 100, height: 50 },
+    style: { fill: "none", stroke: "#111111", strokeWidth: 26 },
+    startMs: 14200, durationMs: 1700, stepId: "step-5",
+    voiceDescription: "Add one curl on the head.", enabled: true,
+  },
+  {
+    id: "08-front-leg", name: "Draw the front leg", order: 8, geometry: "line",
+    vector: { x1: 555, y1: 720, x2: 555, y2: 855 },
+    bounds: { x: 542, y: 720, width: 26, height: 135 },
+    style: { stroke: "#111111", strokeWidth: 26 },
+    startMs: 16200, durationMs: 2000, stepId: "step-6",
+    voiceDescription: "Draw one straight leg.", enabled: true,
+  },
+  {
+    id: "09-back-leg", name: "Draw the back leg", order: 9, geometry: "line",
+    vector: { x1: 350, y1: 720, x2: 350, y2: 855 },
+    bounds: { x: 337, y: 720, width: 26, height: 135 },
+    style: { stroke: "#111111", strokeWidth: 26 },
+    startMs: 18500, durationMs: 2600, stepId: "step-6",
+    voiceDescription: "Finish with the second straight leg.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one big fluffy circle." },
+  { id: "step-2", order: 2, title: "Head", strokeIds: ["02-head"], voiceText: "Add one dark oval head on the side." },
+  { id: "step-3", order: 3, title: "Ears", strokeIds: ["03-left-ear", "04-right-ear"], voiceText: "Add two small oval ears." },
+  { id: "step-4", order: 4, title: "Eyes", strokeIds: ["05-left-eye", "06-right-eye"], voiceText: "Now draw two little eyes." },
+  { id: "step-5", order: 5, title: "Fringe", strokeIds: ["07-fringe"], voiceText: "Add one curl on the head." },
+  { id: "step-6", order: 6, title: "Legs", strokeIds: ["08-front-leg", "09-back-leg"], voiceText: "Finish with two straight legs." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a sheep in just nine strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5300, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5300, endMs: 7500, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 7500, endMs: 11100, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 11100, endMs: 14100, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 14100, endMs: 16100, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 16100, endMs: 21200, text: steps[5]!.voiceText },
+  { id: "result", startMs: 21800, endMs: 24200, text: "It's a sheep!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createSheepDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "19-animal-sheep-001", slug: "easy-sheep",
+    name: { en: "Sheep", vi: "Con cừu" }, category: "animals", subcategory: "farm",
+    difficulty: 1, strokeCount: 9, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["sheep", "animal", "farm", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a sheep in just nine strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

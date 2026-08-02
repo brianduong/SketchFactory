@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "id": "22-animal-bee-001",
+  "slug": "easy-bee",
+  "name": {
+    "en": "Bee",
+    "vi": "Con ong"
+  },
+  "category": "animals",
+  "subcategory": "insects",
+  "difficulty": 1,
+  "strokeCount": 10,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "bee",
+    "animal",
+    "insect",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Start with one round oval body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Stripes",
+      "strokeIds": [
+        "02-top-stripe",
+        "03-bottom-stripe"
+      ],
+      "voiceText": "Draw two straight stripes across it."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Wings",
+      "strokeIds": [
+        "04-left-wing",
+        "05-right-wing"
+      ],
+      "voiceText": "Add two oval wings on the sides."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Eyes",
+      "strokeIds": [
+        "06-left-eye",
+        "07-right-eye"
+      ],
+      "voiceText": "Now draw two little eyes."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Smile",
+      "strokeIds": [
+        "08-smile"
+      ],
+      "voiceText": "Add one happy curve."
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Antennae",
+      "strokeIds": [
+        "09-left-antenna",
+        "10-right-antenna"
+      ],
+      "voiceText": "Finish with two small antennae."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 500,
+        "cy": 570,
+        "rx": 200,
+        "ry": 165
+      },
+      "bounds": {
+        "x": 300,
+        "y": 405,
+        "width": 400,
+        "height": 330
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2200,
+      "stepId": "step-1",
+      "voiceDescription": "Start with one round oval body.",
+      "enabled": true
+    },
+    {
+      "id": "02-top-stripe",
+      "name": "Draw the top stripe",
+      "order": 2,
+      "geometry": "line",
+      "vector": {
+        "x1": 380,
+        "y1": 620,
+        "x2": 620,
+        "y2": 620
+      },
+      "bounds": {
+        "x": 380,
+        "y": 603,
+        "width": 240,
+        "height": 34
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 34
+      },
+      "startMs": 5400,
+      "durationMs": 1600,
+      "stepId": "step-2",
+      "voiceDescription": "Draw one straight stripe.",
+      "enabled": true
+    },
+    {
+      "id": "03-bottom-stripe",
+      "name": "Draw the bottom stripe",
+      "order": 3,
+      "geometry": "line",
+      "vector": {
+        "x1": 415,
+        "y1": 685,
+        "x2": 585,
+        "y2": 685
+      },
+      "bounds": {
+        "x": 415,
+        "y": 668,
+        "width": 170,
+        "height": 34
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 34
+      },
+      "startMs": 7200,
+      "durationMs": 1600,
+      "stepId": "step-2",
+      "voiceDescription": "Draw one shorter stripe below.",
+      "enabled": true
+    },
+    {
+      "id": "04-left-wing",
+      "name": "Add the left wing",
+      "order": 4,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 270,
+        "cy": 450,
+        "rx": 105,
+        "ry": 70
+      },
+      "bounds": {
+        "x": 165,
+        "y": 380,
+        "width": 210,
+        "height": 140
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 20
+      },
+      "startMs": 9000,
+      "durationMs": 1800,
+      "stepId": "step-3",
+      "voiceDescription": "Add one oval wing on the left.",
+      "enabled": true
+    },
+    {
+      "id": "05-right-wing",
+      "name": "Add the right wing",
+      "order": 5,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 730,
+        "cy": 450,
+        "rx": 105,
+        "ry": 70
+      },
+      "bounds": {
+        "x": 625,
+        "y": 380,
+        "width": 210,
+        "height": 140
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 20
+      },
+      "startMs": 11000,
+      "durationMs": 1800,
+      "stepId": "step-3",
+      "voiceDescription": "Add the second oval wing on the right.",
+      "enabled": true
+    },
+    {
+      "id": "06-left-eye",
+      "name": "Draw the left eye",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 440,
+        "cy": 490,
+        "r": 22
+      },
+      "bounds": {
+        "x": 418,
+        "y": 468,
+        "width": 44,
+        "height": 44
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 13000,
+      "durationMs": 1200,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the first little eye.",
+      "enabled": true
+    },
+    {
+      "id": "07-right-eye",
+      "name": "Draw the right eye",
+      "order": 7,
+      "geometry": "circle",
+      "vector": {
+        "cx": 560,
+        "cy": 490,
+        "r": 22
+      },
+      "bounds": {
+        "x": 538,
+        "y": 468,
+        "width": 44,
+        "height": 44
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 14400,
+      "durationMs": 1200,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the second little eye.",
+      "enabled": true
+    },
+    {
+      "id": "08-smile",
+      "name": "Draw the smile",
+      "order": 8,
+      "geometry": "path",
+      "vector": {
+        "d": "M440 545 Q500 595 560 545"
+      },
+      "bounds": {
+        "x": 440,
+        "y": 545,
+        "width": 120,
+        "height": 55
+      },
+      "startMs": 15800,
+      "durationMs": 1700,
+      "stepId": "step-5",
+      "voiceDescription": "Add one happy curve.",
+      "enabled": true
+    },
+    {
+      "id": "09-left-antenna",
+      "name": "Add the left antenna",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M460 410 Q420 330 375 305"
+      },
+      "bounds": {
+        "x": 375,
+        "y": 305,
+        "width": 85,
+        "height": 105
+      },
+      "startMs": 17700,
+      "durationMs": 1700,
+      "stepId": "step-6",
+      "voiceDescription": "Draw one small antenna.",
+      "enabled": true
+    },
+    {
+      "id": "10-right-antenna",
+      "name": "Add the right antenna",
+      "order": 10,
+      "geometry": "path",
+      "vector": {
+        "d": "M540 410 Q580 330 625 305"
+      },
+      "bounds": {
+        "x": 540,
+        "y": 305,
+        "width": 85,
+        "height": 105
+      },
+      "startMs": 19600,
+      "durationMs": 1800,
+      "stepId": "step-6",
+      "voiceDescription": "Finish with the second small antenna.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a bee in just ten strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5300,
+        "text": "Start with one round oval body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5300,
+        "endMs": 8900,
+        "text": "Draw two straight stripes across it."
+      },
+      {
+        "id": "step-3",
+        "startMs": 8900,
+        "endMs": 12900,
+        "text": "Add two oval wings on the sides."
+      },
+      {
+        "id": "step-4",
+        "startMs": 12900,
+        "endMs": 15700,
+        "text": "Now draw two little eyes."
+      },
+      {
+        "id": "step-5",
+        "startMs": 15700,
+        "endMs": 17600,
+        "text": "Add one happy curve."
+      },
+      {
+        "id": "step-6",
+        "startMs": 17600,
+        "endMs": 21500,
+        "text": "Finish with two small antennae."
+      },
+      {
+        "id": "result",
+        "startMs": 21800,
+        "endMs": 24200,
+        "text": "It's a bee!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a bee in just ten strokes?"
+  },
+  "createdAt": "2026-07-31T00:00:00.000Z",
+  "updatedAt": "2026-08-02T06:32:37.279Z"
+}

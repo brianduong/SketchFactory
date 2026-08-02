@@ -1,0 +1,126 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-31T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "ellipse",
+    vector: { cx: 500, cy: 540, rx: 225, ry: 275 },
+    bounds: { x: 275, y: 265, width: 450, height: 550 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Start with one tall oval body.", enabled: true,
+  },
+  {
+    id: "02-left-tuft", name: "Add the left ear tuft", order: 2, geometry: "polygon",
+    vector: { points: "300,330 250,180 405,265" },
+    bounds: { x: 250, y: 180, width: 155, height: 150 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 5400, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add one pointy ear tuft.", enabled: true,
+  },
+  {
+    id: "03-right-tuft", name: "Add the right ear tuft", order: 3, geometry: "polygon",
+    vector: { points: "700,330 750,180 595,265" },
+    bounds: { x: 595, y: 180, width: 155, height: 150 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 7400, durationMs: 1800, stepId: "step-2",
+    voiceDescription: "Add the second pointy ear tuft.", enabled: true,
+  },
+  {
+    id: "04-left-eye", name: "Draw the left eye", order: 4, geometry: "circle",
+    vector: { cx: 400, cy: 450, r: 88 },
+    bounds: { x: 312, y: 362, width: 176, height: 176 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 9400, durationMs: 1600, stepId: "step-3",
+    voiceDescription: "Draw one big round eye.", enabled: true,
+  },
+  {
+    id: "05-right-eye", name: "Draw the right eye", order: 5, geometry: "circle",
+    vector: { cx: 600, cy: 450, r: 88 },
+    bounds: { x: 512, y: 362, width: 176, height: 176 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 11200, durationMs: 1600, stepId: "step-3",
+    voiceDescription: "Draw the second big round eye.", enabled: true,
+  },
+  {
+    id: "06-left-pupil", name: "Add the left pupil", order: 6, geometry: "circle",
+    vector: { cx: 400, cy: 450, r: 32 },
+    bounds: { x: 368, y: 418, width: 64, height: 64 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 13000, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Put one pupil inside.", enabled: true,
+  },
+  {
+    id: "07-right-pupil", name: "Add the right pupil", order: 7, geometry: "circle",
+    vector: { cx: 600, cy: 450, r: 32 },
+    bounds: { x: 568, y: 418, width: 64, height: 64 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 14400, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Put the second pupil inside.", enabled: true,
+  },
+  {
+    id: "08-beak", name: "Add the beak", order: 8, geometry: "polygon",
+    vector: { points: "460,545 540,545 500,625" },
+    bounds: { x: 460, y: 545, width: 80, height: 80 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 15800, durationMs: 1500, stepId: "step-5",
+    voiceDescription: "Add one small triangle beak.", enabled: true,
+  },
+  {
+    id: "09-left-wing", name: "Draw the left wing", order: 9, geometry: "path",
+    vector: { d: "M330 520 Q280 680 360 780" },
+    bounds: { x: 280, y: 520, width: 80, height: 260 },
+    startMs: 17500, durationMs: 1800, stepId: "step-6",
+    voiceDescription: "Draw one curved wing.", enabled: true,
+  },
+  {
+    id: "10-right-wing", name: "Draw the right wing", order: 10, geometry: "path",
+    vector: { d: "M670 520 Q720 680 640 780" },
+    bounds: { x: 640, y: 520, width: 80, height: 260 },
+    startMs: 19500, durationMs: 1800, stepId: "step-6",
+    voiceDescription: "Finish with the second curved wing.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one tall oval body." },
+  { id: "step-2", order: 2, title: "Ear tufts", strokeIds: ["02-left-tuft", "03-right-tuft"], voiceText: "Add two pointy ear tufts on top." },
+  { id: "step-3", order: 3, title: "Eyes", strokeIds: ["04-left-eye", "05-right-eye"], voiceText: "Draw two big round eyes." },
+  { id: "step-4", order: 4, title: "Pupils", strokeIds: ["06-left-pupil", "07-right-pupil"], voiceText: "Put one pupil inside each eye." },
+  { id: "step-5", order: 5, title: "Beak", strokeIds: ["08-beak"], voiceText: "Add one small triangle beak." },
+  { id: "step-6", order: 6, title: "Wings", strokeIds: ["09-left-wing", "10-right-wing"], voiceText: "Finish with two curved wings." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw an owl in just ten strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5300, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5300, endMs: 9300, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 9300, endMs: 12800, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 12800, endMs: 15700, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 15700, endMs: 17400, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 17400, endMs: 21400, text: steps[5]!.voiceText },
+  { id: "result", startMs: 21800, endMs: 24200, text: "It's an owl!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createOwlDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "15-animal-owl-001", slug: "easy-owl",
+    name: { en: "Owl", vi: "Con cú" }, category: "animals", subcategory: "birds",
+    difficulty: 1, strokeCount: 10, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["owl", "animal", "bird", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw an owl in just ten strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

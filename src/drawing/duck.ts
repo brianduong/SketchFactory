@@ -1,0 +1,108 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-31T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "ellipse",
+    vector: { cx: 455, cy: 595, rx: 240, ry: 170 },
+    bounds: { x: 215, y: 425, width: 480, height: 340 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Start with one wide oval body.", enabled: true,
+  },
+  {
+    id: "02-head", name: "Draw the head", order: 2, geometry: "circle",
+    vector: { cx: 715, cy: 400, r: 135 },
+    bounds: { x: 580, y: 265, width: 270, height: 270 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 5600, durationMs: 2200, stepId: "step-2",
+    voiceDescription: "Add one round head on top.", enabled: true,
+  },
+  {
+    id: "03-beak", name: "Add the beak", order: 3, geometry: "polygon",
+    vector: { points: "805,365 895,405 805,450" },
+    bounds: { x: 805, y: 365, width: 90, height: 85 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 18 },
+    startMs: 8000, durationMs: 1600, stepId: "step-3",
+    voiceDescription: "Add one small triangle beak.", enabled: true,
+  },
+  {
+    id: "04-eye", name: "Draw the eye", order: 4, geometry: "circle",
+    vector: { cx: 740, cy: 365, r: 20 },
+    bounds: { x: 720, y: 345, width: 40, height: 40 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 9900, durationMs: 1400, stepId: "step-3",
+    voiceDescription: "Draw one little eye.", enabled: true,
+  },
+  {
+    id: "05-wing", name: "Add the wing", order: 5, geometry: "ellipse",
+    vector: { cx: 430, cy: 600, rx: 125, ry: 85 },
+    bounds: { x: 305, y: 515, width: 250, height: 170 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 11600, durationMs: 2200, stepId: "step-4",
+    voiceDescription: "Add one oval wing.", enabled: true,
+  },
+  {
+    id: "06-tail", name: "Add the tail", order: 6, geometry: "polygon",
+    vector: { points: "250,515 125,470 245,615" },
+    bounds: { x: 125, y: 470, width: 125, height: 145 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
+    startMs: 14100, durationMs: 2000, stepId: "step-4",
+    voiceDescription: "Add one pointy tail.", enabled: true,
+  },
+  {
+    id: "07-left-water", name: "Draw the left water line", order: 7, geometry: "line",
+    vector: { x1: 175, y1: 800, x2: 400, y2: 800 },
+    bounds: { x: 175, y: 790, width: 225, height: 20 },
+    startMs: 16400, durationMs: 2000, stepId: "step-5",
+    voiceDescription: "Draw one water line on the left.", enabled: true,
+  },
+  {
+    id: "08-right-water", name: "Draw the right water line", order: 8, geometry: "line",
+    vector: { x1: 520, y1: 800, x2: 800, y2: 800 },
+    bounds: { x: 520, y: 790, width: 280, height: 20 },
+    startMs: 18700, durationMs: 2400, stepId: "step-5",
+    voiceDescription: "Finish with one water line on the right.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one wide oval body." },
+  { id: "step-2", order: 2, title: "Head", strokeIds: ["02-head"], voiceText: "Add one round head on top." },
+  { id: "step-3", order: 3, title: "Beak and eye", strokeIds: ["03-beak", "04-eye"], voiceText: "Add one triangle beak and one little eye." },
+  { id: "step-4", order: 4, title: "Wing and tail", strokeIds: ["05-wing", "06-tail"], voiceText: "Draw one oval wing and one pointy tail." },
+  { id: "step-5", order: 5, title: "Water", strokeIds: ["07-left-water", "08-right-water"], voiceText: "Finish with two straight water lines." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a duck in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5500, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5500, endMs: 8000, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 8000, endMs: 11500, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 11500, endMs: 16300, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 16300, endMs: 21200, text: steps[4]!.voiceText },
+  { id: "result", startMs: 21800, endMs: 24200, text: "It's a duck!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createDuckDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "17-animal-duck-001", slug: "easy-duck",
+    name: { en: "Duck", vi: "Con vịt" }, category: "animals", subcategory: "birds",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["duck", "animal", "bird", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a duck in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

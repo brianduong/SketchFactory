@@ -1,0 +1,115 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-07-31T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-left-ear", name: "Draw the left ear", order: 1, geometry: "circle",
+    vector: { cx: 320, cy: 325, r: 118 },
+    bounds: { x: 202, y: 207, width: 236, height: 236 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Start with one big round ear.", enabled: true,
+  },
+  {
+    id: "02-right-ear", name: "Draw the right ear", order: 2, geometry: "circle",
+    vector: { cx: 680, cy: 325, r: 118 },
+    bounds: { x: 562, y: 207, width: 236, height: 236 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 5400, durationMs: 1800, stepId: "step-1",
+    voiceDescription: "Add the second big round ear.", enabled: true,
+  },
+  {
+    id: "03-head", name: "Draw the head", order: 3, geometry: "circle",
+    vector: { cx: 500, cy: 520, r: 205 },
+    bounds: { x: 295, y: 315, width: 410, height: 410 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 7400, durationMs: 2400, stepId: "step-2",
+    voiceDescription: "Draw one round head in the middle.", enabled: true,
+  },
+  {
+    id: "04-left-eye", name: "Draw the left eye", order: 4, geometry: "circle",
+    vector: { cx: 430, cy: 490, r: 20 },
+    bounds: { x: 410, y: 470, width: 40, height: 40 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 10000, durationMs: 1300, stepId: "step-3",
+    voiceDescription: "Draw the first little eye.", enabled: true,
+  },
+  {
+    id: "05-right-eye", name: "Draw the right eye", order: 5, geometry: "circle",
+    vector: { cx: 570, cy: 490, r: 20 },
+    bounds: { x: 550, y: 470, width: 40, height: 40 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 11500, durationMs: 1300, stepId: "step-3",
+    voiceDescription: "Draw the second little eye.", enabled: true,
+  },
+  {
+    id: "06-nose", name: "Add the nose", order: 6, geometry: "circle",
+    vector: { cx: 500, cy: 595, r: 26 },
+    bounds: { x: 474, y: 569, width: 52, height: 52 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 16 },
+    startMs: 13000, durationMs: 1400, stepId: "step-4",
+    voiceDescription: "Add one round nose.", enabled: true,
+  },
+  {
+    id: "07-smile", name: "Draw the smile", order: 7, geometry: "path",
+    vector: { d: "M440 640 Q500 690 560 640" },
+    bounds: { x: 440, y: 640, width: 120, height: 50 },
+    startMs: 14600, durationMs: 1800, stepId: "step-4",
+    voiceDescription: "Draw one happy curve.", enabled: true,
+  },
+  {
+    id: "08-left-whisker", name: "Add the left whisker", order: 8, geometry: "line",
+    vector: { x1: 400, y1: 620, x2: 250, y2: 590 },
+    bounds: { x: 250, y: 590, width: 150, height: 30 },
+    startMs: 16600, durationMs: 1900, stepId: "step-5",
+    voiceDescription: "Draw one whisker on the left.", enabled: true,
+  },
+  {
+    id: "09-right-whisker", name: "Add the right whisker", order: 9, geometry: "line",
+    vector: { x1: 600, y1: 620, x2: 750, y2: 590 },
+    bounds: { x: 600, y: 590, width: 150, height: 30 },
+    startMs: 18700, durationMs: 2400, stepId: "step-5",
+    voiceDescription: "Finish with one whisker on the right.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Ears", strokeIds: ["01-left-ear", "02-right-ear"], voiceText: "Start with two big round ears." },
+  { id: "step-2", order: 2, title: "Head", strokeIds: ["03-head"], voiceText: "Draw one round head in the middle." },
+  { id: "step-3", order: 3, title: "Eyes", strokeIds: ["04-left-eye", "05-right-eye"], voiceText: "Now add two little eyes." },
+  { id: "step-4", order: 4, title: "Nose and smile", strokeIds: ["06-nose", "07-smile"], voiceText: "Add one round nose and one happy curve." },
+  { id: "step-5", order: 5, title: "Whiskers", strokeIds: ["08-left-whisker", "09-right-whisker"], voiceText: "Finish with two simple whiskers." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a mouse in just nine strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 7300, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 7300, endMs: 9900, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 9900, endMs: 12900, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 12900, endMs: 16500, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 16500, endMs: 21200, text: steps[4]!.voiceText },
+  { id: "result", startMs: 21800, endMs: 24200, text: "It's a mouse!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createMouseDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "18-animal-mouse-001", slug: "easy-mouse",
+    name: { en: "Mouse", vi: "Con chuột" }, category: "animals", subcategory: "pets",
+    difficulty: 1, strokeCount: 9, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["mouse", "animal", "pet", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a mouse in just nine strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

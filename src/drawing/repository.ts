@@ -4,31 +4,51 @@ import { readJson, writeJson } from "../shared/fs.js";
 import { outputPaths } from "../shared/paths.js";
 import { createCatDrawing } from "./cat.js";
 import { createBearDrawing } from "./bear.js";
+import { createBeeDrawing } from "./bee.js";
 import { createCowDrawing } from "./cow.js";
 import { createDogDrawing } from "./dog.js";
+import { createDuckDrawing } from "./duck.js";
 import { createElephantDrawing } from "./elephant.js";
 import { createFishDrawing } from "./fish.js";
 import { createFoxDrawing } from "./fox.js";
 import { createFrogDrawing } from "./frog.js";
+import { createGiraffeDrawing } from "./giraffe.js";
+import { createLionDrawing } from "./lion.js";
+import { createMonkeyDrawing } from "./monkey.js";
+import { createMouseDrawing } from "./mouse.js";
+import { createOwlDrawing } from "./owl.js";
 import { createPandaDrawing } from "./panda.js";
+import { createPenguinDrawing } from "./penguin.js";
 import { createPigDrawing } from "./pig.js";
 import { createRabbitDrawing } from "./rabbit.js";
+import { createSheepDrawing } from "./sheep.js";
 import { createTurtleDrawing } from "./turtle.js";
+import { createWhaleDrawing } from "./whale.js";
 
 export async function planDrawing(subject: string): Promise<Drawing> {
   const factories: Record<string, () => Drawing> = {
     bear: createBearDrawing,
+    bee: createBeeDrawing,
     cat: createCatDrawing,
     cow: createCowDrawing,
     dog: createDogDrawing,
+    duck: createDuckDrawing,
     elephant: createElephantDrawing,
     fish: createFishDrawing,
     fox: createFoxDrawing,
     frog: createFrogDrawing,
+    giraffe: createGiraffeDrawing,
+    lion: createLionDrawing,
+    monkey: createMonkeyDrawing,
+    mouse: createMouseDrawing,
+    owl: createOwlDrawing,
     panda: createPandaDrawing,
+    penguin: createPenguinDrawing,
     pig: createPigDrawing,
     rabbit: createRabbitDrawing,
+    sheep: createSheepDrawing,
     turtle: createTurtleDrawing,
+    whale: createWhaleDrawing,
   };
   const factory = factories[subject.toLowerCase()];
   if (!factory) {
