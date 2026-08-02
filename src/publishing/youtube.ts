@@ -36,6 +36,7 @@ interface UploadReceipt {
   uploadedAt: string;
   thumbnailSet: boolean;
   captionsSet: boolean;
+  publishAt?: string;
 }
 
 type UploadReceipts = Record<string, UploadReceipt>;
@@ -46,6 +47,7 @@ interface PublishingVideoState {
     uploaded: boolean;
     visibility: string;
     videoId: string | null;
+    scheduledPublishAt?: string | null;
   };
 }
 
@@ -197,15 +199,21 @@ async function loadReceipts(): Promise<UploadReceipts> {
   }
 }
 
-async function recordPublishingState(number: number, videoId: string, visibility: string): Promise<void> {
+async function recordPublishingState(
+  number: number,
+  videoId: string,
+  visibility: string,
+  publishAt?: string,
+): Promise<void> {
   const state = await readJson<PublishingState>(PUBLISHING_STATE_PATH);
   const video = state.videos.find((item) => item.number === number);
   if (!video) {
     throw new Error(`Publishing state chưa có video số ${number}.`);
   }
   video.youtube.uploaded = true;
-  video.youtube.visibility = visibility;
+  video.youtube.visibility = publishAt ? "scheduled" : visibility;
   video.youtube.videoId = videoId;
+  video.youtube.scheduledPublishAt = publishAt ?? null;
   state.sequence.lastYouTubeUploaded = Math.max(state.sequence.lastYouTubeUploaded, number);
   state.updatedAt = new Date().toISOString();
   await writeFile(PUBLISHING_STATE_PATH, `${JSON.stringify(state, null, 2)}\n`);
@@ -216,7 +224,20 @@ export async function uploadYouTubeVideo(options: {
   number: number;
   privacy: "private" | "unlisted" | "public";
   confirmChannelId: string;
+  publishAt?: string;
 }): Promise<void> {
+  if (options.publishAt) {
+    if (options.privacy !== "private") {
+      throw new Error("YouTube chỉ nhận lịch publishAt khi video đang ở privacy private.");
+    }
+    if (Number.isNaN(Date.parse(options.publishAt))) {
+      throw new Error(`publishAt không phải mốc thời gian hợp lệ: ${options.publishAt}`);
+    }
+    if (Date.parse(options.publishAt) <= Date.now()) {
+      throw new Error(`publishAt phải nằm ở tương lai: ${options.publishAt}`);
+    }
+  }
+
   const auth = await authenticatedClient();
   const channel = await currentYouTubeChannel(auth);
   if (channel.id !== options.confirmChannelId) {
@@ -250,6 +271,7 @@ export async function uploadYouTubeVideo(options: {
         },
         status: {
           privacyStatus: options.privacy,
+          ...(options.publishAt ? { publishAt: options.publishAt } : {}),
           selfDeclaredMadeForKids: false,
           containsSyntheticMedia: false,
           license: "youtube",
@@ -269,11 +291,31 @@ export async function uploadYouTubeVideo(options: {
       uploadedAt: new Date().toISOString(),
       thumbnailSet: false,
       captionsSet: false,
+      ...(options.publishAt ? { publishAt: options.publishAt } : {}),
     };
     receipts[drawing.id] = receipt;
     await writeSecretJson(RECEIPTS_PATH, receipts);
   } else {
     console.log(`Đã có upload receipt cho ${drawing.id}; tiếp tục hoàn thiện video ${receipt.videoId}.`);
+    if (options.publishAt && receipt.publishAt !== options.publishAt) {
+      await youtube.videos.update({
+        part: ["status"],
+        requestBody: {
+          id: receipt.videoId,
+          status: {
+            privacyStatus: "private",
+            publishAt: options.publishAt,
+            selfDeclaredMadeForKids: false,
+            license: "youtube",
+            embeddable: true,
+            publicStatsViewable: true,
+          },
+        },
+      });
+      receipt.publishAt = options.publishAt;
+      await writeSecretJson(RECEIPTS_PATH, receipts);
+      console.log(`Đã đặt lại lịch publish: ${options.publishAt}`);
+    }
   }
 
   if (!receipt.thumbnailSet) {
@@ -310,9 +352,14 @@ export async function uploadYouTubeVideo(options: {
     }
   }
 
+  const verified = await youtube.videos.list({ part: ["status"], id: [receipt.videoId] });
+  const status = verified.data.items?.[0]?.status;
+
   console.log(`✅ YouTube upload hoàn tất: https://youtu.be/${receipt.videoId}`);
   console.log(`Channel: ${channel.title} (${channel.id})`);
   console.log(`Privacy requested: ${options.privacy}`);
+  console.log(`Privacy đọc lại từ API: ${status?.privacyStatus}`);
+  if (options.publishAt) console.log(`Lịch publish đọc lại từ API: ${status?.publishAt ?? "(chưa có)"}`);
   for (const warning of warnings) console.warn(`⚠️ ${warning}`);
-  await recordPublishingState(options.number, receipt.videoId, options.privacy);
+  await recordPublishingState(options.number, receipt.videoId, options.privacy, options.publishAt);
 }

@@ -40,11 +40,13 @@ async function main(): Promise<void> {
       if (privacy !== "private" && privacy !== "unlisted" && privacy !== "public") {
         throw new Error("--privacy phải là private, unlisted hoặc public.");
       }
+      const publishAt = values.get("publish-at");
       await uploadYouTubeVideo({
         drawingId: required(values, "id"),
         number,
         privacy,
         confirmChannelId: required(values, "confirm-channel"),
+        ...(typeof publishAt === "string" ? { publishAt } : {}),
       });
       break;
     }
@@ -52,7 +54,7 @@ async function main(): Promise<void> {
       console.log("SketchFactory YouTube CLI");
       console.log("  auth");
       console.log("  channel");
-      console.log("  upload --number <n> --id <drawing-id> --privacy <private|unlisted|public> --confirm-channel <channel-id>");
+      console.log("  upload --number <n> --id <drawing-id> --privacy <private|unlisted|public> --confirm-channel <channel-id> [--publish-at <RFC3339>]");
       if (command) process.exitCode = 1;
   }
 }
