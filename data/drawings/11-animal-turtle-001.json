@@ -92,7 +92,7 @@
         "height": 310
       },
       "style": {
-        "fill": "#70B77E",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -119,7 +119,7 @@
         "height": 156
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -147,7 +147,7 @@
         "height": 84
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -175,7 +175,7 @@
         "height": 84
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -203,7 +203,7 @@
         "height": 84
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -231,7 +231,7 @@
         "height": 84
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -256,7 +256,7 @@
         "height": 65
       },
       "style": {
-        "fill": "#A8D69B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -315,9 +315,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -377,5 +378,5 @@
     "hook": "Can you draw a turtle in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T07:02:59.232Z"
+  "updatedAt": "2026-08-02T06:05:35.493Z"
 }

@@ -102,9 +102,10 @@ export function createCatDrawing(): Drawing {
     strokes,
     voiceScript: {
       language: "en-US",
-      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
-      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
       rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85),
       cues,
     },
     videoMetadata: {

@@ -304,9 +304,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -366,5 +367,5 @@
     "hook": "Can you draw a cat in just ten strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T03:38:00.000Z"
+  "updatedAt": "2026-08-02T05:41:41.432Z"
 }

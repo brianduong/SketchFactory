@@ -91,7 +91,7 @@
         "height": 490
       },
       "style": {
-        "fill": "#EF6F6C",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -116,7 +116,7 @@
         "height": 205
       },
       "style": {
-        "fill": "#EF6F6C",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -141,7 +141,7 @@
         "height": 205
       },
       "style": {
-        "fill": "#EF6F6C",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -221,7 +221,7 @@
         "height": 176
       },
       "style": {
-        "fill": "#F5C99B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -306,9 +306,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -368,5 +369,5 @@
     "hook": "Can you draw a pig in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T06:39:51.063Z"
+  "updatedAt": "2026-08-02T05:55:09.546Z"
 }

@@ -89,7 +89,7 @@
         "height": 540
       },
       "style": {
-        "fill": "#F4D35E",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -114,7 +114,7 @@
         "height": 255
       },
       "style": {
-        "fill": "#F4D35E",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -139,7 +139,7 @@
         "height": 255
       },
       "style": {
-        "fill": "#F4D35E",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -298,9 +298,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -360,5 +361,5 @@
     "hook": "Can you draw a fox in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T05:44:43.527Z"
+  "updatedAt": "2026-08-02T05:50:07.101Z"
 }

@@ -153,7 +153,7 @@
         "height": 180
       },
       "style": {
-        "fill": "#F5C99B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 20
       },
@@ -178,7 +178,7 @@
         "height": 180
       },
       "style": {
-        "fill": "#F5C99B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 20
       },
@@ -258,7 +258,7 @@
         "height": 184
       },
       "style": {
-        "fill": "#F5C99B",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -323,9 +323,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -379,5 +380,5 @@
     "hook": "Can you draw a cow in just ten strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T06:39:45.322Z"
+  "updatedAt": "2026-08-02T05:59:06.119Z"
 }

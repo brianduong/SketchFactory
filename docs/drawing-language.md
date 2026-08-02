@@ -11,10 +11,30 @@
 
 ## Nét
 
-- Màu: `#111111`.
+- Màu: `#111111`. Đây là màu nét duy nhất, không có ngoại lệ.
 - Độ dày chuẩn: `24` đơn vị canvas; phạm vi được phép `20–28`.
 - `stroke-linecap="round"`, `stroke-linejoin="round"`.
 - Không fill, trừ chi tiết kín nhỏ cần nhận diện (mắt/mũi); fill vẫn dùng `#111111`.
+
+### Tuyệt đối không tô màu con vật
+
+Con vật chỉ được thể hiện bằng nét. Không tô mảng màu cho thân, mặt, tai, vây hay bất
+kỳ bộ phận nào, kể cả màu nhạt. Người xem cầm bút chì vẽ theo trên giấy trắng, nên mọi
+thứ họ không vẽ lại được đều phải bị loại.
+
+Ba giá trị `fill` hợp lệ:
+
+| Giá trị | Dùng khi |
+|---|---|
+| `none` | Mặc định cho mọi hình |
+| `#111111` | Chi tiết đặc nhỏ như con ngươi, mũi |
+| `#FFFDF7` | Che phần nét nằm dưới, đúng bằng màu giấy nền |
+
+`#FFFDF7` là màu giấy chứ không phải màu tô, dùng để giấu đoạn nét mà người vẽ thật sẽ
+không kẻ. Không được dùng nó như một mảng màu trang trí.
+
+Cũng không dùng nét dày làm mảng đặc thay cho fill: một nét dày `78` màu xám chính là
+tô màu trá hình. Bề rộng nét luôn nằm trong `20–28`.
 - Không shadow, texture, gradient hay hiệu ứng 3D.
 - Mục tiêu 5–10 semantic strokes. Nhiều subpath trong một stroke chỉ hợp lệ khi được
   vẽ bằng một hành động liên tục hoặc cùng là một chi tiết lặp đơn giản.
@@ -64,6 +84,23 @@ cứng của kênh:
 - Chế độ preview nhanh dùng 350–900 ms/nét. Video học theo mặc định dùng
   1.200–2.500 ms/nét và có khoảng nghỉ ngắn giữa hai hành động để người xem kịp vẽ.
 - Voice cue mô tả đúng step, không liệt kê dữ liệu kỹ thuật.
+
+## Giọng đọc
+
+- Provider bắt buộc: **Kokoro** (`src/voice/kokoro.ts`), chạy cục bộ qua onnxruntime.
+- Giọng mặc định: `af_bella` — giọng nữ trầm ấm.
+- Tốc độ mặc định: `speed: 0.85`, tức đọc chậm hơn bình thường để người xem kịp vẽ.
+- Ghi đè khi cần bằng `SKETCHFACTORY_TTS_VOICE` và `SKETCHFACTORY_TTS_SPEED`.
+- `macos-say` chỉ còn là phương án dự phòng, không dùng cho video xuất bản.
+
+## Đơn giản nhất có thể
+
+Tiêu chí gốc: **ít nét nhất mà vẫn nhận ra đúng con vật**. Nhận dạng được là đủ, không
+cần giống thật. Nét nào bỏ đi mà người xem vẫn gọi đúng tên con vật thì nét đó thừa.
+
+Khi hai chi tiết cắt ngang nhau hoặc chồng lên nhau gây rối, dời chỗ hoặc bỏ bớt, đừng
+thêm nét để che. Sau mỗi lần sửa tọa độ phải render PNG xem lại bằng mắt; số liệu bounds
+đúng không có nghĩa là hình nhìn đúng.
 
 ## Nhận diện
 

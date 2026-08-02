@@ -44,7 +44,7 @@ const strokes: DrawingStroke[] = [
     id: "06-nose", name: "Add the nose", order: 6, geometry: "circle",
     vector: { cx: 500, cy: 585, r: 22 },
     bounds: { x: 478, y: 563, width: 44, height: 44 },
-    style: { fill: "#EF6F6C", stroke: "#111111", strokeWidth: 12 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 12 },
     startMs: 14200, durationMs: 1200, stepId: "step-4",
     voiceDescription: "Add a little round nose.", enabled: true,
   },
@@ -110,9 +110,10 @@ export function createRabbitDrawing(): Drawing {
     strokes,
     voiceScript: {
       language: "en-US",
-      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
-      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
       rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85),
       cues,
     },
     videoMetadata: {

@@ -66,7 +66,7 @@ const strokes: DrawingStroke[] = [
     id: "09-tongue", name: "Add the tongue", order: 9, geometry: "ellipse",
     vector: { cx: 500, cy: 700, rx: 38, ry: 55 },
     bounds: { x: 462, y: 645, width: 76, height: 110 },
-    style: { fill: "#EF6F6C", stroke: "#111111", strokeWidth: 20 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 20 },
     startMs: 20200, durationMs: 1600, stepId: "step-5",
     voiceDescription: "Finish with a little tongue.", enabled: true,
   },
@@ -109,9 +109,10 @@ export function createDogDrawing(): Drawing {
     strokes,
     voiceScript: {
       language: "en-US",
-      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
-      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
       rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85),
       cues,
     },
     videoMetadata: {

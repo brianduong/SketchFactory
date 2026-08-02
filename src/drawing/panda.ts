@@ -11,20 +11,20 @@ const strokes: DrawingStroke[] = [
     voiceDescription: "Start with a big circle.", enabled: true,
   },
   {
-    id: "02-left-ear", name: "Add the left black ear", order: 2, geometry: "circle",
+    id: "02-left-ear", name: "Add the left ear", order: 2, geometry: "circle",
     vector: { cx: 315, cy: 330, r: 80 },
     bounds: { x: 235, y: 250, width: 160, height: 160 },
     style: { fill: "#111111", strokeWidth: 0 },
     startMs: 5800, durationMs: 1600, stepId: "step-2",
-    voiceDescription: "Add one round black ear.", enabled: true,
+    voiceDescription: "Add one round ear.", enabled: true,
   },
   {
-    id: "03-right-ear", name: "Add the right black ear", order: 3, geometry: "circle",
+    id: "03-right-ear", name: "Add the right ear", order: 3, geometry: "circle",
     vector: { cx: 685, cy: 330, r: 80 },
     bounds: { x: 605, y: 250, width: 160, height: 160 },
     style: { fill: "#111111", strokeWidth: 0 },
     startMs: 7800, durationMs: 1600, stepId: "step-2",
-    voiceDescription: "Add another round black ear.", enabled: true,
+    voiceDescription: "Add another round ear.", enabled: true,
   },
   {
     id: "04-left-patch", name: "Draw the left eye patch", order: 4, geometry: "ellipse",
@@ -85,7 +85,7 @@ const strokes: DrawingStroke[] = [
 
 const steps: DrawingStep[] = [
   { id: "step-1", order: 1, title: "Head", strokeIds: ["01-head-outline"], voiceText: "Start with a big circle." },
-  { id: "step-2", order: 2, title: "Ears", strokeIds: ["02-left-ear", "03-right-ear"], voiceText: "Add two round black ears." },
+  { id: "step-2", order: 2, title: "Ears", strokeIds: ["02-left-ear", "03-right-ear"], voiceText: "Add two round ears." },
   { id: "step-3", order: 3, title: "Patches", strokeIds: ["04-left-patch", "05-right-patch"], voiceText: "Draw two oval eye patches." },
   { id: "step-4", order: 4, title: "Eyes", strokeIds: ["06-left-eye", "07-right-eye"], voiceText: "Put one little eye inside each patch." },
   { id: "step-5", order: 5, title: "Face", strokeIds: ["08-muzzle", "09-nose", "10-smile"], voiceText: "Finish with a muzzle, a nose, and one happy curve." },
@@ -120,9 +120,10 @@ export function createPandaDrawing(): Drawing {
     strokes,
     voiceScript: {
       language: "en-US",
-      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "macos-say",
-      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "Samantha",
+      provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
       rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85),
       cues,
     },
     videoMetadata: {

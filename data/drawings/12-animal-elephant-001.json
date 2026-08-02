@@ -85,7 +85,7 @@
         "height": 410
       },
       "style": {
-        "fill": "#87AFC7",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -113,7 +113,7 @@
         "height": 410
       },
       "style": {
-        "fill": "#87AFC7",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -141,7 +141,7 @@
         "height": 280
       },
       "style": {
-        "fill": "#B9D2DF",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 18
       },
@@ -169,7 +169,7 @@
         "height": 280
       },
       "style": {
-        "fill": "#B9D2DF",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 18
       },
@@ -196,7 +196,7 @@
         "height": 440
       },
       "style": {
-        "fill": "#87AFC7",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -264,18 +264,18 @@
       "order": 8,
       "geometry": "path",
       "vector": {
-        "d": "M500 560 Q500 735 585 700"
+        "d": "M500 620 Q450 730 500 855"
       },
       "bounds": {
-        "x": 460,
-        "y": 520,
-        "width": 165,
-        "height": 225
+        "x": 450,
+        "y": 620,
+        "width": 50,
+        "height": 235
       },
       "style": {
         "fill": "none",
-        "stroke": "#87AFC7",
-        "strokeWidth": 78
+        "stroke": "#111111",
+        "strokeWidth": 26
       },
       "startMs": 17500,
       "durationMs": 2400,
@@ -289,13 +289,13 @@
       "order": 9,
       "geometry": "polygon",
       "vector": {
-        "points": "420,605 455,685 480,620"
+        "points": "380,675 398,780 445,700"
       },
       "bounds": {
-        "x": 420,
-        "y": 605,
-        "width": 60,
-        "height": 80
+        "x": 380,
+        "y": 675,
+        "width": 65,
+        "height": 105
       },
       "style": {
         "fill": "#FFFDF7",
@@ -314,13 +314,13 @@
       "order": 10,
       "geometry": "polygon",
       "vector": {
-        "points": "520,620 545,685 580,605"
+        "points": "555,700 602,780 620,675"
       },
       "bounds": {
-        "x": 520,
-        "y": 605,
-        "width": 60,
-        "height": 80
+        "x": 555,
+        "y": 675,
+        "width": 65,
+        "height": 105
       },
       "style": {
         "fill": "#FFFDF7",
@@ -336,9 +336,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -392,5 +393,5 @@
     "hook": "Can you draw an elephant in just ten strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T07:04:10.346Z"
+  "updatedAt": "2026-08-02T06:07:44.924Z"
 }

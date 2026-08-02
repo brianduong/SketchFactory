@@ -92,7 +92,7 @@
         "height": 300
       },
       "style": {
-        "fill": "#79BCE8",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -117,7 +117,7 @@
         "height": 260
       },
       "style": {
-        "fill": "#79BCE8",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 24
       },
@@ -142,7 +142,7 @@
         "height": 140
       },
       "style": {
-        "fill": "#79BCE8",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -167,7 +167,7 @@
         "height": 140
       },
       "style": {
-        "fill": "#79BCE8",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 22
       },
@@ -297,9 +297,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -359,5 +360,5 @@
     "hook": "Can you draw a fish in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T06:40:27.463Z"
+  "updatedAt": "2026-08-02T06:03:30.824Z"
 }

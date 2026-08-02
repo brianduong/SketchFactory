@@ -214,7 +214,7 @@
         "height": 44
       },
       "style": {
-        "fill": "#EF6F6C",
+        "fill": "#FFFDF7",
         "stroke": "#111111",
         "strokeWidth": 12
       },
@@ -305,9 +305,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -367,5 +368,5 @@
     "hook": "Can you draw a rabbit in just nine strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T05:20:54.052Z"
+  "updatedAt": "2026-08-02T05:46:02.269Z"
 }

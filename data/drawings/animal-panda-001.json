@@ -40,7 +40,7 @@
         "02-left-ear",
         "03-right-ear"
       ],
-      "voiceText": "Add two round black ears."
+      "voiceText": "Add two round ears."
     },
     {
       "id": "step-3",
@@ -99,7 +99,7 @@
     },
     {
       "id": "02-left-ear",
-      "name": "Add the left black ear",
+      "name": "Add the left ear",
       "order": 2,
       "geometry": "circle",
       "vector": {
@@ -120,12 +120,12 @@
       "startMs": 5800,
       "durationMs": 1600,
       "stepId": "step-2",
-      "voiceDescription": "Add one round black ear.",
+      "voiceDescription": "Add one round ear.",
       "enabled": true
     },
     {
       "id": "03-right-ear",
-      "name": "Add the right black ear",
+      "name": "Add the right ear",
       "order": 3,
       "geometry": "circle",
       "vector": {
@@ -146,7 +146,7 @@
       "startMs": 7800,
       "durationMs": 1600,
       "stepId": "step-2",
-      "voiceDescription": "Add another round black ear.",
+      "voiceDescription": "Add another round ear.",
       "enabled": true
     },
     {
@@ -334,9 +334,10 @@
   ],
   "voiceScript": {
     "language": "en-US",
-    "provider": "macos-say",
-    "voice": "Samantha",
+    "provider": "kokoro",
+    "voice": "af_bella",
     "rate": 175,
+    "speed": 0.85,
     "cues": [
       {
         "id": "hook",
@@ -354,7 +355,7 @@
         "id": "step-2",
         "startMs": 5500,
         "endMs": 9600,
-        "text": "Add two round black ears."
+        "text": "Add two round ears."
       },
       {
         "id": "step-3",
@@ -396,5 +397,5 @@
     "hook": "Can you draw a panda in just ten strokes?"
   },
   "createdAt": "2026-07-27T00:00:00.000Z",
-  "updatedAt": "2026-07-27T06:10:50.591Z"
+  "updatedAt": "2026-08-02T05:52:39.710Z"
 }
