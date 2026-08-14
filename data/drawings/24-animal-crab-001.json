@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "id": "24-animal-crab-001",
+  "slug": "easy-crab",
+  "name": {
+    "en": "Crab",
+    "vi": "Con cua"
+  },
+  "category": "animals",
+  "subcategory": "aquatic",
+  "difficulty": 1,
+  "strokeCount": 10,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "crab",
+    "animal",
+    "aquatic",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Start with one wide oval body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Left claw",
+      "strokeIds": [
+        "02-left-claw",
+        "03-left-claw-pincer"
+      ],
+      "voiceText": "Add one oval claw on the left and cut a V into its tip."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Right claw",
+      "strokeIds": [
+        "04-right-claw",
+        "05-right-claw-pincer"
+      ],
+      "voiceText": "Do the same on the right for the second claw."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Legs",
+      "strokeIds": [
+        "06-left-legs",
+        "07-right-legs"
+      ],
+      "voiceText": "Draw two legs on each side without lifting your pen."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Eyes",
+      "strokeIds": [
+        "08-left-eye",
+        "09-right-eye"
+      ],
+      "voiceText": "Now add two round eyes."
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Smile",
+      "strokeIds": [
+        "10-smile"
+      ],
+      "voiceText": "Finish with one happy curve."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 500,
+        "cy": 490,
+        "rx": 215,
+        "ry": 140
+      },
+      "bounds": {
+        "x": 285,
+        "y": 350,
+        "width": 430,
+        "height": 280
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2300,
+      "stepId": "step-1",
+      "voiceDescription": "Start with one wide oval body.",
+      "enabled": true
+    },
+    {
+      "id": "02-left-claw",
+      "name": "Draw the left claw",
+      "order": 2,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 255,
+        "cy": 440,
+        "rx": 100,
+        "ry": 70
+      },
+      "bounds": {
+        "x": 155,
+        "y": 370,
+        "width": 200,
+        "height": 140
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 5600,
+      "durationMs": 1700,
+      "stepId": "step-2",
+      "voiceDescription": "Add one oval claw on the left.",
+      "enabled": true
+    },
+    {
+      "id": "03-left-claw-pincer",
+      "name": "Open the left claw",
+      "order": 3,
+      "geometry": "polyline",
+      "vector": {
+        "points": "185,408 255,440 185,475"
+      },
+      "bounds": {
+        "x": 185,
+        "y": 408,
+        "width": 70,
+        "height": 67
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 20
+      },
+      "startMs": 7500,
+      "durationMs": 1300,
+      "stepId": "step-2",
+      "voiceDescription": "Cut one V into its tip.",
+      "enabled": true
+    },
+    {
+      "id": "04-right-claw",
+      "name": "Draw the right claw",
+      "order": 4,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 745,
+        "cy": 440,
+        "rx": 100,
+        "ry": 70
+      },
+      "bounds": {
+        "x": 645,
+        "y": 370,
+        "width": 200,
+        "height": 140
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 9000,
+      "durationMs": 1700,
+      "stepId": "step-3",
+      "voiceDescription": "Add the second oval claw on the right.",
+      "enabled": true
+    },
+    {
+      "id": "05-right-claw-pincer",
+      "name": "Open the right claw",
+      "order": 5,
+      "geometry": "polyline",
+      "vector": {
+        "points": "815,408 745,440 815,475"
+      },
+      "bounds": {
+        "x": 745,
+        "y": 408,
+        "width": 70,
+        "height": 67
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 20
+      },
+      "startMs": 10900,
+      "durationMs": 1300,
+      "stepId": "step-3",
+      "voiceDescription": "Cut the second V into its tip.",
+      "enabled": true
+    },
+    {
+      "id": "06-left-legs",
+      "name": "Draw the left legs",
+      "order": 6,
+      "geometry": "polyline",
+      "vector": {
+        "points": "250,720 355,595 400,755"
+      },
+      "bounds": {
+        "x": 250,
+        "y": 595,
+        "width": 150,
+        "height": 160
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 12400,
+      "durationMs": 1900,
+      "stepId": "step-4",
+      "voiceDescription": "Draw two legs on the left in one line.",
+      "enabled": true
+    },
+    {
+      "id": "07-right-legs",
+      "name": "Draw the right legs",
+      "order": 7,
+      "geometry": "polyline",
+      "vector": {
+        "points": "750,720 645,595 600,755"
+      },
+      "bounds": {
+        "x": 600,
+        "y": 595,
+        "width": 150,
+        "height": 160
+      },
+      "style": {
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 14500,
+      "durationMs": 1900,
+      "stepId": "step-4",
+      "voiceDescription": "Draw two legs on the right the same way.",
+      "enabled": true
+    },
+    {
+      "id": "08-left-eye",
+      "name": "Draw the left eye",
+      "order": 8,
+      "geometry": "circle",
+      "vector": {
+        "cx": 430,
+        "cy": 440,
+        "r": 26
+      },
+      "bounds": {
+        "x": 404,
+        "y": 414,
+        "width": 52,
+        "height": 52
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 16700,
+      "durationMs": 1300,
+      "stepId": "step-5",
+      "voiceDescription": "Draw the first round eye.",
+      "enabled": true
+    },
+    {
+      "id": "09-right-eye",
+      "name": "Draw the right eye",
+      "order": 9,
+      "geometry": "circle",
+      "vector": {
+        "cx": 570,
+        "cy": 440,
+        "r": 26
+      },
+      "bounds": {
+        "x": 544,
+        "y": 414,
+        "width": 52,
+        "height": 52
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 18200,
+      "durationMs": 1300,
+      "stepId": "step-5",
+      "voiceDescription": "Draw the second round eye.",
+      "enabled": true
+    },
+    {
+      "id": "10-smile",
+      "name": "Draw the smile",
+      "order": 10,
+      "geometry": "path",
+      "vector": {
+        "d": "M430 530 Q500 590 570 530"
+      },
+      "bounds": {
+        "x": 430,
+        "y": 530,
+        "width": 140,
+        "height": 60
+      },
+      "startMs": 19800,
+      "durationMs": 1700,
+      "stepId": "step-6",
+      "voiceDescription": "Finish with one happy curve.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a crab in just ten strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5500,
+        "text": "Start with one wide oval body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5500,
+        "endMs": 9000,
+        "text": "Add one oval claw on the left and cut a V into its tip."
+      },
+      {
+        "id": "step-3",
+        "startMs": 9000,
+        "endMs": 12400,
+        "text": "Do the same on the right for the second claw."
+      },
+      {
+        "id": "step-4",
+        "startMs": 12400,
+        "endMs": 16600,
+        "text": "Draw two legs on each side without lifting your pen."
+      },
+      {
+        "id": "step-5",
+        "startMs": 16600,
+        "endMs": 19700,
+        "text": "Now add two round eyes."
+      },
+      {
+        "id": "step-6",
+        "startMs": 19700,
+        "endMs": 21800,
+        "text": "Finish with one happy curve."
+      },
+      {
+        "id": "result",
+        "startMs": 22100,
+        "endMs": 24300,
+        "text": "It's a crab!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a crab in just ten strokes?"
+  },
+  "createdAt": "2026-08-11T00:00:00.000Z",
+  "updatedAt": "2026-08-11T08:47:53.878Z"
+}

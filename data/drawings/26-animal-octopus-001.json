@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "id": "26-animal-octopus-001",
+  "slug": "easy-octopus",
+  "name": {
+    "en": "Octopus",
+    "vi": "Con bạch tuộc"
+  },
+  "category": "animals",
+  "subcategory": "aquatic",
+  "difficulty": 1,
+  "strokeCount": 10,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "octopus",
+    "animal",
+    "aquatic",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Head",
+      "strokeIds": [
+        "01-head"
+      ],
+      "voiceText": "Start with one big round head."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Eyes",
+      "strokeIds": [
+        "02-left-eye",
+        "03-right-eye"
+      ],
+      "voiceText": "Add two round eyes."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Smile",
+      "strokeIds": [
+        "04-smile"
+      ],
+      "voiceText": "Draw one happy curve."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "First arms",
+      "strokeIds": [
+        "05-arm-one",
+        "06-arm-two",
+        "07-arm-three"
+      ],
+      "voiceText": "Now draw three curvy arms below."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "More arms",
+      "strokeIds": [
+        "08-arm-four",
+        "09-arm-five",
+        "10-arm-six"
+      ],
+      "voiceText": "Finish with three more curvy arms."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-head",
+      "name": "Draw the head",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 500,
+        "cy": 400,
+        "rx": 215,
+        "ry": 200
+      },
+      "bounds": {
+        "x": 285,
+        "y": 200,
+        "width": 430,
+        "height": 400
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2400,
+      "stepId": "step-1",
+      "voiceDescription": "Start with one big round head.",
+      "enabled": true
+    },
+    {
+      "id": "02-left-eye",
+      "name": "Draw the left eye",
+      "order": 2,
+      "geometry": "circle",
+      "vector": {
+        "cx": 425,
+        "cy": 390,
+        "r": 28
+      },
+      "bounds": {
+        "x": 397,
+        "y": 362,
+        "width": 56,
+        "height": 56
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 5700,
+      "durationMs": 1300,
+      "stepId": "step-2",
+      "voiceDescription": "Draw the first round eye.",
+      "enabled": true
+    },
+    {
+      "id": "03-right-eye",
+      "name": "Draw the right eye",
+      "order": 3,
+      "geometry": "circle",
+      "vector": {
+        "cx": 575,
+        "cy": 390,
+        "r": 28
+      },
+      "bounds": {
+        "x": 547,
+        "y": 362,
+        "width": 56,
+        "height": 56
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 7200,
+      "durationMs": 1300,
+      "stepId": "step-2",
+      "voiceDescription": "Draw the second round eye.",
+      "enabled": true
+    },
+    {
+      "id": "04-smile",
+      "name": "Draw the smile",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M425 480 Q500 545 575 480"
+      },
+      "bounds": {
+        "x": 425,
+        "y": 480,
+        "width": 150,
+        "height": 65
+      },
+      "startMs": 8800,
+      "durationMs": 1700,
+      "stepId": "step-3",
+      "voiceDescription": "Add one happy curve.",
+      "enabled": true
+    },
+    {
+      "id": "05-arm-one",
+      "name": "Draw the first arm",
+      "order": 5,
+      "geometry": "path",
+      "vector": {
+        "d": "M320 490 Q250 640 285 790"
+      },
+      "bounds": {
+        "x": 250,
+        "y": 490,
+        "width": 70,
+        "height": 300
+      },
+      "startMs": 10800,
+      "durationMs": 1500,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the first curvy arm.",
+      "enabled": true
+    },
+    {
+      "id": "06-arm-two",
+      "name": "Draw the second arm",
+      "order": 6,
+      "geometry": "path",
+      "vector": {
+        "d": "M390 570 Q345 690 375 800"
+      },
+      "bounds": {
+        "x": 345,
+        "y": 570,
+        "width": 45,
+        "height": 230
+      },
+      "startMs": 12500,
+      "durationMs": 1500,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the second curvy arm.",
+      "enabled": true
+    },
+    {
+      "id": "07-arm-three",
+      "name": "Draw the third arm",
+      "order": 7,
+      "geometry": "path",
+      "vector": {
+        "d": "M462 597 Q440 700 465 810"
+      },
+      "bounds": {
+        "x": 440,
+        "y": 597,
+        "width": 25,
+        "height": 213
+      },
+      "startMs": 14200,
+      "durationMs": 1500,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the third curvy arm.",
+      "enabled": true
+    },
+    {
+      "id": "08-arm-four",
+      "name": "Draw the fourth arm",
+      "order": 8,
+      "geometry": "path",
+      "vector": {
+        "d": "M538 597 Q560 700 535 810"
+      },
+      "bounds": {
+        "x": 535,
+        "y": 597,
+        "width": 25,
+        "height": 213
+      },
+      "startMs": 15900,
+      "durationMs": 1500,
+      "stepId": "step-5",
+      "voiceDescription": "Draw the fourth curvy arm.",
+      "enabled": true
+    },
+    {
+      "id": "09-arm-five",
+      "name": "Draw the fifth arm",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M610 570 Q655 690 625 800"
+      },
+      "bounds": {
+        "x": 610,
+        "y": 570,
+        "width": 45,
+        "height": 230
+      },
+      "startMs": 17600,
+      "durationMs": 1500,
+      "stepId": "step-5",
+      "voiceDescription": "Draw the fifth curvy arm.",
+      "enabled": true
+    },
+    {
+      "id": "10-arm-six",
+      "name": "Draw the sixth arm",
+      "order": 10,
+      "geometry": "path",
+      "vector": {
+        "d": "M680 490 Q750 640 715 790"
+      },
+      "bounds": {
+        "x": 680,
+        "y": 490,
+        "width": 70,
+        "height": 300
+      },
+      "startMs": 19300,
+      "durationMs": 1800,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with the sixth curvy arm.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw an octopus in just ten strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5600,
+        "text": "Start with one big round head."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5600,
+        "endMs": 8700,
+        "text": "Add two round eyes."
+      },
+      {
+        "id": "step-3",
+        "startMs": 8700,
+        "endMs": 10700,
+        "text": "Draw one happy curve."
+      },
+      {
+        "id": "step-4",
+        "startMs": 10700,
+        "endMs": 15800,
+        "text": "Now draw three curvy arms below."
+      },
+      {
+        "id": "step-5",
+        "startMs": 15800,
+        "endMs": 21400,
+        "text": "Finish with three more curvy arms."
+      },
+      {
+        "id": "result",
+        "startMs": 21700,
+        "endMs": 23900,
+        "text": "It's an octopus!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw an octopus in just ten strokes?"
+  },
+  "createdAt": "2026-08-11T00:00:00.000Z",
+  "updatedAt": "2026-08-11T08:41:09.228Z"
+}

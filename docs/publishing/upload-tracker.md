@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-02 15:05 (Asia/Ho_Chi_Minh) — đối chiếu trực tiếp với YouTube Data API
+Updated: 2026-08-14 21:55 (Asia/Ho_Chi_Minh) — thêm Squirrel 28; đã upload 27 và 28, hẹn 21-08 và 23-08
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -35,13 +35,27 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 20 | Giraffe | [x] | Scheduled 09-08 20:00 | `zG9SSaV6omY` | [ ] | [ ] | [ ] | Local | [Open](20-animal-giraffe-001.md) |
 | 21 | Whale | [x] | Scheduled 10-08 20:00 | `J6203iAHXos` | [ ] | [ ] | [ ] | Local | [Open](21-animal-whale-001.md) |
 | 22 | Bee | [x] | Scheduled 11-08 20:00 | `LymfnoWAFUs` | [ ] | [ ] | [ ] | Local | [Open](22-animal-bee-001.md) |
+| 23 | Snail | [x] | Scheduled 13-08 20:00 | `KgFSmhYfrlc` | [ ] | [ ] | [ ] | Local | [Open](23-animal-snail-001.md) |
+| 24 | Crab | [x] | Scheduled 15-08 20:00 | `FiaWryl-8AY` | [ ] | [ ] | [ ] | Local | [Open](24-animal-crab-001.md) |
+| 25 | Butterfly | [x] | Scheduled 17-08 20:00 | `8LUXVBkL87g` | [ ] | [ ] | [ ] | Local | [Open](25-animal-butterfly-001.md) |
+| 26 | Octopus | [x] | Scheduled 19-08 20:00 | `gsxj9EtAXDA` | [ ] | [ ] | [ ] | Local | [Open](26-animal-octopus-001.md) |
+| 27 | Koala | [x] | Scheduled 21-08 20:00 | `qQDm6Yd4Zd8` | [ ] | [ ] | [ ] | Local | [Open](27-animal-koala-001.md) |
+| 28 | Squirrel | [x] | Scheduled 23-08 20:00 | `JwvdYcgdhSo` | [ ] | [ ] | [ ] | Local | [Open](28-animal-squirrel-001.md) |
 
 ## Current Totals
 
-- YouTube: 22/22 uploaded — 12 Public, 10 Private có lịch tự công khai
-- TikTok: 0/22 marked
-- Facebook: 0/22 marked
-- Instagram: 0/22 marked
+- YouTube: 28/28 uploaded — 12 Public, 16 Private có lịch tự công khai
+- TikTok: 0/28 marked
+- Facebook: 0/28 marked
+- Instagram: 0/28 marked
+
+Nhịp đăng đổi từ video 23: **hai ngày một video** lúc 20:00 giờ VN (quyết định 2026-08-11).
+Video 01–22 giữ nguyên lịch mỗi ngày một video đã đặt trước đó.
+
+OAuth đã cấp lại ngày 2026-08-11 18:20 sau khi token cũ trả `invalid_grant`; token vẫn
+sống ngày 2026-08-14. Koala 27 và Squirrel 28 upload ngày 2026-08-14, xác minh lại qua
+API: cả hai `private`, đúng `publishAt`, `uploadStatus=processed`, `madeForKids=false`,
+category 26, ngôn ngữ `en`, thumbnail đã gắn.
 
 ## Lịch phát hành 13–22
 
@@ -60,6 +74,19 @@ YouTube tự chuyển sang Public đúng 20:00 (Asia/Ho_Chi_Minh) mỗi ngày, m
 | 10-08 20:00 | 21 Whale |
 | 11-08 20:00 | 22 Bee |
 
+## Lịch phát hành 23–28
+
+Từ đây nhịp là **hai ngày một video**, vẫn 20:00 (Asia/Ho_Chi_Minh).
+
+| Ngày công khai (giờ VN) | Video | Trạng thái |
+|---|---|---|
+| 13-08 20:00 | 23 Snail | Đã upload, hẹn giờ |
+| 15-08 20:00 | 24 Crab | Đã upload, hẹn giờ |
+| 17-08 20:00 | 25 Butterfly | Đã upload, hẹn giờ |
+| 19-08 20:00 | 26 Octopus | Đã upload, hẹn giờ |
+| 21-08 20:00 | 27 Koala | Đã upload, hẹn giờ |
+| 23-08 20:00 | 28 Squirrel | Đã upload, hẹn giờ |
+
 ## Bản v1 còn tô màu
 
 22 video bản cũ đã chuyển **Unlisted** ngày 2026-08-02, không xóa. View và bình luận vẫn
@@ -69,9 +96,13 @@ còn, vẫn xem được qua link trực tiếp. ID lưu tại
 ## Việc còn treo
 
 - Playlist `Simple Drawing Tutorials` (`PLS5I18k91_u4`) hiện **trống**: 22 bản cũ đã bị
-  gỡ nhưng 22 bản mới chưa kịp thêm vì hết quota. Chạy `npm run youtube:playlist -- --apply`.
-- Mỗi video mới có 2 track phụ đề, chưa xác minh được `trackKind`.
+  gỡ nhưng bản mới chưa kịp thêm vì hết quota; nay là 28 video cần thêm. Chạy
+  `npm run youtube:playlist -- --apply`.
+- Phụ đề: đã xác minh ngày 2026-08-14 trên video 27 và 28 — đúng 2 track mỗi video,
+  1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload.
+- OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; hạn kế tiếp
+  khoảng 2026-08-18. Chuyển app sang Published trong Google Cloud Console để khỏi lặp.
 
-Next new video number: **23**
+Next new video number: **29**
 
 Archive procedure: [Publishing operations](operations.md#google-drive-archive-rule)

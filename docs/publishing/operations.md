@@ -1,6 +1,6 @@
 # SketchFactory Publishing Operations
 
-Updated: 2026-08-02 11:22 (Asia/Ho_Chi_Minh)
+Updated: 2026-08-14 21:55 (Asia/Ho_Chi_Minh)
 
 ## Source of Truth
 
@@ -15,18 +15,24 @@ task. Do not rely only on conversation history.
 
 ## Current Position
 
-Đối chiếu trực tiếp với YouTube Data API ngày 2026-08-02.
+Đối chiếu trực tiếp với YouTube Data API ngày 2026-08-14.
 
 - Nội dung đang phát hành: **bản v2 vẽ nét thuần**, giọng Kokoro `af_bella`
-- Last generated video: 22
-- Last YouTube upload: 22
-- Next new video number: 23
+- Last generated video: 28
+- Last YouTube upload: 28
+- Next new video number: 29
 - Videos 01–12: YouTube Public
 - Videos 13–22: Private kèm lịch tự công khai 20:00 giờ VN mỗi ngày, 02/08 → 11/08
-- Custom thumbnail: đã bật, cả 22 video đều dùng thumbnail riêng
+- Videos 23–26: Private kèm lịch tự công khai 20:00 giờ VN, hai ngày một video,
+  13/08 → 19/08. Upload ngày 2026-08-11 sau khi cấp lại OAuth.
+- Videos 27–28 (Koala, Squirrel): upload ngày 2026-08-14, Private kèm lịch 21/08 và
+  23/08 20:00 giờ VN.
+- Custom thumbnail: đã bật, cả 28 video đều dùng thumbnail riêng
+- Phụ đề: mỗi video có 1 track `standard` do mình upload và 1 track `asr` YouTube tự
+  sinh, xác minh ngày 2026-08-14
 - 22 video bản v1 tô màu: đã Unlisted, giữ lại để khôi phục nếu cần
-- Kênh hiện có 44 video: 22 bản v2 hiển thị, 22 bản v1 ẩn
-- Playlist đang trống, chờ chạy `npm run youtube:playlist -- --apply`
+- Kênh hiện có 50 video: 28 bản v2 hiển thị, 22 bản v1 ẩn
+- Playlist đang trống, chờ chạy `npm run youtube:playlist -- --apply` (nay 28 video)
 - Video 09 (Frog, `_j6SiVf0dvs`): nội dung đúng nhưng metadata đang là Fox
 - TikTok account: `Simple Sketch` (`@simplesketchdraw`)
 - TikTok upload mode: manual; the Developer API integration was skipped
@@ -43,10 +49,14 @@ the user confirms that the post was published.
 Only upload when the user explicitly requests a specific video. Never upload or
 publish based only on a schedule assumption.
 
-**Nhịp đăng: đúng một video công khai mỗi ngày.** Render sẵn bao nhiêu cũng được, nhưng
-mỗi lần upload phải để `Private` kèm `--publish-at` để rải mỗi ngày một video lúc 20:00
-giờ VN. Không bao giờ để hai video cùng công khai trong một ngày, kể cả khi hàng đã sẵn.
-Đây là lỗi đã mắc ngày 27/07/2026 khi 10 video đầu lên cùng lúc.
+**Nhịp đăng: từ video 23 là hai ngày một video công khai** (đổi ngày 2026-08-11; trước
+đó là mỗi ngày một video và video 01–22 giữ nguyên lịch cũ). Render sẵn bao nhiêu cũng
+được, nhưng mỗi lần upload phải để `Private` kèm `--publish-at` để rải đúng nhịp, lúc
+20:00 giờ VN. Không bao giờ để hai video cùng công khai trong một ngày, kể cả khi hàng
+đã sẵn. Đây là lỗi đã mắc ngày 27/07/2026 khi 10 video đầu lên cùng lúc.
+
+Nhịp hiện hành ghi máy đọc được ở `data/publishing-state.json` → `youtube.publishCadence`,
+và mốc dự kiến của từng video chưa đăng nằm ở `youtube.plannedPublishAt`.
 
 Default workflow:
 
@@ -120,10 +130,28 @@ hết 1.100 đơn vị. Đừng chạy audit khi còn việc ghi quan trọng ch
 `publishAt` khi video đang Private. 20:00 giờ VN tương ứng `T13:00:00Z` cùng ngày.
 
 ```
-npm run youtube:upload -- --number 23 --id 23-animal-... \
-  --privacy private --publish-at 2026-08-12T13:00:00Z \
+npm run youtube:upload -- --number 23 --id 23-animal-snail-001 \
+  --privacy private --publish-at 2026-08-13T13:00:00Z \
   --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
 ```
+
+Lô 23–27 dùng các lệnh sau. Ngày 2026-08-11 đã chạy xong 23–26; **video 27 còn lại** vì
+quota một ngày chỉ đủ 4 video:
+
+```
+# đã chạy 2026-08-11
+npm run youtube:upload -- --number 23 --id 23-animal-snail-001     --privacy private --publish-at 2026-08-13T13:00:00Z --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+npm run youtube:upload -- --number 24 --id 24-animal-crab-001      --privacy private --publish-at 2026-08-15T13:00:00Z --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+npm run youtube:upload -- --number 25 --id 25-animal-butterfly-001 --privacy private --publish-at 2026-08-17T13:00:00Z --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+npm run youtube:upload -- --number 26 --id 26-animal-octopus-001   --privacy private --publish-at 2026-08-19T13:00:00Z --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+
+# còn lại, chạy sau khi quota reset lúc 14:00 giờ VN ngày 2026-08-12
+npm run youtube:upload -- --number 27 --id 27-animal-koala-001     --privacy private --publish-at 2026-08-21T13:00:00Z --confirm-channel UCAfBtu-doN3P_2q8nuRwXng
+```
+
+Mẹo đếm quota: 4 video đầy đủ là 8.200 đơn vị. Video thứ 5 sẽ chạm 10.250, vượt trần
+10.000 — và nó thường vỡ giữa chừng chứ không chặn ngay, tức là `videos.insert` (1.600)
+lọt còn `captions.insert` (400) trượt, để lại video không phụ đề. Đừng cố video thứ 5.
 
 Uploader đọc lại `privacyStatus` và `publishAt` từ API sau khi upload, ghi
 `visibility: "scheduled"` cùng `scheduledPublishAt` vào `data/publishing-state.json`.
@@ -167,3 +195,19 @@ For every archived file:
 Do not remove drawing JSON, source code, publishing sheets, OAuth tokens or upload
 receipts as part of media archiving. Those files are small and are required to
 reproduce or manage the videos.
+
+## OAuth hết hạn
+
+Ngày 2026-08-11 `npm run youtube:channel` trả `invalid_grant`: refresh token trong
+`.secrets/youtube-token.json` không còn dùng được. OAuth client đang ở chế độ Testing thì
+refresh token hết hạn sau 7 ngày, khớp với mốc cấp quyền 2026-08-02.
+
+Khắc phục: chạy `npm run youtube:auth`, xác nhận trong trình duyệt bằng đúng tài khoản của
+kênh `Simple Sketch`. Lệnh mở server callback tại `http://127.0.0.1:53682/oauth2callback`
+và chờ tối đa 5 phút. Không có cách nào cấp lại token mà không có thao tác của người dùng.
+Muốn khỏi lặp lại mỗi tuần thì đưa OAuth client sang trạng thái Published trong Google
+Cloud Console.
+
+Đã cấp lại thành công lúc 2026-08-11 18:20, kết nối đúng kênh Simple Sketch
+(`UCAfBtu-doN3P_2q8nuRwXng`). Vì client vẫn ở Testing nên **hạn chết kế tiếp khoảng
+2026-08-18**. Trong trang consent phải bấm Advanced → Go to … (unsafe) vì app chưa verify.

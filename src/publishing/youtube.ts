@@ -48,6 +48,7 @@ interface PublishingVideoState {
     visibility: string;
     videoId: string | null;
     scheduledPublishAt?: string | null;
+    thumbnailSet?: boolean;
   };
 }
 
@@ -203,7 +204,8 @@ async function recordPublishingState(
   number: number,
   videoId: string,
   visibility: string,
-  publishAt?: string,
+  publishAt: string | undefined,
+  thumbnailSet: boolean,
 ): Promise<void> {
   const state = await readJson<PublishingState>(PUBLISHING_STATE_PATH);
   const video = state.videos.find((item) => item.number === number);
@@ -214,6 +216,7 @@ async function recordPublishingState(
   video.youtube.visibility = publishAt ? "scheduled" : visibility;
   video.youtube.videoId = videoId;
   video.youtube.scheduledPublishAt = publishAt ?? null;
+  video.youtube.thumbnailSet = thumbnailSet;
   state.sequence.lastYouTubeUploaded = Math.max(state.sequence.lastYouTubeUploaded, number);
   state.updatedAt = new Date().toISOString();
   await writeFile(PUBLISHING_STATE_PATH, `${JSON.stringify(state, null, 2)}\n`);
@@ -361,5 +364,11 @@ export async function uploadYouTubeVideo(options: {
   console.log(`Privacy đọc lại từ API: ${status?.privacyStatus}`);
   if (options.publishAt) console.log(`Lịch publish đọc lại từ API: ${status?.publishAt ?? "(chưa có)"}`);
   for (const warning of warnings) console.warn(`⚠️ ${warning}`);
-  await recordPublishingState(options.number, receipt.videoId, options.privacy, options.publishAt);
+  await recordPublishingState(
+    options.number,
+    receipt.videoId,
+    options.privacy,
+    options.publishAt,
+    receipt.thumbnailSet,
+  );
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-02T15:05:00+07:00",
-  "verifiedAgainstYouTubeApiAt": "2026-08-02T14:55:00+07:00",
+  "updatedAt": "2026-08-14T14:57:00.000Z",
+  "verifiedAgainstYouTubeApiAt": "2026-08-14T14:57:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
     "channelId": "UCAfBtu-doN3P_2q8nuRwXng",
@@ -17,6 +17,13 @@
       "id": "PLS5I18k91_u4",
       "videoCount": 0,
       "structure": "Một playlist chung cho tất cả video, xếp theo số thứ tự. Không chia playlist theo nhóm con vật (quyết định 2026-08-02)."
+    },
+    "publishCadence": {
+      "intervalDays": 2,
+      "timeOfDayVn": "20:00",
+      "publishAtUtc": "T13:00:00Z",
+      "changedAt": "2026-08-11",
+      "note": "Từ video 23 trở đi rải hai ngày một video (quyết định 2026-08-11). Trước đó là mỗi ngày một video, video 01-22 giữ nguyên lịch cũ."
     }
   },
   "tiktok": {
@@ -28,9 +35,9 @@
     "trackOnlyAfterUserConfirmsPublished": true
   },
   "sequence": {
-    "lastGenerated": 22,
-    "lastYouTubeUploaded": 22,
-    "nextNumber": 23
+    "lastGenerated": 28,
+    "lastYouTubeUploaded": 28,
+    "nextNumber": 29
   },
   "videos": [
     {
@@ -472,12 +479,138 @@
         "googleDrive": false,
         "driveFileId": null
       }
+    },
+    {
+      "number": 23,
+      "animal": "Snail",
+      "file": "23-snail.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "KgFSmhYfrlc",
+        "scheduledPublishAt": "2026-08-13T13:00:00Z",
+        "plannedPublishAt": "2026-08-13T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 24,
+      "animal": "Crab",
+      "file": "24-crab.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "FiaWryl-8AY",
+        "scheduledPublishAt": "2026-08-15T13:00:00Z",
+        "plannedPublishAt": "2026-08-15T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 25,
+      "animal": "Butterfly",
+      "file": "25-butterfly.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "8LUXVBkL87g",
+        "scheduledPublishAt": "2026-08-17T13:00:00Z",
+        "plannedPublishAt": "2026-08-17T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 26,
+      "animal": "Octopus",
+      "file": "26-octopus.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "gsxj9EtAXDA",
+        "scheduledPublishAt": "2026-08-19T13:00:00Z",
+        "plannedPublishAt": "2026-08-19T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 27,
+      "animal": "Koala",
+      "file": "27-koala.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "qQDm6Yd4Zd8",
+        "scheduledPublishAt": "2026-08-21T13:00:00Z",
+        "plannedPublishAt": "2026-08-21T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 28,
+      "animal": "Squirrel",
+      "file": "28-squirrel.mp4",
+      "youtube": {
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "JwvdYcgdhSo",
+        "scheduledPublishAt": "2026-08-23T13:00:00Z",
+        "plannedPublishAt": "2026-08-23T13:00:00Z",
+        "thumbnailSet": true
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     }
   ],
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
-    "Chạy npm run youtube:playlist -- --apply sau 14:00 ngày 2026-08-03 để thêm 22 video vào playlist chung (playlist đang trống, cần ~1.100 đơn vị quota)",
-    "Kiểm tra trackKind của 2 track phụ đề trên mỗi video mới; dự kiến là 1 track tự động của YouTube + 1 track do mình upload"
+    "Chạy npm run youtube:playlist -- --apply để thêm 28 video vào playlist chung (playlist đang trống, cần ~1.400 đơn vị quota)",
+    "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại."
   ],
   "contentVersion": {
     "version": 2,

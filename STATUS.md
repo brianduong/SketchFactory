@@ -1,9 +1,17 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-02 15:05 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-14 21:55 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
+
+Ngày 2026-08-11 thêm 5 video mới (23–27) và đổi nhịp đăng thành **hai ngày một video**.
+OAuth đã cấp lại chiều cùng ngày; **23–26 đã upload** ở chế độ Private kèm lịch tự công
+khai 13, 15, 17 và 19 tháng 8.
+
+Ngày 2026-08-14 thêm **Squirrel 28**, render xong và QC đạt. Cùng ngày **upload Koala 27
+và Squirrel 28** ở chế độ Private kèm lịch tự công khai 21-08 và 23-08; cả 28 video giờ
+đều đã nằm trên kênh.
 
 ## Tổng quan
 
@@ -16,13 +24,13 @@ sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển
 | Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
 | Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
-| Bộ video upload-ready | ✅ 22 video | `output/upload-ready/01-cat.mp4` đến `22-bee.mp4` |
+| Bộ video upload-ready | ✅ 28 video | `output/upload-ready/01-cat.mp4` đến `28-squirrel.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
 | Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
 | YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
 | Google Drive archive | 📝 Đã định nghĩa quy trình | `docs/publishing/operations.md` |
 
-## Danh mục 22 video
+## Danh mục 28 video
 
 | No. | Animal | Số nét | Video upload-ready | YouTube |
 |---:|---|---:|---|:---:|
@@ -48,10 +56,19 @@ sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển
 | 20 | Giraffe | 10 | `20-giraffe.mp4` | 🕗 Hẹn 09-08 20:00 — `zG9SSaV6omY` |
 | 21 | Whale | 9 | `21-whale.mp4` | 🕗 Hẹn 10-08 20:00 — `J6203iAHXos` |
 | 22 | Bee | 10 | `22-bee.mp4` | 🕗 Hẹn 11-08 20:00 — `LymfnoWAFUs` |
+| 23 | Snail | 9 | `23-snail.mp4` | 🕗 Hẹn 13-08 20:00 — `KgFSmhYfrlc` |
+| 24 | Crab | 10 | `24-crab.mp4` | 🕗 Hẹn 15-08 20:00 — `FiaWryl-8AY` |
+| 25 | Butterfly | 9 | `25-butterfly.mp4` | 🕗 Hẹn 17-08 20:00 — `8LUXVBkL87g` |
+| 26 | Octopus | 10 | `26-octopus.mp4` | 🕗 Hẹn 19-08 20:00 — `gsxj9EtAXDA` |
+| 27 | Koala | 7 | `27-koala.mp4` | 🕗 Hẹn 21-08 20:00 — `qQDm6Yd4Zd8` |
+| 28 | Squirrel | 9 | `28-squirrel.mp4` | 🕗 Hẹn 23-08 20:00 — `JwvdYcgdhSo` |
 
 Toàn bộ 22 video bản v2 đã nằm trên kênh `Simple Sketch`, xác minh trực tiếp qua YouTube
 Data API ngày 2026-08-02: 12 video đầu Public, 10 video 13–22 Private kèm `publishAt` để
 tự công khai lúc 20:00 giờ VN mỗi ngày, từ 02/08 đến 11/08.
+
+Video 23–26 upload ngày 2026-08-11, xác minh lại qua API: cả 4 đều `private`, đúng
+`publishAt`, `madeForKids=false`, `uploadStatus=processed`, category 26 và ngôn ngữ `en`.
 
 22 video bản v1 còn tô màu đã chuyển **Unlisted**, không xóa, ID lưu tại
 `.secrets/youtube-archive-color-version.json`. Receipt của bản v1 giữ ở
@@ -70,13 +87,15 @@ bảng tổng và từng upload sheet.
 
 ## Quy ước file và publishing
 
-- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`22`.
+- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`28`.
 - `output/shorts/` chứa bản render mới nhất; `upload-ready/` là bản đã chép để upload.
 - File sinh trong `output/` bị ignore khỏi Git và có thể tái tạo từ JSON nguồn.
 - Upload sheet nằm tại `docs/publishing/`; mỗi file ghi số video và trạng thái riêng
   cho YouTube, TikTok, Facebook và Instagram.
 - Bảng tổng: `docs/publishing/upload-tracker.md`.
-- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `23`.
+- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `29`.
+- Nhịp đăng hiện tại: hai ngày một video lúc 20:00 giờ VN, ghi ở
+  `data/publishing-state.json` → `youtube.publishCadence`.
 - Upload sheet cho video mới sinh bằng `npx tsx scripts/publishing-sheet.ts --id <drawing-id>`
   để title/description/tag luôn khớp metadata pipeline.
 - Chỉ upload khi người dùng yêu cầu rõ video; mặc định YouTube là `Private`.
@@ -96,7 +115,14 @@ bảng tổng và từng upload sheet.
 ## Kết quả kiểm chứng hiện tại
 
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
-- `npm test`: 5 test files, 77/77 tests đạt.
+- `npm test`: 5 test files, 89/89 tests đạt.
+- Video 23–28: pipeline chạy đủ stage, QC đạt 0 issue, đều 1080×1920, 29 giây, h264 + aac.
+- Squirrel 28 đã review trên PNG nền trắng: đuôi phải sửa năm vòng (lưỡi liềm rời → chữ D
+  → lá → cụp quá thấp) mới ra bó đuôi xù ôm lưng; tai tam giác bị đầu che thành tai mèo nên
+  đổi lại tai bầu dục nhỏ nhô cao.
+- 5 hình mới đã review trực quan trên PNG nền trắng. Snail phải dời vỏ và kéo dài cuống
+  mắt vì mắt chen vào vỏ; Crab đổi càng bốn lần (tia sét → tai thỏ → nơ → lá) mới ra hình
+  bầu dục có khe kìm; Koala nâng miệng lên cho khỏi dính viền đầu.
 - Validator chặn stroke phức tạp, semantic group, sai số nét và chi tiết ngoài safe area.
 - Test `keeps every declared bound around the real geometry` đối chiếu `bounds` với hình
   học thật của từng nét cho cả 22 drawing.
@@ -123,8 +149,16 @@ bảng tổng và từng upload sheet.
 - Elephant được chỉnh lại: vòi buông giữa mặt xuống `y=855`, hai ngà dời ra `380–445` và
   `555–620` nên không còn nét cắt nhau.
 - 22 hình bản v2 đã render PNG và review bằng mắt trước khi upload.
+- Phụ đề: xác minh ngày 2026-08-14 trên video 27 và 28, mỗi video đúng 2 track —
+  1 track `asr` của YouTube và 1 track `standard` do mình upload.
+- Video 27 và 28 upload ngày 2026-08-14, API xác nhận `private`, đúng `publishAt`,
+  `madeForKids=false`, `uploadStatus=processed`, category 26, ngôn ngữ `en`.
 - Playlist `Simple Drawing Tutorials` (`PLS5I18k91_u4`) hiện **trống**: 22 bản v1 đã gỡ,
-  22 bản v2 chưa thêm vì hết quota. Chạy `npm run youtube:playlist -- --apply`.
+  bản v2 chưa thêm vì hết quota; nay là 28 video. Chạy `npm run youtube:playlist -- --apply`.
+- OAuth cấp lại ngày 2026-08-11. Client còn ở trạng thái Testing nên refresh token chết
+  sau 7 ngày, hạn kế tiếp khoảng 2026-08-18. Nên chuyển app sang Published.
+- `recordPublishingState` trước đây không ghi `thumbnailSet` vào `data/publishing-state.json`
+  nên trường này phải sửa tay; đã vá ngày 2026-08-11 và backfill cho video 23–26.
 - `npm audit --omit=dev`: 0 vulnerabilities sau khi khóa phiên bản dependency an toàn.
 
 ## Artifact được lưu trong Git
@@ -139,10 +173,9 @@ bảng tổng và từng upload sheet.
 
 ## Việc tiếp theo
 
-1. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 22 video vào playlist.
-2. Xác minh `trackKind` của 2 track phụ đề trên mỗi video bản v2.
-3. Theo dõi lịch tự công khai 13–22 mỗi tối 20:00 và cập nhật tracker sau mỗi mốc.
-4. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
-5. Tạo video mới với số bắt đầu từ 23 và chỉ upload khi người dùng yêu cầu.
-6. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
-7. Archive MP4 lên Google Drive theo checksum trước khi xóa local.
+1. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
+2. Theo dõi lịch tự công khai 13–22 mỗi tối 20:00 và cập nhật tracker sau mỗi mốc.
+3. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
+4. Tạo video mới với số bắt đầu từ 29 và chỉ upload khi người dùng yêu cầu.
+5. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
+6. Archive MP4 lên Google Drive theo checksum trước khi xóa local.

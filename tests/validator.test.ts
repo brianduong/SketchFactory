@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { createBearDrawing } from "../src/drawing/bear.js";
 import { createBeeDrawing } from "../src/drawing/bee.js";
+import { createButterflyDrawing } from "../src/drawing/butterfly.js";
 import { createCatDrawing } from "../src/drawing/cat.js";
 import { createCowDrawing } from "../src/drawing/cow.js";
+import { createCrabDrawing } from "../src/drawing/crab.js";
 import { createDogDrawing } from "../src/drawing/dog.js";
 import { createDuckDrawing } from "../src/drawing/duck.js";
 import { createElephantDrawing } from "../src/drawing/elephant.js";
@@ -10,15 +12,19 @@ import { createFishDrawing } from "../src/drawing/fish.js";
 import { createFoxDrawing } from "../src/drawing/fox.js";
 import { createFrogDrawing } from "../src/drawing/frog.js";
 import { createGiraffeDrawing } from "../src/drawing/giraffe.js";
+import { createKoalaDrawing } from "../src/drawing/koala.js";
 import { createLionDrawing } from "../src/drawing/lion.js";
 import { createMonkeyDrawing } from "../src/drawing/monkey.js";
 import { createMouseDrawing } from "../src/drawing/mouse.js";
+import { createOctopusDrawing } from "../src/drawing/octopus.js";
 import { createOwlDrawing } from "../src/drawing/owl.js";
 import { createPandaDrawing } from "../src/drawing/panda.js";
 import { createPenguinDrawing } from "../src/drawing/penguin.js";
 import { createPigDrawing } from "../src/drawing/pig.js";
 import { createRabbitDrawing } from "../src/drawing/rabbit.js";
 import { createSheepDrawing } from "../src/drawing/sheep.js";
+import { createSnailDrawing } from "../src/drawing/snail.js";
+import { createSquirrelDrawing } from "../src/drawing/squirrel.js";
 import { createTurtleDrawing } from "../src/drawing/turtle.js";
 import { createWhaleDrawing } from "../src/drawing/whale.js";
 import { validateDrawing } from "../src/quality-control/validator.js";
@@ -27,8 +33,10 @@ import { strokeExtent } from "./helpers/stroke-extent.js";
 const catalog = [
   ["bear", createBearDrawing],
   ["bee", createBeeDrawing],
+  ["butterfly", createButterflyDrawing],
   ["cat", createCatDrawing],
   ["cow", createCowDrawing],
+  ["crab", createCrabDrawing],
   ["dog", createDogDrawing],
   ["duck", createDuckDrawing],
   ["elephant", createElephantDrawing],
@@ -36,15 +44,19 @@ const catalog = [
   ["fox", createFoxDrawing],
   ["frog", createFrogDrawing],
   ["giraffe", createGiraffeDrawing],
+  ["koala", createKoalaDrawing],
   ["lion", createLionDrawing],
   ["monkey", createMonkeyDrawing],
   ["mouse", createMouseDrawing],
+  ["octopus", createOctopusDrawing],
   ["owl", createOwlDrawing],
   ["panda", createPandaDrawing],
   ["penguin", createPenguinDrawing],
   ["pig", createPigDrawing],
   ["rabbit", createRabbitDrawing],
   ["sheep", createSheepDrawing],
+  ["snail", createSnailDrawing],
+  ["squirrel", createSquirrelDrawing],
   ["turtle", createTurtleDrawing],
   ["whale", createWhaleDrawing],
 ] as const;
