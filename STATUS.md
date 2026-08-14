@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-14 22:00 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-15 00:20 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -19,7 +19,11 @@ vẫn Private và sẽ tự công khai theo lịch 15, 17, 19, 21 và 23 tháng 
 Đêm 2026-08-14 sản xuất thêm **23 video mới (29–51)**, làm trọn nhóm con vật "chắc ăn":
 nai, rắn, sứa, dơi, hồng hạc, tê giác, gà trống, nhím, sao biển, sâu, kiến, cá sấu,
 chuột túi, thiên nga, kỳ lân, lạc đà không bướu, toucan, nhện, lạc đà, stegosaurus,
-T-rex, ngựa vằn, ngựa. Tất cả **giữ ở local, chưa upload**.
+T-rex, ngựa vằn, ngựa. Tất cả **giữ ở local, chưa upload** — người dùng nói sẽ đưa lên
+sau. Kênh vẫn đúng 28 video.
+
+Toàn bộ code và artifact của đợt này đã **merge vào `main`** (fast-forward, commit
+`410834d`) và push lên `origin/main` ngày 2026-08-15.
 
 ## Tổng quan
 
@@ -148,6 +152,11 @@ bảng tổng và từng upload sheet.
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
 - `npm test`: 5 test files, 135/135 tests đạt.
 - Video 23–28: pipeline chạy đủ stage, QC đạt 0 issue, đều 1080×1920, 29 giây, h264 + aac.
+- Video 29–51 đều review trên PNG nền trắng trước khi render. Ba ca khó: con nhện không
+  đủ 10 nét cho thân + 8 chân + mắt nên mỗi nét vẽ thành một đường vòng qua thân thành
+  hai chân (4 nét ra 8 chân); con lạc đà bị bướu lùn vì đường bậc hai `Q` không chạm điểm
+  điều khiển, phải đổi sang bậc ba `C`; ngựa vằn và ngựa suýt đụng kỳ lân nên tách thành
+  đầu chính diện có sọc và nguyên con nhìn nghiêng.
 - Squirrel 28 đã review trên PNG nền trắng: đuôi phải sửa năm vòng (lưỡi liềm rời → chữ D
   → lá → cụp quá thấp) mới ra bó đuôi xù ôm lưng; tai tam giác bị đầu che thành tai mèo nên
   đổi lại tai bầu dục nhỏ nhô cao.
@@ -187,7 +196,8 @@ bảng tổng và từng upload sheet.
 - Playlist `Simple Drawing Tutorials` (`PLS5I18k91_u4`) hiện **trống**: 22 bản v1 đã gỡ,
   bản v2 chưa thêm vì hết quota; nay là 28 video. Chạy `npm run youtube:playlist -- --apply`.
 - OAuth cấp lại ngày 2026-08-11. Client còn ở trạng thái Testing nên refresh token chết
-  sau 7 ngày, hạn kế tiếp khoảng 2026-08-18. Nên chuyển app sang Published.
+  sau 7 ngày, **hạn khoảng 2026-08-18**. Muốn upload 29–51 sau mốc đó thì phải chạy lại
+  `npm run youtube:auth` (cần bấm xác nhận trong trình duyệt). Nên chuyển app sang Published.
 - `recordPublishingState` trước đây không ghi `thumbnailSet` vào `data/publishing-state.json`
   nên trường này phải sửa tay; đã vá ngày 2026-08-11 và backfill cho video 23–26.
 - `npm audit --omit=dev`: 0 vulnerabilities sau khi khóa phiên bản dependency an toàn.
@@ -204,9 +214,12 @@ bảng tổng và từng upload sheet.
 
 ## Việc tiếp theo
 
-1. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
-2. Theo dõi lịch tự công khai 24–28 (15, 17, 19, 21, 23 tháng 8) và cập nhật tracker sau mỗi mốc.
-3. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
-4. Nhóm con vật chắc ăn đã hết; muốn làm tiếp thì sang nhóm phải cẩn thận hoặc đổi chủ đề; chỉ upload khi người dùng yêu cầu.
-5. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
-6. Archive MP4 lên Google Drive theo checksum trước khi xóa local.
+1. **Upload 23 video 29–51 khi người dùng yêu cầu.** MP4 đã sẵn ở `output/upload-ready/`.
+   Quota chỉ đủ ~4 video/ngày (2.050 đơn vị/video, reset 14:00 giờ VN) nên cần khoảng
+   6 ngày. Ngày trong tracker mới là dự kiến, chưa đặt `publishAt` nào.
+2. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
+3. Theo dõi lịch tự công khai 24–28 (15, 17, 19, 21, 23 tháng 8) và cập nhật tracker sau mỗi mốc.
+4. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
+5. Nhóm con vật chắc ăn đã hết; muốn làm tiếp thì sang nhóm phải cẩn thận hoặc đổi chủ đề; chỉ upload khi người dùng yêu cầu.
+6. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
+7. Archive MP4 lên Google Drive theo checksum trước khi xóa local.
