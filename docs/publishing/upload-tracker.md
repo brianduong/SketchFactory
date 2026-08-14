@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-14 21:55 (Asia/Ho_Chi_Minh) — thêm Squirrel 28; đã upload 27 và 28, hẹn 21-08 và 23-08
+Updated: 2026-08-14 22:00 (Asia/Ho_Chi_Minh) — thêm Squirrel 28, upload 27 và 28; đối chiếu API: 23 video đã Public
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -25,17 +25,17 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 10 | Fish | [x] | Public | `LT8x5E-zxGI` | [ ] | [ ] | [ ] | Local | [Open](animal-fish-001.md) |
 | 11 | Turtle | [x] | Public | `SFgzoLwCkPQ` | [ ] | [ ] | [ ] | Local | [Open](11-animal-turtle-001.md) |
 | 12 | Elephant | [x] | Public | `qsPrsEtp54E` | [ ] | [ ] | [ ] | Local | [Open](12-animal-elephant-001.md) |
-| 13 | Lion | [x] | Scheduled 02-08 20:00 | `LoD45Gl_h6o` | [ ] | [ ] | [ ] | Local | [Open](13-animal-lion-001.md) |
-| 14 | Monkey | [x] | Scheduled 03-08 20:00 | `AZ0_u--w9pk` | [ ] | [ ] | [ ] | Local | [Open](14-animal-monkey-001.md) |
-| 15 | Owl | [x] | Scheduled 04-08 20:00 | `Vjkmz43mL8M` | [ ] | [ ] | [ ] | Local | [Open](15-animal-owl-001.md) |
-| 16 | Penguin | [x] | Scheduled 05-08 20:00 | `pP2sOsi4Vwo` | [ ] | [ ] | [ ] | Local | [Open](16-animal-penguin-001.md) |
-| 17 | Duck | [x] | Scheduled 06-08 20:00 | `-wBSaSOMguQ` | [ ] | [ ] | [ ] | Local | [Open](17-animal-duck-001.md) |
-| 18 | Mouse | [x] | Scheduled 07-08 20:00 | `_hSpAiOlTcA` | [ ] | [ ] | [ ] | Local | [Open](18-animal-mouse-001.md) |
-| 19 | Sheep | [x] | Scheduled 08-08 20:00 | `oZUi5ZOdWeA` | [ ] | [ ] | [ ] | Local | [Open](19-animal-sheep-001.md) |
-| 20 | Giraffe | [x] | Scheduled 09-08 20:00 | `zG9SSaV6omY` | [ ] | [ ] | [ ] | Local | [Open](20-animal-giraffe-001.md) |
-| 21 | Whale | [x] | Scheduled 10-08 20:00 | `J6203iAHXos` | [ ] | [ ] | [ ] | Local | [Open](21-animal-whale-001.md) |
-| 22 | Bee | [x] | Scheduled 11-08 20:00 | `LymfnoWAFUs` | [ ] | [ ] | [ ] | Local | [Open](22-animal-bee-001.md) |
-| 23 | Snail | [x] | Scheduled 13-08 20:00 | `KgFSmhYfrlc` | [ ] | [ ] | [ ] | Local | [Open](23-animal-snail-001.md) |
+| 13 | Lion | [x] | Public | `LoD45Gl_h6o` | [ ] | [ ] | [ ] | Local | [Open](13-animal-lion-001.md) |
+| 14 | Monkey | [x] | Public | `AZ0_u--w9pk` | [ ] | [ ] | [ ] | Local | [Open](14-animal-monkey-001.md) |
+| 15 | Owl | [x] | Public | `Vjkmz43mL8M` | [ ] | [ ] | [ ] | Local | [Open](15-animal-owl-001.md) |
+| 16 | Penguin | [x] | Public | `pP2sOsi4Vwo` | [ ] | [ ] | [ ] | Local | [Open](16-animal-penguin-001.md) |
+| 17 | Duck | [x] | Public | `-wBSaSOMguQ` | [ ] | [ ] | [ ] | Local | [Open](17-animal-duck-001.md) |
+| 18 | Mouse | [x] | Public | `_hSpAiOlTcA` | [ ] | [ ] | [ ] | Local | [Open](18-animal-mouse-001.md) |
+| 19 | Sheep | [x] | Public | `oZUi5ZOdWeA` | [ ] | [ ] | [ ] | Local | [Open](19-animal-sheep-001.md) |
+| 20 | Giraffe | [x] | Public | `zG9SSaV6omY` | [ ] | [ ] | [ ] | Local | [Open](20-animal-giraffe-001.md) |
+| 21 | Whale | [x] | Public | `J6203iAHXos` | [ ] | [ ] | [ ] | Local | [Open](21-animal-whale-001.md) |
+| 22 | Bee | [x] | Public | `LymfnoWAFUs` | [ ] | [ ] | [ ] | Local | [Open](22-animal-bee-001.md) |
+| 23 | Snail | [x] | Public | `KgFSmhYfrlc` | [ ] | [ ] | [ ] | Local | [Open](23-animal-snail-001.md) |
 | 24 | Crab | [x] | Scheduled 15-08 20:00 | `FiaWryl-8AY` | [ ] | [ ] | [ ] | Local | [Open](24-animal-crab-001.md) |
 | 25 | Butterfly | [x] | Scheduled 17-08 20:00 | `8LUXVBkL87g` | [ ] | [ ] | [ ] | Local | [Open](25-animal-butterfly-001.md) |
 | 26 | Octopus | [x] | Scheduled 19-08 20:00 | `gsxj9EtAXDA` | [ ] | [ ] | [ ] | Local | [Open](26-animal-octopus-001.md) |
@@ -44,7 +44,7 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 
 ## Current Totals
 
-- YouTube: 28/28 uploaded — 12 Public, 16 Private có lịch tự công khai
+- YouTube: 28/28 uploaded — 23 Public (01–23), 5 Private còn lịch tự công khai (24–28)
 - TikTok: 0/28 marked
 - Facebook: 0/28 marked
 - Instagram: 0/28 marked
@@ -60,6 +60,8 @@ category 26, ngôn ngữ `en`, thumbnail đã gắn.
 ## Lịch phát hành 13–22
 
 YouTube tự chuyển sang Public đúng 20:00 (Asia/Ho_Chi_Minh) mỗi ngày, mỗi ngày một video.
+
+Toàn bộ 13–22 đã tự lên Public đúng lịch, xác minh qua API ngày 2026-08-14.
 
 | Ngày công khai (giờ VN) | Video |
 |---|---|
@@ -80,12 +82,12 @@ Từ đây nhịp là **hai ngày một video**, vẫn 20:00 (Asia/Ho_Chi_Minh).
 
 | Ngày công khai (giờ VN) | Video | Trạng thái |
 |---|---|---|
-| 13-08 20:00 | 23 Snail | Đã upload, hẹn giờ |
-| 15-08 20:00 | 24 Crab | Đã upload, hẹn giờ |
-| 17-08 20:00 | 25 Butterfly | Đã upload, hẹn giờ |
-| 19-08 20:00 | 26 Octopus | Đã upload, hẹn giờ |
-| 21-08 20:00 | 27 Koala | Đã upload, hẹn giờ |
-| 23-08 20:00 | 28 Squirrel | Đã upload, hẹn giờ |
+| 13-08 20:00 | 23 Snail | ✅ Đã Public |
+| 15-08 20:00 | 24 Crab | Chờ tự công khai |
+| 17-08 20:00 | 25 Butterfly | Chờ tự công khai |
+| 19-08 20:00 | 26 Octopus | Chờ tự công khai |
+| 21-08 20:00 | 27 Koala | Chờ tự công khai |
+| 23-08 20:00 | 28 Squirrel | Chờ tự công khai |
 
 ## Bản v1 còn tô màu
 

@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [x] Đã upload — Private, tự chuyển Public lúc 11-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- YouTube: [x] Đã Public từ 11-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -51,7 +51,7 @@ how to draw a bee, easy bee drawing, simple bee drawing, bee, animal, insect, ea
 
 - Video ID: `LymfnoWAFUs` — https://youtu.be/LymfnoWAFUs
 - Upload status: Uploaded 2026-08-02 (bản v2 vẽ nét thuần)
-- Privacy: Private, tự chuyển Public lúc 11-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- Privacy: Public (tự chuyển từ Private đúng lịch) lúc 11-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - publishAt (UTC): `2026-08-11T13:00:00Z`
 - Audience: Not made for kids
 - English captions: Uploaded

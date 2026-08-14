@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [x] Đã upload — Private, tự chuyển Public lúc 09-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- YouTube: [x] Đã Public từ 09-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -51,7 +51,7 @@ how to draw a giraffe, easy giraffe drawing, simple giraffe drawing, giraffe, an
 
 - Video ID: `zG9SSaV6omY` — https://youtu.be/zG9SSaV6omY
 - Upload status: Uploaded 2026-08-02 (bản v2 vẽ nét thuần)
-- Privacy: Private, tự chuyển Public lúc 09-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- Privacy: Public (tự chuyển từ Private đúng lịch) lúc 09-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - publishAt (UTC): `2026-08-09T13:00:00Z`
 - Audience: Not made for kids
 - English captions: Uploaded

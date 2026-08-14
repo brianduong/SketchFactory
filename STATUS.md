@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-14 21:55 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-14 22:00 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -12,6 +12,9 @@ khai 13, 15, 17 và 19 tháng 8.
 Ngày 2026-08-14 thêm **Squirrel 28**, render xong và QC đạt. Cùng ngày **upload Koala 27
 và Squirrel 28** ở chế độ Private kèm lịch tự công khai 21-08 và 23-08; cả 28 video giờ
 đều đã nằm trên kênh.
+
+Đối chiếu API ngày 2026-08-14: **23 video đã Public** (01–23), 5 video còn lại (24–28)
+vẫn Private và sẽ tự công khai theo lịch 15, 17, 19, 21 và 23 tháng 8.
 
 ## Tổng quan
 
@@ -46,26 +49,26 @@ và Squirrel 28** ở chế độ Private kèm lịch tự công khai 21-08 và 
 | 10 | Fish | 9 | `10-fish.mp4` | ✅ Public — `LT8x5E-zxGI` |
 | 11 | Turtle | 9 | `11-turtle.mp4` | ✅ Public — `SFgzoLwCkPQ` |
 | 12 | Elephant | 10 | `12-elephant.mp4` | ✅ Public — `qsPrsEtp54E` |
-| 13 | Lion | 9 | `13-lion.mp4` | 🕗 Hẹn 02-08 20:00 — `LoD45Gl_h6o` |
-| 14 | Monkey | 9 | `14-monkey.mp4` | 🕗 Hẹn 03-08 20:00 — `AZ0_u--w9pk` |
-| 15 | Owl | 10 | `15-owl.mp4` | 🕗 Hẹn 04-08 20:00 — `Vjkmz43mL8M` |
-| 16 | Penguin | 9 | `16-penguin.mp4` | 🕗 Hẹn 05-08 20:00 — `pP2sOsi4Vwo` |
-| 17 | Duck | 8 | `17-duck.mp4` | 🕗 Hẹn 06-08 20:00 — `-wBSaSOMguQ` |
-| 18 | Mouse | 9 | `18-mouse.mp4` | 🕗 Hẹn 07-08 20:00 — `_hSpAiOlTcA` |
-| 19 | Sheep | 9 | `19-sheep.mp4` | 🕗 Hẹn 08-08 20:00 — `oZUi5ZOdWeA` |
-| 20 | Giraffe | 10 | `20-giraffe.mp4` | 🕗 Hẹn 09-08 20:00 — `zG9SSaV6omY` |
-| 21 | Whale | 9 | `21-whale.mp4` | 🕗 Hẹn 10-08 20:00 — `J6203iAHXos` |
-| 22 | Bee | 10 | `22-bee.mp4` | 🕗 Hẹn 11-08 20:00 — `LymfnoWAFUs` |
-| 23 | Snail | 9 | `23-snail.mp4` | 🕗 Hẹn 13-08 20:00 — `KgFSmhYfrlc` |
+| 13 | Lion | 9 | `13-lion.mp4` | ✅ Public — `LoD45Gl_h6o` |
+| 14 | Monkey | 9 | `14-monkey.mp4` | ✅ Public — `AZ0_u--w9pk` |
+| 15 | Owl | 10 | `15-owl.mp4` | ✅ Public — `Vjkmz43mL8M` |
+| 16 | Penguin | 9 | `16-penguin.mp4` | ✅ Public — `pP2sOsi4Vwo` |
+| 17 | Duck | 8 | `17-duck.mp4` | ✅ Public — `-wBSaSOMguQ` |
+| 18 | Mouse | 9 | `18-mouse.mp4` | ✅ Public — `_hSpAiOlTcA` |
+| 19 | Sheep | 9 | `19-sheep.mp4` | ✅ Public — `oZUi5ZOdWeA` |
+| 20 | Giraffe | 10 | `20-giraffe.mp4` | ✅ Public — `zG9SSaV6omY` |
+| 21 | Whale | 9 | `21-whale.mp4` | ✅ Public — `J6203iAHXos` |
+| 22 | Bee | 10 | `22-bee.mp4` | ✅ Public — `LymfnoWAFUs` |
+| 23 | Snail | 9 | `23-snail.mp4` | ✅ Public — `KgFSmhYfrlc` |
 | 24 | Crab | 10 | `24-crab.mp4` | 🕗 Hẹn 15-08 20:00 — `FiaWryl-8AY` |
 | 25 | Butterfly | 9 | `25-butterfly.mp4` | 🕗 Hẹn 17-08 20:00 — `8LUXVBkL87g` |
 | 26 | Octopus | 10 | `26-octopus.mp4` | 🕗 Hẹn 19-08 20:00 — `gsxj9EtAXDA` |
 | 27 | Koala | 7 | `27-koala.mp4` | 🕗 Hẹn 21-08 20:00 — `qQDm6Yd4Zd8` |
 | 28 | Squirrel | 9 | `28-squirrel.mp4` | 🕗 Hẹn 23-08 20:00 — `JwvdYcgdhSo` |
 
-Toàn bộ 22 video bản v2 đã nằm trên kênh `Simple Sketch`, xác minh trực tiếp qua YouTube
-Data API ngày 2026-08-02: 12 video đầu Public, 10 video 13–22 Private kèm `publishAt` để
-tự công khai lúc 20:00 giờ VN mỗi ngày, từ 02/08 đến 11/08.
+Toàn bộ 28 video bản v2 đã nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
+Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 
 Video 23–26 upload ngày 2026-08-11, xác minh lại qua API: cả 4 đều `private`, đúng
 `publishAt`, `madeForKids=false`, `uploadStatus=processed`, category 26 và ngôn ngữ `en`.
@@ -174,7 +177,7 @@ bảng tổng và từng upload sheet.
 ## Việc tiếp theo
 
 1. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
-2. Theo dõi lịch tự công khai 13–22 mỗi tối 20:00 và cập nhật tracker sau mỗi mốc.
+2. Theo dõi lịch tự công khai 24–28 (15, 17, 19, 21, 23 tháng 8) và cập nhật tracker sau mỗi mốc.
 3. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
 4. Tạo video mới với số bắt đầu từ 29 và chỉ upload khi người dùng yêu cầu.
 5. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.

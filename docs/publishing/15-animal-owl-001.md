@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [x] Đã upload — Private, tự chuyển Public lúc 04-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- YouTube: [x] Đã Public từ 04-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -51,7 +51,7 @@ how to draw an owl, easy owl drawing, simple owl drawing, owl, animal, bird, eas
 
 - Video ID: `Vjkmz43mL8M` — https://youtu.be/Vjkmz43mL8M
 - Upload status: Uploaded 2026-08-02 (bản v2 vẽ nét thuần)
-- Privacy: Private, tự chuyển Public lúc 04-08/2026 20:00 (Asia/Ho_Chi_Minh)
+- Privacy: Public (tự chuyển từ Private đúng lịch) lúc 04-08/2026 20:00 (Asia/Ho_Chi_Minh)
 - publishAt (UTC): `2026-08-04T13:00:00Z`
 - Audience: Not made for kids
 - English captions: Uploaded

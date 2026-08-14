@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-14T14:57:00.000Z",
-  "verifiedAgainstYouTubeApiAt": "2026-08-14T14:57:00.000Z",
+  "updatedAt": "2026-08-14T15:00:00.000Z",
+  "verifiedAgainstYouTubeApiAt": "2026-08-14T14:58:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
     "channelId": "UCAfBtu-doN3P_2q8nuRwXng",
@@ -286,7 +286,7 @@
       "file": "13-lion.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "LoD45Gl_h6o",
         "scheduledPublishAt": "2026-08-02T13:00:00Z",
         "thumbnailSet": true
@@ -306,7 +306,7 @@
       "file": "14-monkey.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "AZ0_u--w9pk",
         "scheduledPublishAt": "2026-08-03T13:00:00Z",
         "thumbnailSet": true
@@ -326,7 +326,7 @@
       "file": "15-owl.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "Vjkmz43mL8M",
         "scheduledPublishAt": "2026-08-04T13:00:00Z",
         "thumbnailSet": true
@@ -346,7 +346,7 @@
       "file": "16-penguin.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "pP2sOsi4Vwo",
         "scheduledPublishAt": "2026-08-05T13:00:00Z",
         "thumbnailSet": true
@@ -366,7 +366,7 @@
       "file": "17-duck.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "-wBSaSOMguQ",
         "scheduledPublishAt": "2026-08-06T13:00:00Z",
         "thumbnailSet": true
@@ -386,7 +386,7 @@
       "file": "18-mouse.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "_hSpAiOlTcA",
         "scheduledPublishAt": "2026-08-07T13:00:00Z",
         "thumbnailSet": true
@@ -406,7 +406,7 @@
       "file": "19-sheep.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "oZUi5ZOdWeA",
         "scheduledPublishAt": "2026-08-08T13:00:00Z",
         "thumbnailSet": true
@@ -426,7 +426,7 @@
       "file": "20-giraffe.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "zG9SSaV6omY",
         "scheduledPublishAt": "2026-08-09T13:00:00Z",
         "thumbnailSet": true
@@ -446,7 +446,7 @@
       "file": "21-whale.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "J6203iAHXos",
         "scheduledPublishAt": "2026-08-10T13:00:00Z",
         "thumbnailSet": true
@@ -466,7 +466,7 @@
       "file": "22-bee.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "LymfnoWAFUs",
         "scheduledPublishAt": "2026-08-11T13:00:00Z",
         "thumbnailSet": true
@@ -486,7 +486,7 @@
       "file": "23-snail.mp4",
       "youtube": {
         "uploaded": true,
-        "visibility": "scheduled",
+        "visibility": "public",
         "videoId": "KgFSmhYfrlc",
         "scheduledPublishAt": "2026-08-13T13:00:00Z",
         "plannedPublishAt": "2026-08-13T13:00:00Z",
