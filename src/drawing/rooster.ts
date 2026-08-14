@@ -1,0 +1,125 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-14T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "ellipse",
+    vector: { cx: 450, cy: 620, rx: 200, ry: 160 },
+    bounds: { x: 250, y: 460, width: 400, height: 320 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Start with one oval body.", enabled: true,
+  },
+  {
+    id: "02-tail-low", name: "Draw the first tail feather", order: 2, geometry: "path",
+    vector: { d: "M632 660 C830 620 870 460 760 360" },
+    bounds: { x: 632, y: 360, width: 238, height: 300 },
+    startMs: 5700, durationMs: 2200, stepId: "step-2",
+    voiceDescription: "Sweep one long tail feather up.", enabled: true,
+  },
+  {
+    id: "03-tail-high", name: "Draw the second tail feather", order: 3, geometry: "path",
+    vector: { d: "M628 600 C800 540 830 380 700 300" },
+    bounds: { x: 628, y: 300, width: 202, height: 300 },
+    startMs: 8200, durationMs: 2000, stepId: "step-2",
+    voiceDescription: "Add a second feather beside it.", enabled: true,
+  },
+  {
+    id: "04-comb", name: "Draw the comb", order: 4, geometry: "polygon",
+    vector: { points: "312,296 336,196 368,286 400,186 432,284 460,296" },
+    bounds: { x: 312, y: 186, width: 148, height: 110 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 10500, durationMs: 2200, stepId: "step-3",
+    voiceDescription: "Draw a zigzag comb on top.", enabled: true,
+  },
+  {
+    id: "05-beak", name: "Draw the beak", order: 5, geometry: "polygon",
+    vector: { points: "268,368 148,408 268,452" },
+    bounds: { x: 148, y: 368, width: 120, height: 84 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 13000, durationMs: 1800, stepId: "step-4",
+    voiceDescription: "Add one pointed beak.", enabled: true,
+  },
+  {
+    id: "06-tail-top", name: "Draw the third tail feather", order: 6, geometry: "path",
+    vector: { d: "M615 545 C760 480 780 340 660 265" },
+    bounds: { x: 615, y: 265, width: 165, height: 280 },
+    startMs: 15100, durationMs: 1700, stepId: "step-2",
+    voiceDescription: "Add the last feather on top.", enabled: true,
+  },
+  {
+    id: "07-head", name: "Draw the head", order: 7, geometry: "circle",
+    vector: { cx: 385, cy: 385, r: 122 },
+    bounds: { x: 263, y: 263, width: 244, height: 244 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 17100, durationMs: 2400, stepId: "step-5",
+    voiceDescription: "Draw one round head over them.", enabled: true,
+  },
+  {
+    id: "08-eye", name: "Draw the eye", order: 8, geometry: "circle",
+    vector: { cx: 350, cy: 355, r: 22 },
+    bounds: { x: 328, y: 333, width: 44, height: 44 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 19800, durationMs: 1400, stepId: "step-6",
+    voiceDescription: "Give it one round eye.", enabled: true,
+  },
+  {
+    id: "09-left-leg", name: "Draw the left leg", order: 9, geometry: "path",
+    vector: { d: "M400 775 L375 855" },
+    bounds: { x: 375, y: 775, width: 25, height: 80 },
+    startMs: 21400, durationMs: 1300, stepId: "step-7",
+    voiceDescription: "Draw one thin leg.", enabled: true,
+  },
+  {
+    id: "10-right-leg", name: "Draw the right leg", order: 10, geometry: "path",
+    vector: { d: "M500 775 L525 855" },
+    bounds: { x: 500, y: 775, width: 25, height: 80 },
+    startMs: 22900, durationMs: 1300, stepId: "step-7",
+    voiceDescription: "Finish with the second leg.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one oval body." },
+  { id: "step-2", order: 2, title: "Tail", strokeIds: ["02-tail-low", "03-tail-high", "06-tail-top"], voiceText: "Sweep three long tail feathers up behind it." },
+  { id: "step-3", order: 3, title: "Comb", strokeIds: ["04-comb"], voiceText: "Draw a zigzag comb on top." },
+  { id: "step-4", order: 4, title: "Beak", strokeIds: ["05-beak"], voiceText: "Add one big pointed beak." },
+  { id: "step-5", order: 5, title: "Head", strokeIds: ["07-head"], voiceText: "Draw one round head over them." },
+  { id: "step-6", order: 6, title: "Eye", strokeIds: ["08-eye"], voiceText: "Give it one round eye." },
+  { id: "step-7", order: 7, title: "Legs", strokeIds: ["09-left-leg", "10-right-leg"], voiceText: "Finish with two thin legs." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a rooster in just ten strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5600, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5600, endMs: 10400, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 10400, endMs: 12900, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 12900, endMs: 17000, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 17000, endMs: 19700, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 19700, endMs: 21300, text: steps[5]!.voiceText },
+  { id: "step-7", startMs: 21300, endMs: 24300, text: steps[6]!.voiceText },
+  { id: "result", startMs: 24600, endMs: 26600, text: "It's a rooster!" },
+  { id: "cta", startMs: 26800, endMs: 28900, text: "Great job! Try it yourself." },
+];
+
+export function createRoosterDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "35-animal-rooster-001", slug: "easy-rooster",
+    name: { en: "Rooster", vi: "Con gà trống" }, category: "animals", subcategory: "birds",
+    difficulty: 1, strokeCount: 10, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["rooster", "animal", "bird", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a rooster in just ten strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

@@ -90,7 +90,7 @@ async function main(): Promise<void> {
       throw new Error(`Lệnh "${command}" đã có vị trí trong kiến trúc nhưng nằm ngoài MVP 0.1.`);
     default:
       console.log("SketchFactory CLI");
-      console.log("  create --subject <bear|bee|butterfly|cat|cow|crab|dog|duck|elephant|fish|fox|frog|giraffe|koala|lion|monkey|mouse|octopus|owl|panda|penguin|pig|rabbit|sheep|snail|squirrel|turtle|whale> [--force]");
+      console.log("  create --subject <ant|bat|bear|bee|butterfly|cat|caterpillar|camel|cow|crab|crocodile|deer|dog|duck|elephant|fish|flamingo|fox|frog|giraffe|hedgehog|horse|jellyfish|kangaroo|koala|lion|llama|monkey|mouse|octopus|owl|panda|penguin|pig|rabbit|rhino|rooster|sheep|snail|snake|spider|squirrel|starfish|stegosaurus|swan|toucan|trex|turtle|unicorn|whale|zebra> [--force]");
       console.log("  render:short --id <drawing-id> [--force]");
       console.log("  validate --id <drawing-id>");
       console.log("  list");

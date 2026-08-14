@@ -41,13 +41,36 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 26 | Octopus | [x] | Scheduled 19-08 20:00 | `gsxj9EtAXDA` | [ ] | [ ] | [ ] | Local | [Open](26-animal-octopus-001.md) |
 | 27 | Koala | [x] | Scheduled 21-08 20:00 | `qQDm6Yd4Zd8` | [ ] | [ ] | [ ] | Local | [Open](27-animal-koala-001.md) |
 | 28 | Squirrel | [x] | Scheduled 23-08 20:00 | `JwvdYcgdhSo` | [ ] | [ ] | [ ] | Local | [Open](28-animal-squirrel-001.md) |
+| 29 | Deer | [ ] | Chưa upload — dự kiến 25-08 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](29-animal-deer-001.md) |
+| 30 | Snake | [ ] | Chưa upload — dự kiến 27-08 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](30-animal-snake-001.md) |
+| 31 | Jellyfish | [ ] | Chưa upload — dự kiến 29-08 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](31-animal-jellyfish-001.md) |
+| 32 | Bat | [ ] | Chưa upload — dự kiến 31-08 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](32-animal-bat-001.md) |
+| 33 | Flamingo | [ ] | Chưa upload — dự kiến 02-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](33-animal-flamingo-001.md) |
+| 34 | Rhino | [ ] | Chưa upload — dự kiến 04-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](34-animal-rhino-001.md) |
+| 35 | Rooster | [ ] | Chưa upload — dự kiến 06-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](35-animal-rooster-001.md) |
+| 36 | Hedgehog | [ ] | Chưa upload — dự kiến 08-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](36-animal-hedgehog-001.md) |
+| 37 | Starfish | [ ] | Chưa upload — dự kiến 10-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](37-animal-starfish-001.md) |
+| 38 | Caterpillar | [ ] | Chưa upload — dự kiến 12-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](38-animal-caterpillar-001.md) |
+| 39 | Ant | [ ] | Chưa upload — dự kiến 14-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](39-animal-ant-001.md) |
+| 40 | Crocodile | [ ] | Chưa upload — dự kiến 16-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](40-animal-crocodile-001.md) |
+| 41 | Kangaroo | [ ] | Chưa upload — dự kiến 18-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](41-animal-kangaroo-001.md) |
+| 42 | Swan | [ ] | Chưa upload — dự kiến 20-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](42-animal-swan-001.md) |
+| 43 | Unicorn | [ ] | Chưa upload — dự kiến 22-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](43-animal-unicorn-001.md) |
+| 44 | Llama | [ ] | Chưa upload — dự kiến 24-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](44-animal-llama-001.md) |
+| 45 | Toucan | [ ] | Chưa upload — dự kiến 26-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](45-animal-toucan-001.md) |
+| 46 | Spider | [ ] | Chưa upload — dự kiến 28-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](46-animal-spider-001.md) |
+| 47 | Camel | [ ] | Chưa upload — dự kiến 30-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](47-animal-camel-001.md) |
+| 48 | Stegosaurus | [ ] | Chưa upload — dự kiến 02-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](48-animal-stegosaurus-001.md) |
+| 49 | T-Rex | [ ] | Chưa upload — dự kiến 04-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](49-animal-trex-001.md) |
+| 50 | Zebra | [ ] | Chưa upload — dự kiến 06-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](50-animal-zebra-001.md) |
+| 51 | Horse | [ ] | Chưa upload — dự kiến 08-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](51-animal-horse-001.md) |
 
 ## Current Totals
 
-- YouTube: 28/28 uploaded — 23 Public (01–23), 5 Private còn lịch tự công khai (24–28)
-- TikTok: 0/28 marked
-- Facebook: 0/28 marked
-- Instagram: 0/28 marked
+- YouTube: 28/51 uploaded — 23 Public (01–23), 5 Private còn lịch tự công khai (24–28), 23 video mới (29–51) mới render, **chưa upload**
+- TikTok: 0/51 marked
+- Facebook: 0/51 marked
+- Instagram: 0/51 marked
 
 Nhịp đăng đổi từ video 23: **hai ngày một video** lúc 20:00 giờ VN (quyết định 2026-08-11).
 Video 01–22 giữ nguyên lịch mỗi ngày một video đã đặt trước đó.
@@ -95,6 +118,13 @@ Từ đây nhịp là **hai ngày một video**, vẫn 20:00 (Asia/Ho_Chi_Minh).
 còn, vẫn xem được qua link trực tiếp. ID lưu tại
 `.secrets/youtube-archive-color-version.json`, MP4 và drawing JSON cũ nằm ngoài repo.
 
+## Đợt render 29–51 (2026-08-14)
+
+Sản xuất theo yêu cầu "vẽ hết nhóm chắc ăn" — trọn 23 con — giữ ở local, **không upload
+trong ngày**.
+Ngày dự kiến ở bảng trên chỉ là nhịp hai ngày một video nối tiếp sau Squirrel 28; chưa
+đặt `publishAt` nào trên YouTube.
+
 ## Việc còn treo
 
 - Playlist `Simple Drawing Tutorials` (`PLS5I18k91_u4`) hiện **trống**: 22 bản cũ đã bị
@@ -105,6 +135,6 @@ còn, vẫn xem được qua link trực tiếp. ID lưu tại
 - OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; hạn kế tiếp
   khoảng 2026-08-18. Chuyển app sang Published trong Google Cloud Console để khỏi lặp.
 
-Next new video number: **29**
+Next new video number: **52**
 
 Archive procedure: [Publishing operations](operations.md#google-drive-archive-rule)

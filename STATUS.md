@@ -16,6 +16,11 @@ và Squirrel 28** ở chế độ Private kèm lịch tự công khai 21-08 và 
 Đối chiếu API ngày 2026-08-14: **23 video đã Public** (01–23), 5 video còn lại (24–28)
 vẫn Private và sẽ tự công khai theo lịch 15, 17, 19, 21 và 23 tháng 8.
 
+Đêm 2026-08-14 sản xuất thêm **23 video mới (29–51)**, làm trọn nhóm con vật "chắc ăn":
+nai, rắn, sứa, dơi, hồng hạc, tê giác, gà trống, nhím, sao biển, sâu, kiến, cá sấu,
+chuột túi, thiên nga, kỳ lân, lạc đà không bướu, toucan, nhện, lạc đà, stegosaurus,
+T-rex, ngựa vằn, ngựa. Tất cả **giữ ở local, chưa upload**.
+
 ## Tổng quan
 
 | Hạng mục | Trạng thái | Bằng chứng |
@@ -27,13 +32,13 @@ vẫn Private và sẽ tự công khai theo lịch 15, 17, 19, 21 và 23 tháng 
 | Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
 | Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
-| Bộ video upload-ready | ✅ 28 video | `output/upload-ready/01-cat.mp4` đến `28-squirrel.mp4` |
+| Bộ video upload-ready | ✅ 51 video | `output/upload-ready/01-cat.mp4` đến `51-horse.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
 | Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
 | YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
 | Google Drive archive | 📝 Đã định nghĩa quy trình | `docs/publishing/operations.md` |
 
-## Danh mục 28 video
+## Danh mục 51 video
 
 | No. | Animal | Số nét | Video upload-ready | YouTube |
 |---:|---|---:|---|:---:|
@@ -65,6 +70,29 @@ vẫn Private và sẽ tự công khai theo lịch 15, 17, 19, 21 và 23 tháng 
 | 26 | Octopus | 10 | `26-octopus.mp4` | 🕗 Hẹn 19-08 20:00 — `gsxj9EtAXDA` |
 | 27 | Koala | 7 | `27-koala.mp4` | 🕗 Hẹn 21-08 20:00 — `qQDm6Yd4Zd8` |
 | 28 | Squirrel | 9 | `28-squirrel.mp4` | 🕗 Hẹn 23-08 20:00 — `JwvdYcgdhSo` |
+| 29 | Deer | 10 | `29-deer.mp4` | ⏳ Chưa upload — dự kiến 25-08 20:00 |
+| 30 | Snake | 7 | `30-snake.mp4` | ⏳ Chưa upload — dự kiến 27-08 20:00 |
+| 31 | Jellyfish | 10 | `31-jellyfish.mp4` | ⏳ Chưa upload — dự kiến 29-08 20:00 |
+| 32 | Bat | 8 | `32-bat.mp4` | ⏳ Chưa upload — dự kiến 31-08 20:00 |
+| 33 | Flamingo | 8 | `33-flamingo.mp4` | ⏳ Chưa upload — dự kiến 02-09 20:00 |
+| 34 | Rhino | 9 | `34-rhino.mp4` | ⏳ Chưa upload — dự kiến 04-09 20:00 |
+| 35 | Rooster | 10 | `35-rooster.mp4` | ⏳ Chưa upload — dự kiến 06-09 20:00 |
+| 36 | Hedgehog | 6 | `36-hedgehog.mp4` | ⏳ Chưa upload — dự kiến 08-09 20:00 |
+| 37 | Starfish | 9 | `37-starfish.mp4` | ⏳ Chưa upload — dự kiến 10-09 20:00 |
+| 38 | Caterpillar | 10 | `38-caterpillar.mp4` | ⏳ Chưa upload — dự kiến 12-09 20:00 |
+| 39 | Ant | 10 | `39-ant.mp4` | ⏳ Chưa upload — dự kiến 14-09 20:00 |
+| 40 | Crocodile | 9 | `40-crocodile.mp4` | ⏳ Chưa upload — dự kiến 16-09 20:00 |
+| 41 | Kangaroo | 9 | `41-kangaroo.mp4` | ⏳ Chưa upload — dự kiến 18-09 20:00 |
+| 42 | Swan | 8 | `42-swan.mp4` | ⏳ Chưa upload — dự kiến 20-09 20:00 |
+| 43 | Unicorn | 9 | `43-unicorn.mp4` | ⏳ Chưa upload — dự kiến 22-09 20:00 |
+| 44 | Llama | 10 | `44-llama.mp4` | ⏳ Chưa upload — dự kiến 24-09 20:00 |
+| 45 | Toucan | 8 | `45-toucan.mp4` | ⏳ Chưa upload — dự kiến 26-09 20:00 |
+| 46 | Spider | 8 | `46-spider.mp4` | ⏳ Chưa upload — dự kiến 28-09 20:00 |
+| 47 | Camel | 10 | `47-camel.mp4` | ⏳ Chưa upload — dự kiến 30-09 20:00 |
+| 48 | Stegosaurus | 8 | `48-stegosaurus.mp4` | ⏳ Chưa upload — dự kiến 02-10 20:00 |
+| 49 | T-Rex | 8 | `49-trex.mp4` | ⏳ Chưa upload — dự kiến 04-10 20:00 |
+| 50 | Zebra | 10 | `50-zebra.mp4` | ⏳ Chưa upload — dự kiến 06-10 20:00 |
+| 51 | Horse | 10 | `51-horse.mp4` | ⏳ Chưa upload — dự kiến 08-10 20:00 |
 
 Toàn bộ 28 video bản v2 đã nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
@@ -90,13 +118,13 @@ bảng tổng và từng upload sheet.
 
 ## Quy ước file và publishing
 
-- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`28`.
+- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`51`.
 - `output/shorts/` chứa bản render mới nhất; `upload-ready/` là bản đã chép để upload.
 - File sinh trong `output/` bị ignore khỏi Git và có thể tái tạo từ JSON nguồn.
 - Upload sheet nằm tại `docs/publishing/`; mỗi file ghi số video và trạng thái riêng
   cho YouTube, TikTok, Facebook và Instagram.
 - Bảng tổng: `docs/publishing/upload-tracker.md`.
-- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `29`.
+- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `52`.
 - Nhịp đăng hiện tại: hai ngày một video lúc 20:00 giờ VN, ghi ở
   `data/publishing-state.json` → `youtube.publishCadence`.
 - Upload sheet cho video mới sinh bằng `npx tsx scripts/publishing-sheet.ts --id <drawing-id>`
@@ -118,7 +146,7 @@ bảng tổng và từng upload sheet.
 ## Kết quả kiểm chứng hiện tại
 
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
-- `npm test`: 5 test files, 89/89 tests đạt.
+- `npm test`: 5 test files, 135/135 tests đạt.
 - Video 23–28: pipeline chạy đủ stage, QC đạt 0 issue, đều 1080×1920, 29 giây, h264 + aac.
 - Squirrel 28 đã review trên PNG nền trắng: đuôi phải sửa năm vòng (lưỡi liềm rời → chữ D
   → lá → cụp quá thấp) mới ra bó đuôi xù ôm lưng; tai tam giác bị đầu che thành tai mèo nên
@@ -179,6 +207,6 @@ bảng tổng và từng upload sheet.
 1. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
 2. Theo dõi lịch tự công khai 24–28 (15, 17, 19, 21, 23 tháng 8) và cập nhật tracker sau mỗi mốc.
 3. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
-4. Tạo video mới với số bắt đầu từ 29 và chỉ upload khi người dùng yêu cầu.
+4. Nhóm con vật chắc ăn đã hết; muốn làm tiếp thì sang nhóm phải cẩn thận hoặc đổi chủ đề; chỉ upload khi người dùng yêu cầu.
 5. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
 6. Archive MP4 lên Google Drive theo checksum trước khi xóa local.

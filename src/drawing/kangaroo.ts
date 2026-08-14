@@ -1,0 +1,118 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-14T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-tail", name: "Draw the tail", order: 1, geometry: "path",
+    vector: { d: "M470 640 C700 660 830 720 860 800" },
+    bounds: { x: 470, y: 640, width: 390, height: 160 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Sweep one thick tail out behind.", enabled: true,
+  },
+  {
+    id: "02-tail-under", name: "Close the tail", order: 2, geometry: "path",
+    vector: { d: "M470 720 C700 740 800 800 860 800" },
+    bounds: { x: 470, y: 720, width: 390, height: 80 },
+    startMs: 5700, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Bring a second curve back to close it.", enabled: true,
+  },
+  {
+    id: "03-body", name: "Draw the body", order: 3, geometry: "ellipse",
+    vector: { cx: 420, cy: 570, rx: 150, ry: 195 },
+    bounds: { x: 270, y: 375, width: 300, height: 390 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 8200, durationMs: 2600, stepId: "step-2",
+    voiceDescription: "Draw one tall oval body.", enabled: true,
+  },
+  {
+    id: "04-foot", name: "Draw the big foot", order: 4, geometry: "polygon",
+    vector: { points: "345,755 250,825 470,825 450,750" },
+    bounds: { x: 250, y: 750, width: 220, height: 75 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 11100, durationMs: 2200, stepId: "step-3",
+    voiceDescription: "Add one big flat foot at the bottom.", enabled: true,
+  },
+  {
+    id: "05-left-ear", name: "Draw the left ear", order: 5, geometry: "ellipse",
+    vector: { cx: 355, cy: 220, rx: 34, ry: 74 },
+    bounds: { x: 321, y: 146, width: 68, height: 148 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 13600, durationMs: 1700, stepId: "step-4",
+    voiceDescription: "Draw one tall ear.", enabled: true,
+  },
+  {
+    id: "06-right-ear", name: "Draw the right ear", order: 6, geometry: "ellipse",
+    vector: { cx: 460, cy: 210, rx: 34, ry: 74 },
+    bounds: { x: 426, y: 136, width: 68, height: 148 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 15500, durationMs: 1700, stepId: "step-4",
+    voiceDescription: "Draw the second tall ear.", enabled: true,
+  },
+  {
+    id: "07-head", name: "Draw the head", order: 7, geometry: "ellipse",
+    vector: { cx: 405, cy: 320, rx: 115, ry: 100 },
+    bounds: { x: 290, y: 220, width: 230, height: 200 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 17400, durationMs: 2400, stepId: "step-5",
+    voiceDescription: "Add one oval head under the ears.", enabled: true,
+  },
+  {
+    id: "08-eye", name: "Draw the eye", order: 8, geometry: "circle",
+    vector: { cx: 370, cy: 300, r: 22 },
+    bounds: { x: 348, y: 278, width: 44, height: 44 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 20100, durationMs: 1400, stepId: "step-6",
+    voiceDescription: "Give it one round eye.", enabled: true,
+  },
+  {
+    id: "09-nose", name: "Add the nose", order: 9, geometry: "circle",
+    vector: { cx: 300, cy: 330, r: 20 },
+    bounds: { x: 280, y: 310, width: 40, height: 40 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 21700, durationMs: 1400, stepId: "step-6",
+    voiceDescription: "Finish with one little nose.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Tail", strokeIds: ["01-tail", "02-tail-under"], voiceText: "Start with two curves for the thick tail." },
+  { id: "step-2", order: 2, title: "Body", strokeIds: ["03-body"], voiceText: "Draw one tall oval body." },
+  { id: "step-3", order: 3, title: "Foot", strokeIds: ["04-foot"], voiceText: "Add one big flat foot at the bottom." },
+  { id: "step-4", order: 4, title: "Ears", strokeIds: ["05-left-ear", "06-right-ear"], voiceText: "Draw two tall ears on top." },
+  { id: "step-5", order: 5, title: "Head", strokeIds: ["07-head"], voiceText: "Add one oval head under the ears." },
+  { id: "step-6", order: 6, title: "Face", strokeIds: ["08-eye", "09-nose"], voiceText: "Finish with one round eye and a little nose." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a kangaroo in just nine strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 8100, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 8100, endMs: 11000, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 11000, endMs: 13500, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 13500, endMs: 17300, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 17300, endMs: 20000, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 20000, endMs: 23200, text: steps[5]!.voiceText },
+  { id: "result", startMs: 23500, endMs: 25700, text: "It's a kangaroo!" },
+  { id: "cta", startMs: 26000, endMs: 28900, text: "Great job! Try it yourself." },
+];
+
+export function createKangarooDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "41-animal-kangaroo-001", slug: "easy-kangaroo",
+    name: { en: "Kangaroo", vi: "Con chuột túi" }, category: "animals", subcategory: "wildlife",
+    difficulty: 1, strokeCount: 9, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["kangaroo", "animal", "wildlife", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a kangaroo in just nine strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

@@ -1,0 +1,108 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-14T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "ellipse",
+    vector: { cx: 430, cy: 560, rx: 190, ry: 130 },
+    bounds: { x: 240, y: 430, width: 380, height: 260 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2600, stepId: "step-1",
+    voiceDescription: "Start with one oval body.", enabled: true,
+  },
+  {
+    id: "02-neck-front", name: "Draw the front of the neck", order: 2, geometry: "path",
+    vector: { d: "M545 480 C645 375 525 250 615 200" },
+    bounds: { x: 525, y: 200, width: 120, height: 280 },
+    startMs: 5900, durationMs: 2600, stepId: "step-2",
+    voiceDescription: "Curve one long neck up from the body.", enabled: true,
+  },
+  {
+    id: "03-neck-back", name: "Draw the back of the neck", order: 3, geometry: "path",
+    vector: { d: "M467 480 C567 375 447 250 537 200" },
+    bounds: { x: 447, y: 200, width: 120, height: 280 },
+    startMs: 8800, durationMs: 2400, stepId: "step-2",
+    voiceDescription: "Draw a second curve beside it.", enabled: true,
+  },
+  {
+    id: "04-head", name: "Draw the head", order: 4, geometry: "circle",
+    vector: { cx: 576, cy: 175, r: 74 },
+    bounds: { x: 502, y: 101, width: 148, height: 148 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 11500, durationMs: 2200, stepId: "step-3",
+    voiceDescription: "Add one round head on top.", enabled: true,
+  },
+  {
+    id: "05-beak", name: "Draw the beak", order: 5, geometry: "polygon",
+    vector: { points: "638,150 790,192 632,232" },
+    bounds: { x: 632, y: 150, width: 158, height: 82 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 14000, durationMs: 2000, stepId: "step-4",
+    voiceDescription: "Add one big pointed beak.", enabled: true,
+  },
+  {
+    id: "06-eye", name: "Draw the eye", order: 6, geometry: "circle",
+    vector: { cx: 590, cy: 155, r: 20 },
+    bounds: { x: 570, y: 135, width: 40, height: 40 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 16300, durationMs: 1400, stepId: "step-5",
+    voiceDescription: "Give it one round eye.", enabled: true,
+  },
+  {
+    id: "07-leg", name: "Draw the leg", order: 7, geometry: "path",
+    vector: { d: "M420 680 L430 790 L360 830" },
+    bounds: { x: 360, y: 680, width: 70, height: 150 },
+    startMs: 18000, durationMs: 2200, stepId: "step-6",
+    voiceDescription: "Draw one thin leg with a bend.", enabled: true,
+  },
+  {
+    id: "08-tucked-leg", name: "Add the tucked leg", order: 8, geometry: "path",
+    vector: { d: "M505 685 L555 740 L500 775" },
+    bounds: { x: 500, y: 685, width: 55, height: 90 },
+    startMs: 20500, durationMs: 1500, stepId: "step-6",
+    voiceDescription: "Finish with the second leg tucked up.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one oval body." },
+  { id: "step-2", order: 2, title: "Neck", strokeIds: ["02-neck-front", "03-neck-back"], voiceText: "Draw two long curves for the tall neck." },
+  { id: "step-3", order: 3, title: "Head", strokeIds: ["04-head"], voiceText: "Add one round head on top." },
+  { id: "step-4", order: 4, title: "Beak", strokeIds: ["05-beak"], voiceText: "Add one big pointed beak." },
+  { id: "step-5", order: 5, title: "Eye", strokeIds: ["06-eye"], voiceText: "Give it one round eye." },
+  { id: "step-6", order: 6, title: "Legs", strokeIds: ["07-leg", "08-tucked-leg"], voiceText: "Finish with one long leg and one tucked up." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a flamingo in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5800, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5800, endMs: 11400, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 11400, endMs: 13900, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 13900, endMs: 16200, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 16200, endMs: 17900, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 17900, endMs: 22000, text: steps[5]!.voiceText },
+  { id: "result", startMs: 22300, endMs: 24500, text: "It's a flamingo!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createFlamingoDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "33-animal-flamingo-001", slug: "easy-flamingo",
+    name: { en: "Flamingo", vi: "Chim hồng hạc" }, category: "animals", subcategory: "birds",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["flamingo", "animal", "bird", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a flamingo in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

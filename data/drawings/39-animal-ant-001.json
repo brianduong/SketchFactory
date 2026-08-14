@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "39-animal-ant-001",
+  "slug": "easy-ant",
+  "name": {
+    "en": "Ant",
+    "vi": "Con kiến"
+  },
+  "category": "animals",
+  "subcategory": "insects",
+  "difficulty": 1,
+  "strokeCount": 10,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "ant",
+    "animal",
+    "insect",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-abdomen",
+        "02-thorax",
+        "03-head"
+      ],
+      "voiceText": "Start with three ovals in a row for the body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Antennae",
+      "strokeIds": [
+        "04-left-antenna",
+        "05-right-antenna"
+      ],
+      "voiceText": "Draw two thin antennae on the head."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Eye",
+      "strokeIds": [
+        "06-eye"
+      ],
+      "voiceText": "Give it one round eye."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Legs",
+      "strokeIds": [
+        "07-front-leg",
+        "08-middle-leg",
+        "09-back-leg",
+        "10-rear-leg"
+      ],
+      "voiceText": "Finish with four bent legs under the body."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-abdomen",
+      "name": "Draw the back part",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 690,
+        "cy": 480,
+        "rx": 150,
+        "ry": 120
+      },
+      "bounds": {
+        "x": 540,
+        "y": 360,
+        "width": 300,
+        "height": 240
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2400,
+      "stepId": "step-1",
+      "voiceDescription": "Start with one big oval at the back.",
+      "enabled": true
+    },
+    {
+      "id": "02-thorax",
+      "name": "Draw the middle part",
+      "order": 2,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 490,
+        "cy": 480,
+        "rx": 88,
+        "ry": 72
+      },
+      "bounds": {
+        "x": 402,
+        "y": 408,
+        "width": 176,
+        "height": 144
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 5700,
+      "durationMs": 2000,
+      "stepId": "step-1",
+      "voiceDescription": "Add one smaller oval in the middle.",
+      "enabled": true
+    },
+    {
+      "id": "03-head",
+      "name": "Draw the head",
+      "order": 3,
+      "geometry": "circle",
+      "vector": {
+        "cx": 320,
+        "cy": 465,
+        "r": 110
+      },
+      "bounds": {
+        "x": 210,
+        "y": 355,
+        "width": 220,
+        "height": 220
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 8000,
+      "durationMs": 2200,
+      "stepId": "step-1",
+      "voiceDescription": "Draw one round head at the front.",
+      "enabled": true
+    },
+    {
+      "id": "04-left-antenna",
+      "name": "Add the first antenna",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M272 375 L225 280"
+      },
+      "bounds": {
+        "x": 225,
+        "y": 280,
+        "width": 47,
+        "height": 95
+      },
+      "startMs": 10500,
+      "durationMs": 1600,
+      "stepId": "step-2",
+      "voiceDescription": "Draw one thin antenna.",
+      "enabled": true
+    },
+    {
+      "id": "05-right-antenna",
+      "name": "Add the second antenna",
+      "order": 5,
+      "geometry": "path",
+      "vector": {
+        "d": "M355 358 L385 262"
+      },
+      "bounds": {
+        "x": 355,
+        "y": 262,
+        "width": 30,
+        "height": 96
+      },
+      "startMs": 12300,
+      "durationMs": 1600,
+      "stepId": "step-2",
+      "voiceDescription": "Draw the second antenna.",
+      "enabled": true
+    },
+    {
+      "id": "06-eye",
+      "name": "Draw the eye",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 278,
+        "cy": 440,
+        "r": 24
+      },
+      "bounds": {
+        "x": 254,
+        "y": 416,
+        "width": 48,
+        "height": 48
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 14100,
+      "durationMs": 1400,
+      "stepId": "step-3",
+      "voiceDescription": "Give it one round eye.",
+      "enabled": true
+    },
+    {
+      "id": "07-front-leg",
+      "name": "Draw the front leg",
+      "order": 7,
+      "geometry": "path",
+      "vector": {
+        "d": "M440 540 L390 650 L320 690"
+      },
+      "bounds": {
+        "x": 320,
+        "y": 540,
+        "width": 120,
+        "height": 150
+      },
+      "startMs": 15800,
+      "durationMs": 1700,
+      "stepId": "step-4",
+      "voiceDescription": "Draw one bent leg.",
+      "enabled": true
+    },
+    {
+      "id": "08-middle-leg",
+      "name": "Draw the middle leg",
+      "order": 8,
+      "geometry": "path",
+      "vector": {
+        "d": "M490 552 L480 670 L410 730"
+      },
+      "bounds": {
+        "x": 410,
+        "y": 552,
+        "width": 80,
+        "height": 178
+      },
+      "startMs": 17700,
+      "durationMs": 1700,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the second leg.",
+      "enabled": true
+    },
+    {
+      "id": "09-back-leg",
+      "name": "Draw the back leg",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M540 545 L570 665 L510 725"
+      },
+      "bounds": {
+        "x": 510,
+        "y": 545,
+        "width": 60,
+        "height": 180
+      },
+      "startMs": 19600,
+      "durationMs": 1700,
+      "stepId": "step-4",
+      "voiceDescription": "Draw the third leg.",
+      "enabled": true
+    },
+    {
+      "id": "10-rear-leg",
+      "name": "Draw the last leg",
+      "order": 10,
+      "geometry": "path",
+      "vector": {
+        "d": "M600 570 L660 675 L620 745"
+      },
+      "bounds": {
+        "x": 600,
+        "y": 570,
+        "width": 60,
+        "height": 175
+      },
+      "startMs": 21500,
+      "durationMs": 1700,
+      "stepId": "step-4",
+      "voiceDescription": "Finish with the last leg.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw an ant in just ten strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 10300,
+        "text": "Start with three ovals in a row for the body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 10300,
+        "endMs": 14000,
+        "text": "Draw two thin antennae on the head."
+      },
+      {
+        "id": "step-3",
+        "startMs": 14000,
+        "endMs": 15700,
+        "text": "Give it one round eye."
+      },
+      {
+        "id": "step-4",
+        "startMs": 15700,
+        "endMs": 23300,
+        "text": "Finish with four bent legs under the body."
+      },
+      {
+        "id": "result",
+        "startMs": 23600,
+        "endMs": 25800,
+        "text": "It's an ant!"
+      },
+      {
+        "id": "cta",
+        "startMs": 26000,
+        "endMs": 28900,
+        "text": "Great job! Try it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw an ant in just ten strokes?"
+  },
+  "createdAt": "2026-08-14T00:00:00.000Z",
+  "updatedAt": "2026-08-14T16:04:16.866Z"
+}

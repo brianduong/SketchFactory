@@ -1,0 +1,103 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-14T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-top-legs", name: "Draw the top pair of legs", order: 1, geometry: "path",
+    vector: { d: "M180 430 C320 260 680 260 820 430" },
+    bounds: { x: 180, y: 260, width: 640, height: 170 },
+    startMs: 3000, durationMs: 2400, stepId: "step-1",
+    voiceDescription: "Draw one long curve across for two legs.", enabled: true,
+  },
+  {
+    id: "02-upper-legs", name: "Draw the second pair", order: 2, geometry: "path",
+    vector: { d: "M140 540 C300 400 700 400 860 540" },
+    bounds: { x: 140, y: 400, width: 720, height: 140 },
+    startMs: 5700, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Draw a second curve below it.", enabled: true,
+  },
+  {
+    id: "03-lower-legs", name: "Draw the third pair", order: 3, geometry: "path",
+    vector: { d: "M160 660 C320 540 680 540 840 660" },
+    bounds: { x: 160, y: 540, width: 680, height: 120 },
+    startMs: 8200, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Draw the third curve.", enabled: true,
+  },
+  {
+    id: "04-bottom-legs", name: "Draw the last pair", order: 4, geometry: "path",
+    vector: { d: "M220 780 C360 670 640 670 780 780" },
+    bounds: { x: 220, y: 670, width: 560, height: 110 },
+    startMs: 10700, durationMs: 2200, stepId: "step-1",
+    voiceDescription: "Draw the last curve. That makes eight legs.", enabled: true,
+  },
+  {
+    id: "05-body", name: "Draw the body", order: 5, geometry: "circle",
+    vector: { cx: 500, cy: 520, r: 178 },
+    bounds: { x: 322, y: 342, width: 356, height: 356 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 13200, durationMs: 2800, stepId: "step-2",
+    voiceDescription: "Draw one big round body over the middle.", enabled: true,
+  },
+  {
+    id: "06-left-eye", name: "Draw the left eye", order: 6, geometry: "circle",
+    vector: { cx: 448, cy: 475, r: 28 },
+    bounds: { x: 420, y: 447, width: 56, height: 56 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 16300, durationMs: 1500, stepId: "step-3",
+    voiceDescription: "Draw the first round eye.", enabled: true,
+  },
+  {
+    id: "07-right-eye", name: "Draw the right eye", order: 7, geometry: "circle",
+    vector: { cx: 552, cy: 475, r: 28 },
+    bounds: { x: 524, y: 447, width: 56, height: 56 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 18100, durationMs: 1500, stepId: "step-3",
+    voiceDescription: "Draw the second round eye.", enabled: true,
+  },
+  {
+    id: "08-smile", name: "Draw the smile", order: 8, geometry: "path",
+    vector: { d: "M438 570 Q500 625 562 570" },
+    bounds: { x: 438, y: 570, width: 124, height: 55 },
+    startMs: 19900, durationMs: 2200, stepId: "step-4",
+    voiceDescription: "Finish with one happy curve.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Legs", strokeIds: ["01-top-legs", "02-upper-legs", "03-lower-legs", "04-bottom-legs"], voiceText: "Draw four long curves across. Each one makes two legs." },
+  { id: "step-2", order: 2, title: "Body", strokeIds: ["05-body"], voiceText: "Draw one big round body over the middle." },
+  { id: "step-3", order: 3, title: "Eyes", strokeIds: ["06-left-eye", "07-right-eye"], voiceText: "Now add two round eyes." },
+  { id: "step-4", order: 4, title: "Smile", strokeIds: ["08-smile"], voiceText: "Finish with one happy curve." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a spider in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 13100, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 13100, endMs: 16200, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 16200, endMs: 19800, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 19800, endMs: 22200, text: steps[3]!.voiceText },
+  { id: "result", startMs: 22500, endMs: 24700, text: "It's a spider!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createSpiderDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "46-animal-spider-001", slug: "easy-spider",
+    name: { en: "Spider", vi: "Con nhện" }, category: "animals", subcategory: "insects",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["spider", "animal", "insect", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a spider in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

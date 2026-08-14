@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "id": "51-animal-horse-001",
+  "slug": "easy-horse",
+  "name": {
+    "en": "Horse",
+    "vi": "Con ngựa"
+  },
+  "category": "animals",
+  "subcategory": "farm",
+  "difficulty": 1,
+  "strokeCount": 10,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "horse",
+    "animal",
+    "farm",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Start with one long oval body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Neck",
+      "strokeIds": [
+        "02-neck"
+      ],
+      "voiceText": "Add one wide neck going up."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Ear",
+      "strokeIds": [
+        "03-ear"
+      ],
+      "voiceText": "Add one pointy ear on top."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Head",
+      "strokeIds": [
+        "04-head"
+      ],
+      "voiceText": "Draw one long oval head."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Eye",
+      "strokeIds": [
+        "05-eye"
+      ],
+      "voiceText": "Give it one round eye."
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Tail",
+      "strokeIds": [
+        "06-tail"
+      ],
+      "voiceText": "Sweep one curve down for the tail."
+    },
+    {
+      "id": "step-7",
+      "order": 7,
+      "title": "Legs",
+      "strokeIds": [
+        "07-front-leg",
+        "08-front-leg-two",
+        "09-back-leg",
+        "10-back-leg-two"
+      ],
+      "voiceText": "Finish with four straight legs."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 460,
+        "cy": 520,
+        "rx": 205,
+        "ry": 125
+      },
+      "bounds": {
+        "x": 255,
+        "y": 395,
+        "width": 410,
+        "height": 250
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2600,
+      "stepId": "step-1",
+      "voiceDescription": "Start with one long oval body.",
+      "enabled": true
+    },
+    {
+      "id": "02-neck",
+      "name": "Draw the neck",
+      "order": 2,
+      "geometry": "polygon",
+      "vector": {
+        "points": "600,455 690,275 775,305 675,480"
+      },
+      "bounds": {
+        "x": 600,
+        "y": 275,
+        "width": 175,
+        "height": 205
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 5900,
+      "durationMs": 2400,
+      "stepId": "step-2",
+      "voiceDescription": "Add one wide neck going up.",
+      "enabled": true
+    },
+    {
+      "id": "03-ear",
+      "name": "Draw the ear",
+      "order": 3,
+      "geometry": "polygon",
+      "vector": {
+        "points": "726,214 745,140 782,206"
+      },
+      "bounds": {
+        "x": 726,
+        "y": 140,
+        "width": 56,
+        "height": 74
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 22
+      },
+      "startMs": 8500,
+      "durationMs": 1800,
+      "stepId": "step-3",
+      "voiceDescription": "Add one pointy ear on top.",
+      "enabled": true
+    },
+    {
+      "id": "04-head",
+      "name": "Draw the head",
+      "order": 4,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 762,
+        "cy": 265,
+        "rx": 108,
+        "ry": 64
+      },
+      "bounds": {
+        "x": 654,
+        "y": 201,
+        "width": 216,
+        "height": 128
+      },
+      "style": {
+        "fill": "#FFFDF7",
+        "stroke": "#111111",
+        "strokeWidth": 24
+      },
+      "startMs": 10500,
+      "durationMs": 2400,
+      "stepId": "step-4",
+      "voiceDescription": "Draw one long oval head.",
+      "enabled": true
+    },
+    {
+      "id": "05-eye",
+      "name": "Draw the eye",
+      "order": 5,
+      "geometry": "circle",
+      "vector": {
+        "cx": 792,
+        "cy": 246,
+        "r": 20
+      },
+      "bounds": {
+        "x": 772,
+        "y": 226,
+        "width": 40,
+        "height": 40
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 13100,
+      "durationMs": 1400,
+      "stepId": "step-5",
+      "voiceDescription": "Give it one round eye.",
+      "enabled": true
+    },
+    {
+      "id": "06-tail",
+      "name": "Draw the tail",
+      "order": 6,
+      "geometry": "path",
+      "vector": {
+        "d": "M274 468 C200 520 190 620 232 692"
+      },
+      "bounds": {
+        "x": 190,
+        "y": 468,
+        "width": 84,
+        "height": 224
+      },
+      "startMs": 14700,
+      "durationMs": 2200,
+      "stepId": "step-6",
+      "voiceDescription": "Sweep one curve down for the tail.",
+      "enabled": true
+    },
+    {
+      "id": "07-front-leg",
+      "name": "Draw the first leg",
+      "order": 7,
+      "geometry": "path",
+      "vector": {
+        "d": "M370 630 L345 800"
+      },
+      "bounds": {
+        "x": 345,
+        "y": 630,
+        "width": 25,
+        "height": 170
+      },
+      "startMs": 17100,
+      "durationMs": 1500,
+      "stepId": "step-7",
+      "voiceDescription": "Draw one straight leg.",
+      "enabled": true
+    },
+    {
+      "id": "08-front-leg-two",
+      "name": "Draw the second leg",
+      "order": 8,
+      "geometry": "path",
+      "vector": {
+        "d": "M445 638 L420 800"
+      },
+      "bounds": {
+        "x": 420,
+        "y": 638,
+        "width": 25,
+        "height": 162
+      },
+      "startMs": 18800,
+      "durationMs": 1500,
+      "stepId": "step-7",
+      "voiceDescription": "Draw the second leg.",
+      "enabled": true
+    },
+    {
+      "id": "09-back-leg",
+      "name": "Draw the third leg",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M545 638 L570 800"
+      },
+      "bounds": {
+        "x": 545,
+        "y": 638,
+        "width": 25,
+        "height": 162
+      },
+      "startMs": 20500,
+      "durationMs": 1500,
+      "stepId": "step-7",
+      "voiceDescription": "Draw the third leg.",
+      "enabled": true
+    },
+    {
+      "id": "10-back-leg-two",
+      "name": "Draw the last leg",
+      "order": 10,
+      "geometry": "path",
+      "vector": {
+        "d": "M615 630 L645 800"
+      },
+      "bounds": {
+        "x": 615,
+        "y": 630,
+        "width": 30,
+        "height": 170
+      },
+      "startMs": 22200,
+      "durationMs": 1500,
+      "stepId": "step-7",
+      "voiceDescription": "Finish with the last leg.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a horse in just ten strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5800,
+        "text": "Start with one long oval body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5800,
+        "endMs": 8400,
+        "text": "Add one wide neck going up."
+      },
+      {
+        "id": "step-3",
+        "startMs": 8400,
+        "endMs": 10400,
+        "text": "Add one pointy ear on top."
+      },
+      {
+        "id": "step-4",
+        "startMs": 10400,
+        "endMs": 13000,
+        "text": "Draw one long oval head."
+      },
+      {
+        "id": "step-5",
+        "startMs": 13000,
+        "endMs": 14600,
+        "text": "Give it one round eye."
+      },
+      {
+        "id": "step-6",
+        "startMs": 14600,
+        "endMs": 17000,
+        "text": "Sweep one curve down for the tail."
+      },
+      {
+        "id": "step-7",
+        "startMs": 17000,
+        "endMs": 23800,
+        "text": "Finish with four straight legs."
+      },
+      {
+        "id": "result",
+        "startMs": 24100,
+        "endMs": 26100,
+        "text": "It's a horse!"
+      },
+      {
+        "id": "cta",
+        "startMs": 26400,
+        "endMs": 28900,
+        "text": "Great job! Try it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a horse in just ten strokes?"
+  },
+  "createdAt": "2026-08-14T00:00:00.000Z",
+  "updatedAt": "2026-08-14T16:51:10.655Z"
+}

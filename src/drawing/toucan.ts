@@ -1,0 +1,111 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-14T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "ellipse",
+    vector: { cx: 500, cy: 600, rx: 175, ry: 200 },
+    bounds: { x: 325, y: 400, width: 350, height: 400 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 3000, durationMs: 2600, stepId: "step-1",
+    voiceDescription: "Start with one tall oval body.", enabled: true,
+  },
+  {
+    id: "02-tail", name: "Draw the tail", order: 2, geometry: "polygon",
+    vector: { points: "615,680 775,805 585,795" },
+    bounds: { x: 585, y: 680, width: 190, height: 125 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 22 },
+    startMs: 5900, durationMs: 2200, stepId: "step-2",
+    voiceDescription: "Add one pointed tail behind.", enabled: true,
+  },
+  {
+    id: "03-beak", name: "Draw the big beak", order: 3, geometry: "polygon",
+    vector: { points: "405,268 105,372 405,452" },
+    bounds: { x: 105, y: 268, width: 300, height: 184 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 8400, durationMs: 2800, stepId: "step-3",
+    voiceDescription: "Draw one huge beak pointing left.", enabled: true,
+  },
+  {
+    id: "04-head", name: "Draw the head", order: 4, geometry: "circle",
+    vector: { cx: 460, cy: 355, r: 135 },
+    bounds: { x: 325, y: 220, width: 270, height: 270 },
+    style: { fill: "#FFFDF7", stroke: "#111111", strokeWidth: 24 },
+    startMs: 11500, durationMs: 2600, stepId: "step-4",
+    voiceDescription: "Add one round head behind the beak.", enabled: true,
+  },
+  {
+    id: "05-eye", name: "Draw the eye", order: 5, geometry: "circle",
+    vector: { cx: 440, cy: 320, r: 30 },
+    bounds: { x: 410, y: 290, width: 60, height: 60 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 14400, durationMs: 1600, stepId: "step-5",
+    voiceDescription: "Give it one big round eye.", enabled: true,
+  },
+  {
+    id: "06-wing", name: "Draw the wing", order: 6, geometry: "path",
+    vector: { d: "M430 540 C540 505 620 590 585 690" },
+    bounds: { x: 430, y: 505, width: 190, height: 185 },
+    startMs: 16300, durationMs: 2400, stepId: "step-6",
+    voiceDescription: "Draw one curve inside for the wing.", enabled: true,
+  },
+  {
+    id: "07-left-foot", name: "Draw the left foot", order: 7, geometry: "path",
+    vector: { d: "M450 795 L425 845" },
+    bounds: { x: 425, y: 795, width: 25, height: 50 },
+    startMs: 19000, durationMs: 1500, stepId: "step-7",
+    voiceDescription: "Add one little foot.", enabled: true,
+  },
+  {
+    id: "08-right-foot", name: "Draw the right foot", order: 8, geometry: "path",
+    vector: { d: "M545 795 L570 845" },
+    bounds: { x: 545, y: 795, width: 25, height: 50 },
+    startMs: 20800, durationMs: 1500, stepId: "step-7",
+    voiceDescription: "Finish with the second little foot.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body"], voiceText: "Start with one tall oval body." },
+  { id: "step-2", order: 2, title: "Tail", strokeIds: ["02-tail"], voiceText: "Add one pointed tail behind." },
+  { id: "step-3", order: 3, title: "Beak", strokeIds: ["03-beak"], voiceText: "Draw one huge beak pointing left." },
+  { id: "step-4", order: 4, title: "Head", strokeIds: ["04-head"], voiceText: "Add one round head behind the beak." },
+  { id: "step-5", order: 5, title: "Eye", strokeIds: ["05-eye"], voiceText: "Give it one big round eye." },
+  { id: "step-6", order: 6, title: "Wing", strokeIds: ["06-wing"], voiceText: "Draw one curve inside for the wing." },
+  { id: "step-7", order: 7, title: "Feet", strokeIds: ["07-left-foot", "08-right-foot"], voiceText: "Finish with two little feet." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a toucan in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 5800, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 5800, endMs: 8300, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 8300, endMs: 11400, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 11400, endMs: 14300, text: steps[3]!.voiceText },
+  { id: "step-5", startMs: 14300, endMs: 16200, text: steps[4]!.voiceText },
+  { id: "step-6", startMs: 16200, endMs: 18900, text: steps[5]!.voiceText },
+  { id: "step-7", startMs: 18900, endMs: 22400, text: steps[6]!.voiceText },
+  { id: "result", startMs: 22700, endMs: 24900, text: "It's a toucan!" },
+  { id: "cta", startMs: 25200, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createToucanDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "45-animal-toucan-001", slug: "easy-toucan",
+    name: { en: "Toucan", vi: "Chim toucan" }, category: "animals", subcategory: "birds",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["toucan", "animal", "bird", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a toucan in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}
