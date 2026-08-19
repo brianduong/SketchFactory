@@ -1,0 +1,109 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-19T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-body", name: "Draw the body", order: 1, geometry: "line",
+    vector: { x1: 500, y1: 300, x2: 500, y2: 800 },
+    bounds: { x: 488, y: 300, width: 24, height: 500 },
+    startMs: 3000, durationMs: 2600, stepId: "step-1",
+    voiceDescription: "Draw one long line for the body.", enabled: true,
+  },
+  {
+    id: "02-head", name: "Draw the head", order: 2, geometry: "circle",
+    vector: { cx: 500, cy: 265, r: 55 },
+    bounds: { x: 445, y: 210, width: 110, height: 110 },
+    startMs: 5900, durationMs: 1900, stepId: "step-1",
+    voiceDescription: "Add a round head on top.", enabled: true,
+  },
+  {
+    id: "03-wing-top-left", name: "Top left wing", order: 3, geometry: "path",
+    vector: { d: "M487 395 C330 290 235 350 480 445" },
+    bounds: { x: 235, y: 290, width: 252, height: 155 },
+    startMs: 8100, durationMs: 1900, stepId: "step-2",
+    voiceDescription: "Draw one long wing on the left.", enabled: true,
+  },
+  {
+    id: "04-wing-top-right", name: "Top right wing", order: 4, geometry: "path",
+    vector: { d: "M513 395 C670 290 765 350 520 445" },
+    bounds: { x: 513, y: 290, width: 252, height: 155 },
+    startMs: 10300, durationMs: 1900, stepId: "step-2",
+    voiceDescription: "Draw the same wing on the right.", enabled: true,
+  },
+  {
+    id: "05-wing-low-left", name: "Lower left wing", order: 5, geometry: "path",
+    vector: { d: "M487 480 C370 470 300 555 483 535" },
+    bounds: { x: 300, y: 470, width: 187, height: 85 },
+    startMs: 12500, durationMs: 1900, stepId: "step-3",
+    voiceDescription: "Add a smaller wing underneath.", enabled: true,
+  },
+  {
+    id: "06-wing-low-right", name: "Lower right wing", order: 6, geometry: "path",
+    vector: { d: "M513 480 C630 470 700 555 517 535" },
+    bounds: { x: 513, y: 470, width: 187, height: 85 },
+    startMs: 14700, durationMs: 1900, stepId: "step-3",
+    voiceDescription: "And the last wing on the right.", enabled: true,
+  },
+  {
+    id: "07-eye-left", name: "Left eye", order: 7, geometry: "circle",
+    vector: { cx: 475, cy: 250, r: 18 },
+    bounds: { x: 457, y: 232, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 16900, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Add one round eye.", enabled: true,
+  },
+  {
+    id: "08-eye-right", name: "Right eye", order: 8, geometry: "circle",
+    vector: { cx: 525, cy: 250, r: 18 },
+    bounds: { x: 507, y: 232, width: 36, height: 36 },
+    style: { fill: "#111111", strokeWidth: 0 },
+    startMs: 18400, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Add the second eye.", enabled: true,
+  },
+  {
+    id: "09-tail-line", name: "Tail line", order: 9, geometry: "line",
+    vector: { x1: 470, y1: 700, x2: 530, y2: 700 },
+    bounds: { x: 470, y: 688, width: 60, height: 24 },
+    startMs: 19900, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Finish with one short line on the tail.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Body", strokeIds: ["01-body", "02-head"], voiceText: "Draw one long body line and a round head." },
+  { id: "step-2", order: 2, title: "Top wings", strokeIds: ["03-wing-top-left", "04-wing-top-right"], voiceText: "Draw two long wings near the top." },
+  { id: "step-3", order: 3, title: "Lower wings", strokeIds: ["05-wing-low-left", "06-wing-low-right"], voiceText: "Add two smaller wings underneath." },
+  { id: "step-4", order: 4, title: "Face", strokeIds: ["07-eye-left", "08-eye-right", "09-tail-line"], voiceText: "Finish with two eyes and one line on the tail." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a dragonfly in just nine strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 8000, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 8000, endMs: 12400, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 12400, endMs: 16800, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 16800, endMs: 21300, text: steps[3]!.voiceText },
+  { id: "result", startMs: 21500, endMs: 23700, text: "It's a dragonfly!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createDragonflyDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "55-animal-dragonfly-001", slug: "easy-dragonfly",
+    name: { en: "Dragonfly", vi: "Con chuồn chuồn" }, category: "animals", subcategory: "insects",
+    difficulty: 2, strokeCount: 9, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["dragonfly", "animal", "insect", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a dragonfly in just nine strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

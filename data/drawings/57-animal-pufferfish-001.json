@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "57-animal-pufferfish-001",
+  "slug": "easy-pufferfish",
+  "name": {
+    "en": "Pufferfish",
+    "vi": "Con cá nóc"
+  },
+  "category": "animals",
+  "subcategory": "sea",
+  "difficulty": 1,
+  "strokeCount": 6,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "pufferfish",
+    "animal",
+    "sea",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Draw one round body with spikes all around."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Eyes",
+      "strokeIds": [
+        "02-eye-left",
+        "03-eye-right"
+      ],
+      "voiceText": "Add two big round eyes."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Pupils",
+      "strokeIds": [
+        "04-pupil-left",
+        "05-pupil-right"
+      ],
+      "voiceText": "Put one dot inside each eye."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Mouth",
+      "strokeIds": [
+        "06-mouth"
+      ],
+      "voiceText": "Finish with one small round mouth."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the spiky body",
+      "order": 1,
+      "geometry": "polygon",
+      "vector": {
+        "points": "500,285 547,346 618,316 627,393 704,403 674,473 735,520 674,567 704,638 627,647 618,724 547,694 500,755 453,694 383,724 373,647 296,638 326,567 265,520 326,473 296,403 373,393 382,316 453,346"
+      },
+      "bounds": {
+        "x": 265,
+        "y": 285,
+        "width": 470,
+        "height": 470
+      },
+      "startMs": 3000,
+      "durationMs": 4000,
+      "stepId": "step-1",
+      "voiceDescription": "Draw one round body with spikes all around.",
+      "enabled": true
+    },
+    {
+      "id": "02-eye-left",
+      "name": "Left eye",
+      "order": 2,
+      "geometry": "circle",
+      "vector": {
+        "cx": 420,
+        "cy": 470,
+        "r": 42
+      },
+      "bounds": {
+        "x": 378,
+        "y": 428,
+        "width": 84,
+        "height": 84
+      },
+      "startMs": 7300,
+      "durationMs": 3000,
+      "stepId": "step-2",
+      "voiceDescription": "Add one big round eye.",
+      "enabled": true
+    },
+    {
+      "id": "03-eye-right",
+      "name": "Right eye",
+      "order": 3,
+      "geometry": "circle",
+      "vector": {
+        "cx": 580,
+        "cy": 470,
+        "r": 42
+      },
+      "bounds": {
+        "x": 538,
+        "y": 428,
+        "width": 84,
+        "height": 84
+      },
+      "startMs": 10600,
+      "durationMs": 3000,
+      "stepId": "step-2",
+      "voiceDescription": "Add the second big eye.",
+      "enabled": true
+    },
+    {
+      "id": "04-pupil-left",
+      "name": "Left pupil",
+      "order": 4,
+      "geometry": "circle",
+      "vector": {
+        "cx": 420,
+        "cy": 470,
+        "r": 17
+      },
+      "bounds": {
+        "x": 403,
+        "y": 453,
+        "width": 34,
+        "height": 34
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 13900,
+      "durationMs": 1900,
+      "stepId": "step-3",
+      "voiceDescription": "Put one dot inside.",
+      "enabled": true
+    },
+    {
+      "id": "05-pupil-right",
+      "name": "Right pupil",
+      "order": 5,
+      "geometry": "circle",
+      "vector": {
+        "cx": 580,
+        "cy": 470,
+        "r": 17
+      },
+      "bounds": {
+        "x": 563,
+        "y": 453,
+        "width": 34,
+        "height": 34
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 16100,
+      "durationMs": 1900,
+      "stepId": "step-3",
+      "voiceDescription": "And one dot in the other eye.",
+      "enabled": true
+    },
+    {
+      "id": "06-mouth",
+      "name": "Draw the mouth",
+      "order": 6,
+      "geometry": "path",
+      "vector": {
+        "d": "M450 600 C480 645 520 645 550 600"
+      },
+      "bounds": {
+        "x": 450,
+        "y": 600,
+        "width": 100,
+        "height": 45
+      },
+      "startMs": 18300,
+      "durationMs": 3000,
+      "stepId": "step-4",
+      "voiceDescription": "Finish with one small round mouth.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a pufferfish in just six strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 7200,
+        "text": "Draw one round body with spikes all around."
+      },
+      {
+        "id": "step-2",
+        "startMs": 7200,
+        "endMs": 13800,
+        "text": "Add two big round eyes."
+      },
+      {
+        "id": "step-3",
+        "startMs": 13800,
+        "endMs": 18200,
+        "text": "Put one dot inside each eye."
+      },
+      {
+        "id": "step-4",
+        "startMs": 18200,
+        "endMs": 21500,
+        "text": "Finish with one small round mouth."
+      },
+      {
+        "id": "result",
+        "startMs": 21700,
+        "endMs": 23900,
+        "text": "It's a pufferfish!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a pufferfish in just six strokes?"
+  },
+  "createdAt": "2026-08-19T00:00:00.000Z",
+  "updatedAt": "2026-08-19T16:04:01.617Z"
+}

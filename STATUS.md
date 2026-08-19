@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-15 00:20 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-19 23:45 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -25,6 +25,15 @@ sau. Kênh vẫn đúng 28 video.
 Toàn bộ code và artifact của đợt này đã **merge vào `main`** (fast-forward, commit
 `410834d`) và push lên `origin/main` ngày 2026-08-15.
 
+Ngày 2026-08-19 sản xuất thêm **10 video mới (52–61)**: cá ngựa, công, bọ rùa, chuồn
+chuồn, bọ cạp, cá nóc, thú mỏ vịt, lười, hải ly, hải mã. Chọn theo **dáng hình còn
+trống** chứ không theo số nét — tua fan, thân gai, mỏ dẹt, tư thế treo, đuôi bè, ngà.
+Cả 10 đều QC `passed`, 29 giây, 1080×1920.
+
+**Chưa upload được video nào.** Refresh token OAuth đã hết hạn (`invalid_grant`) đúng
+như dự đoán mốc 2026-08-18; phải nhờ người dùng chạy `npm run youtube:auth`. Hàng đợi
+chờ upload giờ là **33 video (29–61)**, quota ~4 video/ngày nên cần khoảng 9 ngày.
+
 ## Tổng quan
 
 | Hạng mục | Trạng thái | Bằng chứng |
@@ -36,13 +45,13 @@ Toàn bộ code và artifact của đợt này đã **merge vào `main`** (fast-
 | Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
 | Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
-| Bộ video upload-ready | ✅ 51 video | `output/upload-ready/01-cat.mp4` đến `51-horse.mp4` |
+| Bộ video upload-ready | ✅ 61 video | `output/upload-ready/01-cat.mp4` đến `61-walrus.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
 | Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
 | YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
 | Google Drive archive | 📝 Đã định nghĩa quy trình | `docs/publishing/operations.md` |
 
-## Danh mục 51 video
+## Danh mục 61 video
 
 | No. | Animal | Số nét | Video upload-ready | YouTube |
 |---:|---|---:|---|:---:|
@@ -97,6 +106,16 @@ Toàn bộ code và artifact của đợt này đã **merge vào `main`** (fast-
 | 49 | T-Rex | 8 | `49-trex.mp4` | ⏳ Chưa upload — dự kiến 04-10 20:00 |
 | 50 | Zebra | 10 | `50-zebra.mp4` | ⏳ Chưa upload — dự kiến 06-10 20:00 |
 | 51 | Horse | 10 | `51-horse.mp4` | ⏳ Chưa upload — dự kiến 08-10 20:00 |
+| 52 | Seahorse | 10 | `52-seahorse.mp4` | ⏳ Chưa upload — dự kiến 10-10 20:00 |
+| 53 | Peacock | 10 | `53-peacock.mp4` | ⏳ Chưa upload — dự kiến 12-10 20:00 |
+| 54 | Ladybug | 9 | `54-ladybug.mp4` | ⏳ Chưa upload — dự kiến 14-10 20:00 |
+| 55 | Dragonfly | 9 | `55-dragonfly.mp4` | ⏳ Chưa upload — dự kiến 16-10 20:00 |
+| 56 | Scorpion | 8 | `56-scorpion.mp4` | ⏳ Chưa upload — dự kiến 18-10 20:00 |
+| 57 | Pufferfish | 6 | `57-pufferfish.mp4` | ⏳ Chưa upload — dự kiến 20-10 20:00 |
+| 58 | Platypus | 8 | `58-platypus.mp4` | ⏳ Chưa upload — dự kiến 22-10 20:00 |
+| 59 | Sloth | 9 | `59-sloth.mp4` | ⏳ Chưa upload — dự kiến 24-10 20:00 |
+| 60 | Beaver | 10 | `60-beaver.mp4` | ⏳ Chưa upload — dự kiến 26-10 20:00 |
+| 61 | Walrus | 9 | `61-walrus.mp4` | ⏳ Chưa upload — dự kiến 28-10 20:00 |
 
 Toàn bộ 28 video bản v2 đã nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
@@ -214,12 +233,14 @@ bảng tổng và từng upload sheet.
 
 ## Việc tiếp theo
 
-1. **Upload 23 video 29–51 khi người dùng yêu cầu.** MP4 đã sẵn ở `output/upload-ready/`.
-   Quota chỉ đủ ~4 video/ngày (2.050 đơn vị/video, reset 14:00 giờ VN) nên cần khoảng
-   6 ngày. Ngày trong tracker mới là dự kiến, chưa đặt `publishAt` nào.
+1. **Cấp lại OAuth rồi upload 33 video 29–61.** Người dùng đã yêu cầu upload nối tiếp
+   từ số 29 (quyết định 2026-08-19). Đang kẹt ở `invalid_grant`, cần chạy
+   `npm run youtube:auth`. MP4 đã sẵn ở `output/upload-ready/`. Quota chỉ đủ ~4
+   video/ngày (2.050 đơn vị/video, reset 14:00 giờ VN) nên cần khoảng 9 ngày. Ngày
+   trong tracker mới là dự kiến, chưa đặt `publishAt` nào.
 2. Chạy `npm run youtube:playlist -- --apply` khi có quota để thêm 28 video vào playlist.
 3. Theo dõi lịch tự công khai 24–28 (15, 17, 19, 21, 23 tháng 8) và cập nhật tracker sau mỗi mốc.
 4. Cân nhắc thiết kế lại Whale 21: silhouette hiện tại vẫn gần với Fish 10.
-5. Nhóm con vật chắc ăn đã hết; muốn làm tiếp thì sang nhóm phải cẩn thận hoặc đổi chủ đề; chỉ upload khi người dùng yêu cầu.
+5. Sau 61 con, kho silhouette động vật đã rất chật. Đợt 52–61 phải sửa nhiều vòng preview (bọ cạp 5 vòng, hải ly 3 vòng). Đợt sau nên tính tới đổi chủ đề; chỉ upload khi người dùng yêu cầu.
 6. Cập nhật tracker sau mỗi lần đăng lên YouTube, TikTok, Facebook hoặc Instagram.
 7. Archive MP4 lên Google Drive theo checksum trước khi xóa local.

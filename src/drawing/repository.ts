@@ -53,9 +53,29 @@ import { createTurtleDrawing } from "./turtle.js";
 import { createUnicornDrawing } from "./unicorn.js";
 import { createWhaleDrawing } from "./whale.js";
 import { createZebraDrawing } from "./zebra.js";
+import { createSeahorseDrawing } from "./seahorse.js";
+import { createPeacockDrawing } from "./peacock.js";
+import { createLadybugDrawing } from "./ladybug.js";
+import { createDragonflyDrawing } from "./dragonfly.js";
+import { createScorpionDrawing } from "./scorpion.js";
+import { createPufferfishDrawing } from "./pufferfish.js";
+import { createPlatypusDrawing } from "./platypus.js";
+import { createSlothDrawing } from "./sloth.js";
+import { createBeaverDrawing } from "./beaver.js";
+import { createWalrusDrawing } from "./walrus.js";
 
 export async function planDrawing(subject: string): Promise<Drawing> {
   const factories: Record<string, () => Drawing> = {
+    seahorse: createSeahorseDrawing,
+    peacock: createPeacockDrawing,
+    ladybug: createLadybugDrawing,
+    dragonfly: createDragonflyDrawing,
+    scorpion: createScorpionDrawing,
+    pufferfish: createPufferfishDrawing,
+    platypus: createPlatypusDrawing,
+    sloth: createSlothDrawing,
+    beaver: createBeaverDrawing,
+    walrus: createWalrusDrawing,
     ant: createAntDrawing,
     bat: createBatDrawing,
     bear: createBearDrawing,

@@ -50,6 +50,16 @@ import { createTurtleDrawing } from "../src/drawing/turtle.js";
 import { createUnicornDrawing } from "../src/drawing/unicorn.js";
 import { createWhaleDrawing } from "../src/drawing/whale.js";
 import { createZebraDrawing } from "../src/drawing/zebra.js";
+import { createSeahorseDrawing } from "../src/drawing/seahorse.js";
+import { createPeacockDrawing } from "../src/drawing/peacock.js";
+import { createLadybugDrawing } from "../src/drawing/ladybug.js";
+import { createDragonflyDrawing } from "../src/drawing/dragonfly.js";
+import { createScorpionDrawing } from "../src/drawing/scorpion.js";
+import { createPufferfishDrawing } from "../src/drawing/pufferfish.js";
+import { createPlatypusDrawing } from "../src/drawing/platypus.js";
+import { createSlothDrawing } from "../src/drawing/sloth.js";
+import { createBeaverDrawing } from "../src/drawing/beaver.js";
+import { createWalrusDrawing } from "../src/drawing/walrus.js";
 import { validateDrawing } from "../src/quality-control/validator.js";
 import { strokeExtent } from "./helpers/stroke-extent.js";
 
@@ -105,6 +115,16 @@ const catalog = [
   ["unicorn", createUnicornDrawing],
   ["whale", createWhaleDrawing],
   ["zebra", createZebraDrawing],
+  ["seahorse", createSeahorseDrawing],
+  ["peacock", createPeacockDrawing],
+  ["ladybug", createLadybugDrawing],
+  ["dragonfly", createDragonflyDrawing],
+  ["scorpion", createScorpionDrawing],
+  ["pufferfish", createPufferfishDrawing],
+  ["platypus", createPlatypusDrawing],
+  ["sloth", createSlothDrawing],
+  ["beaver", createBeaverDrawing],
+  ["walrus", createWalrusDrawing],
 ] as const;
 
 describe("validateDrawing", () => {

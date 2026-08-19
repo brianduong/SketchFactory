@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "id": "59-animal-sloth-001",
+  "slug": "easy-sloth",
+  "name": {
+    "en": "Sloth",
+    "vi": "Con lười"
+  },
+  "category": "animals",
+  "subcategory": "wildlife",
+  "difficulty": 2,
+  "strokeCount": 9,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "sloth",
+    "animal",
+    "wildlife",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Branch",
+      "strokeIds": [
+        "01-branch"
+      ],
+      "voiceText": "Draw one long branch across the top."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Body",
+      "strokeIds": [
+        "02-body",
+        "03-head"
+      ],
+      "voiceText": "Draw a tall body and a round head."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Arms",
+      "strokeIds": [
+        "04-arm-left",
+        "05-arm-right"
+      ],
+      "voiceText": "Draw two long arms up to the branch."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Face",
+      "strokeIds": [
+        "06-eye-left",
+        "07-eye-right",
+        "08-nose",
+        "09-smile"
+      ],
+      "voiceText": "Finish with two eyes, a nose and one slow smile."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-branch",
+      "name": "Draw the branch",
+      "order": 1,
+      "geometry": "line",
+      "vector": {
+        "x1": 150,
+        "y1": 250,
+        "x2": 850,
+        "y2": 250
+      },
+      "bounds": {
+        "x": 150,
+        "y": 238,
+        "width": 700,
+        "height": 24
+      },
+      "startMs": 3000,
+      "durationMs": 2000,
+      "stepId": "step-1",
+      "voiceDescription": "Draw one long branch across the top.",
+      "enabled": true
+    },
+    {
+      "id": "02-body",
+      "name": "Draw the body",
+      "order": 2,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 500,
+        "cy": 560,
+        "rx": 130,
+        "ry": 175
+      },
+      "bounds": {
+        "x": 370,
+        "y": 385,
+        "width": 260,
+        "height": 350
+      },
+      "startMs": 5300,
+      "durationMs": 2700,
+      "stepId": "step-2",
+      "voiceDescription": "Draw a tall oval for the body.",
+      "enabled": true
+    },
+    {
+      "id": "03-head",
+      "name": "Draw the head",
+      "order": 3,
+      "geometry": "circle",
+      "vector": {
+        "cx": 500,
+        "cy": 380,
+        "r": 105
+      },
+      "bounds": {
+        "x": 395,
+        "y": 275,
+        "width": 210,
+        "height": 210
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 8300,
+      "durationMs": 2000,
+      "stepId": "step-2",
+      "voiceDescription": "Add a round head on top.",
+      "enabled": true
+    },
+    {
+      "id": "04-arm-left",
+      "name": "Left arm",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M400 400 C330 340 320 280 350 255"
+      },
+      "bounds": {
+        "x": 320,
+        "y": 255,
+        "width": 80,
+        "height": 145
+      },
+      "startMs": 10600,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Draw one arm up to the branch.",
+      "enabled": true
+    },
+    {
+      "id": "05-arm-right",
+      "name": "Right arm",
+      "order": 5,
+      "geometry": "path",
+      "vector": {
+        "d": "M600 400 C670 340 680 280 650 255"
+      },
+      "bounds": {
+        "x": 600,
+        "y": 255,
+        "width": 80,
+        "height": 145
+      },
+      "startMs": 12900,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Draw the second arm up to the branch.",
+      "enabled": true
+    },
+    {
+      "id": "06-eye-left",
+      "name": "Left eye",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 460,
+        "cy": 370,
+        "r": 18
+      },
+      "bounds": {
+        "x": 442,
+        "y": 352,
+        "width": 36,
+        "height": 36
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 15200,
+      "durationMs": 1300,
+      "stepId": "step-4",
+      "voiceDescription": "Add one sleepy eye.",
+      "enabled": true
+    },
+    {
+      "id": "07-eye-right",
+      "name": "Right eye",
+      "order": 7,
+      "geometry": "circle",
+      "vector": {
+        "cx": 540,
+        "cy": 370,
+        "r": 18
+      },
+      "bounds": {
+        "x": 522,
+        "y": 352,
+        "width": 36,
+        "height": 36
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 16800,
+      "durationMs": 1300,
+      "stepId": "step-4",
+      "voiceDescription": "Add the second eye.",
+      "enabled": true
+    },
+    {
+      "id": "08-nose",
+      "name": "Draw the nose",
+      "order": 8,
+      "geometry": "path",
+      "vector": {
+        "d": "M480 410 C495 437 505 437 520 410"
+      },
+      "bounds": {
+        "x": 480,
+        "y": 410,
+        "width": 40,
+        "height": 27
+      },
+      "startMs": 18400,
+      "durationMs": 1300,
+      "stepId": "step-4",
+      "voiceDescription": "Add a small round nose.",
+      "enabled": true
+    },
+    {
+      "id": "09-smile",
+      "name": "Draw the smile",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M455 455 C480 487 520 487 545 455"
+      },
+      "bounds": {
+        "x": 455,
+        "y": 455,
+        "width": 90,
+        "height": 32
+      },
+      "startMs": 20000,
+      "durationMs": 1300,
+      "stepId": "step-4",
+      "voiceDescription": "Finish with one slow smile.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a sloth in just nine strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5200,
+        "text": "Draw one long branch across the top."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5200,
+        "endMs": 10500,
+        "text": "Draw a tall body and a round head."
+      },
+      {
+        "id": "step-3",
+        "startMs": 10500,
+        "endMs": 15100,
+        "text": "Draw two long arms up to the branch."
+      },
+      {
+        "id": "step-4",
+        "startMs": 15100,
+        "endMs": 21500,
+        "text": "Finish with two eyes, a nose and one slow smile."
+      },
+      {
+        "id": "result",
+        "startMs": 21700,
+        "endMs": 23900,
+        "text": "It's a sloth!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a sloth in just nine strokes?"
+  },
+  "createdAt": "2026-08-19T00:00:00.000Z",
+  "updatedAt": "2026-08-19T16:06:43.419Z"
+}

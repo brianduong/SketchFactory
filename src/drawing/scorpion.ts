@@ -1,0 +1,103 @@
+import type { Drawing, DrawingStep, DrawingStroke, VoiceCue } from "../types/drawing.js";
+
+const createdAt = "2026-08-19T00:00:00.000Z";
+
+const strokes: DrawingStroke[] = [
+  {
+    id: "01-leg-one", name: "First pair of legs", order: 1, geometry: "path",
+    vector: { d: "M338 395 C298 510 298 610 342 720" },
+    bounds: { x: 298, y: 395, width: 44, height: 325 },
+    startMs: 3000, durationMs: 2000, stepId: "step-1",
+    voiceDescription: "Draw one curve for the first pair of legs.", enabled: true,
+  },
+  {
+    id: "02-leg-two", name: "Second pair of legs", order: 2, geometry: "path",
+    vector: { d: "M422 390 C386 510 386 610 424 725" },
+    bounds: { x: 386, y: 390, width: 38, height: 335 },
+    startMs: 5300, durationMs: 2000, stepId: "step-1",
+    voiceDescription: "Draw the next pair the same way.", enabled: true,
+  },
+  {
+    id: "03-leg-three", name: "Third pair of legs", order: 3, geometry: "path",
+    vector: { d: "M507 395 C474 510 474 610 510 720" },
+    bounds: { x: 474, y: 395, width: 36, height: 325 },
+    startMs: 7600, durationMs: 2000, stepId: "step-1",
+    voiceDescription: "And one more pair of legs.", enabled: true,
+  },
+  {
+    id: "04-body", name: "Draw the body", order: 4, geometry: "ellipse",
+    vector: { cx: 430, cy: 560, rx: 150, ry: 85 },
+    bounds: { x: 280, y: 475, width: 300, height: 170 },
+    style: { fill: "#FFFDF7" },
+    startMs: 9900, durationMs: 2600, stepId: "step-2",
+    voiceDescription: "Draw a long body across the middle.", enabled: true,
+  },
+  {
+    id: "05-claw-top", name: "Top claw", order: 5, geometry: "ellipse",
+    vector: { cx: 245, cy: 480, rx: 70, ry: 44 },
+    bounds: { x: 175, y: 436, width: 140, height: 88 },
+    style: { fill: "#FFFDF7" },
+    startMs: 12800, durationMs: 2000, stepId: "step-3",
+    voiceDescription: "Add one big claw reaching forward.", enabled: true,
+  },
+  {
+    id: "06-claw-bottom", name: "Bottom claw", order: 6, geometry: "ellipse",
+    vector: { cx: 245, cy: 640, rx: 70, ry: 44 },
+    bounds: { x: 175, y: 596, width: 140, height: 88 },
+    style: { fill: "#FFFDF7" },
+    startMs: 15100, durationMs: 2000, stepId: "step-3",
+    voiceDescription: "Add the second claw under it.", enabled: true,
+  },
+  {
+    id: "07-tail", name: "Draw the tail", order: 7, geometry: "path",
+    vector: { d: "M578 570 C760 520 780 260 575 250" },
+    bounds: { x: 575, y: 250, width: 205, height: 320 },
+    startMs: 17400, durationMs: 2600, stepId: "step-4",
+    voiceDescription: "Curl the long tail up over the back.", enabled: true,
+  },
+  {
+    id: "08-stinger", name: "Draw the stinger", order: 8, geometry: "line",
+    vector: { x1: 575, y1: 250, x2: 500, y2: 292 },
+    bounds: { x: 500, y: 250, width: 75, height: 42 },
+    startMs: 20300, durationMs: 1200, stepId: "step-4",
+    voiceDescription: "Finish with a sharp stinger on the end.", enabled: true,
+  },
+];
+
+const steps: DrawingStep[] = [
+  { id: "step-1", order: 1, title: "Legs", strokeIds: ["01-leg-one", "02-leg-two", "03-leg-three"], voiceText: "Draw three curves for the legs." },
+  { id: "step-2", order: 2, title: "Body", strokeIds: ["04-body"], voiceText: "Draw a long body across the middle of the legs." },
+  { id: "step-3", order: 3, title: "Claws", strokeIds: ["05-claw-top", "06-claw-bottom"], voiceText: "Add two big claws reaching forward." },
+  { id: "step-4", order: 4, title: "Tail", strokeIds: ["07-tail", "08-stinger"], voiceText: "Curl the long tail up over the back and add a sharp stinger." },
+];
+
+const cues: VoiceCue[] = [
+  { id: "hook", startMs: 200, endMs: 2500, text: "Can you draw a scorpion in just eight strokes?" },
+  { id: "step-1", startMs: 2700, endMs: 9800, text: steps[0]!.voiceText },
+  { id: "step-2", startMs: 9800, endMs: 12700, text: steps[1]!.voiceText },
+  { id: "step-3", startMs: 12700, endMs: 17300, text: steps[2]!.voiceText },
+  { id: "step-4", startMs: 17300, endMs: 21700, text: steps[3]!.voiceText },
+  { id: "result", startMs: 21900, endMs: 24100, text: "It's a scorpion!" },
+  { id: "cta", startMs: 25000, endMs: 28700, text: "Great job! Now try drawing it yourself." },
+];
+
+export function createScorpionDrawing(): Drawing {
+  return {
+    schemaVersion: 1, id: "56-animal-scorpion-001", slug: "easy-scorpion",
+    name: { en: "Scorpion", vi: "Con bọ cạp" }, category: "animals", subcategory: "insects",
+    difficulty: 1, strokeCount: 8, estimatedDrawingSeconds: 10, status: "draft",
+    tags: ["scorpion", "animal", "desert", "easy drawing"], canvas: { width: 1000, height: 1000 },
+    steps, strokes,
+    voiceScript: {
+      language: "en-US", provider: process.env.SKETCHFACTORY_TTS_PROVIDER ?? "kokoro",
+      voice: process.env.SKETCHFACTORY_TTS_VOICE ?? "af_bella",
+      rate: Number(process.env.SKETCHFACTORY_TTS_RATE ?? 175),
+      speed: Number(process.env.SKETCHFACTORY_TTS_SPEED ?? 0.85), cues,
+    },
+    videoMetadata: {
+      width: 1080, height: 1920, fps: 30, durationSeconds: 29,
+      hook: "Can you draw a scorpion in just eight strokes?",
+    },
+    createdAt, updatedAt: new Date().toISOString(),
+  };
+}

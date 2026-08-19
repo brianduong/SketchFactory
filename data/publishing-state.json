@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-14T17:00:00.000Z",
+  "updatedAt": "2026-08-19T16:00:00.000Z",
   "verifiedAgainstYouTubeApiAt": "2026-08-14T14:58:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
@@ -35,9 +35,9 @@
     "trackOnlyAfterUserConfirmsPublished": true
   },
   "sequence": {
-    "lastGenerated": 51,
+    "lastGenerated": 61,
     "lastYouTubeUploaded": 28,
-    "nextNumber": 52
+    "nextNumber": 62
   },
   "videos": [
     {
@@ -1078,6 +1078,216 @@
         "videoId": null,
         "scheduledPublishAt": null,
         "plannedPublishAt": "2026-10-08T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 52,
+      "animal": "Seahorse",
+      "file": "52-seahorse.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-10T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 53,
+      "animal": "Peacock",
+      "file": "53-peacock.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-12T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 54,
+      "animal": "Ladybug",
+      "file": "54-ladybug.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-14T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 55,
+      "animal": "Dragonfly",
+      "file": "55-dragonfly.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-16T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 56,
+      "animal": "Scorpion",
+      "file": "56-scorpion.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-18T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 57,
+      "animal": "Pufferfish",
+      "file": "57-pufferfish.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-20T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 58,
+      "animal": "Platypus",
+      "file": "58-platypus.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-22T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 59,
+      "animal": "Sloth",
+      "file": "59-sloth.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-24T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 60,
+      "animal": "Beaver",
+      "file": "60-beaver.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-26T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 61,
+      "animal": "Walrus",
+      "file": "61-walrus.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-28T13:00:00Z",
         "thumbnailSet": false
       },
       "tiktok": false,

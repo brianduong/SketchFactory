@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "id": "61-animal-walrus-001",
+  "slug": "easy-walrus",
+  "name": {
+    "en": "Walrus",
+    "vi": "Con hải mã"
+  },
+  "category": "animals",
+  "subcategory": "sea",
+  "difficulty": 2,
+  "strokeCount": 9,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "walrus",
+    "animal",
+    "sea",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Draw one big round body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Head",
+      "strokeIds": [
+        "02-head",
+        "03-muzzle"
+      ],
+      "voiceText": "Add a round head and a wide muzzle."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Tusks",
+      "strokeIds": [
+        "04-tusk-left",
+        "05-tusk-right"
+      ],
+      "voiceText": "Draw two long tusks pointing down."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Face",
+      "strokeIds": [
+        "06-eye-left",
+        "07-eye-right",
+        "08-nose"
+      ],
+      "voiceText": "Add two eyes and a small nose."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Flipper",
+      "strokeIds": [
+        "09-flipper"
+      ],
+      "voiceText": "Finish with one flipper at the back."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 520,
+        "cy": 620,
+        "rx": 200,
+        "ry": 160
+      },
+      "bounds": {
+        "x": 320,
+        "y": 460,
+        "width": 400,
+        "height": 320
+      },
+      "startMs": 3000,
+      "durationMs": 2600,
+      "stepId": "step-1",
+      "voiceDescription": "Draw one big round body.",
+      "enabled": true
+    },
+    {
+      "id": "02-head",
+      "name": "Draw the head",
+      "order": 2,
+      "geometry": "circle",
+      "vector": {
+        "cx": 470,
+        "cy": 400,
+        "r": 130
+      },
+      "bounds": {
+        "x": 340,
+        "y": 270,
+        "width": 260,
+        "height": 260
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 5900,
+      "durationMs": 1900,
+      "stepId": "step-2",
+      "voiceDescription": "Add a round head on top.",
+      "enabled": true
+    },
+    {
+      "id": "03-muzzle",
+      "name": "Draw the muzzle",
+      "order": 3,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 470,
+        "cy": 462,
+        "rx": 105,
+        "ry": 70
+      },
+      "bounds": {
+        "x": 365,
+        "y": 392,
+        "width": 210,
+        "height": 140
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 8100,
+      "durationMs": 1900,
+      "stepId": "step-2",
+      "voiceDescription": "Draw a wide muzzle in the middle.",
+      "enabled": true
+    },
+    {
+      "id": "04-tusk-left",
+      "name": "Left tusk",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M430 522 C415 590 415 650 435 700"
+      },
+      "bounds": {
+        "x": 415,
+        "y": 522,
+        "width": 20,
+        "height": 178
+      },
+      "startMs": 10300,
+      "durationMs": 1900,
+      "stepId": "step-3",
+      "voiceDescription": "Draw one long tusk pointing down.",
+      "enabled": true
+    },
+    {
+      "id": "05-tusk-right",
+      "name": "Right tusk",
+      "order": 5,
+      "geometry": "path",
+      "vector": {
+        "d": "M520 522 C535 590 535 650 515 700"
+      },
+      "bounds": {
+        "x": 515,
+        "y": 522,
+        "width": 20,
+        "height": 178
+      },
+      "startMs": 12500,
+      "durationMs": 1900,
+      "stepId": "step-3",
+      "voiceDescription": "Draw the second long tusk.",
+      "enabled": true
+    },
+    {
+      "id": "06-eye-left",
+      "name": "Left eye",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 425,
+        "cy": 365,
+        "r": 18
+      },
+      "bounds": {
+        "x": 407,
+        "y": 347,
+        "width": 36,
+        "height": 36
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 14700,
+      "durationMs": 1200,
+      "stepId": "step-4",
+      "voiceDescription": "Add one round eye.",
+      "enabled": true
+    },
+    {
+      "id": "07-eye-right",
+      "name": "Right eye",
+      "order": 7,
+      "geometry": "circle",
+      "vector": {
+        "cx": 525,
+        "cy": 365,
+        "r": 18
+      },
+      "bounds": {
+        "x": 507,
+        "y": 347,
+        "width": 36,
+        "height": 36
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 16200,
+      "durationMs": 1200,
+      "stepId": "step-4",
+      "voiceDescription": "Add the second eye.",
+      "enabled": true
+    },
+    {
+      "id": "08-nose",
+      "name": "Draw the nose",
+      "order": 8,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 470,
+        "cy": 430,
+        "rx": 30,
+        "ry": 20
+      },
+      "bounds": {
+        "x": 440,
+        "y": 410,
+        "width": 60,
+        "height": 40
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 17700,
+      "durationMs": 1200,
+      "stepId": "step-4",
+      "voiceDescription": "Put a small nose on the muzzle.",
+      "enabled": true
+    },
+    {
+      "id": "09-flipper",
+      "name": "Draw the flipper",
+      "order": 9,
+      "geometry": "path",
+      "vector": {
+        "d": "M690 700 C765 722 792 772 715 782"
+      },
+      "bounds": {
+        "x": 690,
+        "y": 700,
+        "width": 102,
+        "height": 82
+      },
+      "startMs": 19200,
+      "durationMs": 1900,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with one flipper at the back.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2500,
+        "text": "Can you draw a walrus in just nine strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2700,
+        "endMs": 5800,
+        "text": "Draw one big round body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5800,
+        "endMs": 10200,
+        "text": "Add a round head and a wide muzzle."
+      },
+      {
+        "id": "step-3",
+        "startMs": 10200,
+        "endMs": 14600,
+        "text": "Draw two long tusks pointing down."
+      },
+      {
+        "id": "step-4",
+        "startMs": 14600,
+        "endMs": 19100,
+        "text": "Add two eyes and a small nose."
+      },
+      {
+        "id": "step-5",
+        "startMs": 19100,
+        "endMs": 21300,
+        "text": "Finish with one flipper at the back."
+      },
+      {
+        "id": "result",
+        "startMs": 21500,
+        "endMs": 23700,
+        "text": "It's a walrus!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a walrus in just nine strokes?"
+  },
+  "createdAt": "2026-08-19T00:00:00.000Z",
+  "updatedAt": "2026-08-19T16:09:29.240Z"
+}

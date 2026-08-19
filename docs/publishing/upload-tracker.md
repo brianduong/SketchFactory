@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-14 22:00 (Asia/Ho_Chi_Minh) — thêm Squirrel 28, upload 27 và 28; đối chiếu API: 23 video đã Public
+Updated: 2026-08-19 23:30 (Asia/Ho_Chi_Minh) — thêm 10 video mới 52–61; OAuth hết hạn nên chưa upload được video nào
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -64,6 +64,16 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 49 | T-Rex | [ ] | Chưa upload — dự kiến 04-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](49-animal-trex-001.md) |
 | 50 | Zebra | [ ] | Chưa upload — dự kiến 06-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](50-animal-zebra-001.md) |
 | 51 | Horse | [ ] | Chưa upload — dự kiến 08-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](51-animal-horse-001.md) |
+| 52 | Seahorse | [ ] | Chưa upload — dự kiến 10-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](52-animal-seahorse-001.md) |
+| 53 | Peacock | [ ] | Chưa upload — dự kiến 12-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](53-animal-peacock-001.md) |
+| 54 | Ladybug | [ ] | Chưa upload — dự kiến 14-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](54-animal-ladybug-001.md) |
+| 55 | Dragonfly | [ ] | Chưa upload — dự kiến 16-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](55-animal-dragonfly-001.md) |
+| 56 | Scorpion | [ ] | Chưa upload — dự kiến 18-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](56-animal-scorpion-001.md) |
+| 57 | Pufferfish | [ ] | Chưa upload — dự kiến 20-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](57-animal-pufferfish-001.md) |
+| 58 | Platypus | [ ] | Chưa upload — dự kiến 22-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](58-animal-platypus-001.md) |
+| 59 | Sloth | [ ] | Chưa upload — dự kiến 24-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
+| 60 | Beaver | [ ] | Chưa upload — dự kiến 26-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
+| 61 | Walrus | [ ] | Chưa upload — dự kiến 28-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
 
 ## Current Totals
 
