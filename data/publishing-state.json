@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-23T08:30:00.000Z",
-  "verifiedAgainstYouTubeApiAt": "2026-08-14T14:58:00.000Z",
+  "updatedAt": "2026-08-23T09:00:00.000Z",
+  "verifiedAgainstYouTubeApiAt": "2026-08-23T08:45:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
     "channelId": "UCAfBtu-doN3P_2q8nuRwXng",
@@ -24,7 +24,7 @@
         "id": "PLS5I18k91_u4",
         "name": "Simple Drawing Tutorials",
         "includes": "all",
-        "videoCount": 0,
+        "videoCount": 32,
         "note": "Playlist chung cho tất cả video, xếp theo số thứ tự (quyết định 2026-08-02)."
       },
       {
@@ -46,7 +46,7 @@
   },
   "sequence": {
     "lastGenerated": 71,
-    "lastYouTubeUploaded": 28,
+    "lastYouTubeUploaded": 32,
     "nextNumber": 72
   },
   "videos": [
@@ -650,12 +650,12 @@
       "category": "animals",
       "file": "29-deer.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "7-Z_DbN4pgU",
+        "scheduledPublishAt": "2026-08-25T13:00:00Z",
         "plannedPublishAt": "2026-08-25T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -672,12 +672,12 @@
       "category": "animals",
       "file": "30-snake.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "mC50OblpiUg",
+        "scheduledPublishAt": "2026-08-27T13:00:00Z",
         "plannedPublishAt": "2026-08-27T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -694,12 +694,12 @@
       "category": "animals",
       "file": "31-jellyfish.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "ytAUiPbstTw",
+        "scheduledPublishAt": "2026-08-29T13:00:00Z",
         "plannedPublishAt": "2026-08-29T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -716,12 +716,12 @@
       "category": "animals",
       "file": "32-bat.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "sUTDn03UdhQ",
+        "scheduledPublishAt": "2026-08-31T13:00:00Z",
         "plannedPublishAt": "2026-08-31T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1593,8 +1593,9 @@
   ],
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
-    "Chạy npm run youtube:playlist -- --apply để tạo playlist \"Easy Object Drawings\" và thêm video vào cả hai playlist (playlist chung đang trống; ~50 đơn vị quota mỗi lần thêm)",
-    "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại."
+    "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại.",
+    "Upload tiếp 4 video/ngày từ số 33, Private kèm --publish-at theo nhịp hai ngày một video (33 → 2026-09-02T13:00:00Z). Quota reset 14:00 giờ VN.",
+    "Chạy npm run youtube:playlist -- --apply sau mỗi đợt upload; playlist \"Easy Object Drawings\" sẽ được script tự tạo khi video đồ vật đầu tiên (số 62) lên kênh."
   ],
   "contentVersion": {
     "version": 2,

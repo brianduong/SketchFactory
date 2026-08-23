@@ -74,6 +74,11 @@ async function main(): Promise<void> {
       .sort((a, b) => a.number - b.number);
     console.log(`\n▸ ${playlist.name} (${playlist.includes}) — ${wanted.length} video đủ điều kiện.`);
 
+    if (!playlist.id && !wanted.length) {
+      console.log("Chưa có video nào thuộc nhóm này — khoan tạo playlist rỗng trên kênh.");
+      continue;
+    }
+
     if (!playlist.id) {
       if (!APPLY) {
         console.log("Playlist chưa tồn tại. Chạy lại với --apply để tạo.");

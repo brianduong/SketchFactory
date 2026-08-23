@@ -56,7 +56,7 @@ how to draw an octopus, easy octopus drawing, simple octopus drawing, octopus, a
 - Audience: Not made for kids
 - English captions: Uploaded
 - Custom thumbnail: Đã đặt
-- Playlist: chưa thêm, xem việc treo trong upload-tracker.md
+- Playlist: đã thêm vào `Simple Drawing Tutorials` (2026-08-23)
 
 ## Final Checklist
 

@@ -56,7 +56,7 @@ how to draw a bee, easy bee drawing, simple bee drawing, bee, animal, insect, ea
 - Audience: Not made for kids
 - English captions: Uploaded
 - Custom thumbnail: Đã đặt
-- Playlist: chưa thêm lại sau khi thay bản mới, xem việc treo trong upload-tracker.md
+- Playlist: đã thêm vào `Simple Drawing Tutorials` (2026-08-23)
 
 ## Final Checklist
 

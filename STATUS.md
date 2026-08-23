@@ -43,9 +43,17 @@ nay có `youtube.playlists` (mỗi playlist khai báo `includes`) và mỗi vide
 `npm run youtube:playlist -- --apply` tự tạo playlist còn thiếu rồi thêm video vào đúng
 nhóm. Video đồ vật nằm ở cả hai playlist.
 
-**Chưa upload được video nào.** Refresh token OAuth đã hết hạn (`invalid_grant`) đúng
-như dự đoán mốc 2026-08-18; phải nhờ người dùng chạy `npm run youtube:auth`. Hàng đợi
-chờ upload giờ là **43 video (29–71)**, quota ~4 video/ngày nên cần khoảng 11 ngày.
+Chiều 2026-08-23 người dùng cấp lại OAuth, em **upload 29–32** (Deer, Snake, Jellyfish,
+Bat) ở chế độ Private kèm lịch tự công khai 25, 27, 29 và 31 tháng 8 — hết 8.200 đơn vị
+quota. Dùng nốt quota còn lại **lấp đầy playlist chung**: `Simple Drawing Tutorials` nay
+có đủ **32 video (01–32)**, xoá được việc treo từ 2026-08-02.
+
+Playlist `Easy Object Drawings` **cố ý chưa tạo** — chờ tới khi video đồ vật đầu tiên
+(số 62) lên kênh, để không có playlist rỗng công khai trên kênh. `playlist-sync` đã được
+sửa để bỏ qua playlist chưa có video nào.
+
+Kênh giờ có **32 video**, hàng đợi còn **39 video (33–71)**, quota ~4 video/ngày nên cần
+khoảng 10 ngày nữa.
 
 ## Tổng quan
 
@@ -96,10 +104,10 @@ chờ upload giờ là **43 video (29–71)**, quota ~4 video/ngày nên cần k
 | 26 | Octopus | 10 | `26-octopus.mp4` | 🕗 Hẹn 19-08 20:00 — `gsxj9EtAXDA` |
 | 27 | Koala | 7 | `27-koala.mp4` | 🕗 Hẹn 21-08 20:00 — `qQDm6Yd4Zd8` |
 | 28 | Squirrel | 9 | `28-squirrel.mp4` | 🕗 Hẹn 23-08 20:00 — `JwvdYcgdhSo` |
-| 29 | Deer | 10 | `29-deer.mp4` | ⏳ Chưa upload — dự kiến 25-08 20:00 |
-| 30 | Snake | 7 | `30-snake.mp4` | ⏳ Chưa upload — dự kiến 27-08 20:00 |
-| 31 | Jellyfish | 10 | `31-jellyfish.mp4` | ⏳ Chưa upload — dự kiến 29-08 20:00 |
-| 32 | Bat | 8 | `32-bat.mp4` | ⏳ Chưa upload — dự kiến 31-08 20:00 |
+| 29 | Deer | 10 | `29-deer.mp4` | 🕗 Hẹn 25-08 20:00 — `7-Z_DbN4pgU` |
+| 30 | Snake | 7 | `30-snake.mp4` | 🕗 Hẹn 27-08 20:00 — `mC50OblpiUg` |
+| 31 | Jellyfish | 10 | `31-jellyfish.mp4` | 🕗 Hẹn 29-08 20:00 — `ytAUiPbstTw` |
+| 32 | Bat | 8 | `32-bat.mp4` | 🕗 Hẹn 31-08 20:00 — `sUTDn03UdhQ` |
 | 33 | Flamingo | 8 | `33-flamingo.mp4` | ⏳ Chưa upload — dự kiến 02-09 20:00 |
 | 34 | Rhino | 9 | `34-rhino.mp4` | ⏳ Chưa upload — dự kiến 04-09 20:00 |
 | 35 | Rooster | 10 | `35-rooster.mp4` | ⏳ Chưa upload — dự kiến 06-09 20:00 |
@@ -140,7 +148,7 @@ chờ upload giờ là **43 video (29–71)**, quota ~4 video/ngày nên cần k
 | 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
 | 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
 
-Toàn bộ 28 video bản v2 đã nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+Tới 2026-08-23 có 32 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
 Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 
