@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "68-object-cactus-001",
+  "slug": "easy-cactus",
+  "name": {
+    "en": "Cactus",
+    "vi": "Cây xương rồng"
+  },
+  "category": "objects",
+  "subcategory": "plant",
+  "difficulty": 1,
+  "strokeCount": 6,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "cactus",
+    "plant",
+    "object",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Pot",
+      "strokeIds": [
+        "01-pot",
+        "02-pot-rim"
+      ],
+      "voiceText": "Draw a small pot with a wide rim."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Body",
+      "strokeIds": [
+        "03-stem"
+      ],
+      "voiceText": "Draw a tall rounded body."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Left arm",
+      "strokeIds": [
+        "04-arm-left"
+      ],
+      "voiceText": "Add an arm curving up on the left."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Right arm",
+      "strokeIds": [
+        "05-arm-right"
+      ],
+      "voiceText": "Add another arm on the right."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Flower",
+      "strokeIds": [
+        "06-flower"
+      ],
+      "voiceText": "Finish with a flower on top."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-pot",
+      "name": "Draw the pot",
+      "order": 1,
+      "geometry": "polygon",
+      "vector": {
+        "points": "360,720 640,720 600,860 400,860"
+      },
+      "bounds": {
+        "x": 360,
+        "y": 720,
+        "width": 280,
+        "height": 140
+      },
+      "startMs": 3000,
+      "durationMs": 2700,
+      "stepId": "step-1",
+      "voiceDescription": "Draw a small pot at the bottom.",
+      "enabled": true
+    },
+    {
+      "id": "02-pot-rim",
+      "name": "Add the rim",
+      "order": 2,
+      "geometry": "rect",
+      "vector": {
+        "x": 330,
+        "y": 660,
+        "width": 340,
+        "height": 60
+      },
+      "bounds": {
+        "x": 330,
+        "y": 660,
+        "width": 340,
+        "height": 60
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 6000,
+      "durationMs": 2700,
+      "stepId": "step-1",
+      "voiceDescription": "Add a wide rim on the pot.",
+      "enabled": true
+    },
+    {
+      "id": "03-stem",
+      "name": "Draw the body",
+      "order": 3,
+      "geometry": "rect",
+      "vector": {
+        "x": 430,
+        "y": 290,
+        "width": 140,
+        "height": 370,
+        "rx": 70
+      },
+      "bounds": {
+        "x": 430,
+        "y": 290,
+        "width": 140,
+        "height": 370
+      },
+      "startMs": 9000,
+      "durationMs": 2700,
+      "stepId": "step-2",
+      "voiceDescription": "Draw a tall rounded body.",
+      "enabled": true
+    },
+    {
+      "id": "04-arm-left",
+      "name": "Left arm",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M430 500 C330 500 320 470 320 330"
+      },
+      "bounds": {
+        "x": 320,
+        "y": 330,
+        "width": 110,
+        "height": 170
+      },
+      "startMs": 12000,
+      "durationMs": 2700,
+      "stepId": "step-3",
+      "voiceDescription": "Add an arm curving up on the left.",
+      "enabled": true
+    },
+    {
+      "id": "05-arm-right",
+      "name": "Right arm",
+      "order": 5,
+      "geometry": "path",
+      "vector": {
+        "d": "M570 560 C670 560 680 530 680 400"
+      },
+      "bounds": {
+        "x": 570,
+        "y": 400,
+        "width": 110,
+        "height": 160
+      },
+      "startMs": 15000,
+      "durationMs": 2700,
+      "stepId": "step-4",
+      "voiceDescription": "Add another arm on the right.",
+      "enabled": true
+    },
+    {
+      "id": "06-flower",
+      "name": "Add the flower",
+      "order": 6,
+      "geometry": "ellipse",
+      "vector": {
+        "cx": 500,
+        "cy": 262,
+        "rx": 58,
+        "ry": 40
+      },
+      "bounds": {
+        "x": 442,
+        "y": 222,
+        "width": 116,
+        "height": 80
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 18000,
+      "durationMs": 2700,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with a flower on top.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2800,
+        "text": "Can you draw a cactus in just six strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2800,
+        "endMs": 8800,
+        "text": "Draw a small pot with a wide rim."
+      },
+      {
+        "id": "step-2",
+        "startMs": 8800,
+        "endMs": 11800,
+        "text": "Draw a tall rounded body."
+      },
+      {
+        "id": "step-3",
+        "startMs": 11800,
+        "endMs": 14800,
+        "text": "Add an arm curving up on the left."
+      },
+      {
+        "id": "step-4",
+        "startMs": 14800,
+        "endMs": 17800,
+        "text": "Add another arm on the right."
+      },
+      {
+        "id": "step-5",
+        "startMs": 17800,
+        "endMs": 20900,
+        "text": "Finish with a flower on top."
+      },
+      {
+        "id": "result",
+        "startMs": 21100,
+        "endMs": 23300,
+        "text": "It's a cactus!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a cactus in just six strokes?"
+  },
+  "createdAt": "2026-08-23T00:00:00.000Z",
+  "updatedAt": "2026-08-23T08:22:54.109Z"
+}

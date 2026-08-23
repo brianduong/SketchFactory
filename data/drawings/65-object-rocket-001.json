@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "65-object-rocket-001",
+  "slug": "easy-rocket",
+  "name": {
+    "en": "Rocket",
+    "vi": "Tên lửa"
+  },
+  "category": "objects",
+  "subcategory": "space",
+  "difficulty": 1,
+  "strokeCount": 8,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "rocket",
+    "spaceship",
+    "object",
+    "space",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Draw a tall box for the body."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Nose",
+      "strokeIds": [
+        "02-nose"
+      ],
+      "voiceText": "Add a pointy nose on top."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Window",
+      "strokeIds": [
+        "03-window",
+        "04-band"
+      ],
+      "voiceText": "Draw a round window and a line near the bottom."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Fins",
+      "strokeIds": [
+        "05-fin-left",
+        "06-fin-right"
+      ],
+      "voiceText": "Add two fins on the sides."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Flame",
+      "strokeIds": [
+        "07-flame-outer",
+        "08-flame-inner"
+      ],
+      "voiceText": "Finish with two flames under the rocket."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "rect",
+      "vector": {
+        "x": 390,
+        "y": 330,
+        "width": 220,
+        "height": 380
+      },
+      "bounds": {
+        "x": 390,
+        "y": 330,
+        "width": 220,
+        "height": 380
+      },
+      "startMs": 3000,
+      "durationMs": 2000,
+      "stepId": "step-1",
+      "voiceDescription": "Draw a tall box for the body.",
+      "enabled": true
+    },
+    {
+      "id": "02-nose",
+      "name": "Add the nose",
+      "order": 2,
+      "geometry": "polygon",
+      "vector": {
+        "points": "390,330 500,150 610,330"
+      },
+      "bounds": {
+        "x": 390,
+        "y": 150,
+        "width": 220,
+        "height": 180
+      },
+      "startMs": 5300,
+      "durationMs": 2000,
+      "stepId": "step-2",
+      "voiceDescription": "Add a pointy nose on top.",
+      "enabled": true
+    },
+    {
+      "id": "03-window",
+      "name": "Draw the window",
+      "order": 3,
+      "geometry": "circle",
+      "vector": {
+        "cx": 500,
+        "cy": 430,
+        "r": 70
+      },
+      "bounds": {
+        "x": 430,
+        "y": 360,
+        "width": 140,
+        "height": 140
+      },
+      "startMs": 7600,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Draw a round window.",
+      "enabled": true
+    },
+    {
+      "id": "04-band",
+      "name": "Draw the band",
+      "order": 4,
+      "geometry": "line",
+      "vector": {
+        "x1": 390,
+        "y1": 620,
+        "x2": 610,
+        "y2": 620
+      },
+      "bounds": {
+        "x": 390,
+        "y": 610,
+        "width": 220,
+        "height": 20
+      },
+      "startMs": 9900,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Add one line near the bottom.",
+      "enabled": true
+    },
+    {
+      "id": "05-fin-left",
+      "name": "Left fin",
+      "order": 5,
+      "geometry": "polygon",
+      "vector": {
+        "points": "390,560 280,760 390,710"
+      },
+      "bounds": {
+        "x": 280,
+        "y": 560,
+        "width": 110,
+        "height": 200
+      },
+      "startMs": 12200,
+      "durationMs": 2000,
+      "stepId": "step-4",
+      "voiceDescription": "Add one fin on the left.",
+      "enabled": true
+    },
+    {
+      "id": "06-fin-right",
+      "name": "Right fin",
+      "order": 6,
+      "geometry": "polygon",
+      "vector": {
+        "points": "610,560 720,760 610,710"
+      },
+      "bounds": {
+        "x": 610,
+        "y": 560,
+        "width": 110,
+        "height": 200
+      },
+      "startMs": 14500,
+      "durationMs": 2000,
+      "stepId": "step-4",
+      "voiceDescription": "Add the second fin.",
+      "enabled": true
+    },
+    {
+      "id": "07-flame-outer",
+      "name": "Big flame",
+      "order": 7,
+      "geometry": "polygon",
+      "vector": {
+        "points": "410,710 500,880 590,710"
+      },
+      "bounds": {
+        "x": 410,
+        "y": 710,
+        "width": 180,
+        "height": 170
+      },
+      "startMs": 16800,
+      "durationMs": 2000,
+      "stepId": "step-5",
+      "voiceDescription": "Draw a flame under the rocket.",
+      "enabled": true
+    },
+    {
+      "id": "08-flame-inner",
+      "name": "Small flame",
+      "order": 8,
+      "geometry": "polygon",
+      "vector": {
+        "points": "455,730 500,830 545,730"
+      },
+      "bounds": {
+        "x": 455,
+        "y": 730,
+        "width": 90,
+        "height": 100
+      },
+      "startMs": 19100,
+      "durationMs": 2000,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with a smaller flame inside.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2800,
+        "text": "Can you draw a rocket in just eight strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2800,
+        "endMs": 5100,
+        "text": "Draw a tall box for the body."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5100,
+        "endMs": 7400,
+        "text": "Add a pointy nose on top."
+      },
+      {
+        "id": "step-3",
+        "startMs": 7400,
+        "endMs": 12000,
+        "text": "Draw a round window and a line near the bottom."
+      },
+      {
+        "id": "step-4",
+        "startMs": 12000,
+        "endMs": 16600,
+        "text": "Add two fins on the sides."
+      },
+      {
+        "id": "step-5",
+        "startMs": 16600,
+        "endMs": 21300,
+        "text": "Finish with two flames under the rocket."
+      },
+      {
+        "id": "result",
+        "startMs": 21500,
+        "endMs": 23700,
+        "text": "It's a rocket!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a rocket in just eight strokes?"
+  },
+  "createdAt": "2026-08-23T00:00:00.000Z",
+  "updatedAt": "2026-08-23T08:18:13.602Z"
+}

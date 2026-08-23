@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-19 23:30 (Asia/Ho_Chi_Minh) — thêm 10 video mới 52–61; OAuth hết hạn nên chưa upload được video nào
+Updated: 2026-08-23 (Asia/Ho_Chi_Minh) — thêm 10 video đồ vật 62–71, mở playlist thứ hai; OAuth vẫn hết hạn nên chưa upload được video nào
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -11,7 +11,7 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 - `[ ]` Not uploaded yet
 - This tracker records uploads only; it does not mean the video is already Public.
 
-| No. | Animal | YouTube | Visibility | Video ID | TikTok | Facebook | Instagram | Storage | Publishing info |
+| No. | Subject | YouTube | Visibility | Video ID | TikTok | Facebook | Instagram | Storage | Publishing info |
 |---:|---|:---:|---|---|:---:|:---:|:---:|---|---|
 | 01 | Cat | [x] | Public | `O4RkgkWIPbE` | [ ] | [ ] | [ ] | Local | [Open](animal-cat-001.md) |
 | 02 | Dog | [x] | Public | `hiUp_b8d920` | [ ] | [ ] | [ ] | Local | [Open](animal-dog-001.md) |
@@ -74,6 +74,16 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 59 | Sloth | [ ] | Chưa upload — dự kiến 24-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
 | 60 | Beaver | [ ] | Chưa upload — dự kiến 26-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
 | 61 | Walrus | [ ] | Chưa upload — dự kiến 28-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
+| 62 | House | [ ] | Chưa upload — dự kiến 30-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
+| 63 | Ice Cream Cone | [ ] | Chưa upload — dự kiến 01-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](63-object-icecream-001.md) |
+| 64 | Sailboat | [ ] | Chưa upload — dự kiến 03-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](64-object-sailboat-001.md) |
+| 65 | Rocket | [ ] | Chưa upload — dự kiến 05-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](65-object-rocket-001.md) |
+| 66 | Cupcake | [ ] | Chưa upload — dự kiến 07-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](66-object-cupcake-001.md) |
+| 67 | Umbrella | [ ] | Chưa upload — dự kiến 09-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](67-object-umbrella-001.md) |
+| 68 | Cactus | [ ] | Chưa upload — dự kiến 11-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](68-object-cactus-001.md) |
+| 69 | Robot | [ ] | Chưa upload — dự kiến 13-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](69-object-robot-001.md) |
+| 70 | Car | [ ] | Chưa upload — dự kiến 15-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](70-object-car-001.md) |
+| 71 | Tulip | [ ] | Chưa upload — dự kiến 17-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](71-object-tulip-001.md) |
 
 ## Current Totals
 
@@ -135,16 +145,28 @@ trong ngày**.
 Ngày dự kiến ở bảng trên chỉ là nhịp hai ngày một video nối tiếp sau Squirrel 28; chưa
 đặt `publishAt` nào trên YouTube.
 
+## Đợt render 62–71 (2026-08-23)
+
+Mười video đầu tiên **không phải con vật**: nhà, kem, thuyền buồm, tên lửa, cupcake, cái ô,
+xương rồng, người máy, ô tô, hoa tulip. Chuyển sang đồ vật vì các dáng động vật còn trống
+đều đụng hình con đã có trên kênh. Giữ ở local, chưa upload.
+
+Nhóm này có `category: "objects"` trong `publishing-state.json` nên khi upload sẽ vào **cả
+hai playlist**: `Simple Drawing Tutorials` (chung) và `Easy Object Drawings` (riêng đồ vật,
+chưa tạo trên YouTube).
+
 ## Việc còn treo
 
 - Playlist `Simple Drawing Tutorials` (`PLS5I18k91_u4`) hiện **trống**: 22 bản cũ đã bị
-  gỡ nhưng bản mới chưa kịp thêm vì hết quota; nay là 28 video cần thêm. Chạy
-  `npm run youtube:playlist -- --apply`.
+  gỡ nhưng bản mới chưa kịp thêm vì hết quota; nay là 28 video cần thêm. Playlist
+  `Easy Object Drawings` thì **chưa tồn tại trên YouTube**. Chạy
+  `npm run youtube:playlist -- --apply` — script tự tạo playlist còn thiếu, ghi id vào
+  state rồi thêm video vào đúng nhóm.
 - Phụ đề: đã xác minh ngày 2026-08-14 trên video 27 và 28 — đúng 2 track mỗi video,
   1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload.
 - OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; hạn kế tiếp
   khoảng 2026-08-18. Chuyển app sang Published trong Google Cloud Console để khỏi lặp.
 
-Next new video number: **52**
+Next new video number: **72**
 
 Archive procedure: [Publishing operations](operations.md#google-drive-archive-rule)

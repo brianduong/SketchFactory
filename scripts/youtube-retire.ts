@@ -19,7 +19,7 @@ const CONFIRM = process.argv.includes("--delete-confirm");
 
 interface ArchivedVideo {
   number: number;
-  animal: string;
+  subject: string;
   videoId: string;
   deletedAt?: string;
 }
@@ -50,7 +50,7 @@ async function main(): Promise<void> {
   if (!pending.length) return;
   if (!CONFIRM) {
     for (const video of pending) {
-      console.log(`  ${String(video.number).padStart(2, "0")} ${video.animal} — ${video.videoId}`);
+      console.log(`  ${String(video.number).padStart(2, "0")} ${video.subject} — ${video.videoId}`);
     }
     console.log("\nChạy lại với --delete-confirm để xóa vĩnh viễn.");
     return;
@@ -72,13 +72,13 @@ async function main(): Promise<void> {
       // Video đã bị xóa tay từ trước thì coi như xong, các lỗi khác thì dừng.
       if (!/not found/i.test(message)) {
         await writeFile(archivePath, `${JSON.stringify(archive, null, 2)}\n`, { mode: 0o600 });
-        throw new Error(`Dừng ở video ${video.number} ${video.animal}: ${message}`);
+        throw new Error(`Dừng ở video ${video.number} ${video.subject}: ${message}`);
       }
       console.log(`   video ${video.number} không còn tồn tại, bỏ qua`);
     }
     video.deletedAt = new Date().toISOString();
     await writeFile(archivePath, `${JSON.stringify(archive, null, 2)}\n`, { mode: 0o600 });
-    console.log(`🗑️  ${String(video.number).padStart(2, "0")} ${video.animal} — ${video.videoId}`);
+    console.log(`🗑️  ${String(video.number).padStart(2, "0")} ${video.subject} — ${video.videoId}`);
   }
 
   console.log(`\nĐã xóa ${pending.length} video.`);

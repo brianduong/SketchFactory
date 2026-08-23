@@ -63,9 +63,29 @@ import { createPlatypusDrawing } from "./platypus.js";
 import { createSlothDrawing } from "./sloth.js";
 import { createBeaverDrawing } from "./beaver.js";
 import { createWalrusDrawing } from "./walrus.js";
+import { createHouseDrawing } from "./house.js";
+import { createIceCreamDrawing } from "./icecream.js";
+import { createSailboatDrawing } from "./sailboat.js";
+import { createRocketDrawing } from "./rocket.js";
+import { createCupcakeDrawing } from "./cupcake.js";
+import { createUmbrellaDrawing } from "./umbrella.js";
+import { createCactusDrawing } from "./cactus.js";
+import { createRobotDrawing } from "./robot.js";
+import { createCarDrawing } from "./car.js";
+import { createTulipDrawing } from "./tulip.js";
 
 export async function planDrawing(subject: string): Promise<Drawing> {
   const factories: Record<string, () => Drawing> = {
+    house: createHouseDrawing,
+    icecream: createIceCreamDrawing,
+    sailboat: createSailboatDrawing,
+    rocket: createRocketDrawing,
+    cupcake: createCupcakeDrawing,
+    umbrella: createUmbrellaDrawing,
+    cactus: createCactusDrawing,
+    robot: createRobotDrawing,
+    car: createCarDrawing,
+    tulip: createTulipDrawing,
     seahorse: createSeahorseDrawing,
     peacock: createPeacockDrawing,
     ladybug: createLadybugDrawing,

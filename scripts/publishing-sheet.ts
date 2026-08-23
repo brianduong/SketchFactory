@@ -7,11 +7,28 @@
  * Sheet dùng đúng metadata mà pipeline đã sinh, nên title/description/tag trong
  * docs/publishing luôn khớp với `output/reports/<id>-metadata.json`.
  */
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { loadDrawing } from "../src/drawing/repository.js";
 import { generateMetadata } from "../src/metadata/engine.js";
 import { writeText } from "../src/shared/fs.js";
 import { ROOT } from "../src/shared/paths.js";
+
+interface StatePlaylist {
+  name: string;
+  includes: string;
+}
+
+/** Playlist mà video thuộc về: playlist `all` luôn nhận, playlist nhóm nhận đúng category. */
+async function playlistsFor(category: string): Promise<string> {
+  const state = JSON.parse(
+    await readFile(path.join(ROOT, "data", "publishing-state.json"), "utf8"),
+  ) as { youtube: { playlists: StatePlaylist[] } };
+  const names = state.youtube.playlists
+    .filter((playlist) => playlist.includes === "all" || playlist.includes === category)
+    .map((playlist) => playlist.name);
+  return names.join(", ");
+}
 
 function requireFlag(name: string): string {
   const index = process.argv.indexOf(`--${name}`);
@@ -33,6 +50,7 @@ async function main(): Promise<void> {
   const shorts = metadata.youtubeShorts;
   const article = /^[aeiou]/i.test(drawing.name.en) ? "AN" : "A";
   const video = uploadFileName(id, drawing.name.en);
+  const playlists = await playlistsFor(drawing.category);
 
   const sheet = `# Video ${number} — YouTube Upload — ${drawing.name.en}
 
@@ -73,7 +91,7 @@ ${shorts.keywords.join(", ")}
 - License: Standard YouTube License
 - Comments: On
 - Shorts remixing: On
-- Playlist: Simple Drawing Tutorials
+- Playlist: ${playlists}
 - Initial visibility: Private
 
 ## YouTube Result

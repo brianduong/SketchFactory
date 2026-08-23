@@ -90,7 +90,7 @@ async function main(): Promise<void> {
       throw new Error(`Lệnh "${command}" đã có vị trí trong kiến trúc nhưng nằm ngoài MVP 0.1.`);
     default:
       console.log("SketchFactory CLI");
-      console.log("  create --subject <ant|bat|bear|beaver|bee|butterfly|camel|cat|caterpillar|cow|crab|crocodile|deer|dog|dragonfly|duck|elephant|fish|flamingo|fox|frog|giraffe|hedgehog|horse|jellyfish|kangaroo|koala|ladybug|lion|llama|monkey|mouse|octopus|owl|panda|peacock|penguin|pig|platypus|pufferfish|rabbit|rhino|rooster|scorpion|seahorse|sheep|sloth|snail|snake|spider|squirrel|starfish|stegosaurus|swan|toucan|trex|turtle|unicorn|walrus|whale|zebra> [--force]");
+      console.log("  create --subject <ant|bat|bear|beaver|bee|butterfly|cactus|camel|car|cat|caterpillar|cow|crab|crocodile|cupcake|deer|dog|dragonfly|duck|elephant|fish|flamingo|fox|frog|giraffe|hedgehog|horse|house|icecream|jellyfish|kangaroo|koala|ladybug|lion|llama|monkey|mouse|octopus|owl|panda|peacock|penguin|pig|platypus|pufferfish|rabbit|rhino|robot|rocket|rooster|sailboat|scorpion|seahorse|sheep|sloth|snail|snake|spider|squirrel|starfish|stegosaurus|swan|toucan|trex|tulip|turtle|umbrella|unicorn|walrus|whale|zebra> [--force]");
       console.log("  render:short --id <drawing-id> [--force]");
       console.log("  validate --id <drawing-id>");
       console.log("  list");

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T16:00:00.000Z",
+  "updatedAt": "2026-08-23T08:30:00.000Z",
   "verifiedAgainstYouTubeApiAt": "2026-08-14T14:58:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
@@ -12,19 +12,29 @@
     "defaultCategory": "Howto & Style",
     "customThumbnailAvailable": true,
     "customThumbnailVerifiedAt": "2026-08-02",
-    "playlist": {
-      "name": "Simple Drawing Tutorials",
-      "id": "PLS5I18k91_u4",
-      "videoCount": 0,
-      "structure": "Một playlist chung cho tất cả video, xếp theo số thứ tự. Không chia playlist theo nhóm con vật (quyết định 2026-08-02)."
-    },
     "publishCadence": {
       "intervalDays": 2,
       "timeOfDayVn": "20:00",
       "publishAtUtc": "T13:00:00Z",
       "changedAt": "2026-08-11",
       "note": "Từ video 23 trở đi rải hai ngày một video (quyết định 2026-08-11). Trước đó là mỗi ngày một video, video 01-22 giữ nguyên lịch cũ."
-    }
+    },
+    "playlists": [
+      {
+        "id": "PLS5I18k91_u4",
+        "name": "Simple Drawing Tutorials",
+        "includes": "all",
+        "videoCount": 0,
+        "note": "Playlist chung cho tất cả video, xếp theo số thứ tự (quyết định 2026-08-02)."
+      },
+      {
+        "id": null,
+        "name": "Easy Object Drawings",
+        "includes": "objects",
+        "videoCount": 0,
+        "note": "Playlist riêng cho nhóm đồ vật, mở từ video 62 (quyết định 2026-08-23). id còn null vì OAuth chưa cấp lại; `npm run youtube:playlist -- --apply` sẽ tự tạo rồi ghi id vào đây."
+      }
+    ]
   },
   "tiktok": {
     "accountName": "Simple Sketch",
@@ -35,14 +45,15 @@
     "trackOnlyAfterUserConfirmsPublished": true
   },
   "sequence": {
-    "lastGenerated": 61,
+    "lastGenerated": 71,
     "lastYouTubeUploaded": 28,
-    "nextNumber": 62
+    "nextNumber": 72
   },
   "videos": [
     {
       "number": 1,
-      "animal": "Cat",
+      "subject": "Cat",
+      "category": "animals",
       "file": "01-cat.mp4",
       "youtube": {
         "uploaded": true,
@@ -62,7 +73,8 @@
     },
     {
       "number": 2,
-      "animal": "Dog",
+      "subject": "Dog",
+      "category": "animals",
       "file": "02-dog.mp4",
       "youtube": {
         "uploaded": true,
@@ -82,7 +94,8 @@
     },
     {
       "number": 3,
-      "animal": "Rabbit",
+      "subject": "Rabbit",
+      "category": "animals",
       "file": "03-rabbit.mp4",
       "youtube": {
         "uploaded": true,
@@ -102,7 +115,8 @@
     },
     {
       "number": 4,
-      "animal": "Bear",
+      "subject": "Bear",
+      "category": "animals",
       "file": "04-bear.mp4",
       "youtube": {
         "uploaded": true,
@@ -122,7 +136,8 @@
     },
     {
       "number": 5,
-      "animal": "Fox",
+      "subject": "Fox",
+      "category": "animals",
       "file": "05-fox.mp4",
       "youtube": {
         "uploaded": true,
@@ -142,7 +157,8 @@
     },
     {
       "number": 6,
-      "animal": "Panda",
+      "subject": "Panda",
+      "category": "animals",
       "file": "06-panda.mp4",
       "youtube": {
         "uploaded": true,
@@ -162,7 +178,8 @@
     },
     {
       "number": 7,
-      "animal": "Pig",
+      "subject": "Pig",
+      "category": "animals",
       "file": "07-pig.mp4",
       "youtube": {
         "uploaded": true,
@@ -182,7 +199,8 @@
     },
     {
       "number": 8,
-      "animal": "Cow",
+      "subject": "Cow",
+      "category": "animals",
       "file": "08-cow.mp4",
       "youtube": {
         "uploaded": true,
@@ -202,7 +220,8 @@
     },
     {
       "number": 9,
-      "animal": "Frog",
+      "subject": "Frog",
+      "category": "animals",
       "file": "09-frog.mp4",
       "youtube": {
         "uploaded": true,
@@ -222,7 +241,8 @@
     },
     {
       "number": 10,
-      "animal": "Fish",
+      "subject": "Fish",
+      "category": "animals",
       "file": "10-fish.mp4",
       "youtube": {
         "uploaded": true,
@@ -242,7 +262,8 @@
     },
     {
       "number": 11,
-      "animal": "Turtle",
+      "subject": "Turtle",
+      "category": "animals",
       "file": "11-turtle.mp4",
       "youtube": {
         "uploaded": true,
@@ -262,7 +283,8 @@
     },
     {
       "number": 12,
-      "animal": "Elephant",
+      "subject": "Elephant",
+      "category": "animals",
       "file": "12-elephant.mp4",
       "youtube": {
         "uploaded": true,
@@ -282,7 +304,8 @@
     },
     {
       "number": 13,
-      "animal": "Lion",
+      "subject": "Lion",
+      "category": "animals",
       "file": "13-lion.mp4",
       "youtube": {
         "uploaded": true,
@@ -302,7 +325,8 @@
     },
     {
       "number": 14,
-      "animal": "Monkey",
+      "subject": "Monkey",
+      "category": "animals",
       "file": "14-monkey.mp4",
       "youtube": {
         "uploaded": true,
@@ -322,7 +346,8 @@
     },
     {
       "number": 15,
-      "animal": "Owl",
+      "subject": "Owl",
+      "category": "animals",
       "file": "15-owl.mp4",
       "youtube": {
         "uploaded": true,
@@ -342,7 +367,8 @@
     },
     {
       "number": 16,
-      "animal": "Penguin",
+      "subject": "Penguin",
+      "category": "animals",
       "file": "16-penguin.mp4",
       "youtube": {
         "uploaded": true,
@@ -362,7 +388,8 @@
     },
     {
       "number": 17,
-      "animal": "Duck",
+      "subject": "Duck",
+      "category": "animals",
       "file": "17-duck.mp4",
       "youtube": {
         "uploaded": true,
@@ -382,7 +409,8 @@
     },
     {
       "number": 18,
-      "animal": "Mouse",
+      "subject": "Mouse",
+      "category": "animals",
       "file": "18-mouse.mp4",
       "youtube": {
         "uploaded": true,
@@ -402,7 +430,8 @@
     },
     {
       "number": 19,
-      "animal": "Sheep",
+      "subject": "Sheep",
+      "category": "animals",
       "file": "19-sheep.mp4",
       "youtube": {
         "uploaded": true,
@@ -422,7 +451,8 @@
     },
     {
       "number": 20,
-      "animal": "Giraffe",
+      "subject": "Giraffe",
+      "category": "animals",
       "file": "20-giraffe.mp4",
       "youtube": {
         "uploaded": true,
@@ -442,7 +472,8 @@
     },
     {
       "number": 21,
-      "animal": "Whale",
+      "subject": "Whale",
+      "category": "animals",
       "file": "21-whale.mp4",
       "youtube": {
         "uploaded": true,
@@ -462,7 +493,8 @@
     },
     {
       "number": 22,
-      "animal": "Bee",
+      "subject": "Bee",
+      "category": "animals",
       "file": "22-bee.mp4",
       "youtube": {
         "uploaded": true,
@@ -482,7 +514,8 @@
     },
     {
       "number": 23,
-      "animal": "Snail",
+      "subject": "Snail",
+      "category": "animals",
       "file": "23-snail.mp4",
       "youtube": {
         "uploaded": true,
@@ -503,7 +536,8 @@
     },
     {
       "number": 24,
-      "animal": "Crab",
+      "subject": "Crab",
+      "category": "animals",
       "file": "24-crab.mp4",
       "youtube": {
         "uploaded": true,
@@ -524,7 +558,8 @@
     },
     {
       "number": 25,
-      "animal": "Butterfly",
+      "subject": "Butterfly",
+      "category": "animals",
       "file": "25-butterfly.mp4",
       "youtube": {
         "uploaded": true,
@@ -545,7 +580,8 @@
     },
     {
       "number": 26,
-      "animal": "Octopus",
+      "subject": "Octopus",
+      "category": "animals",
       "file": "26-octopus.mp4",
       "youtube": {
         "uploaded": true,
@@ -566,7 +602,8 @@
     },
     {
       "number": 27,
-      "animal": "Koala",
+      "subject": "Koala",
+      "category": "animals",
       "file": "27-koala.mp4",
       "youtube": {
         "uploaded": true,
@@ -587,7 +624,8 @@
     },
     {
       "number": 28,
-      "animal": "Squirrel",
+      "subject": "Squirrel",
+      "category": "animals",
       "file": "28-squirrel.mp4",
       "youtube": {
         "uploaded": true,
@@ -608,7 +646,8 @@
     },
     {
       "number": 29,
-      "animal": "Deer",
+      "subject": "Deer",
+      "category": "animals",
       "file": "29-deer.mp4",
       "youtube": {
         "uploaded": false,
@@ -629,7 +668,8 @@
     },
     {
       "number": 30,
-      "animal": "Snake",
+      "subject": "Snake",
+      "category": "animals",
       "file": "30-snake.mp4",
       "youtube": {
         "uploaded": false,
@@ -650,7 +690,8 @@
     },
     {
       "number": 31,
-      "animal": "Jellyfish",
+      "subject": "Jellyfish",
+      "category": "animals",
       "file": "31-jellyfish.mp4",
       "youtube": {
         "uploaded": false,
@@ -671,7 +712,8 @@
     },
     {
       "number": 32,
-      "animal": "Bat",
+      "subject": "Bat",
+      "category": "animals",
       "file": "32-bat.mp4",
       "youtube": {
         "uploaded": false,
@@ -692,7 +734,8 @@
     },
     {
       "number": 33,
-      "animal": "Flamingo",
+      "subject": "Flamingo",
+      "category": "animals",
       "file": "33-flamingo.mp4",
       "youtube": {
         "uploaded": false,
@@ -713,7 +756,8 @@
     },
     {
       "number": 34,
-      "animal": "Rhino",
+      "subject": "Rhino",
+      "category": "animals",
       "file": "34-rhino.mp4",
       "youtube": {
         "uploaded": false,
@@ -734,7 +778,8 @@
     },
     {
       "number": 35,
-      "animal": "Rooster",
+      "subject": "Rooster",
+      "category": "animals",
       "file": "35-rooster.mp4",
       "youtube": {
         "uploaded": false,
@@ -755,7 +800,8 @@
     },
     {
       "number": 36,
-      "animal": "Hedgehog",
+      "subject": "Hedgehog",
+      "category": "animals",
       "file": "36-hedgehog.mp4",
       "youtube": {
         "uploaded": false,
@@ -776,7 +822,8 @@
     },
     {
       "number": 37,
-      "animal": "Starfish",
+      "subject": "Starfish",
+      "category": "animals",
       "file": "37-starfish.mp4",
       "youtube": {
         "uploaded": false,
@@ -797,7 +844,8 @@
     },
     {
       "number": 38,
-      "animal": "Caterpillar",
+      "subject": "Caterpillar",
+      "category": "animals",
       "file": "38-caterpillar.mp4",
       "youtube": {
         "uploaded": false,
@@ -818,7 +866,8 @@
     },
     {
       "number": 39,
-      "animal": "Ant",
+      "subject": "Ant",
+      "category": "animals",
       "file": "39-ant.mp4",
       "youtube": {
         "uploaded": false,
@@ -839,7 +888,8 @@
     },
     {
       "number": 40,
-      "animal": "Crocodile",
+      "subject": "Crocodile",
+      "category": "animals",
       "file": "40-crocodile.mp4",
       "youtube": {
         "uploaded": false,
@@ -860,7 +910,8 @@
     },
     {
       "number": 41,
-      "animal": "Kangaroo",
+      "subject": "Kangaroo",
+      "category": "animals",
       "file": "41-kangaroo.mp4",
       "youtube": {
         "uploaded": false,
@@ -881,7 +932,8 @@
     },
     {
       "number": 42,
-      "animal": "Swan",
+      "subject": "Swan",
+      "category": "animals",
       "file": "42-swan.mp4",
       "youtube": {
         "uploaded": false,
@@ -902,7 +954,8 @@
     },
     {
       "number": 43,
-      "animal": "Unicorn",
+      "subject": "Unicorn",
+      "category": "animals",
       "file": "43-unicorn.mp4",
       "youtube": {
         "uploaded": false,
@@ -923,7 +976,8 @@
     },
     {
       "number": 44,
-      "animal": "Llama",
+      "subject": "Llama",
+      "category": "animals",
       "file": "44-llama.mp4",
       "youtube": {
         "uploaded": false,
@@ -944,7 +998,8 @@
     },
     {
       "number": 45,
-      "animal": "Toucan",
+      "subject": "Toucan",
+      "category": "animals",
       "file": "45-toucan.mp4",
       "youtube": {
         "uploaded": false,
@@ -965,7 +1020,8 @@
     },
     {
       "number": 46,
-      "animal": "Spider",
+      "subject": "Spider",
+      "category": "animals",
       "file": "46-spider.mp4",
       "youtube": {
         "uploaded": false,
@@ -986,7 +1042,8 @@
     },
     {
       "number": 47,
-      "animal": "Camel",
+      "subject": "Camel",
+      "category": "animals",
       "file": "47-camel.mp4",
       "youtube": {
         "uploaded": false,
@@ -1007,7 +1064,8 @@
     },
     {
       "number": 48,
-      "animal": "Stegosaurus",
+      "subject": "Stegosaurus",
+      "category": "animals",
       "file": "48-stegosaurus.mp4",
       "youtube": {
         "uploaded": false,
@@ -1028,7 +1086,8 @@
     },
     {
       "number": 49,
-      "animal": "T-Rex",
+      "subject": "T-Rex",
+      "category": "animals",
       "file": "49-trex.mp4",
       "youtube": {
         "uploaded": false,
@@ -1049,7 +1108,8 @@
     },
     {
       "number": 50,
-      "animal": "Zebra",
+      "subject": "Zebra",
+      "category": "animals",
       "file": "50-zebra.mp4",
       "youtube": {
         "uploaded": false,
@@ -1070,7 +1130,8 @@
     },
     {
       "number": 51,
-      "animal": "Horse",
+      "subject": "Horse",
+      "category": "animals",
       "file": "51-horse.mp4",
       "youtube": {
         "uploaded": false,
@@ -1091,7 +1152,8 @@
     },
     {
       "number": 52,
-      "animal": "Seahorse",
+      "subject": "Seahorse",
+      "category": "animals",
       "file": "52-seahorse.mp4",
       "youtube": {
         "uploaded": false,
@@ -1112,7 +1174,8 @@
     },
     {
       "number": 53,
-      "animal": "Peacock",
+      "subject": "Peacock",
+      "category": "animals",
       "file": "53-peacock.mp4",
       "youtube": {
         "uploaded": false,
@@ -1133,7 +1196,8 @@
     },
     {
       "number": 54,
-      "animal": "Ladybug",
+      "subject": "Ladybug",
+      "category": "animals",
       "file": "54-ladybug.mp4",
       "youtube": {
         "uploaded": false,
@@ -1154,7 +1218,8 @@
     },
     {
       "number": 55,
-      "animal": "Dragonfly",
+      "subject": "Dragonfly",
+      "category": "animals",
       "file": "55-dragonfly.mp4",
       "youtube": {
         "uploaded": false,
@@ -1175,7 +1240,8 @@
     },
     {
       "number": 56,
-      "animal": "Scorpion",
+      "subject": "Scorpion",
+      "category": "animals",
       "file": "56-scorpion.mp4",
       "youtube": {
         "uploaded": false,
@@ -1196,7 +1262,8 @@
     },
     {
       "number": 57,
-      "animal": "Pufferfish",
+      "subject": "Pufferfish",
+      "category": "animals",
       "file": "57-pufferfish.mp4",
       "youtube": {
         "uploaded": false,
@@ -1217,7 +1284,8 @@
     },
     {
       "number": 58,
-      "animal": "Platypus",
+      "subject": "Platypus",
+      "category": "animals",
       "file": "58-platypus.mp4",
       "youtube": {
         "uploaded": false,
@@ -1238,7 +1306,8 @@
     },
     {
       "number": 59,
-      "animal": "Sloth",
+      "subject": "Sloth",
+      "category": "animals",
       "file": "59-sloth.mp4",
       "youtube": {
         "uploaded": false,
@@ -1259,7 +1328,8 @@
     },
     {
       "number": 60,
-      "animal": "Beaver",
+      "subject": "Beaver",
+      "category": "animals",
       "file": "60-beaver.mp4",
       "youtube": {
         "uploaded": false,
@@ -1280,7 +1350,8 @@
     },
     {
       "number": 61,
-      "animal": "Walrus",
+      "subject": "Walrus",
+      "category": "animals",
       "file": "61-walrus.mp4",
       "youtube": {
         "uploaded": false,
@@ -1298,11 +1369,231 @@
         "googleDrive": false,
         "driveFileId": null
       }
+    },
+    {
+      "number": 62,
+      "subject": "House",
+      "category": "objects",
+      "file": "62-house.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-10-30T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 63,
+      "subject": "Ice Cream Cone",
+      "category": "objects",
+      "file": "63-ice-cream-cone.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-01T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 64,
+      "subject": "Sailboat",
+      "category": "objects",
+      "file": "64-sailboat.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-03T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 65,
+      "subject": "Rocket",
+      "category": "objects",
+      "file": "65-rocket.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-05T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 66,
+      "subject": "Cupcake",
+      "category": "objects",
+      "file": "66-cupcake.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-07T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 67,
+      "subject": "Umbrella",
+      "category": "objects",
+      "file": "67-umbrella.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-09T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 68,
+      "subject": "Cactus",
+      "category": "objects",
+      "file": "68-cactus.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-11T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 69,
+      "subject": "Robot",
+      "category": "objects",
+      "file": "69-robot.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-13T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 70,
+      "subject": "Car",
+      "category": "objects",
+      "file": "70-car.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-15T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
+    },
+    {
+      "number": 71,
+      "subject": "Tulip",
+      "category": "objects",
+      "file": "71-tulip.mp4",
+      "youtube": {
+        "uploaded": false,
+        "visibility": "not-uploaded",
+        "videoId": null,
+        "scheduledPublishAt": null,
+        "plannedPublishAt": "2026-11-17T13:00:00Z",
+        "thumbnailSet": false
+      },
+      "tiktok": false,
+      "facebook": false,
+      "instagram": false,
+      "storage": {
+        "local": true,
+        "googleDrive": false,
+        "driveFileId": null
+      }
     }
   ],
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
-    "Chạy npm run youtube:playlist -- --apply để thêm 28 video vào playlist chung (playlist đang trống, cần ~1.400 đơn vị quota)",
+    "Chạy npm run youtube:playlist -- --apply để tạo playlist \"Easy Object Drawings\" và thêm video vào cả hai playlist (playlist chung đang trống; ~50 đơn vị quota mỗi lần thêm)",
     "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại."
   ],
   "contentVersion": {

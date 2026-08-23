@@ -60,6 +60,16 @@ import { createPlatypusDrawing } from "../src/drawing/platypus.js";
 import { createSlothDrawing } from "../src/drawing/sloth.js";
 import { createBeaverDrawing } from "../src/drawing/beaver.js";
 import { createWalrusDrawing } from "../src/drawing/walrus.js";
+import { createHouseDrawing } from "../src/drawing/house.js";
+import { createIceCreamDrawing } from "../src/drawing/icecream.js";
+import { createSailboatDrawing } from "../src/drawing/sailboat.js";
+import { createRocketDrawing } from "../src/drawing/rocket.js";
+import { createCupcakeDrawing } from "../src/drawing/cupcake.js";
+import { createUmbrellaDrawing } from "../src/drawing/umbrella.js";
+import { createCactusDrawing } from "../src/drawing/cactus.js";
+import { createRobotDrawing } from "../src/drawing/robot.js";
+import { createCarDrawing } from "../src/drawing/car.js";
+import { createTulipDrawing } from "../src/drawing/tulip.js";
 import { validateDrawing } from "../src/quality-control/validator.js";
 import { strokeExtent } from "./helpers/stroke-extent.js";
 
@@ -125,6 +135,16 @@ const catalog = [
   ["sloth", createSlothDrawing],
   ["beaver", createBeaverDrawing],
   ["walrus", createWalrusDrawing],
+  ["house", createHouseDrawing],
+  ["icecream", createIceCreamDrawing],
+  ["sailboat", createSailboatDrawing],
+  ["rocket", createRocketDrawing],
+  ["cupcake", createCupcakeDrawing],
+  ["umbrella", createUmbrellaDrawing],
+  ["cactus", createCactusDrawing],
+  ["robot", createRobotDrawing],
+  ["car", createCarDrawing],
+  ["tulip", createTulipDrawing],
 ] as const;
 
 describe("validateDrawing", () => {

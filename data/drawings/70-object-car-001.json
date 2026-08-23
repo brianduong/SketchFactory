@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "id": "70-object-car-001",
+  "slug": "easy-car",
+  "name": {
+    "en": "Car",
+    "vi": "Chiếc xe hơi"
+  },
+  "category": "objects",
+  "subcategory": "vehicle",
+  "difficulty": 2,
+  "strokeCount": 8,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "car",
+    "object",
+    "vehicle",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Body",
+      "strokeIds": [
+        "01-body"
+      ],
+      "voiceText": "Draw a long rounded box."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Roof",
+      "strokeIds": [
+        "02-roof",
+        "03-window-line"
+      ],
+      "voiceText": "Add a curved roof and split the window."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Wheels",
+      "strokeIds": [
+        "04-wheel-left",
+        "05-wheel-right"
+      ],
+      "voiceText": "Draw two big wheels."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Hubs",
+      "strokeIds": [
+        "06-hub-left",
+        "07-hub-right"
+      ],
+      "voiceText": "Add a small circle inside each wheel."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Headlight",
+      "strokeIds": [
+        "08-headlight"
+      ],
+      "voiceText": "Finish with a headlight in front."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-body",
+      "name": "Draw the body",
+      "order": 1,
+      "geometry": "rect",
+      "vector": {
+        "x": 180,
+        "y": 530,
+        "width": 640,
+        "height": 180,
+        "rx": 50
+      },
+      "bounds": {
+        "x": 180,
+        "y": 530,
+        "width": 640,
+        "height": 180
+      },
+      "startMs": 3000,
+      "durationMs": 2000,
+      "stepId": "step-1",
+      "voiceDescription": "Draw a long rounded box.",
+      "enabled": true
+    },
+    {
+      "id": "02-roof",
+      "name": "Add the roof",
+      "order": 2,
+      "geometry": "path",
+      "vector": {
+        "d": "M330 530 C380 400 620 400 670 530"
+      },
+      "bounds": {
+        "x": 330,
+        "y": 400,
+        "width": 340,
+        "height": 130
+      },
+      "startMs": 5300,
+      "durationMs": 2000,
+      "stepId": "step-2",
+      "voiceDescription": "Add a curved roof on top.",
+      "enabled": true
+    },
+    {
+      "id": "03-window-line",
+      "name": "Split the window",
+      "order": 3,
+      "geometry": "line",
+      "vector": {
+        "x1": 500,
+        "y1": 435,
+        "x2": 500,
+        "y2": 530
+      },
+      "bounds": {
+        "x": 490,
+        "y": 435,
+        "width": 20,
+        "height": 95
+      },
+      "startMs": 7600,
+      "durationMs": 2000,
+      "stepId": "step-2",
+      "voiceDescription": "Split the window with one line.",
+      "enabled": true
+    },
+    {
+      "id": "04-wheel-left",
+      "name": "Left wheel",
+      "order": 4,
+      "geometry": "circle",
+      "vector": {
+        "cx": 330,
+        "cy": 730,
+        "r": 85
+      },
+      "bounds": {
+        "x": 245,
+        "y": 645,
+        "width": 170,
+        "height": 170
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 9900,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Draw one big wheel.",
+      "enabled": true
+    },
+    {
+      "id": "05-wheel-right",
+      "name": "Right wheel",
+      "order": 5,
+      "geometry": "circle",
+      "vector": {
+        "cx": 670,
+        "cy": 730,
+        "r": 85
+      },
+      "bounds": {
+        "x": 585,
+        "y": 645,
+        "width": 170,
+        "height": 170
+      },
+      "style": {
+        "fill": "#FFFDF7"
+      },
+      "startMs": 12200,
+      "durationMs": 2000,
+      "stepId": "step-3",
+      "voiceDescription": "Draw the second wheel.",
+      "enabled": true
+    },
+    {
+      "id": "06-hub-left",
+      "name": "Left hub",
+      "order": 6,
+      "geometry": "circle",
+      "vector": {
+        "cx": 330,
+        "cy": 730,
+        "r": 30
+      },
+      "bounds": {
+        "x": 300,
+        "y": 700,
+        "width": 60,
+        "height": 60
+      },
+      "startMs": 14500,
+      "durationMs": 2000,
+      "stepId": "step-4",
+      "voiceDescription": "Add a small circle inside the wheel.",
+      "enabled": true
+    },
+    {
+      "id": "07-hub-right",
+      "name": "Right hub",
+      "order": 7,
+      "geometry": "circle",
+      "vector": {
+        "cx": 670,
+        "cy": 730,
+        "r": 30
+      },
+      "bounds": {
+        "x": 640,
+        "y": 700,
+        "width": 60,
+        "height": 60
+      },
+      "startMs": 16800,
+      "durationMs": 2000,
+      "stepId": "step-4",
+      "voiceDescription": "Add the second small circle.",
+      "enabled": true
+    },
+    {
+      "id": "08-headlight",
+      "name": "Add the headlight",
+      "order": 8,
+      "geometry": "circle",
+      "vector": {
+        "cx": 780,
+        "cy": 595,
+        "r": 24
+      },
+      "bounds": {
+        "x": 756,
+        "y": 571,
+        "width": 48,
+        "height": 48
+      },
+      "style": {
+        "fill": "#111111",
+        "strokeWidth": 0
+      },
+      "startMs": 19100,
+      "durationMs": 2000,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with a headlight in front.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2800,
+        "text": "Can you draw a car in just eight strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2800,
+        "endMs": 5100,
+        "text": "Draw a long rounded box."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5100,
+        "endMs": 9700,
+        "text": "Add a curved roof and split the window."
+      },
+      {
+        "id": "step-3",
+        "startMs": 9700,
+        "endMs": 14300,
+        "text": "Draw two big wheels."
+      },
+      {
+        "id": "step-4",
+        "startMs": 14300,
+        "endMs": 18900,
+        "text": "Add a small circle inside each wheel."
+      },
+      {
+        "id": "step-5",
+        "startMs": 18900,
+        "endMs": 21300,
+        "text": "Finish with a headlight in front."
+      },
+      {
+        "id": "result",
+        "startMs": 21500,
+        "endMs": 23700,
+        "text": "It's a car!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a car in just eight strokes?"
+  },
+  "createdAt": "2026-08-23T00:00:00.000Z",
+  "updatedAt": "2026-08-23T08:25:58.518Z"
+}

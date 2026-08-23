@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "id": "71-object-tulip-001",
+  "slug": "easy-tulip",
+  "name": {
+    "en": "Tulip",
+    "vi": "Hoa tulip"
+  },
+  "category": "objects",
+  "subcategory": "plant",
+  "difficulty": 2,
+  "strokeCount": 7,
+  "estimatedDrawingSeconds": 10,
+  "status": "generated",
+  "tags": [
+    "tulip",
+    "flower",
+    "object",
+    "plant",
+    "easy drawing"
+  ],
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Cup",
+      "strokeIds": [
+        "01-cup"
+      ],
+      "voiceText": "Draw a wide U for the flower."
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Side petals",
+      "strokeIds": [
+        "02-petal-left",
+        "03-petal-right"
+      ],
+      "voiceText": "Add two petals on the sides."
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Middle petal",
+      "strokeIds": [
+        "04-petal-center"
+      ],
+      "voiceText": "Add a small petal in the middle."
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Stem",
+      "strokeIds": [
+        "05-stem"
+      ],
+      "voiceText": "Draw a long stem down."
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Leaves",
+      "strokeIds": [
+        "06-leaf-left",
+        "07-leaf-right"
+      ],
+      "voiceText": "Finish with two leaves on the stem."
+    }
+  ],
+  "strokes": [
+    {
+      "id": "01-cup",
+      "name": "Draw the cup",
+      "order": 1,
+      "geometry": "path",
+      "vector": {
+        "d": "M370 400 C380 620 620 620 630 400"
+      },
+      "bounds": {
+        "x": 370,
+        "y": 400,
+        "width": 260,
+        "height": 220
+      },
+      "startMs": 3000,
+      "durationMs": 2300,
+      "stepId": "step-1",
+      "voiceDescription": "Draw a wide U for the flower.",
+      "enabled": true
+    },
+    {
+      "id": "02-petal-left",
+      "name": "Left petal",
+      "order": 2,
+      "geometry": "path",
+      "vector": {
+        "d": "M370 400 C370 310 400 280 450 290 C480 300 490 330 500 370"
+      },
+      "bounds": {
+        "x": 370,
+        "y": 280,
+        "width": 130,
+        "height": 120
+      },
+      "startMs": 5600,
+      "durationMs": 2300,
+      "stepId": "step-2",
+      "voiceDescription": "Add a petal on the left.",
+      "enabled": true
+    },
+    {
+      "id": "03-petal-right",
+      "name": "Right petal",
+      "order": 3,
+      "geometry": "path",
+      "vector": {
+        "d": "M630 400 C630 310 600 280 550 290 C520 300 510 330 500 370"
+      },
+      "bounds": {
+        "x": 500,
+        "y": 280,
+        "width": 130,
+        "height": 120
+      },
+      "startMs": 8200,
+      "durationMs": 2300,
+      "stepId": "step-2",
+      "voiceDescription": "Add a petal on the right.",
+      "enabled": true
+    },
+    {
+      "id": "04-petal-center",
+      "name": "Middle petal",
+      "order": 4,
+      "geometry": "path",
+      "vector": {
+        "d": "M462 350 C472 255 528 255 538 350"
+      },
+      "bounds": {
+        "x": 462,
+        "y": 255,
+        "width": 76,
+        "height": 95
+      },
+      "startMs": 10800,
+      "durationMs": 2300,
+      "stepId": "step-3",
+      "voiceDescription": "Add a small petal in the middle.",
+      "enabled": true
+    },
+    {
+      "id": "05-stem",
+      "name": "Draw the stem",
+      "order": 5,
+      "geometry": "line",
+      "vector": {
+        "x1": 500,
+        "y1": 560,
+        "x2": 500,
+        "y2": 860
+      },
+      "bounds": {
+        "x": 490,
+        "y": 560,
+        "width": 20,
+        "height": 300
+      },
+      "startMs": 13400,
+      "durationMs": 2300,
+      "stepId": "step-4",
+      "voiceDescription": "Draw a long stem down.",
+      "enabled": true
+    },
+    {
+      "id": "06-leaf-left",
+      "name": "Left leaf",
+      "order": 6,
+      "geometry": "path",
+      "vector": {
+        "d": "M500 710 C400 640 300 700 300 780 C360 800 460 780 500 710"
+      },
+      "bounds": {
+        "x": 300,
+        "y": 640,
+        "width": 200,
+        "height": 160
+      },
+      "startMs": 16000,
+      "durationMs": 2300,
+      "stepId": "step-5",
+      "voiceDescription": "Add a leaf on the left.",
+      "enabled": true
+    },
+    {
+      "id": "07-leaf-right",
+      "name": "Right leaf",
+      "order": 7,
+      "geometry": "path",
+      "vector": {
+        "d": "M500 760 C600 690 700 750 700 830 C640 850 540 830 500 760"
+      },
+      "bounds": {
+        "x": 500,
+        "y": 690,
+        "width": 200,
+        "height": 160
+      },
+      "startMs": 18600,
+      "durationMs": 2300,
+      "stepId": "step-5",
+      "voiceDescription": "Finish with a leaf on the right.",
+      "enabled": true
+    }
+  ],
+  "voiceScript": {
+    "language": "en-US",
+    "provider": "kokoro",
+    "voice": "af_bella",
+    "rate": 175,
+    "speed": 0.85,
+    "cues": [
+      {
+        "id": "hook",
+        "startMs": 200,
+        "endMs": 2800,
+        "text": "Can you draw a tulip in just seven strokes?"
+      },
+      {
+        "id": "step-1",
+        "startMs": 2800,
+        "endMs": 5400,
+        "text": "Draw a wide U for the flower."
+      },
+      {
+        "id": "step-2",
+        "startMs": 5400,
+        "endMs": 10600,
+        "text": "Add two petals on the sides."
+      },
+      {
+        "id": "step-3",
+        "startMs": 10600,
+        "endMs": 13200,
+        "text": "Add a small petal in the middle."
+      },
+      {
+        "id": "step-4",
+        "startMs": 13200,
+        "endMs": 15800,
+        "text": "Draw a long stem down."
+      },
+      {
+        "id": "step-5",
+        "startMs": 15800,
+        "endMs": 21100,
+        "text": "Finish with two leaves on the stem."
+      },
+      {
+        "id": "result",
+        "startMs": 21300,
+        "endMs": 23500,
+        "text": "It's a tulip!"
+      },
+      {
+        "id": "cta",
+        "startMs": 25000,
+        "endMs": 28700,
+        "text": "Great job! Now try drawing it yourself."
+      }
+    ]
+  },
+  "videoMetadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 29,
+    "hook": "Can you draw a tulip in just seven strokes?"
+  },
+  "createdAt": "2026-08-23T00:00:00.000Z",
+  "updatedAt": "2026-08-23T08:27:30.907Z"
+}

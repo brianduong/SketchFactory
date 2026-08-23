@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-19 23:45 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-23 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -30,9 +30,22 @@ chuồn, bọ cạp, cá nóc, thú mỏ vịt, lười, hải ly, hải mã. Ch
 trống** chứ không theo số nét — tua fan, thân gai, mỏ dẹt, tư thế treo, đuôi bè, ngà.
 Cả 10 đều QC `passed`, 29 giây, 1080×1920.
 
+Ngày 2026-08-23 sản xuất thêm **10 video (62–71)** và đây là loạt đầu **không phải con
+vật**: nhà, kem, thuyền buồm, tên lửa, cupcake, cái ô, xương rồng, người máy, ô tô, hoa
+tulip. Lý do đổi nhóm là mọi dáng động vật còn lại đều đụng con đã có trên kênh — cá mập
+≈ cá/cá voi, sói ≈ chó/cáo, hổ ≈ ngựa vằn, hà mã ≈ tê giác, cá heo ≈ cá voi, dê ≈ cừu,
+thằn lằn ≈ cá sấu, tôm hùm ≈ cua/bọ cạp, hải cẩu ≈ hải mã, rái cá ≈ hải ly. Đồ vật mở ra
+vùng hình hoàn toàn trống.
+
+Kèm theo là **playlist thứ hai**: `Easy Object Drawings` chỉ chứa nhóm đồ vật, còn
+`Simple Drawing Tutorials` giữ vai trò playlist chung cho tất cả video. `publishing-state`
+nay có `youtube.playlists` (mỗi playlist khai báo `includes`) và mỗi video có `category`;
+`npm run youtube:playlist -- --apply` tự tạo playlist còn thiếu rồi thêm video vào đúng
+nhóm. Video đồ vật nằm ở cả hai playlist.
+
 **Chưa upload được video nào.** Refresh token OAuth đã hết hạn (`invalid_grant`) đúng
 như dự đoán mốc 2026-08-18; phải nhờ người dùng chạy `npm run youtube:auth`. Hàng đợi
-chờ upload giờ là **33 video (29–61)**, quota ~4 video/ngày nên cần khoảng 9 ngày.
+chờ upload giờ là **43 video (29–71)**, quota ~4 video/ngày nên cần khoảng 11 ngày.
 
 ## Tổng quan
 
@@ -45,15 +58,15 @@ chờ upload giờ là **33 video (29–61)**, quota ~4 video/ngày nên cần k
 | Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
 | Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
-| Bộ video upload-ready | ✅ 61 video | `output/upload-ready/01-cat.mp4` đến `61-walrus.mp4` |
+| Bộ video upload-ready | ✅ 71 video | `output/upload-ready/01-cat.mp4` đến `71-tulip.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
 | Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
 | YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
 | Google Drive archive | 📝 Đã định nghĩa quy trình | `docs/publishing/operations.md` |
 
-## Danh mục 61 video
+## Danh mục 71 video
 
-| No. | Animal | Số nét | Video upload-ready | YouTube |
+| No. | Subject | Số nét | Video upload-ready | YouTube |
 |---:|---|---:|---|:---:|
 | 01 | Cat | 10 | `01-cat.mp4` | ✅ Public — `O4RkgkWIPbE` |
 | 02 | Dog | 9 | `02-dog.mp4` | ✅ Public — `hiUp_b8d920` |
@@ -116,6 +129,16 @@ chờ upload giờ là **33 video (29–61)**, quota ~4 video/ngày nên cần k
 | 59 | Sloth | 9 | `59-sloth.mp4` | ⏳ Chưa upload — dự kiến 24-10 20:00 |
 | 60 | Beaver | 10 | `60-beaver.mp4` | ⏳ Chưa upload — dự kiến 26-10 20:00 |
 | 61 | Walrus | 9 | `61-walrus.mp4` | ⏳ Chưa upload — dự kiến 28-10 20:00 |
+| 62 | House | 7 | `62-house.mp4` | ⏳ Chưa upload — dự kiến 30-10 20:00 |
+| 63 | Ice Cream Cone | 7 | `63-ice-cream-cone.mp4` | ⏳ Chưa upload — dự kiến 01-11 20:00 |
+| 64 | Sailboat | 6 | `64-sailboat.mp4` | ⏳ Chưa upload — dự kiến 03-11 20:00 |
+| 65 | Rocket | 8 | `65-rocket.mp4` | ⏳ Chưa upload — dự kiến 05-11 20:00 |
+| 66 | Cupcake | 7 | `66-cupcake.mp4` | ⏳ Chưa upload — dự kiến 07-11 20:00 |
+| 67 | Umbrella | 7 | `67-umbrella.mp4` | ⏳ Chưa upload — dự kiến 09-11 20:00 |
+| 68 | Cactus | 6 | `68-cactus.mp4` | ⏳ Chưa upload — dự kiến 11-11 20:00 |
+| 69 | Robot | 9 | `69-robot.mp4` | ⏳ Chưa upload — dự kiến 13-11 20:00 |
+| 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
+| 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
 
 Toàn bộ 28 video bản v2 đã nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
@@ -141,13 +164,13 @@ bảng tổng và từng upload sheet.
 
 ## Quy ước file và publishing
 
-- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`51`.
+- Video dùng để đăng nằm tại `output/upload-ready/` và có prefix `01`–`71`.
 - `output/shorts/` chứa bản render mới nhất; `upload-ready/` là bản đã chép để upload.
 - File sinh trong `output/` bị ignore khỏi Git và có thể tái tạo từ JSON nguồn.
 - Upload sheet nằm tại `docs/publishing/`; mỗi file ghi số video và trạng thái riêng
   cho YouTube, TikTok, Facebook và Instagram.
 - Bảng tổng: `docs/publishing/upload-tracker.md`.
-- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `52`.
+- Trạng thái máy đọc được: `data/publishing-state.json`; số video tiếp theo là `72`.
 - Nhịp đăng hiện tại: hai ngày một video lúc 20:00 giờ VN, ghi ở
   `data/publishing-state.json` → `youtube.publishCadence`.
 - Upload sheet cho video mới sinh bằng `npx tsx scripts/publishing-sheet.ts --id <drawing-id>`
@@ -161,6 +184,7 @@ bảng tổng và từng upload sheet.
 
 - Mỗi bước là một nét đơn liên tục; không gom nhiều chi tiết vào một stroke.
 - Mỗi hình có 5–10 nét và phải nhận diện nhanh.
+- Từ video 62 kênh có thêm nhóm đồ vật (`category: "objects"`), đăng kèm playlist riêng.
 - Video dọc 1080×1920, dài 29 giây, có voice, subtitle và thumbnail.
 - Hook “Can you draw…” tự chia hai dòng để không bị khuất hai bên trên YouTube mobile.
 - Tiêu đề, mô tả và tag dùng tiếng Anh nhất quán.
@@ -169,7 +193,7 @@ bảng tổng và từng upload sheet.
 ## Kết quả kiểm chứng hiện tại
 
 - `npm run typecheck`: đạt, không lỗi TypeScript strict.
-- `npm test`: 5 test files, 135/135 tests đạt.
+- `npm test`: 5 test files, 175/175 tests đạt.
 - Video 23–28: pipeline chạy đủ stage, QC đạt 0 issue, đều 1080×1920, 29 giây, h264 + aac.
 - Video 29–51 đều review trên PNG nền trắng trước khi render. Ba ca khó: con nhện không
   đủ 10 nét cho thân + 8 chân + mắt nên mỗi nét vẽ thành một đường vòng qua thân thành

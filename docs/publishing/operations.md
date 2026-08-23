@@ -100,10 +100,23 @@ vẽ nét ngày 2026-08-02:
 
 ## Playlist
 
-Kênh dùng **một playlist chung** `Simple Drawing Tutorials` (`PLS5I18k91_u4`) chứa tất cả
-video, xếp theo số thứ tự, để người xem chạy liên tục từ video 01 tới cuối. Không chia
-playlist theo nhóm con vật — quyết định ngày 2026-08-02, dù drawing có sẵn `subcategory`
-(wildlife, pets, farm, birds, aquatic, insects).
+Kênh dùng **hai playlist**, khai báo trong `youtube.playlists` của
+`data/publishing-state.json`:
+
+| Playlist | `includes` | Nhận video |
+|---|---|---|
+| `Simple Drawing Tutorials` (`PLS5I18k91_u4`) | `all` | tất cả, xếp theo số thứ tự |
+| `Easy Object Drawings` (chưa có id) | `objects` | chỉ nhóm đồ vật, từ video 62 |
+
+Playlist chung giữ nguyên vai trò cũ: chạy liên tục từ video 01 tới cuối. Vẫn **không chia
+playlist theo nhóm con vật** — quyết định ngày 2026-08-02 còn nguyên giá trị, dù drawing có
+sẵn `subcategory` (wildlife, pets, farm, birds, aquatic, insects). Playlist thứ hai mở ngày
+2026-08-23 khi loạt đồ vật bắt đầu, vì đồ vật lẫn vào danh sách con vật thì người xem theo
+chủ đề khó tìm.
+
+`npm run youtube:playlist -- --apply` đọc `category` của từng video rồi thêm vào đúng
+playlist; playlist nào còn `id: null` thì script tự tạo (public) và ghi id ngược lại vào
+state. Video đồ vật nằm ở **cả hai** playlist.
 
 ## Quota YouTube
 
