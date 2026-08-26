@@ -58,15 +58,18 @@ bảo "upload được bao nhiêu thì upload hết", em chạy tiếp **37–61
 `quotaExceeded` ở video 62. Tổng cộng **29 video (33–61)** lên kênh trong một ngày — con số
 "~4 video/ngày" ghi từ 2026-08-11 là **sai**, quota thật đủ cho khoảng 29 lượt upload.
 
+Chiều cùng ngày thử lại thì quota hồi được một ít, đủ cho **đúng một video nữa (62 House)**
+rồi lại `quotaExceeded` ở 63. Tổng ngày 26-08: **30 video (33–62)**.
+
 **Việc còn dở vì hết quota giữa chừng** (chạy lại đúng lệnh `youtube:upload` cũ là bù được,
 uploader đọc receipt ở `.secrets/youtube-uploads.json` nên không upload lại file video):
 
-- **Phụ đề chưa lên: video 54–61.**
+- **Phụ đề chưa lên: video 54–62.**
 - **Thumbnail chưa đặt: video 58, 60, 61.**
-- **Playlist chưa sync: video 37–61** — `npm run youtube:playlist -- --apply`.
+- **Playlist chưa sync: video 37–62** — `npm run youtube:playlist -- --apply`; video 62 đã
+  lên kênh nên lần chạy tới sẽ tự tạo playlist `Easy Object Drawings`.
 
-Kênh giờ có **61 video**, hàng đợi còn **10 video (62–71)**, tất cả đều là loạt đồ vật.
-Playlist `Easy Object Drawings` sẽ được tạo khi số 62 lên kênh.
+Kênh giờ có **62 video**, hàng đợi còn **9 video (63–71)**, tất cả đều là loạt đồ vật.
 
 ## Tổng quan
 
@@ -150,7 +153,7 @@ Playlist `Easy Object Drawings` sẽ được tạo khi số 62 lên kênh.
 | 59 | Sloth | 9 | `59-sloth.mp4` | 🕗 Hẹn 24-10 20:00 ⚠️ thiếu phụ đề — `uFUwDHiTSEQ` |
 | 60 | Beaver | 10 | `60-beaver.mp4` | 🕗 Hẹn 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `UKqdlhiSnFU` |
 | 61 | Walrus | 9 | `61-walrus.mp4` | 🕗 Hẹn 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `yeje_-d-YIA` |
-| 62 | House | 7 | `62-house.mp4` | ⏳ Chưa upload — dự kiến 30-10 20:00 |
+| 62 | House | 7 | `62-house.mp4` | 🕗 Hẹn 30-10 20:00 ⚠️ thiếu phụ đề — `pyNzXq3sZp8` |
 | 63 | Ice Cream Cone | 7 | `63-ice-cream-cone.mp4` | ⏳ Chưa upload — dự kiến 01-11 20:00 |
 | 64 | Sailboat | 6 | `64-sailboat.mp4` | ⏳ Chưa upload — dự kiến 03-11 20:00 |
 | 65 | Rocket | 8 | `65-rocket.mp4` | ⏳ Chưa upload — dự kiến 05-11 20:00 |
@@ -161,7 +164,7 @@ Playlist `Easy Object Drawings` sẽ được tạo khi số 62 lên kênh.
 | 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
 | 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
 
-Tới 2026-08-26 có 61 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+Tới 2026-08-26 có 62 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
 Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 

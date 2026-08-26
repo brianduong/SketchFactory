@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T08:11:02.961Z",
+  "updatedAt": "2026-08-26T11:15:17.033Z",
   "verifiedAgainstYouTubeApiAt": "2026-08-23T08:45:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
@@ -46,7 +46,7 @@
   },
   "sequence": {
     "lastGenerated": 71,
-    "lastYouTubeUploaded": 61,
+    "lastYouTubeUploaded": 62,
     "nextNumber": 72
   },
   "videos": [
@@ -1376,12 +1376,12 @@
       "category": "objects",
       "file": "62-house.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "pyNzXq3sZp8",
+        "scheduledPublishAt": "2026-10-30T13:00:00Z",
         "plannedPublishAt": "2026-10-30T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1594,10 +1594,10 @@
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
     "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại.",
-    "Bù phụ đề cho video 54-61 và thumbnail cho 58, 60, 61: chạy lại đúng lệnh npm run youtube:upload cũ (uploader đọc receipt .secrets/youtube-uploads.json nên bỏ qua bước upload video, chỉ làm phần còn thiếu).",
-    "Chạy npm run youtube:playlist -- --apply để thêm video 37-61 vào Simple Drawing Tutorials (quota 2026-08-26 đã cạn).",
-    "Upload nốt 10 video cuối 62-71 (loạt đồ vật), Private kèm --publish-at, 62 -> 2026-10-30T13:00:00Z. Playlist Easy Object Drawings sẽ tự được tạo lúc đó.",
-    "Quota thật: ngày 2026-08-26 upload được 29 video liền (33-61) rồi mới quotaExceeded. Con số ~4 video/ngày ghi trước đó là sai."
+    "Bù phụ đề cho video 54-62 và thumbnail cho 58, 60, 61: chạy lại đúng lệnh npm run youtube:upload cũ (uploader đọc receipt .secrets/youtube-uploads.json nên bỏ qua bước upload video, chỉ làm phần còn thiếu).",
+    "Chạy npm run youtube:playlist -- --apply để thêm video 37-62 vào Simple Drawing Tutorials; video 62 đã lên kênh nên lần chạy tới sẽ tự tạo playlist Easy Object Drawings.",
+    "Upload nốt 9 video cuối 63-71 (loạt đồ vật), Private kèm --publish-at, 63 -> 2026-11-01T13:00:00Z.",
+    "Quota ngày 2026-08-26: upload liền 29 video (33-61) rồi quotaExceeded; ~3 tiếng sau hồi đủ đúng 1 video (62) rồi cạn tiếp. Con số ~4 video/ngày ghi trước đó là sai, nhưng cũng đừng hứa 29 video mỗi ngày - cứ chạy tới khi bị chặn."
   ],
   "contentVersion": {
     "version": 2,

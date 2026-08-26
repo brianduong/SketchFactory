@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–61 (29 video, Private + lịch 02-09 → 28-10) tới khi hết quota; playlist chung mới đủ 01–36, còn 37–61 chờ sync
+Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–62 (30 video, Private + lịch 02-09 → 30-10) qua hai đợt, cả hai đều dừng vì hết quota; playlist chung mới đủ 01–36, còn 37–62 chờ sync
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -74,7 +74,7 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 59 | Sloth | [x] | Scheduled 24-10 20:00 ⚠️ thiếu phụ đề | `uFUwDHiTSEQ` | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
 | 60 | Beaver | [x] | Scheduled 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `UKqdlhiSnFU` | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
 | 61 | Walrus | [x] | Scheduled 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `yeje_-d-YIA` | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
-| 62 | House | [ ] | Chưa upload — dự kiến 30-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
+| 62 | House | [x] | Scheduled 30-10 20:00 ⚠️ thiếu phụ đề | `pyNzXq3sZp8` | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
 | 63 | Ice Cream Cone | [ ] | Chưa upload — dự kiến 01-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](63-object-icecream-001.md) |
 | 64 | Sailboat | [ ] | Chưa upload — dự kiến 03-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](64-object-sailboat-001.md) |
 | 65 | Rocket | [ ] | Chưa upload — dự kiến 05-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](65-object-rocket-001.md) |
@@ -160,12 +160,12 @@ chưa tạo trên YouTube).
 - **Bù phần thiếu do hết quota giữa chừng ngày 2026-08-26** — chạy lại đúng lệnh
   `npm run youtube:upload` cũ cho từng video; uploader đọc receipt ở
   `.secrets/youtube-uploads.json` nên bỏ qua bước upload file video, chỉ làm nốt phần dở:
-  - phụ đề chưa lên: **54, 55, 56, 57, 58, 59, 60, 61**
+  - phụ đề chưa lên: **54, 55, 56, 57, 58, 59, 60, 61, 62**
   - thumbnail chưa đặt: **58, 60, 61**
-- **Playlist chưa sync cho video 37–61** — `npm run youtube:playlist -- --apply`. Playlist
-  chung mới đủ tới 36. Playlist `Easy Object Drawings` vẫn **chưa tạo trên YouTube**, cố ý
-  chờ tới khi video đồ vật đầu tiên (số 62) lên kênh để khỏi để playlist rỗng công khai.
-- Upload nốt **10 video cuối 62–71** (loạt đồ vật), Private kèm `--publish-at`, 62 → 30-10.
+- **Playlist chưa sync cho video 37–62** — `npm run youtube:playlist -- --apply`. Playlist
+  chung mới đủ tới 36. Video 62 đã lên kênh nên lần chạy tới **sẽ tự tạo** playlist
+  `Easy Object Drawings`.
+- Upload nốt **9 video cuối 63–71** (loạt đồ vật), Private kèm `--publish-at`, 63 → 01-11.
   Quota reset 14:00 giờ VN.
 - **Quota thật lớn hơn ghi chép cũ**: ngày 2026-08-26 upload liền **29 video (33–61)** rồi
   mới `quotaExceeded`. Con số "~4 video/ngày" ghi từ 2026-08-11 là sai.
