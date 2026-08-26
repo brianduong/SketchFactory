@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-23 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-08-26 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -52,8 +52,13 @@ Playlist `Easy Object Drawings` **cố ý chưa tạo** — chờ tới khi vide
 (số 62) lên kênh, để không có playlist rỗng công khai trên kênh. `playlist-sync` đã được
 sửa để bỏ qua playlist chưa có video nào.
 
-Kênh giờ có **32 video**, hàng đợi còn **39 video (33–71)**, quota ~4 video/ngày nên cần
-khoảng 10 ngày nữa.
+Ngày 2026-08-26 OAuth vẫn còn hiệu lực, em **upload 33–36** (Flamingo, Rhino, Rooster,
+Hedgehog) ở chế độ Private kèm lịch tự công khai 02, 04, 06 và 08 tháng 9 — hết 8.200 đơn
+vị quota — rồi chạy `youtube:playlist --apply` để thêm cả 4 vào `Simple Drawing Tutorials`
+(nay đủ **36 video**, xác minh lại bằng dry-run).
+
+Kênh giờ có **36 video**, hàng đợi còn **35 video (37–71)**, quota ~4 video/ngày nên cần
+khoảng 9 ngày nữa.
 
 ## Tổng quan
 
@@ -108,10 +113,10 @@ khoảng 10 ngày nữa.
 | 30 | Snake | 7 | `30-snake.mp4` | 🕗 Hẹn 27-08 20:00 — `mC50OblpiUg` |
 | 31 | Jellyfish | 10 | `31-jellyfish.mp4` | 🕗 Hẹn 29-08 20:00 — `ytAUiPbstTw` |
 | 32 | Bat | 8 | `32-bat.mp4` | 🕗 Hẹn 31-08 20:00 — `sUTDn03UdhQ` |
-| 33 | Flamingo | 8 | `33-flamingo.mp4` | ⏳ Chưa upload — dự kiến 02-09 20:00 |
-| 34 | Rhino | 9 | `34-rhino.mp4` | ⏳ Chưa upload — dự kiến 04-09 20:00 |
-| 35 | Rooster | 10 | `35-rooster.mp4` | ⏳ Chưa upload — dự kiến 06-09 20:00 |
-| 36 | Hedgehog | 6 | `36-hedgehog.mp4` | ⏳ Chưa upload — dự kiến 08-09 20:00 |
+| 33 | Flamingo | 8 | `33-flamingo.mp4` | 🕗 Hẹn 02-09 20:00 — `UTWEUTq6sQ8` |
+| 34 | Rhino | 9 | `34-rhino.mp4` | 🕗 Hẹn 04-09 20:00 — `6NlX9EnwKMI` |
+| 35 | Rooster | 10 | `35-rooster.mp4` | 🕗 Hẹn 06-09 20:00 — `jx4IhcrGfKI` |
+| 36 | Hedgehog | 6 | `36-hedgehog.mp4` | 🕗 Hẹn 08-09 20:00 — `JiDrkyQrhrs` |
 | 37 | Starfish | 9 | `37-starfish.mp4` | ⏳ Chưa upload — dự kiến 10-09 20:00 |
 | 38 | Caterpillar | 10 | `38-caterpillar.mp4` | ⏳ Chưa upload — dự kiến 12-09 20:00 |
 | 39 | Ant | 10 | `39-ant.mp4` | ⏳ Chưa upload — dự kiến 14-09 20:00 |
@@ -148,7 +153,7 @@ khoảng 10 ngày nữa.
 | 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
 | 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
 
-Tới 2026-08-23 có 32 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+Tới 2026-08-26 có 36 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
 Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 

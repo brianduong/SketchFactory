@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-23 (Asia/Ho_Chi_Minh) — thêm 10 video đồ vật 62–71 và mở playlist thứ hai; OAuth đã cấp lại, upload 29–32 và lấp đầy playlist chung (32 video)
+Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–36 (Private + lịch 02-09 → 08-09) và thêm cả 4 vào playlist chung (36 video)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -45,10 +45,10 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 30 | Snake | [x] | Scheduled 27-08 20:00 | `mC50OblpiUg` | [ ] | [ ] | [ ] | Local | [Open](30-animal-snake-001.md) |
 | 31 | Jellyfish | [x] | Scheduled 29-08 20:00 | `ytAUiPbstTw` | [ ] | [ ] | [ ] | Local | [Open](31-animal-jellyfish-001.md) |
 | 32 | Bat | [x] | Scheduled 31-08 20:00 | `sUTDn03UdhQ` | [ ] | [ ] | [ ] | Local | [Open](32-animal-bat-001.md) |
-| 33 | Flamingo | [ ] | Chưa upload — dự kiến 02-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](33-animal-flamingo-001.md) |
-| 34 | Rhino | [ ] | Chưa upload — dự kiến 04-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](34-animal-rhino-001.md) |
-| 35 | Rooster | [ ] | Chưa upload — dự kiến 06-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](35-animal-rooster-001.md) |
-| 36 | Hedgehog | [ ] | Chưa upload — dự kiến 08-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](36-animal-hedgehog-001.md) |
+| 33 | Flamingo | [x] | Scheduled 02-09 20:00 | `UTWEUTq6sQ8` | [ ] | [ ] | [ ] | Local | [Open](33-animal-flamingo-001.md) |
+| 34 | Rhino | [x] | Scheduled 04-09 20:00 | `6NlX9EnwKMI` | [ ] | [ ] | [ ] | Local | [Open](34-animal-rhino-001.md) |
+| 35 | Rooster | [x] | Scheduled 06-09 20:00 | `jx4IhcrGfKI` | [ ] | [ ] | [ ] | Local | [Open](35-animal-rooster-001.md) |
+| 36 | Hedgehog | [x] | Scheduled 08-09 20:00 | `JiDrkyQrhrs` | [ ] | [ ] | [ ] | Local | [Open](36-animal-hedgehog-001.md) |
 | 37 | Starfish | [ ] | Chưa upload — dự kiến 10-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](37-animal-starfish-001.md) |
 | 38 | Caterpillar | [ ] | Chưa upload — dự kiến 12-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](38-animal-caterpillar-001.md) |
 | 39 | Ant | [ ] | Chưa upload — dự kiến 14-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](39-animal-ant-001.md) |
@@ -157,12 +157,12 @@ chưa tạo trên YouTube).
 
 ## Việc còn treo
 
-- ~~Playlist `Simple Drawing Tutorials` trống~~ — **xong 2026-08-23**: đã thêm đủ 32 video
-  (01–32), xác minh lại bằng dry-run. Playlist `Easy Object Drawings` vẫn **chưa tạo trên
-  YouTube**, cố ý chờ tới khi video đồ vật đầu tiên (số 62) lên kênh để khỏi để playlist
-  rỗng công khai; `npm run youtube:playlist -- --apply` sẽ tự tạo lúc đó.
-- Upload tiếp **4 video/ngày từ số 33** (33 → 02-09), Private kèm `--publish-at`. Quota
-  reset 14:00 giờ VN.
+- ~~Playlist `Simple Drawing Tutorials` trống~~ — **xong 2026-08-23**, cập nhật 2026-08-26:
+  đã đủ 36 video (01–36), xác minh lại bằng dry-run. Playlist `Easy Object Drawings` vẫn
+  **chưa tạo trên YouTube**, cố ý chờ tới khi video đồ vật đầu tiên (số 62) lên kênh để
+  khỏi để playlist rỗng công khai; `npm run youtube:playlist -- --apply` sẽ tự tạo lúc đó.
+- Upload tiếp **4 video/ngày từ số 37** (37 → 10-09), Private kèm `--publish-at`. Quota
+  reset 14:00 giờ VN. Còn **35 video chờ (37–71)**, hết hàng đợi khoảng 9 ngày nữa.
 - Phụ đề: đã xác minh ngày 2026-08-14 trên video 27 và 28 — đúng 2 track mỗi video,
   1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload.
 - OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; đã phải cấp lại
