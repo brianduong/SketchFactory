@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–36 (Private + lịch 02-09 → 08-09) và thêm cả 4 vào playlist chung (36 video)
+Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–61 (29 video, Private + lịch 02-09 → 28-10) tới khi hết quota; playlist chung mới đủ 01–36, còn 37–61 chờ sync
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -49,31 +49,31 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 34 | Rhino | [x] | Scheduled 04-09 20:00 | `6NlX9EnwKMI` | [ ] | [ ] | [ ] | Local | [Open](34-animal-rhino-001.md) |
 | 35 | Rooster | [x] | Scheduled 06-09 20:00 | `jx4IhcrGfKI` | [ ] | [ ] | [ ] | Local | [Open](35-animal-rooster-001.md) |
 | 36 | Hedgehog | [x] | Scheduled 08-09 20:00 | `JiDrkyQrhrs` | [ ] | [ ] | [ ] | Local | [Open](36-animal-hedgehog-001.md) |
-| 37 | Starfish | [ ] | Chưa upload — dự kiến 10-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](37-animal-starfish-001.md) |
-| 38 | Caterpillar | [ ] | Chưa upload — dự kiến 12-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](38-animal-caterpillar-001.md) |
-| 39 | Ant | [ ] | Chưa upload — dự kiến 14-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](39-animal-ant-001.md) |
-| 40 | Crocodile | [ ] | Chưa upload — dự kiến 16-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](40-animal-crocodile-001.md) |
-| 41 | Kangaroo | [ ] | Chưa upload — dự kiến 18-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](41-animal-kangaroo-001.md) |
-| 42 | Swan | [ ] | Chưa upload — dự kiến 20-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](42-animal-swan-001.md) |
-| 43 | Unicorn | [ ] | Chưa upload — dự kiến 22-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](43-animal-unicorn-001.md) |
-| 44 | Llama | [ ] | Chưa upload — dự kiến 24-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](44-animal-llama-001.md) |
-| 45 | Toucan | [ ] | Chưa upload — dự kiến 26-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](45-animal-toucan-001.md) |
-| 46 | Spider | [ ] | Chưa upload — dự kiến 28-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](46-animal-spider-001.md) |
-| 47 | Camel | [ ] | Chưa upload — dự kiến 30-09 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](47-animal-camel-001.md) |
-| 48 | Stegosaurus | [ ] | Chưa upload — dự kiến 02-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](48-animal-stegosaurus-001.md) |
-| 49 | T-Rex | [ ] | Chưa upload — dự kiến 04-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](49-animal-trex-001.md) |
-| 50 | Zebra | [ ] | Chưa upload — dự kiến 06-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](50-animal-zebra-001.md) |
-| 51 | Horse | [ ] | Chưa upload — dự kiến 08-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](51-animal-horse-001.md) |
-| 52 | Seahorse | [ ] | Chưa upload — dự kiến 10-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](52-animal-seahorse-001.md) |
-| 53 | Peacock | [ ] | Chưa upload — dự kiến 12-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](53-animal-peacock-001.md) |
-| 54 | Ladybug | [ ] | Chưa upload — dự kiến 14-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](54-animal-ladybug-001.md) |
-| 55 | Dragonfly | [ ] | Chưa upload — dự kiến 16-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](55-animal-dragonfly-001.md) |
-| 56 | Scorpion | [ ] | Chưa upload — dự kiến 18-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](56-animal-scorpion-001.md) |
-| 57 | Pufferfish | [ ] | Chưa upload — dự kiến 20-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](57-animal-pufferfish-001.md) |
-| 58 | Platypus | [ ] | Chưa upload — dự kiến 22-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](58-animal-platypus-001.md) |
-| 59 | Sloth | [ ] | Chưa upload — dự kiến 24-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
-| 60 | Beaver | [ ] | Chưa upload — dự kiến 26-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
-| 61 | Walrus | [ ] | Chưa upload — dự kiến 28-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
+| 37 | Starfish | [x] | Scheduled 10-09 20:00 | `yy_ZOCMHMVU` | [ ] | [ ] | [ ] | Local | [Open](37-animal-starfish-001.md) |
+| 38 | Caterpillar | [x] | Scheduled 12-09 20:00 | `3icVZ9JmtUs` | [ ] | [ ] | [ ] | Local | [Open](38-animal-caterpillar-001.md) |
+| 39 | Ant | [x] | Scheduled 14-09 20:00 | `-ZfRElixoRw` | [ ] | [ ] | [ ] | Local | [Open](39-animal-ant-001.md) |
+| 40 | Crocodile | [x] | Scheduled 16-09 20:00 | `j55wcu6hAUQ` | [ ] | [ ] | [ ] | Local | [Open](40-animal-crocodile-001.md) |
+| 41 | Kangaroo | [x] | Scheduled 18-09 20:00 | `kHHc1QKeR4E` | [ ] | [ ] | [ ] | Local | [Open](41-animal-kangaroo-001.md) |
+| 42 | Swan | [x] | Scheduled 20-09 20:00 | `hAxmy-J5V6s` | [ ] | [ ] | [ ] | Local | [Open](42-animal-swan-001.md) |
+| 43 | Unicorn | [x] | Scheduled 22-09 20:00 | `TeZEXGCEvwA` | [ ] | [ ] | [ ] | Local | [Open](43-animal-unicorn-001.md) |
+| 44 | Llama | [x] | Scheduled 24-09 20:00 | `ltfUAJESslc` | [ ] | [ ] | [ ] | Local | [Open](44-animal-llama-001.md) |
+| 45 | Toucan | [x] | Scheduled 26-09 20:00 | `Jayp2LSfpLs` | [ ] | [ ] | [ ] | Local | [Open](45-animal-toucan-001.md) |
+| 46 | Spider | [x] | Scheduled 28-09 20:00 | `BF0QRqZfdXs` | [ ] | [ ] | [ ] | Local | [Open](46-animal-spider-001.md) |
+| 47 | Camel | [x] | Scheduled 30-09 20:00 | `SA-C_81tkEo` | [ ] | [ ] | [ ] | Local | [Open](47-animal-camel-001.md) |
+| 48 | Stegosaurus | [x] | Scheduled 02-10 20:00 | `cFg4_atT3sQ` | [ ] | [ ] | [ ] | Local | [Open](48-animal-stegosaurus-001.md) |
+| 49 | T-Rex | [x] | Scheduled 04-10 20:00 | `oGjlXrvBrzE` | [ ] | [ ] | [ ] | Local | [Open](49-animal-trex-001.md) |
+| 50 | Zebra | [x] | Scheduled 06-10 20:00 | `Kr3bsXzyFIw` | [ ] | [ ] | [ ] | Local | [Open](50-animal-zebra-001.md) |
+| 51 | Horse | [x] | Scheduled 08-10 20:00 | `IjFkbw-LlKo` | [ ] | [ ] | [ ] | Local | [Open](51-animal-horse-001.md) |
+| 52 | Seahorse | [x] | Scheduled 10-10 20:00 | `jfpJ2bS8bB4` | [ ] | [ ] | [ ] | Local | [Open](52-animal-seahorse-001.md) |
+| 53 | Peacock | [x] | Scheduled 12-10 20:00 | `2gkzPvt6h14` | [ ] | [ ] | [ ] | Local | [Open](53-animal-peacock-001.md) |
+| 54 | Ladybug | [x] | Scheduled 14-10 20:00 ⚠️ thiếu phụ đề | `oloSJZGIPL0` | [ ] | [ ] | [ ] | Local | [Open](54-animal-ladybug-001.md) |
+| 55 | Dragonfly | [x] | Scheduled 16-10 20:00 ⚠️ thiếu phụ đề | `veDUVkY7pAc` | [ ] | [ ] | [ ] | Local | [Open](55-animal-dragonfly-001.md) |
+| 56 | Scorpion | [x] | Scheduled 18-10 20:00 ⚠️ thiếu phụ đề | `gbnXLhPJlnI` | [ ] | [ ] | [ ] | Local | [Open](56-animal-scorpion-001.md) |
+| 57 | Pufferfish | [x] | Scheduled 20-10 20:00 ⚠️ thiếu phụ đề | `q--UFP12tmY` | [ ] | [ ] | [ ] | Local | [Open](57-animal-pufferfish-001.md) |
+| 58 | Platypus | [x] | Scheduled 22-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `lMPcJQzET8s` | [ ] | [ ] | [ ] | Local | [Open](58-animal-platypus-001.md) |
+| 59 | Sloth | [x] | Scheduled 24-10 20:00 ⚠️ thiếu phụ đề | `uFUwDHiTSEQ` | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
+| 60 | Beaver | [x] | Scheduled 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `UKqdlhiSnFU` | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
+| 61 | Walrus | [x] | Scheduled 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `yeje_-d-YIA` | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
 | 62 | House | [ ] | Chưa upload — dự kiến 30-10 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
 | 63 | Ice Cream Cone | [ ] | Chưa upload — dự kiến 01-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](63-object-icecream-001.md) |
 | 64 | Sailboat | [ ] | Chưa upload — dự kiến 03-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](64-object-sailboat-001.md) |
@@ -157,12 +157,18 @@ chưa tạo trên YouTube).
 
 ## Việc còn treo
 
-- ~~Playlist `Simple Drawing Tutorials` trống~~ — **xong 2026-08-23**, cập nhật 2026-08-26:
-  đã đủ 36 video (01–36), xác minh lại bằng dry-run. Playlist `Easy Object Drawings` vẫn
-  **chưa tạo trên YouTube**, cố ý chờ tới khi video đồ vật đầu tiên (số 62) lên kênh để
-  khỏi để playlist rỗng công khai; `npm run youtube:playlist -- --apply` sẽ tự tạo lúc đó.
-- Upload tiếp **4 video/ngày từ số 37** (37 → 10-09), Private kèm `--publish-at`. Quota
-  reset 14:00 giờ VN. Còn **35 video chờ (37–71)**, hết hàng đợi khoảng 9 ngày nữa.
+- **Bù phần thiếu do hết quota giữa chừng ngày 2026-08-26** — chạy lại đúng lệnh
+  `npm run youtube:upload` cũ cho từng video; uploader đọc receipt ở
+  `.secrets/youtube-uploads.json` nên bỏ qua bước upload file video, chỉ làm nốt phần dở:
+  - phụ đề chưa lên: **54, 55, 56, 57, 58, 59, 60, 61**
+  - thumbnail chưa đặt: **58, 60, 61**
+- **Playlist chưa sync cho video 37–61** — `npm run youtube:playlist -- --apply`. Playlist
+  chung mới đủ tới 36. Playlist `Easy Object Drawings` vẫn **chưa tạo trên YouTube**, cố ý
+  chờ tới khi video đồ vật đầu tiên (số 62) lên kênh để khỏi để playlist rỗng công khai.
+- Upload nốt **10 video cuối 62–71** (loạt đồ vật), Private kèm `--publish-at`, 62 → 30-10.
+  Quota reset 14:00 giờ VN.
+- **Quota thật lớn hơn ghi chép cũ**: ngày 2026-08-26 upload liền **29 video (33–61)** rồi
+  mới `quotaExceeded`. Con số "~4 video/ngày" ghi từ 2026-08-11 là sai.
 - Phụ đề: đã xác minh ngày 2026-08-14 trên video 27 và 28 — đúng 2 track mỗi video,
   1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload.
 - OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; đã phải cấp lại

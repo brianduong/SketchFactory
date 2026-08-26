@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [ ] Chưa upload
+- YouTube: [x] Đã upload — Private, tự chuyển Public lúc 22-10/2026 20:00 (Asia/Ho_Chi_Minh)
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -49,12 +49,14 @@ how to draw a platypus, easy platypus drawing, simple platypus drawing, platypus
 
 ## YouTube Result
 
-- Video ID: chưa có
-- Upload status: chưa upload
-- Privacy: chưa upload
-- Audience: chưa đặt
-- English captions: chưa upload
-- Custom thumbnail: chưa đặt
+- Video ID: `lMPcJQzET8s` — https://youtu.be/lMPcJQzET8s
+- Upload status: Uploaded 2026-08-26
+- Privacy: Private, tự chuyển Public lúc 22-10/2026 20:00 (Asia/Ho_Chi_Minh)
+- publishAt (UTC): `2026-10-22T13:00:00Z`
+- Audience: Not made for kids
+- English captions: **CHƯA upload** — hết quota 2026-08-26, chạy lại lệnh upload để bù
+- Custom thumbnail: **CHƯA đặt** — hết quota 2026-08-26, chạy lại lệnh upload để bù
+- Playlist: **chưa thêm** — hết quota 2026-08-26, chạy `npm run youtube:playlist -- --apply`
 
 ## Final Checklist
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T07:30:03.517Z",
+  "updatedAt": "2026-08-26T08:11:02.961Z",
   "verifiedAgainstYouTubeApiAt": "2026-08-23T08:45:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
@@ -46,7 +46,7 @@
   },
   "sequence": {
     "lastGenerated": 71,
-    "lastYouTubeUploaded": 36,
+    "lastYouTubeUploaded": 61,
     "nextNumber": 72
   },
   "videos": [
@@ -826,12 +826,12 @@
       "category": "animals",
       "file": "37-starfish.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "yy_ZOCMHMVU",
+        "scheduledPublishAt": "2026-09-10T13:00:00Z",
         "plannedPublishAt": "2026-09-10T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -848,12 +848,12 @@
       "category": "animals",
       "file": "38-caterpillar.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "3icVZ9JmtUs",
+        "scheduledPublishAt": "2026-09-12T13:00:00Z",
         "plannedPublishAt": "2026-09-12T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -870,12 +870,12 @@
       "category": "animals",
       "file": "39-ant.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "-ZfRElixoRw",
+        "scheduledPublishAt": "2026-09-14T13:00:00Z",
         "plannedPublishAt": "2026-09-14T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -892,12 +892,12 @@
       "category": "animals",
       "file": "40-crocodile.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "j55wcu6hAUQ",
+        "scheduledPublishAt": "2026-09-16T13:00:00Z",
         "plannedPublishAt": "2026-09-16T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -914,12 +914,12 @@
       "category": "animals",
       "file": "41-kangaroo.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "kHHc1QKeR4E",
+        "scheduledPublishAt": "2026-09-18T13:00:00Z",
         "plannedPublishAt": "2026-09-18T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -936,12 +936,12 @@
       "category": "animals",
       "file": "42-swan.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "hAxmy-J5V6s",
+        "scheduledPublishAt": "2026-09-20T13:00:00Z",
         "plannedPublishAt": "2026-09-20T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -958,12 +958,12 @@
       "category": "animals",
       "file": "43-unicorn.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "TeZEXGCEvwA",
+        "scheduledPublishAt": "2026-09-22T13:00:00Z",
         "plannedPublishAt": "2026-09-22T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -980,12 +980,12 @@
       "category": "animals",
       "file": "44-llama.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "ltfUAJESslc",
+        "scheduledPublishAt": "2026-09-24T13:00:00Z",
         "plannedPublishAt": "2026-09-24T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1002,12 +1002,12 @@
       "category": "animals",
       "file": "45-toucan.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "Jayp2LSfpLs",
+        "scheduledPublishAt": "2026-09-26T13:00:00Z",
         "plannedPublishAt": "2026-09-26T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1024,12 +1024,12 @@
       "category": "animals",
       "file": "46-spider.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "BF0QRqZfdXs",
+        "scheduledPublishAt": "2026-09-28T13:00:00Z",
         "plannedPublishAt": "2026-09-28T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1046,12 +1046,12 @@
       "category": "animals",
       "file": "47-camel.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "SA-C_81tkEo",
+        "scheduledPublishAt": "2026-09-30T13:00:00Z",
         "plannedPublishAt": "2026-09-30T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1068,12 +1068,12 @@
       "category": "animals",
       "file": "48-stegosaurus.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "cFg4_atT3sQ",
+        "scheduledPublishAt": "2026-10-02T13:00:00Z",
         "plannedPublishAt": "2026-10-02T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1090,12 +1090,12 @@
       "category": "animals",
       "file": "49-trex.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "oGjlXrvBrzE",
+        "scheduledPublishAt": "2026-10-04T13:00:00Z",
         "plannedPublishAt": "2026-10-04T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1112,12 +1112,12 @@
       "category": "animals",
       "file": "50-zebra.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "Kr3bsXzyFIw",
+        "scheduledPublishAt": "2026-10-06T13:00:00Z",
         "plannedPublishAt": "2026-10-06T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1134,12 +1134,12 @@
       "category": "animals",
       "file": "51-horse.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "IjFkbw-LlKo",
+        "scheduledPublishAt": "2026-10-08T13:00:00Z",
         "plannedPublishAt": "2026-10-08T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1156,12 +1156,12 @@
       "category": "animals",
       "file": "52-seahorse.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "jfpJ2bS8bB4",
+        "scheduledPublishAt": "2026-10-10T13:00:00Z",
         "plannedPublishAt": "2026-10-10T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1178,12 +1178,12 @@
       "category": "animals",
       "file": "53-peacock.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "2gkzPvt6h14",
+        "scheduledPublishAt": "2026-10-12T13:00:00Z",
         "plannedPublishAt": "2026-10-12T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1200,12 +1200,12 @@
       "category": "animals",
       "file": "54-ladybug.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "oloSJZGIPL0",
+        "scheduledPublishAt": "2026-10-14T13:00:00Z",
         "plannedPublishAt": "2026-10-14T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1222,12 +1222,12 @@
       "category": "animals",
       "file": "55-dragonfly.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "veDUVkY7pAc",
+        "scheduledPublishAt": "2026-10-16T13:00:00Z",
         "plannedPublishAt": "2026-10-16T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1244,12 +1244,12 @@
       "category": "animals",
       "file": "56-scorpion.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "gbnXLhPJlnI",
+        "scheduledPublishAt": "2026-10-18T13:00:00Z",
         "plannedPublishAt": "2026-10-18T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1266,12 +1266,12 @@
       "category": "animals",
       "file": "57-pufferfish.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "q--UFP12tmY",
+        "scheduledPublishAt": "2026-10-20T13:00:00Z",
         "plannedPublishAt": "2026-10-20T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1288,10 +1288,10 @@
       "category": "animals",
       "file": "58-platypus.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "lMPcJQzET8s",
+        "scheduledPublishAt": "2026-10-22T13:00:00Z",
         "plannedPublishAt": "2026-10-22T13:00:00Z",
         "thumbnailSet": false
       },
@@ -1310,12 +1310,12 @@
       "category": "animals",
       "file": "59-sloth.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "uFUwDHiTSEQ",
+        "scheduledPublishAt": "2026-10-24T13:00:00Z",
         "plannedPublishAt": "2026-10-24T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1332,10 +1332,10 @@
       "category": "animals",
       "file": "60-beaver.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "UKqdlhiSnFU",
+        "scheduledPublishAt": "2026-10-26T13:00:00Z",
         "plannedPublishAt": "2026-10-26T13:00:00Z",
         "thumbnailSet": false
       },
@@ -1354,10 +1354,10 @@
       "category": "animals",
       "file": "61-walrus.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "yeje_-d-YIA",
+        "scheduledPublishAt": "2026-10-28T13:00:00Z",
         "plannedPublishAt": "2026-10-28T13:00:00Z",
         "thumbnailSet": false
       },
@@ -1594,8 +1594,10 @@
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
     "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại.",
-    "Upload tiếp 4 video/ngày từ số 37, Private kèm --publish-at theo nhịp hai ngày một video (37 → 2026-09-10T13:00:00Z). Quota reset 14:00 giờ VN. Còn 35 video chờ (37–71).",
-    "Chạy npm run youtube:playlist -- --apply sau mỗi đợt upload; playlist \"Easy Object Drawings\" sẽ được script tự tạo khi video đồ vật đầu tiên (số 62) lên kênh."
+    "Bù phụ đề cho video 54-61 và thumbnail cho 58, 60, 61: chạy lại đúng lệnh npm run youtube:upload cũ (uploader đọc receipt .secrets/youtube-uploads.json nên bỏ qua bước upload video, chỉ làm phần còn thiếu).",
+    "Chạy npm run youtube:playlist -- --apply để thêm video 37-61 vào Simple Drawing Tutorials (quota 2026-08-26 đã cạn).",
+    "Upload nốt 10 video cuối 62-71 (loạt đồ vật), Private kèm --publish-at, 62 -> 2026-10-30T13:00:00Z. Playlist Easy Object Drawings sẽ tự được tạo lúc đó.",
+    "Quota thật: ngày 2026-08-26 upload được 29 video liền (33-61) rồi mới quotaExceeded. Con số ~4 video/ngày ghi trước đó là sai."
   ],
   "contentVersion": {
     "version": 2,

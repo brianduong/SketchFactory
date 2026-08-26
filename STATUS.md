@@ -52,13 +52,21 @@ Playlist `Easy Object Drawings` **cố ý chưa tạo** — chờ tới khi vide
 (số 62) lên kênh, để không có playlist rỗng công khai trên kênh. `playlist-sync` đã được
 sửa để bỏ qua playlist chưa có video nào.
 
-Ngày 2026-08-26 OAuth vẫn còn hiệu lực, em **upload 33–36** (Flamingo, Rhino, Rooster,
-Hedgehog) ở chế độ Private kèm lịch tự công khai 02, 04, 06 và 08 tháng 9 — hết 8.200 đơn
-vị quota — rồi chạy `youtube:playlist --apply` để thêm cả 4 vào `Simple Drawing Tutorials`
-(nay đủ **36 video**, xác minh lại bằng dry-run).
+Ngày 2026-08-26 OAuth vẫn còn hiệu lực. Đợt đầu upload **33–36** rồi chạy
+`youtube:playlist --apply` (playlist chung đủ 36 video, xác minh bằng dry-run). Người dùng
+bảo "upload được bao nhiêu thì upload hết", em chạy tiếp **37–61** cho tới khi YouTube trả
+`quotaExceeded` ở video 62. Tổng cộng **29 video (33–61)** lên kênh trong một ngày — con số
+"~4 video/ngày" ghi từ 2026-08-11 là **sai**, quota thật đủ cho khoảng 29 lượt upload.
 
-Kênh giờ có **36 video**, hàng đợi còn **35 video (37–71)**, quota ~4 video/ngày nên cần
-khoảng 9 ngày nữa.
+**Việc còn dở vì hết quota giữa chừng** (chạy lại đúng lệnh `youtube:upload` cũ là bù được,
+uploader đọc receipt ở `.secrets/youtube-uploads.json` nên không upload lại file video):
+
+- **Phụ đề chưa lên: video 54–61.**
+- **Thumbnail chưa đặt: video 58, 60, 61.**
+- **Playlist chưa sync: video 37–61** — `npm run youtube:playlist -- --apply`.
+
+Kênh giờ có **61 video**, hàng đợi còn **10 video (62–71)**, tất cả đều là loạt đồ vật.
+Playlist `Easy Object Drawings` sẽ được tạo khi số 62 lên kênh.
 
 ## Tổng quan
 
@@ -117,31 +125,31 @@ khoảng 9 ngày nữa.
 | 34 | Rhino | 9 | `34-rhino.mp4` | 🕗 Hẹn 04-09 20:00 — `6NlX9EnwKMI` |
 | 35 | Rooster | 10 | `35-rooster.mp4` | 🕗 Hẹn 06-09 20:00 — `jx4IhcrGfKI` |
 | 36 | Hedgehog | 6 | `36-hedgehog.mp4` | 🕗 Hẹn 08-09 20:00 — `JiDrkyQrhrs` |
-| 37 | Starfish | 9 | `37-starfish.mp4` | ⏳ Chưa upload — dự kiến 10-09 20:00 |
-| 38 | Caterpillar | 10 | `38-caterpillar.mp4` | ⏳ Chưa upload — dự kiến 12-09 20:00 |
-| 39 | Ant | 10 | `39-ant.mp4` | ⏳ Chưa upload — dự kiến 14-09 20:00 |
-| 40 | Crocodile | 9 | `40-crocodile.mp4` | ⏳ Chưa upload — dự kiến 16-09 20:00 |
-| 41 | Kangaroo | 9 | `41-kangaroo.mp4` | ⏳ Chưa upload — dự kiến 18-09 20:00 |
-| 42 | Swan | 8 | `42-swan.mp4` | ⏳ Chưa upload — dự kiến 20-09 20:00 |
-| 43 | Unicorn | 9 | `43-unicorn.mp4` | ⏳ Chưa upload — dự kiến 22-09 20:00 |
-| 44 | Llama | 10 | `44-llama.mp4` | ⏳ Chưa upload — dự kiến 24-09 20:00 |
-| 45 | Toucan | 8 | `45-toucan.mp4` | ⏳ Chưa upload — dự kiến 26-09 20:00 |
-| 46 | Spider | 8 | `46-spider.mp4` | ⏳ Chưa upload — dự kiến 28-09 20:00 |
-| 47 | Camel | 10 | `47-camel.mp4` | ⏳ Chưa upload — dự kiến 30-09 20:00 |
-| 48 | Stegosaurus | 8 | `48-stegosaurus.mp4` | ⏳ Chưa upload — dự kiến 02-10 20:00 |
-| 49 | T-Rex | 8 | `49-trex.mp4` | ⏳ Chưa upload — dự kiến 04-10 20:00 |
-| 50 | Zebra | 10 | `50-zebra.mp4` | ⏳ Chưa upload — dự kiến 06-10 20:00 |
-| 51 | Horse | 10 | `51-horse.mp4` | ⏳ Chưa upload — dự kiến 08-10 20:00 |
-| 52 | Seahorse | 10 | `52-seahorse.mp4` | ⏳ Chưa upload — dự kiến 10-10 20:00 |
-| 53 | Peacock | 10 | `53-peacock.mp4` | ⏳ Chưa upload — dự kiến 12-10 20:00 |
-| 54 | Ladybug | 9 | `54-ladybug.mp4` | ⏳ Chưa upload — dự kiến 14-10 20:00 |
-| 55 | Dragonfly | 9 | `55-dragonfly.mp4` | ⏳ Chưa upload — dự kiến 16-10 20:00 |
-| 56 | Scorpion | 8 | `56-scorpion.mp4` | ⏳ Chưa upload — dự kiến 18-10 20:00 |
-| 57 | Pufferfish | 6 | `57-pufferfish.mp4` | ⏳ Chưa upload — dự kiến 20-10 20:00 |
-| 58 | Platypus | 8 | `58-platypus.mp4` | ⏳ Chưa upload — dự kiến 22-10 20:00 |
-| 59 | Sloth | 9 | `59-sloth.mp4` | ⏳ Chưa upload — dự kiến 24-10 20:00 |
-| 60 | Beaver | 10 | `60-beaver.mp4` | ⏳ Chưa upload — dự kiến 26-10 20:00 |
-| 61 | Walrus | 9 | `61-walrus.mp4` | ⏳ Chưa upload — dự kiến 28-10 20:00 |
+| 37 | Starfish | 9 | `37-starfish.mp4` | 🕗 Hẹn 10-09 20:00 — `yy_ZOCMHMVU` |
+| 38 | Caterpillar | 10 | `38-caterpillar.mp4` | 🕗 Hẹn 12-09 20:00 — `3icVZ9JmtUs` |
+| 39 | Ant | 10 | `39-ant.mp4` | 🕗 Hẹn 14-09 20:00 — `-ZfRElixoRw` |
+| 40 | Crocodile | 9 | `40-crocodile.mp4` | 🕗 Hẹn 16-09 20:00 — `j55wcu6hAUQ` |
+| 41 | Kangaroo | 9 | `41-kangaroo.mp4` | 🕗 Hẹn 18-09 20:00 — `kHHc1QKeR4E` |
+| 42 | Swan | 8 | `42-swan.mp4` | 🕗 Hẹn 20-09 20:00 — `hAxmy-J5V6s` |
+| 43 | Unicorn | 9 | `43-unicorn.mp4` | 🕗 Hẹn 22-09 20:00 — `TeZEXGCEvwA` |
+| 44 | Llama | 10 | `44-llama.mp4` | 🕗 Hẹn 24-09 20:00 — `ltfUAJESslc` |
+| 45 | Toucan | 8 | `45-toucan.mp4` | 🕗 Hẹn 26-09 20:00 — `Jayp2LSfpLs` |
+| 46 | Spider | 8 | `46-spider.mp4` | 🕗 Hẹn 28-09 20:00 — `BF0QRqZfdXs` |
+| 47 | Camel | 10 | `47-camel.mp4` | 🕗 Hẹn 30-09 20:00 — `SA-C_81tkEo` |
+| 48 | Stegosaurus | 8 | `48-stegosaurus.mp4` | 🕗 Hẹn 02-10 20:00 — `cFg4_atT3sQ` |
+| 49 | T-Rex | 8 | `49-trex.mp4` | 🕗 Hẹn 04-10 20:00 — `oGjlXrvBrzE` |
+| 50 | Zebra | 10 | `50-zebra.mp4` | 🕗 Hẹn 06-10 20:00 — `Kr3bsXzyFIw` |
+| 51 | Horse | 10 | `51-horse.mp4` | 🕗 Hẹn 08-10 20:00 — `IjFkbw-LlKo` |
+| 52 | Seahorse | 10 | `52-seahorse.mp4` | 🕗 Hẹn 10-10 20:00 — `jfpJ2bS8bB4` |
+| 53 | Peacock | 10 | `53-peacock.mp4` | 🕗 Hẹn 12-10 20:00 — `2gkzPvt6h14` |
+| 54 | Ladybug | 9 | `54-ladybug.mp4` | 🕗 Hẹn 14-10 20:00 ⚠️ thiếu phụ đề — `oloSJZGIPL0` |
+| 55 | Dragonfly | 9 | `55-dragonfly.mp4` | 🕗 Hẹn 16-10 20:00 ⚠️ thiếu phụ đề — `veDUVkY7pAc` |
+| 56 | Scorpion | 8 | `56-scorpion.mp4` | 🕗 Hẹn 18-10 20:00 ⚠️ thiếu phụ đề — `gbnXLhPJlnI` |
+| 57 | Pufferfish | 6 | `57-pufferfish.mp4` | 🕗 Hẹn 20-10 20:00 ⚠️ thiếu phụ đề — `q--UFP12tmY` |
+| 58 | Platypus | 8 | `58-platypus.mp4` | 🕗 Hẹn 22-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `lMPcJQzET8s` |
+| 59 | Sloth | 9 | `59-sloth.mp4` | 🕗 Hẹn 24-10 20:00 ⚠️ thiếu phụ đề — `uFUwDHiTSEQ` |
+| 60 | Beaver | 10 | `60-beaver.mp4` | 🕗 Hẹn 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `UKqdlhiSnFU` |
+| 61 | Walrus | 9 | `61-walrus.mp4` | 🕗 Hẹn 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `yeje_-d-YIA` |
 | 62 | House | 7 | `62-house.mp4` | ⏳ Chưa upload — dự kiến 30-10 20:00 |
 | 63 | Ice Cream Cone | 7 | `63-ice-cream-cone.mp4` | ⏳ Chưa upload — dự kiến 01-11 20:00 |
 | 64 | Sailboat | 6 | `64-sailboat.mp4` | ⏳ Chưa upload — dự kiến 03-11 20:00 |
@@ -153,7 +161,7 @@ khoảng 9 ngày nữa.
 | 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
 | 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
 
-Tới 2026-08-26 có 36 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+Tới 2026-08-26 có 61 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
 Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 
