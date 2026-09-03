@@ -56,7 +56,7 @@ how to draw a tulip, easy tulip drawing, simple tulip drawing, tulip, flower, ob
 - Audience: Not made for kids
 - English captions: Uploaded
 - Custom thumbnail: Đã đặt
-- Playlist: chưa thêm — hết quota ở đúng video này ngày 2026-09-03; `Easy Object Drawings` cũng chưa tạo
+- Playlist: đã thêm vào `Simple Drawing Tutorials` ngày 2026-09-03; `Easy Object Drawings` chưa tạo (hết quota)
 
 ## Final Checklist
 

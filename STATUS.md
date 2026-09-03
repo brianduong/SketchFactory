@@ -81,9 +81,16 @@ nên người dùng cấp lại; sau đó em chạy một lượt trọn vẹn *
 
 **Kênh nay có đủ 71 video, hàng đợi upload trống.** Video cuối tự công khai 17-11-2026.
 
-`npm run youtube:playlist -- --apply` thêm được **37–70** vào `Simple Drawing Tutorials`
-rồi trả `quotaExceeded` đúng ở video 71. Còn treo: **thêm 71 vào playlist chung** và
-**tạo playlist `Easy Object Drawings`** (62–71) — chạy lại đúng lệnh đó khi quota hồi.
+`npm run youtube:playlist -- --apply` chạy hai lần trong ngày: lần đầu thêm 37–70 rồi hết
+quota ở video 71, lần sau thêm nốt 71 — **`Simple Drawing Tutorials` nay đủ 71/71**. Còn
+treo đúng một việc: **tạo playlist `Easy Object Drawings`** (nhóm đồ vật 62–71), lại hết
+quota đúng lúc tạo. Chạy lại đúng lệnh đó sau 14:00 giờ VN hôm sau.
+
+Cùng ngày **OAuth app chuyển sang `In production`**, hết cảnh token chết mỗi 7 ngày. Điều
+kiện Google đòi là `Application home page` + `Application privacy policy link`, nên repo
+được chuyển **public** (người dùng quyết định) và thêm `index.html` + `privacy.html` ở gốc,
+phục vụ qua GitHub Pages tại `https://brianduong.github.io/SketchFactory/`. Authorized
+domain phải khai đủ `brianduong.github.io`, Google không nhận mỗi `github.io`.
 
 ## Tổng quan
 

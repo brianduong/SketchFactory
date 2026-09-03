@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-09-03 (Asia/Ho_Chi_Minh) — upload nốt 63–71 (Private + lịch 01-11 → 17-11) và bù phụ đề 54–62, thumbnail 58/60/61; cả 71 video đã lên kênh. Playlist chung đủ 01–70, hết quota ở video 71
+Updated: 2026-09-03 (Asia/Ho_Chi_Minh) — upload nốt 63–71 (Private + lịch 01-11 → 17-11) và bù phụ đề 54–62, thumbnail 58/60/61; cả 71 video đã lên kênh, playlist chung đủ 71/71. Còn nợ đúng playlist `Easy Object Drawings`. OAuth app đã chuyển sang In production
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -157,10 +157,11 @@ chưa tạo trên YouTube).
 
 ## Việc còn treo
 
-- **Playlist đồ vật `Easy Object Drawings` chưa được tạo** và **video 71 chưa vào playlist
-  chung** — ngày 2026-09-03 `npm run youtube:playlist -- --apply` thêm được 37–70 vào
-  `Simple Drawing Tutorials` rồi trả `quotaExceeded` ngay ở video 71. Chạy lại đúng lệnh đó
-  khi quota hồi (script tự bỏ qua video đã có trong playlist).
+- **Playlist đồ vật `Easy Object Drawings` chưa được tạo** — ngày 2026-09-03 chạy
+  `npm run youtube:playlist -- --apply` hai lần: lần đầu thêm 37–70 vào
+  `Simple Drawing Tutorials` rồi hết quota ở video 71, lần sau thêm nốt 71 (playlist chung
+  nay **đủ 71/71**) rồi lại hết quota đúng lúc tạo playlist đồ vật. Chạy lại đúng lệnh đó
+  sau 14:00 giờ VN hôm sau là xong; script tự bỏ qua video đã có trong playlist.
 - **Quota thật lớn hơn ghi chép cũ**: ngày 2026-08-26 upload liền **29 video (33–61)**, ngày
   2026-09-03 upload tiếp **9 video (63–71)** cộng phần bù phụ đề/thumbnail cho 54–62 mà
   không hề bị chặn. Con số "~4 video/ngày" ghi từ 2026-08-11 là sai.
@@ -168,9 +169,16 @@ chưa tạo trên YouTube).
   1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload. Video 18 từng bị
   ghi nhầm là thiếu phụ đề trong receipt; ngày 2026-09-03 YouTube trả về "đã có caption
   track cùng language và name", tức phụ đề vẫn nằm đúng chỗ — cờ receipt đã sửa lại.
-- OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; đã phải cấp lại
-  ngày 2026-09-03 (lần trước 2026-08-23), hạn kế tiếp khoảng **2026-09-10**. Chuyển app
-  sang Published trong Google Cloud Console để khỏi lặp — việc này cần người dùng bấm.
+- ~~OAuth client ở trạng thái Testing~~ — **đã xong ngày 2026-09-03**: app chuyển sang
+  **In production**. Để publish được phải điền `Application home page` và
+  `Application privacy policy link` (trỏ vào GitHub Pages của repo, xem `index.html` và
+  `privacy.html` ở gốc repo) rồi khai `brianduong.github.io` vào **Authorized domains** —
+  Google bắt khai đủ subdomain chứ không nhận mỗi `github.io`. Refresh token nay **không
+  còn tự chết sau 7 ngày**; chỉ mất hiệu lực nếu đổi mật khẩu Google, tự thu hồi quyền,
+  hoặc app nằm không 6 tháng. App chưa qua verification nên màn hình cấp quyền hiện cảnh
+  báo "Google hasn't verified this app" — bấm **Advanced → Go to SketchFactory Uploader**
+  là qua. Repo đã chuyển **public** để phục vụ GitHub Pages (người dùng quyết định
+  2026-09-03).
 - Hàng đợi upload đã **trống**: cả 71 video đều nằm trên kênh, video cuối tự công khai
   17-11. Muốn có video mới thì phải sản xuất tiếp từ số 72.
 - **Chưa xóa 22 video bản v1 tô màu** — người dùng đã đồng ý xóa vĩnh viễn từ 2026-08-03
