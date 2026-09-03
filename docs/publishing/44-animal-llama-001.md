@@ -56,7 +56,7 @@ how to draw a llama, easy llama drawing, simple llama drawing, llama, animal, wi
 - Audience: Not made for kids
 - English captions: Uploaded
 - Custom thumbnail: Đã đặt
-- Playlist: **chưa thêm** — hết quota 2026-08-26, chạy `npm run youtube:playlist -- --apply`
+- Playlist: đã thêm vào `Simple Drawing Tutorials` ngày 2026-09-03
 
 ## Final Checklist
 

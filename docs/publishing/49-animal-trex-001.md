@@ -56,7 +56,7 @@ how to draw a t-rex, easy t-rex drawing, simple t-rex drawing, t-rex, dinosaur, 
 - Audience: Not made for kids
 - English captions: Uploaded
 - Custom thumbnail: Đã đặt
-- Playlist: **chưa thêm** — hết quota 2026-08-26, chạy `npm run youtube:playlist -- --apply`
+- Playlist: đã thêm vào `Simple Drawing Tutorials` ngày 2026-09-03
 
 ## Final Checklist
 

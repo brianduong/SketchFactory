@@ -54,9 +54,9 @@ how to draw a walrus, easy walrus drawing, simple walrus drawing, walrus, animal
 - Privacy: Private, tự chuyển Public lúc 28-10/2026 20:00 (Asia/Ho_Chi_Minh)
 - publishAt (UTC): `2026-10-28T13:00:00Z`
 - Audience: Not made for kids
-- English captions: **CHƯA upload** — hết quota 2026-08-26, chạy lại lệnh upload để bù
-- Custom thumbnail: **CHƯA đặt** — hết quota 2026-08-26, chạy lại lệnh upload để bù
-- Playlist: **chưa thêm** — hết quota 2026-08-26, chạy `npm run youtube:playlist -- --apply`
+- English captions: Uploaded (bù ngày 2026-09-03)
+- Custom thumbnail: Đã đặt (bù ngày 2026-09-03)
+- Playlist: đã thêm vào `Simple Drawing Tutorials` ngày 2026-09-03
 
 ## Final Checklist
 

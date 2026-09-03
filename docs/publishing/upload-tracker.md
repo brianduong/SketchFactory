@@ -1,6 +1,6 @@
 # SketchFactory — Upload Tracker
 
-Updated: 2026-08-26 (Asia/Ho_Chi_Minh) — upload 33–62 (30 video, Private + lịch 02-09 → 30-10) qua hai đợt, cả hai đều dừng vì hết quota; playlist chung mới đủ 01–36, còn 37–62 chờ sync
+Updated: 2026-09-03 (Asia/Ho_Chi_Minh) — upload nốt 63–71 (Private + lịch 01-11 → 17-11) và bù phụ đề 54–62, thumbnail 58/60/61; cả 71 video đã lên kênh. Playlist chung đủ 01–70, hết quota ở video 71
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**, upload ngày 2026-08-02. Bản v1 còn
 tô màu đã chuyển Unlisted, không còn hiện trên kênh.
@@ -66,24 +66,24 @@ tô màu đã chuyển Unlisted, không còn hiện trên kênh.
 | 51 | Horse | [x] | Scheduled 08-10 20:00 | `IjFkbw-LlKo` | [ ] | [ ] | [ ] | Local | [Open](51-animal-horse-001.md) |
 | 52 | Seahorse | [x] | Scheduled 10-10 20:00 | `jfpJ2bS8bB4` | [ ] | [ ] | [ ] | Local | [Open](52-animal-seahorse-001.md) |
 | 53 | Peacock | [x] | Scheduled 12-10 20:00 | `2gkzPvt6h14` | [ ] | [ ] | [ ] | Local | [Open](53-animal-peacock-001.md) |
-| 54 | Ladybug | [x] | Scheduled 14-10 20:00 ⚠️ thiếu phụ đề | `oloSJZGIPL0` | [ ] | [ ] | [ ] | Local | [Open](54-animal-ladybug-001.md) |
-| 55 | Dragonfly | [x] | Scheduled 16-10 20:00 ⚠️ thiếu phụ đề | `veDUVkY7pAc` | [ ] | [ ] | [ ] | Local | [Open](55-animal-dragonfly-001.md) |
-| 56 | Scorpion | [x] | Scheduled 18-10 20:00 ⚠️ thiếu phụ đề | `gbnXLhPJlnI` | [ ] | [ ] | [ ] | Local | [Open](56-animal-scorpion-001.md) |
-| 57 | Pufferfish | [x] | Scheduled 20-10 20:00 ⚠️ thiếu phụ đề | `q--UFP12tmY` | [ ] | [ ] | [ ] | Local | [Open](57-animal-pufferfish-001.md) |
-| 58 | Platypus | [x] | Scheduled 22-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `lMPcJQzET8s` | [ ] | [ ] | [ ] | Local | [Open](58-animal-platypus-001.md) |
-| 59 | Sloth | [x] | Scheduled 24-10 20:00 ⚠️ thiếu phụ đề | `uFUwDHiTSEQ` | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
-| 60 | Beaver | [x] | Scheduled 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `UKqdlhiSnFU` | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
-| 61 | Walrus | [x] | Scheduled 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề | `yeje_-d-YIA` | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
-| 62 | House | [x] | Scheduled 30-10 20:00 ⚠️ thiếu phụ đề | `pyNzXq3sZp8` | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
-| 63 | Ice Cream Cone | [ ] | Chưa upload — dự kiến 01-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](63-object-icecream-001.md) |
-| 64 | Sailboat | [ ] | Chưa upload — dự kiến 03-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](64-object-sailboat-001.md) |
-| 65 | Rocket | [ ] | Chưa upload — dự kiến 05-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](65-object-rocket-001.md) |
-| 66 | Cupcake | [ ] | Chưa upload — dự kiến 07-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](66-object-cupcake-001.md) |
-| 67 | Umbrella | [ ] | Chưa upload — dự kiến 09-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](67-object-umbrella-001.md) |
-| 68 | Cactus | [ ] | Chưa upload — dự kiến 11-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](68-object-cactus-001.md) |
-| 69 | Robot | [ ] | Chưa upload — dự kiến 13-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](69-object-robot-001.md) |
-| 70 | Car | [ ] | Chưa upload — dự kiến 15-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](70-object-car-001.md) |
-| 71 | Tulip | [ ] | Chưa upload — dự kiến 17-11 20:00 | — | [ ] | [ ] | [ ] | Local | [Open](71-object-tulip-001.md) |
+| 54 | Ladybug | [x] | Scheduled 14-10 20:00 | `oloSJZGIPL0` | [ ] | [ ] | [ ] | Local | [Open](54-animal-ladybug-001.md) |
+| 55 | Dragonfly | [x] | Scheduled 16-10 20:00 | `veDUVkY7pAc` | [ ] | [ ] | [ ] | Local | [Open](55-animal-dragonfly-001.md) |
+| 56 | Scorpion | [x] | Scheduled 18-10 20:00 | `gbnXLhPJlnI` | [ ] | [ ] | [ ] | Local | [Open](56-animal-scorpion-001.md) |
+| 57 | Pufferfish | [x] | Scheduled 20-10 20:00 | `q--UFP12tmY` | [ ] | [ ] | [ ] | Local | [Open](57-animal-pufferfish-001.md) |
+| 58 | Platypus | [x] | Scheduled 22-10 20:00 | `lMPcJQzET8s` | [ ] | [ ] | [ ] | Local | [Open](58-animal-platypus-001.md) |
+| 59 | Sloth | [x] | Scheduled 24-10 20:00 | `uFUwDHiTSEQ` | [ ] | [ ] | [ ] | Local | [Open](59-animal-sloth-001.md) |
+| 60 | Beaver | [x] | Scheduled 26-10 20:00 | `UKqdlhiSnFU` | [ ] | [ ] | [ ] | Local | [Open](60-animal-beaver-001.md) |
+| 61 | Walrus | [x] | Scheduled 28-10 20:00 | `yeje_-d-YIA` | [ ] | [ ] | [ ] | Local | [Open](61-animal-walrus-001.md) |
+| 62 | House | [x] | Scheduled 30-10 20:00 | `pyNzXq3sZp8` | [ ] | [ ] | [ ] | Local | [Open](62-object-house-001.md) |
+| 63 | Ice Cream Cone | [x] | Scheduled 01-11 20:00 | `XWr-T9FQILI` | [ ] | [ ] | [ ] | Local | [Open](63-object-icecream-001.md) |
+| 64 | Sailboat | [x] | Scheduled 03-11 20:00 | `X_P-z_F8ZFc` | [ ] | [ ] | [ ] | Local | [Open](64-object-sailboat-001.md) |
+| 65 | Rocket | [x] | Scheduled 05-11 20:00 | `IuUrO9M5Fn4` | [ ] | [ ] | [ ] | Local | [Open](65-object-rocket-001.md) |
+| 66 | Cupcake | [x] | Scheduled 07-11 20:00 | `FL5Ny2AF_J8` | [ ] | [ ] | [ ] | Local | [Open](66-object-cupcake-001.md) |
+| 67 | Umbrella | [x] | Scheduled 09-11 20:00 | `rrhpI-vsWNM` | [ ] | [ ] | [ ] | Local | [Open](67-object-umbrella-001.md) |
+| 68 | Cactus | [x] | Scheduled 11-11 20:00 | `WDZYq0CjzJM` | [ ] | [ ] | [ ] | Local | [Open](68-object-cactus-001.md) |
+| 69 | Robot | [x] | Scheduled 13-11 20:00 | `LyZnsGzL0cs` | [ ] | [ ] | [ ] | Local | [Open](69-object-robot-001.md) |
+| 70 | Car | [x] | Scheduled 15-11 20:00 | `kgf_Er3CQjU` | [ ] | [ ] | [ ] | Local | [Open](70-object-car-001.md) |
+| 71 | Tulip | [x] | Scheduled 17-11 20:00 | `8v9bvzzHPuQ` | [ ] | [ ] | [ ] | Local | [Open](71-object-tulip-001.md) |
 
 ## Current Totals
 
@@ -157,23 +157,22 @@ chưa tạo trên YouTube).
 
 ## Việc còn treo
 
-- **Bù phần thiếu do hết quota giữa chừng ngày 2026-08-26** — chạy lại đúng lệnh
-  `npm run youtube:upload` cũ cho từng video; uploader đọc receipt ở
-  `.secrets/youtube-uploads.json` nên bỏ qua bước upload file video, chỉ làm nốt phần dở:
-  - phụ đề chưa lên: **54, 55, 56, 57, 58, 59, 60, 61, 62**
-  - thumbnail chưa đặt: **58, 60, 61**
-- **Playlist chưa sync cho video 37–62** — `npm run youtube:playlist -- --apply`. Playlist
-  chung mới đủ tới 36. Video 62 đã lên kênh nên lần chạy tới **sẽ tự tạo** playlist
-  `Easy Object Drawings`.
-- Upload nốt **9 video cuối 63–71** (loạt đồ vật), Private kèm `--publish-at`, 63 → 01-11.
-  Quota reset 14:00 giờ VN.
-- **Quota thật lớn hơn ghi chép cũ**: ngày 2026-08-26 upload liền **29 video (33–61)** rồi
-  mới `quotaExceeded`. Con số "~4 video/ngày" ghi từ 2026-08-11 là sai.
+- **Playlist đồ vật `Easy Object Drawings` chưa được tạo** và **video 71 chưa vào playlist
+  chung** — ngày 2026-09-03 `npm run youtube:playlist -- --apply` thêm được 37–70 vào
+  `Simple Drawing Tutorials` rồi trả `quotaExceeded` ngay ở video 71. Chạy lại đúng lệnh đó
+  khi quota hồi (script tự bỏ qua video đã có trong playlist).
+- **Quota thật lớn hơn ghi chép cũ**: ngày 2026-08-26 upload liền **29 video (33–61)**, ngày
+  2026-09-03 upload tiếp **9 video (63–71)** cộng phần bù phụ đề/thumbnail cho 54–62 mà
+  không hề bị chặn. Con số "~4 video/ngày" ghi từ 2026-08-11 là sai.
 - Phụ đề: đã xác minh ngày 2026-08-14 trên video 27 và 28 — đúng 2 track mỗi video,
-  1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload.
+  1 track `asr` do YouTube tự sinh và 1 track `standard` do mình upload. Video 18 từng bị
+  ghi nhầm là thiếu phụ đề trong receipt; ngày 2026-09-03 YouTube trả về "đã có caption
+  track cùng language và name", tức phụ đề vẫn nằm đúng chỗ — cờ receipt đã sửa lại.
 - OAuth client còn ở trạng thái Testing nên refresh token chết sau 7 ngày; đã phải cấp lại
-  ngày 2026-08-23, hạn kế tiếp khoảng **2026-08-30**. Chuyển app sang Published trong
-  Google Cloud Console để khỏi lặp — việc này cần người dùng bấm.
+  ngày 2026-09-03 (lần trước 2026-08-23), hạn kế tiếp khoảng **2026-09-10**. Chuyển app
+  sang Published trong Google Cloud Console để khỏi lặp — việc này cần người dùng bấm.
+- Hàng đợi upload đã **trống**: cả 71 video đều nằm trên kênh, video cuối tự công khai
+  17-11. Muốn có video mới thì phải sản xuất tiếp từ số 72.
 
 Next new video number: **72**
 

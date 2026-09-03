@@ -2,7 +2,7 @@
 
 ## Trạng thái đăng
 
-- YouTube: [ ] Chưa upload
+- YouTube: [x] Đã upload — Private, tự chuyển Public lúc 03-11/2026 20:00 (Asia/Ho_Chi_Minh)
 - TikTok: [ ] Chưa đánh dấu
 - Facebook: [ ] Chưa đánh dấu
 - Instagram: [ ] Chưa đánh dấu
@@ -49,12 +49,14 @@ how to draw a sailboat, easy sailboat drawing, simple sailboat drawing, sailboat
 
 ## YouTube Result
 
-- Video ID: chưa có
-- Upload status: chưa upload
-- Privacy: chưa upload
-- Audience: chưa đặt
-- English captions: chưa upload
-- Custom thumbnail: chưa đặt
+- Video ID: `X_P-z_F8ZFc` — https://youtu.be/X_P-z_F8ZFc
+- Upload status: Uploaded 2026-09-03
+- Privacy: Private, tự chuyển Public lúc 03-11/2026 20:00 (Asia/Ho_Chi_Minh)
+- publishAt (UTC): `2026-11-03T13:00:00Z`
+- Audience: Not made for kids
+- English captions: Uploaded
+- Custom thumbnail: Đã đặt
+- Playlist: đã thêm vào `Simple Drawing Tutorials`; `Easy Object Drawings` chưa tạo (hết quota 2026-09-03)
 
 ## Final Checklist
 

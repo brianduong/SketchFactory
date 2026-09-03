@@ -1,6 +1,6 @@
 # Trạng thái SketchFactory
 
-Cập nhật: 2026-08-26 (Asia/Ho_Chi_Minh)
+Cập nhật: 2026-09-03 (Asia/Ho_Chi_Minh)
 
 Nội dung đang phát hành là **bản v2 vẽ nét thuần**: bỏ toàn bộ màu tô, giọng đọc chuyển
 sang Kokoro `af_bella` speed 0.85. 22 video bản v1 còn tô màu đã chuyển Unlisted.
@@ -69,7 +69,21 @@ uploader đọc receipt ở `.secrets/youtube-uploads.json` nên không upload l
 - **Playlist chưa sync: video 37–62** — `npm run youtube:playlist -- --apply`; video 62 đã
   lên kênh nên lần chạy tới sẽ tự tạo playlist `Easy Object Drawings`.
 
-Kênh giờ có **62 video**, hàng đợi còn **9 video (63–71)**, tất cả đều là loạt đồ vật.
+Ngày 2026-09-03 người dùng bảo "em upload lên đi". Token OAuth đã chết (`invalid_grant`)
+nên người dùng cấp lại; sau đó em chạy một lượt trọn vẹn **không hề bị chặn quota**:
+
+- **Bù xong phần dở của ngày 26-08**: phụ đề cho 54–62, thumbnail cho 58, 60 và 61.
+- **Upload nốt 9 video cuối 63–71** (Ice Cream Cone, Sailboat, Rocket, Cupcake, Umbrella,
+  Cactus, Robot, Car, Tulip), Private kèm lịch tự công khai **01-11 → 17-11**, hai ngày một
+  video. Đọc lại từ API: cả 9 đều `private` và đúng `publishAt`.
+- Video 18 Mouse bị receipt ghi nhầm là thiếu phụ đề; YouTube trả về "đã có caption track
+  cùng language và name", tức phụ đề vẫn nằm đúng chỗ — đã sửa cờ trong receipt.
+
+**Kênh nay có đủ 71 video, hàng đợi upload trống.** Video cuối tự công khai 17-11-2026.
+
+`npm run youtube:playlist -- --apply` thêm được **37–70** vào `Simple Drawing Tutorials`
+rồi trả `quotaExceeded` đúng ở video 71. Còn treo: **thêm 71 vào playlist chung** và
+**tạo playlist `Easy Object Drawings`** (62–71) — chạy lại đúng lệnh đó khi quota hồi.
 
 ## Tổng quan
 
@@ -82,7 +96,7 @@ Kênh giờ có **62 video**, hàng đợi còn **9 video (63–71)**, tất c�
 | Metadata tiếng Anh trung tính | ✅ Hoàn thành | `src/metadata/engine.ts`, metadata tests |
 | Thumbnail theo từng con vật | ✅ Hoàn thành | `src/thumbnail/engine.ts` |
 | Bộ nhận diện kênh | ✅ Hoàn thành | `assets/branding/`, `docs/brand-guide.md` |
-| Bộ video upload-ready | ✅ 71 video | `output/upload-ready/01-cat.mp4` đến `71-tulip.mp4` |
+| Bộ video upload-ready | ✅ 71 video, đã lên kênh hết | `output/upload-ready/01-cat.mp4` đến `71-tulip.mp4` |
 | Theo dõi đa nền tảng | ✅ Hoàn thành | `docs/publishing/upload-tracker.md` |
 | Trạng thái publishing có cấu trúc | ✅ Hoàn thành | `data/publishing-state.json` |
 | YouTube uploader | ✅ Hoạt động khi được yêu cầu | OAuth + upload + caption + API verification |
@@ -145,26 +159,26 @@ Kênh giờ có **62 video**, hàng đợi còn **9 video (63–71)**, tất c�
 | 51 | Horse | 10 | `51-horse.mp4` | 🕗 Hẹn 08-10 20:00 — `IjFkbw-LlKo` |
 | 52 | Seahorse | 10 | `52-seahorse.mp4` | 🕗 Hẹn 10-10 20:00 — `jfpJ2bS8bB4` |
 | 53 | Peacock | 10 | `53-peacock.mp4` | 🕗 Hẹn 12-10 20:00 — `2gkzPvt6h14` |
-| 54 | Ladybug | 9 | `54-ladybug.mp4` | 🕗 Hẹn 14-10 20:00 ⚠️ thiếu phụ đề — `oloSJZGIPL0` |
-| 55 | Dragonfly | 9 | `55-dragonfly.mp4` | 🕗 Hẹn 16-10 20:00 ⚠️ thiếu phụ đề — `veDUVkY7pAc` |
-| 56 | Scorpion | 8 | `56-scorpion.mp4` | 🕗 Hẹn 18-10 20:00 ⚠️ thiếu phụ đề — `gbnXLhPJlnI` |
-| 57 | Pufferfish | 6 | `57-pufferfish.mp4` | 🕗 Hẹn 20-10 20:00 ⚠️ thiếu phụ đề — `q--UFP12tmY` |
-| 58 | Platypus | 8 | `58-platypus.mp4` | 🕗 Hẹn 22-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `lMPcJQzET8s` |
-| 59 | Sloth | 9 | `59-sloth.mp4` | 🕗 Hẹn 24-10 20:00 ⚠️ thiếu phụ đề — `uFUwDHiTSEQ` |
-| 60 | Beaver | 10 | `60-beaver.mp4` | 🕗 Hẹn 26-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `UKqdlhiSnFU` |
-| 61 | Walrus | 9 | `61-walrus.mp4` | 🕗 Hẹn 28-10 20:00 ⚠️ thiếu thumbnail, phụ đề — `yeje_-d-YIA` |
-| 62 | House | 7 | `62-house.mp4` | 🕗 Hẹn 30-10 20:00 ⚠️ thiếu phụ đề — `pyNzXq3sZp8` |
-| 63 | Ice Cream Cone | 7 | `63-ice-cream-cone.mp4` | ⏳ Chưa upload — dự kiến 01-11 20:00 |
-| 64 | Sailboat | 6 | `64-sailboat.mp4` | ⏳ Chưa upload — dự kiến 03-11 20:00 |
-| 65 | Rocket | 8 | `65-rocket.mp4` | ⏳ Chưa upload — dự kiến 05-11 20:00 |
-| 66 | Cupcake | 7 | `66-cupcake.mp4` | ⏳ Chưa upload — dự kiến 07-11 20:00 |
-| 67 | Umbrella | 7 | `67-umbrella.mp4` | ⏳ Chưa upload — dự kiến 09-11 20:00 |
-| 68 | Cactus | 6 | `68-cactus.mp4` | ⏳ Chưa upload — dự kiến 11-11 20:00 |
-| 69 | Robot | 9 | `69-robot.mp4` | ⏳ Chưa upload — dự kiến 13-11 20:00 |
-| 70 | Car | 8 | `70-car.mp4` | ⏳ Chưa upload — dự kiến 15-11 20:00 |
-| 71 | Tulip | 7 | `71-tulip.mp4` | ⏳ Chưa upload — dự kiến 17-11 20:00 |
+| 54 | Ladybug | 9 | `54-ladybug.mp4` | 🕗 Hẹn 14-10 20:00 — `oloSJZGIPL0` |
+| 55 | Dragonfly | 9 | `55-dragonfly.mp4` | 🕗 Hẹn 16-10 20:00 — `veDUVkY7pAc` |
+| 56 | Scorpion | 8 | `56-scorpion.mp4` | 🕗 Hẹn 18-10 20:00 — `gbnXLhPJlnI` |
+| 57 | Pufferfish | 6 | `57-pufferfish.mp4` | 🕗 Hẹn 20-10 20:00 — `q--UFP12tmY` |
+| 58 | Platypus | 8 | `58-platypus.mp4` | 🕗 Hẹn 22-10 20:00 — `lMPcJQzET8s` |
+| 59 | Sloth | 9 | `59-sloth.mp4` | 🕗 Hẹn 24-10 20:00 — `uFUwDHiTSEQ` |
+| 60 | Beaver | 10 | `60-beaver.mp4` | 🕗 Hẹn 26-10 20:00 — `UKqdlhiSnFU` |
+| 61 | Walrus | 9 | `61-walrus.mp4` | 🕗 Hẹn 28-10 20:00 — `yeje_-d-YIA` |
+| 62 | House | 7 | `62-house.mp4` | 🕗 Hẹn 30-10 20:00 — `pyNzXq3sZp8` |
+| 63 | Ice Cream Cone | 7 | `63-ice-cream-cone.mp4` | 🕗 Hẹn 01-11 20:00 — `XWr-T9FQILI` |
+| 64 | Sailboat | 6 | `64-sailboat.mp4` | 🕗 Hẹn 03-11 20:00 — `X_P-z_F8ZFc` |
+| 65 | Rocket | 8 | `65-rocket.mp4` | 🕗 Hẹn 05-11 20:00 — `IuUrO9M5Fn4` |
+| 66 | Cupcake | 7 | `66-cupcake.mp4` | 🕗 Hẹn 07-11 20:00 — `FL5Ny2AF_J8` |
+| 67 | Umbrella | 7 | `67-umbrella.mp4` | 🕗 Hẹn 09-11 20:00 — `rrhpI-vsWNM` |
+| 68 | Cactus | 6 | `68-cactus.mp4` | 🕗 Hẹn 11-11 20:00 — `WDZYq0CjzJM` |
+| 69 | Robot | 9 | `69-robot.mp4` | 🕗 Hẹn 13-11 20:00 — `LyZnsGzL0cs` |
+| 70 | Car | 8 | `70-car.mp4` | 🕗 Hẹn 15-11 20:00 — `kgf_Er3CQjU` |
+| 71 | Tulip | 7 | `71-tulip.mp4` | 🕗 Hẹn 17-11 20:00 — `8v9bvzzHPuQ` |
 
-Tới 2026-08-26 có 62 video bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
+Tới 2026-09-03 có đủ **71 video** bản v2 nằm trên kênh `Simple Sketch`. Xác minh qua YouTube Data API
 ngày 2026-08-14: video 01–23 đã Public (13–22 tự lên đúng lịch mỗi ngày 02/08–11/08,
 Snail 23 lên tối 13/08), video 24–28 còn Private kèm `publishAt` cách hai ngày một video.
 

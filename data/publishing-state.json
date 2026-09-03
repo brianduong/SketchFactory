@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T11:15:17.033Z",
+  "updatedAt": "2026-09-03T08:15:42.631Z",
   "verifiedAgainstYouTubeApiAt": "2026-08-23T08:45:00.000Z",
   "youtube": {
     "channelName": "Simple Sketch",
@@ -24,8 +24,8 @@
         "id": "PLS5I18k91_u4",
         "name": "Simple Drawing Tutorials",
         "includes": "all",
-        "videoCount": 35,
-        "note": "Playlist chung cho tất cả video, xếp theo số thứ tự (quyết định 2026-08-02)."
+        "videoCount": 70,
+        "note": "Playlist chung cho tất cả video, xếp theo số thứ tự (quyết định 2026-08-02). Tới 2026-09-03 có 70/71 video (thiếu 71 vì hết quota)."
       },
       {
         "id": null,
@@ -46,7 +46,7 @@
   },
   "sequence": {
     "lastGenerated": 71,
-    "lastYouTubeUploaded": 62,
+    "lastYouTubeUploaded": 71,
     "nextNumber": 72
   },
   "videos": [
@@ -1293,7 +1293,7 @@
         "videoId": "lMPcJQzET8s",
         "scheduledPublishAt": "2026-10-22T13:00:00Z",
         "plannedPublishAt": "2026-10-22T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1337,7 +1337,7 @@
         "videoId": "UKqdlhiSnFU",
         "scheduledPublishAt": "2026-10-26T13:00:00Z",
         "plannedPublishAt": "2026-10-26T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1359,7 +1359,7 @@
         "videoId": "yeje_-d-YIA",
         "scheduledPublishAt": "2026-10-28T13:00:00Z",
         "plannedPublishAt": "2026-10-28T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1398,12 +1398,12 @@
       "category": "objects",
       "file": "63-ice-cream-cone.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "XWr-T9FQILI",
+        "scheduledPublishAt": "2026-11-01T13:00:00Z",
         "plannedPublishAt": "2026-11-01T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1420,12 +1420,12 @@
       "category": "objects",
       "file": "64-sailboat.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "X_P-z_F8ZFc",
+        "scheduledPublishAt": "2026-11-03T13:00:00Z",
         "plannedPublishAt": "2026-11-03T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1442,12 +1442,12 @@
       "category": "objects",
       "file": "65-rocket.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "IuUrO9M5Fn4",
+        "scheduledPublishAt": "2026-11-05T13:00:00Z",
         "plannedPublishAt": "2026-11-05T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1464,12 +1464,12 @@
       "category": "objects",
       "file": "66-cupcake.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "FL5Ny2AF_J8",
+        "scheduledPublishAt": "2026-11-07T13:00:00Z",
         "plannedPublishAt": "2026-11-07T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1486,12 +1486,12 @@
       "category": "objects",
       "file": "67-umbrella.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "rrhpI-vsWNM",
+        "scheduledPublishAt": "2026-11-09T13:00:00Z",
         "plannedPublishAt": "2026-11-09T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1508,12 +1508,12 @@
       "category": "objects",
       "file": "68-cactus.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "WDZYq0CjzJM",
+        "scheduledPublishAt": "2026-11-11T13:00:00Z",
         "plannedPublishAt": "2026-11-11T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1530,12 +1530,12 @@
       "category": "objects",
       "file": "69-robot.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "LyZnsGzL0cs",
+        "scheduledPublishAt": "2026-11-13T13:00:00Z",
         "plannedPublishAt": "2026-11-13T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1552,12 +1552,12 @@
       "category": "objects",
       "file": "70-car.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "kgf_Er3CQjU",
+        "scheduledPublishAt": "2026-11-15T13:00:00Z",
         "plannedPublishAt": "2026-11-15T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1574,12 +1574,12 @@
       "category": "objects",
       "file": "71-tulip.mp4",
       "youtube": {
-        "uploaded": false,
-        "visibility": "not-uploaded",
-        "videoId": null,
-        "scheduledPublishAt": null,
+        "uploaded": true,
+        "visibility": "scheduled",
+        "videoId": "8v9bvzzHPuQ",
+        "scheduledPublishAt": "2026-11-17T13:00:00Z",
         "plannedPublishAt": "2026-11-17T13:00:00Z",
-        "thumbnailSet": false
+        "thumbnailSet": true
       },
       "tiktok": false,
       "facebook": false,
@@ -1593,11 +1593,11 @@
   ],
   "pendingActions": [
     "Xóa vĩnh viễn 22 video bản v1 tô màu sau 14:00 ngày 2026-08-03: npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm (~1.100 đơn vị quota). Người dùng đã xác nhận sau khi biết Cat 1258 view, Elephant 818, Dog 581, Rabbit 315 sẽ mất.",
-    "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại.",
-    "Bù phụ đề cho video 54-62 và thumbnail cho 58, 60, 61: chạy lại đúng lệnh npm run youtube:upload cũ (uploader đọc receipt .secrets/youtube-uploads.json nên bỏ qua bước upload video, chỉ làm phần còn thiếu).",
-    "Chạy npm run youtube:playlist -- --apply để thêm video 37-62 vào Simple Drawing Tutorials; video 62 đã lên kênh nên lần chạy tới sẽ tự tạo playlist Easy Object Drawings.",
-    "Upload nốt 9 video cuối 63-71 (loạt đồ vật), Private kèm --publish-at, 63 -> 2026-11-01T13:00:00Z.",
-    "Quota ngày 2026-08-26: upload liền 29 video (33-61) rồi quotaExceeded; ~3 tiếng sau hồi đủ đúng 1 video (62) rồi cạn tiếp. Con số ~4 video/ngày ghi trước đó là sai, nhưng cũng đừng hứa 29 video mỗi ngày - cứ chạy tới khi bị chặn."
+    "Phụ đề đã xác minh 2026-08-14 trên video 27 và 28: mỗi video có 1 track asr của YouTube và 1 track standard do mình upload. Không cần kiểm tra lại. Video 18 từng bị receipt ghi nhầm là thiếu phụ đề; ngày 2026-09-03 YouTube trả lỗi \"đã có caption track cùng language và name\", tức phụ đề vẫn đúng chỗ - cờ receipt đã sửa.",
+    "Playlist còn dở sau 2026-09-03: video 71 chưa vào Simple Drawing Tutorials va playlist Easy Object Drawings (62-71) chưa được tạo - quotaExceeded đúng ở video 71. Chạy lại npm run youtube:playlist -- --apply khi quota hồi (14:00 giờ VN).",
+    "Quota thật lớn hơn ghi chép cũ: 2026-08-26 upload 29 video liền (33-61); 2026-09-03 upload 9 video (63-71) cộng phần bù phụ đề/thumbnail 54-62 mà không bị chặn, chỉ hết quota ở bước playlist cuối. Cứ chạy tới khi bị chặn rồi báo con số thật.",
+    "OAuth client còn ở trạng thái Testing nên refresh token chết sau ~7 ngày; cấp lại 2026-09-03, hạn kế tiếp khoảng 2026-09-10. Người dùng phải tự chạy npm run youtube:auth.",
+    "Hàng đợi upload đã trống: cả 71 video nằm trên kênh. Muốn có video mới phải sản xuất tiếp từ số 72."
   ],
   "contentVersion": {
     "version": 2,
