@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Sketch — Draw anything. The simple way.</title>
+<style>
+  :root {
+    --yellow: #F4D35E;
+    --ink: #111111;
+    --paper: #FFFDF7;
+    --coral: #EF6F6C;
+    --gray: #555555;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+  .mark {
+    display: inline-block;
+    background: var(--yellow);
+    border: 3px solid var(--ink);
+    border-radius: 0.75rem;
+    padding: 0.35rem 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+  h1 { font-size: 2.25rem; font-weight: 800; line-height: 1.15; margin: 2rem 0 0.5rem; }
+  .tagline { font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); font-size: 0.8rem; }
+  p { color: var(--gray); }
+  p.lead { color: var(--ink); font-size: 1.1rem; }
+  hr { border: 0; border-top: 2px solid var(--ink); opacity: 0.12; margin: 2.5rem 0; }
+  a { color: var(--ink); text-decoration-color: var(--coral); text-underline-offset: 3px; }
+  .cta {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: var(--gray); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="mark">Simple Sketch</span>
+  <h1>Draw anything.<br>The simple way.</h1>
+  <p class="tagline">Short drawing tutorials</p>
+
+  <p class="lead">Simple Sketch publishes short, calm drawing tutorials. Every video takes
+  one subject — an animal, an everyday object — and reduces it to the fewest strokes that
+  still read as itself. No colour, no shading, no rush. Follow along on paper, a whiteboard,
+  or a tablet.</p>
+
+  <p><a class="cta" href="https://www.youtube.com/@simplesketchdraw">Watch on YouTube</a></p>
+
+  <hr>
+
+  <h2>About this page</h2>
+  <p>This site belongs to <strong>SketchFactory Uploader</strong>, a personal command-line
+  tool that renders these videos and uploads them to the channel above. It is not a product,
+  a service, or an app anyone else signs into — it runs on one laptop and posts to one
+  channel.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
