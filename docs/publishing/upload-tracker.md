@@ -173,6 +173,13 @@ chưa tạo trên YouTube).
   sang Published trong Google Cloud Console để khỏi lặp — việc này cần người dùng bấm.
 - Hàng đợi upload đã **trống**: cả 71 video đều nằm trên kênh, video cuối tự công khai
   17-11. Muốn có video mới thì phải sản xuất tiếp từ số 72.
+- **Chưa xóa 22 video bản v1 tô màu** — người dùng đã đồng ý xóa vĩnh viễn từ 2026-08-03
+  (biết trước sẽ mất view: Cat 1258, Elephant 818, Dog 581, Rabbit 315) nhưng lệnh chưa
+  từng chạy; 22 video đó vẫn đang Unlisted trên kênh. Lệnh:
+  `npm run youtube:retire -- --archive youtube-archive-color-version.json --delete-confirm`
+  (~1.100 đơn vị quota). **Không tự chạy** — hỏi lại người dùng trước vì không hoàn tác được.
+- **Chưa đăng platform nào ngoài YouTube**: TikTok (`@simplesketchdraw`), Facebook và
+  Instagram vẫn 0/71, đăng thủ công.
 
 Next new video number: **72**
 
